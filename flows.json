@@ -651,9 +651,7 @@
             "b033bb0c16d50512"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 382
+        "y": 19
     },
     {
         "id": "4eae9dfe783940c7",
@@ -1446,7 +1444,9 @@
             "dca9dfe35ad7a682"
         ],
         "x": 44,
-        "y": 19
+        "y": 19,
+        "w": 1852,
+        "h": 942
     },
     {
         "id": "22baf3437ddf891a",
@@ -20514,7 +20514,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: 'HR-Data.txt' \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents:  msg.nameBase + '.txt'\n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -20609,7 +20609,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = 'HR-Data.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: 'HR-Data.txt', question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase+'.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21192,7 +21192,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: 'HR-Data.txt' \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt' \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21309,7 +21309,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = 'HR-Data.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: 'HR-Data.txt', question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase + '.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21370,7 +21370,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: 'HR-Data.txt' \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt'\n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21487,7 +21487,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = 'HR-Data.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: 'HR-Data.txt', question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase + '.txt'\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22619,7 +22619,7 @@
         "type": "function",
         "z": "5a97503883e96ee8",
         "name": "function 604",
-        "func": "msg.collection = 'AISettings'\n\n// msg.query={\n//     user: msg.fromApp.email,\n// }\n// msg.payload = {\n//     user: msg.fromApp.email,\n//     selectedDb: objectid(msg.payload[0]._id)\n// }\n\nmsg.payload = [\n    { \"prompt\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[0]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true }, \n    { \"prompt\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor.Respond to user questions using the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[2]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': false  }, \n    { \"prompt\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[1]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true }\n    ]\nreturn msg;",
+        "func": "msg.collection = 'AISettings'\n\nmsg.payload = [\n    { \"prompt\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[1]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true },\n    { \"prompt\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor.Respond to user questions using the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[2]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': false },\n    { \"prompt\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[0]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true }\n]\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
