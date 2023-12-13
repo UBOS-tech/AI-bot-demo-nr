@@ -1,0 +1,18 @@
+{
+    "7908a755f1520aa7": {
+        "user": "${AIBOTDB-MONGO-USER-NAME}",
+        "password": "${AIBOTDB-MONGO-PASSWORD}"
+    },
+    "30a581e7169ce66b": {},
+    "baf069bd70255c7f": {},
+    "4b07803a52e468f5": {
+        "token": "{global.get('telegram').BOT_TOKEN}"
+    },
+    "c1d982bbf3464838": {},
+    "a32b312f472ff9d3": {
+        "token": "6851144846:AAFN9436UTwqQRcevfxhLM-nVHoo8gvk_Sg"
+    },
+    "fcdefb56d748a68c": {
+        "OPENAI_API_KEY": "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"
+    }
+}
