@@ -641,9 +641,7 @@
             "b033bb0c16d50512"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 382
+        "y": 19
     },
     {
         "id": "4eae9dfe783940c7",
@@ -882,9 +880,7 @@
             "07dd748a613f4705"
         ],
         "x": 2334,
-        "y": 399,
-        "w": 1322,
-        "h": 702
+        "y": 399
     },
     {
         "id": "a40ce0519f786db3",
@@ -927,9 +923,7 @@
             "7705a529a359f8eb"
         ],
         "x": 2334,
-        "y": 19,
-        "w": 1352,
-        "h": 362
+        "y": 19
     },
     {
         "id": "566b1306d753e50d",
@@ -1042,9 +1036,7 @@
             "70013c8ece053415"
         ],
         "x": 14,
-        "y": 1259,
-        "w": 1312,
-        "h": 1462
+        "y": 1259
     },
     {
         "id": "3f798d6121d48971",
@@ -1139,9 +1131,7 @@
             "1681dd095372be95"
         ],
         "x": 14,
-        "y": 39,
-        "w": 2292,
-        "h": 1202
+        "y": 39
     },
     {
         "id": "0fb791f72a382f0a",
@@ -2898,7 +2888,7 @@
         "z": "ebf7c602310ae1c1",
         "g": "37a7b2262ade6898",
         "name": "function 618",
-        "func": "if (msg.payload.length > 0) {\n\n    msg.OPENAI_API_KEY = msg.payload[0].key\n\n    msg.history = {\n        requestText: msg.fromApp.message,\n        startDate: Date.now(),\n        type: 'demo',\n        email: msg.fromApp.email\n    }\n\n    // msg.input = msg.fromApp.message;\n\n    return [msg, null]\n} else {\n    const timestamp = Date.now();\n\n    msg.payload = {\n        endDate: timestamp,\n        startDate: timestamp,\n        requestText: msg.input,\n        answer: 'Secure ongoing access to the demo version by saving your OpenAI key in the dedicated AI Setup page, accessible through the menu.',\n        date: timestamp,\n        chat_id: msg.fromDb?.chat_id ? msg.fromDb?.chat_id : msg.id,\n        user_name: 'you',\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n\n    };\n\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n\n    return [null, msg];\n}\n",
+        "func": "if (msg.payload.length > 0) {\n\n    msg.OPENAI_API_KEY = msg.payload[0].key\n\n\n    msg.history = {\n        requestText: msg.input,\n        startDate: Date.now(),\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n    }\n\n    // msg.input = msg.fromApp.message;\n\n    return [msg, null]\n} else {\n    const timestamp = Date.now();\n\n    msg.payload = {\n        endDate: timestamp,\n        startDate: timestamp,\n        requestText: msg.input,\n        answer: 'Secure ongoing access to the demo version by saving your OpenAI key in the dedicated AI Setup page, accessible through the menu.',\n        date: timestamp,\n        chat_id: msg.fromDb?.chat_id ? msg.fromDb?.chat_id : msg.id,\n        user_name: 'you',\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n\n    };\n\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n\n    return [null, msg];\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -9847,7 +9837,6 @@
         "wires": [
             [
                 "06af825b3013eade",
-                "d84bc8458a9612e5",
                 "2e3abcb9e2592336"
             ]
         ]
@@ -11170,7 +11159,7 @@
         "upload": true,
         "swaggerDoc": "",
         "x": 110,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
                 "269f4c3a201c1b0a"
@@ -11190,7 +11179,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
                 "ab68471c2ee2f760"
@@ -11210,7 +11199,7 @@
         "overwriteFile": "true",
         "encoding": "binary",
         "x": 550,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
                 "8c863e5458064bfb"
@@ -11226,7 +11215,7 @@
         "statusCode": "",
         "headers": {},
         "x": 750,
-        "y": 120,
+        "y": 140,
         "wires": []
     },
     {
@@ -11242,8 +11231,8 @@
         "sendError": false,
         "encoding": "binary",
         "allProps": false,
-        "x": 280,
-        "y": 180,
+        "x": 290,
+        "y": 220,
         "wires": [
             [
                 "75c2ed2ad4c3de9b"
@@ -11261,7 +11250,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 110,
-        "y": 180,
+        "y": 220,
         "wires": [
             [
                 "e3826507190f2779"
@@ -11278,8 +11267,8 @@
         "headers": {
             "Content-Type": "image/png"
         },
-        "x": 560,
-        "y": 180,
+        "x": 570,
+        "y": 220,
         "wires": []
     },
     {
@@ -11296,7 +11285,7 @@
         "encoding": "binary",
         "allProps": false,
         "x": 260,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "b4b1f74b1f92e251"
@@ -11314,7 +11303,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 100,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "1fddeb1d0f1aa246"
@@ -11332,7 +11321,7 @@
             "Content-Type": "image/png"
         },
         "x": 580,
-        "y": 300,
+        "y": 340,
         "wires": []
     },
     {
@@ -11348,7 +11337,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "1f263028b189f117"
@@ -11366,7 +11355,7 @@
         ],
         "uncaught": false,
         "x": 270,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "5d87e404bc2aadfc"
@@ -11386,7 +11375,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "b4b1f74b1f92e251"
@@ -11403,8 +11392,8 @@
             "e3826507190f2779"
         ],
         "uncaught": false,
-        "x": 270,
-        "y": 220,
+        "x": 280,
+        "y": 260,
         "wires": [
             [
                 "b033bb0c16d50512"
@@ -11423,8 +11412,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 220,
+        "x": 420,
+        "y": 260,
         "wires": [
             [
                 "75c2ed2ad4c3de9b"
