@@ -205,7 +205,9 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 679
+        "y": 679,
+        "w": 672,
+        "h": 642
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -227,7 +229,9 @@
             "4ca2aafdce75631b"
         ],
         "x": 714,
-        "y": 679
+        "y": 679,
+        "w": 1012,
+        "h": 122
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -267,7 +271,9 @@
             "cda158a3d19d64d9"
         ],
         "x": 714,
-        "y": 839
+        "y": 839,
+        "w": 1452,
+        "h": 482
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -305,7 +311,9 @@
             "8ade01b7fdd836bc"
         ],
         "x": 854,
-        "y": 1359
+        "y": 1359,
+        "w": 1172,
+        "h": 402
     },
     {
         "id": "a89d39ed625d493a",
@@ -354,7 +362,9 @@
             "aed0f134a3d46198"
         ],
         "x": 14,
-        "y": 1359
+        "y": 1359,
+        "w": 812,
+        "h": 642
     },
     {
         "id": "152119097abe3c6c",
@@ -723,7 +733,9 @@
             "480c5804853edad3"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 1912,
+        "h": 622
     },
     {
         "id": "90cc95e0240e9048",
@@ -901,7 +913,9 @@
             "07dd748a613f4705"
         ],
         "x": 2334,
-        "y": 399
+        "y": 399,
+        "w": 1322,
+        "h": 702
     },
     {
         "id": "a40ce0519f786db3",
@@ -944,7 +958,9 @@
             "7705a529a359f8eb"
         ],
         "x": 2334,
-        "y": 19
+        "y": 19,
+        "w": 1352,
+        "h": 362
     },
     {
         "id": "566b1306d753e50d",
@@ -1057,7 +1073,9 @@
             "70013c8ece053415"
         ],
         "x": 14,
-        "y": 1259
+        "y": 1259,
+        "w": 1312,
+        "h": 1462
     },
     {
         "id": "3f798d6121d48971",
@@ -1152,7 +1170,9 @@
             "1681dd095372be95"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 2292,
+        "h": 1202
     },
     {
         "id": "0fb791f72a382f0a",
@@ -1541,7 +1561,9 @@
             "cd7beec48b6d0a13"
         ],
         "x": 34,
-        "y": 2059
+        "y": 2059,
+        "w": 3652,
+        "h": 922
     },
     {
         "id": "4b07803a52e468f5",
@@ -3925,7 +3947,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\",\n    }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4199,7 +4221,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\nmsg.url = env.get('nodered') + '/createHR'\n\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\",\n        select: true,\n\n    }\n}\nmsg.url = env.get('nodered') + '/createHR'\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
