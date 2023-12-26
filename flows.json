@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "4cba6f8219137af4",
+        "type": "tab",
+        "label": "Settings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f4036141cc030bcf",
         "type": "tab",
         "label": "Auth",
@@ -51,14 +59,6 @@
         "id": "bc2279776f9fc918",
         "type": "tab",
         "label": "Bot ",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "4cba6f8219137af4",
-        "type": "tab",
-        "label": "Settings",
         "disabled": false,
         "info": "",
         "env": []
@@ -402,10 +402,15 @@
             "5092087d9039a0cf",
             "19eb532e09327098",
             "960a3e61829bb489",
-            "c58feab76db92813"
+            "c58feab76db92813",
+            "fb4f92ede19d9f64",
+            "53355054d0d9a19e",
+            "bc3079138c8427f1"
         ],
         "x": 34,
-        "y": 279
+        "y": 279,
+        "w": 3112,
+        "h": 302
     },
     {
         "id": "c479b9fa6206f5f0",
@@ -432,7 +437,9 @@
             "c32d2d5b2f208e74"
         ],
         "x": 74,
-        "y": 919
+        "y": 919,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "32d3112d56e6b1ab",
@@ -459,7 +466,9 @@
             "3513b2ea589bb4a4"
         ],
         "x": 74,
-        "y": 1119
+        "y": 1119,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "faa44c8af53ff52c",
@@ -486,7 +495,9 @@
             "0dc15aa186445a0f"
         ],
         "x": 74,
-        "y": 1339
+        "y": 1339,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "649b2f424f00fcf7",
@@ -513,7 +524,9 @@
             "e9e2f318883d6af3"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1012,
+        "h": 202
     },
     {
         "id": "e40f1639481a93e5",
@@ -540,7 +553,9 @@
             "8a7b40691c947077"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 972,
+        "h": 202
     },
     {
         "id": "4f917968caad45c9",
@@ -561,7 +576,9 @@
             "2dbe218776fe3204"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "a599b3138f375738",
@@ -641,7 +658,9 @@
             "b033bb0c16d50512"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "4eae9dfe783940c7",
@@ -788,7 +807,9 @@
             "13a0b7d44f1afb32"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 1932,
+        "h": 222
     },
     {
         "id": "8777f3383a4d7bd4",
@@ -1434,11 +1455,16 @@
             "90bc5eb57a431dbb",
             "8ac3d52e2469efeb",
             "14cfaa6d2bfcd676",
-            "dca9dfe35ad7a682"
+            "dca9dfe35ad7a682",
+            "e1b3134fac3e17d1",
+            "98d0b42697728009",
+            "e09645697f79414d",
+            "323e280e2f602e36",
+            "1d399d7e2563d8e4"
         ],
-        "x": 44,
+        "x": 24,
         "y": 19,
-        "w": 1852,
+        "w": 1862,
         "h": 942
     },
     {
@@ -2888,7 +2914,7 @@
         "z": "ebf7c602310ae1c1",
         "g": "37a7b2262ade6898",
         "name": "function 618",
-        "func": "if (msg.payload.length > 0) {\n\n    msg.OPENAI_API_KEY = msg.payload[0].key\n\n\n    msg.history = {\n        requestText: msg.input,\n        startDate: Date.now(),\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n    }\n\n    // msg.input = msg.fromApp.message;\n\n    return [msg, null]\n} else {\n    const timestamp = Date.now();\n\n    msg.payload = {\n        endDate: timestamp,\n        startDate: timestamp,\n        requestText: msg.input,\n        answer: 'Secure ongoing access to the demo version by saving your OpenAI key in the dedicated AI Setup page, accessible through the menu.',\n        date: timestamp,\n        chat_id: msg.fromDb?.chat_id ? msg.fromDb?.chat_id : msg.id,\n        user_name: 'you',\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n\n    };\n\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n\n    return [null, msg];\n}\n",
+        "func": "if (msg.payload.length > 0) {\n\n    msg.OPENAI_API_KEY = msg.payload[0].key\n\n\n    msg.history = {\n        requestText: msg.input,\n        startDate: Date.now(),\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n    }\n\n    // msg.input = msg.fromApp.message;\n\n    return [msg, null]\n} else {\n    const timestamp = Date.now();\n\n    msg.payload = {\n        endDate: timestamp,\n        startDate: timestamp,\n        requestText: msg.input,\n        answer: 'To ensure uninterrupted access to the demo version, please secure your ongoing access by saving your OpenAI key. You can do this through the dedicated \"AI Setup page\" accessible via the menu, or simply by clicking the \"Save Open AI Key\" button located at the top right corner of this page.',\n        date: timestamp,\n        chat_id: msg.fromDb?.chat_id ? msg.fromDb?.chat_id : msg.id,\n        user_name: 'you',\n        type: 'demo',\n        email: msg.fromApp.email + '_' + msg.fromApp.dbname\n\n    };\n\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n\n    return [null, msg];\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -3099,7 +3125,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 545,
+        "x": 535,
         "y": 740,
         "wires": [
             [
@@ -3133,7 +3159,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 400,
+        "x": 390,
         "y": 740,
         "wires": [
             [
@@ -3158,7 +3184,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 660,
+        "x": 650,
         "y": 740,
         "wires": [
             [
@@ -3188,7 +3214,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 160,
         "y": 740,
         "wires": [
             [
@@ -3207,7 +3233,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 765,
+        "x": 755,
         "y": 740,
         "wires": [
             [
@@ -3228,7 +3254,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
+        "x": 880,
         "y": 740,
         "wires": [
             [
@@ -3253,7 +3279,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1080,
+        "x": 1070,
         "y": 740,
         "wires": [
             [
@@ -3276,7 +3302,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
+        "x": 1070,
         "y": 700,
         "wires": []
     },
@@ -3301,7 +3327,7 @@
                 "module": "openai"
             }
         ],
-        "x": 1520,
+        "x": 1510,
         "y": 880,
         "wires": [
             [
@@ -3322,7 +3348,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
+        "x": 1030,
         "y": 880,
         "wires": [
             [
@@ -3348,7 +3374,7 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1290,
+        "x": 1280,
         "y": 880,
         "wires": [
             [
@@ -3371,7 +3397,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1790,
+        "x": 1780,
         "y": 880,
         "wires": []
     },
@@ -3387,7 +3413,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1445,
+        "x": 1435,
         "y": 920,
         "wires": [
             [
@@ -3407,7 +3433,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1570,
+        "x": 1560,
         "y": 920,
         "wires": [
             []
@@ -3420,7 +3446,7 @@
         "g": "b54f0e60ef6f071e",
         "name": "hr",
         "info": "",
-        "x": 140,
+        "x": 130,
         "y": 700,
         "wires": []
     },
@@ -3436,7 +3462,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
+        "x": 860,
         "y": 100,
         "wires": [
             [
@@ -3455,7 +3481,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 745,
+        "x": 735,
         "y": 100,
         "wires": [
             [
@@ -3481,7 +3507,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1060,
+        "x": 1050,
         "y": 100,
         "wires": [
             [
@@ -3507,7 +3533,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 640,
+        "x": 630,
         "y": 100,
         "wires": [
             [
@@ -3529,7 +3555,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
+        "x": 1050,
         "y": 60,
         "wires": []
     },
@@ -3544,7 +3570,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 525,
+        "x": 515,
         "y": 100,
         "wires": [
             [
@@ -3565,7 +3591,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
+        "x": 1010,
         "y": 240,
         "wires": [
             [
@@ -3598,7 +3624,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 380,
+        "x": 370,
         "y": 100,
         "wires": [
             [
@@ -3628,7 +3654,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 140,
         "y": 100,
         "wires": [
             [
@@ -3643,7 +3669,7 @@
         "g": "b54f0e60ef6f071e",
         "name": "friednly",
         "info": "",
-        "x": 120,
+        "x": 110,
         "y": 60,
         "wires": []
     },
@@ -3672,7 +3698,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 380,
+        "x": 370,
         "y": 380,
         "wires": [
             [
@@ -3702,7 +3728,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 140,
         "y": 380,
         "wires": [
             [
@@ -3721,7 +3747,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 525,
+        "x": 515,
         "y": 380,
         "wires": [
             [
@@ -3747,7 +3773,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 640,
+        "x": 630,
         "y": 380,
         "wires": [
             [
@@ -3766,7 +3792,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 745,
+        "x": 735,
         "y": 380,
         "wires": [
             [
@@ -3787,7 +3813,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
+        "x": 860,
         "y": 380,
         "wires": [
             [
@@ -3812,7 +3838,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1060,
+        "x": 1050,
         "y": 380,
         "wires": [
             [
@@ -3835,7 +3861,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
+        "x": 1050,
         "y": 340,
         "wires": []
     },
@@ -3851,7 +3877,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
+        "x": 1010,
         "y": 520,
         "wires": [
             [
@@ -3866,7 +3892,7 @@
         "g": "b54f0e60ef6f071e",
         "name": "ubos",
         "info": "",
-        "x": 120,
+        "x": 110,
         "y": 340,
         "wires": []
     },
@@ -3882,7 +3908,7 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 1310,
+        "x": 1300,
         "y": 740,
         "wires": [
             [
@@ -3910,7 +3936,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1500,
+        "x": 1490,
         "y": 700,
         "wires": [
             [
@@ -3929,7 +3955,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1650,
+        "x": 1640,
         "y": 700,
         "wires": [
             []
@@ -3947,7 +3973,7 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 1290,
+        "x": 1280,
         "y": 100,
         "wires": [
             [
@@ -3979,7 +4005,7 @@
                 "module": "openai"
             }
         ],
-        "x": 1500,
+        "x": 1490,
         "y": 240,
         "wires": [
             [
@@ -3994,7 +4020,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\n\nmsg.url = env.get('nodered') + '/createUbosSupport'\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4005,11 +4031,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 1480,
+        "x": 1470,
         "y": 60,
         "wires": [
             [
-                "070f6d905da48ab8"
+                "070f6d905da48ab8",
+                "323e280e2f602e36"
             ]
         ]
     },
@@ -4031,7 +4058,7 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1270,
+        "x": 1260,
         "y": 240,
         "wires": [
             [
@@ -4054,7 +4081,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1770,
+        "x": 1760,
         "y": 240,
         "wires": []
     },
@@ -4069,7 +4096,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1630,
+        "x": 1620,
         "y": 60,
         "wires": [
             []
@@ -4087,7 +4114,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1405,
+        "x": 1395,
         "y": 280,
         "wires": [
             [
@@ -4107,7 +4134,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1530,
+        "x": 1520,
         "y": 280,
         "wires": [
             []
@@ -4125,7 +4152,7 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 1290,
+        "x": 1280,
         "y": 380,
         "wires": [
             [
@@ -4157,7 +4184,7 @@
                 "module": "openai"
             }
         ],
-        "x": 1500,
+        "x": 1490,
         "y": 520,
         "wires": [
             [
@@ -4172,7 +4199,7 @@
         "z": "5a97503883e96ee8",
         "g": "b54f0e60ef6f071e",
         "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\nmsg.url = env.get('nodered') + '/createHR'\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4183,11 +4210,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 1480,
+        "x": 1470,
         "y": 340,
         "wires": [
             [
-                "90bc5eb57a431dbb"
+                "90bc5eb57a431dbb",
+                "1d399d7e2563d8e4"
             ]
         ]
     },
@@ -4209,7 +4237,7 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1270,
+        "x": 1260,
         "y": 520,
         "wires": [
             [
@@ -4232,7 +4260,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1770,
+        "x": 1760,
         "y": 520,
         "wires": []
     },
@@ -4247,7 +4275,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1630,
+        "x": 1620,
         "y": 340,
         "wires": [
             []
@@ -4265,7 +4293,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1425,
+        "x": 1415,
         "y": 560,
         "wires": [
             [
@@ -4285,7 +4313,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1550,
+        "x": 1540,
         "y": 560,
         "wires": [
             []
@@ -5397,7 +5425,7 @@
         "type": "function",
         "z": "5a97503883e96ee8",
         "name": "function 604",
-        "func": "msg.collection = 'AISettings'\n\nmsg.payload = [\n    { \"prompt\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[1]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true },\n    { \"prompt\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor.Respond to user questions using the provided information: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[2]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': false },\n    { \"prompt\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.: \", \"model\": \"gpt-4-1106-preview\", \"collection\": objectid(msg.payload[0]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true }\n]\nreturn msg;",
+        "func": "msg.collection = 'AISettings'\n\nmsg.payload = [\n    { \"prompt\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information: \", \"model\": \"gpt-3.5-turbo\", \"collection\": objectid(msg.payload[1]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': true },\n    { \"prompt\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor.Respond to user questions using the provided information: \", \"model\": \"gpt-3.5-turbo\", \"collection\": objectid(msg.payload[2]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': false },\n    { \"prompt\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.: \", \"model\": \"gpt-3.5-turbo\", \"collection\": objectid(msg.payload[0]._id), \"email\": msg.fromApp.email, type: 'demo', 'selected': false }\n]\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5696,7 +5724,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1135,
+        "x": 1125,
         "y": 520,
         "wires": [
             [
@@ -5792,7 +5820,7 @@
         "type": "function",
         "z": "5a97503883e96ee8",
         "name": "function 632",
-        "func": "msg.payload=msg.payload[0]?.key ? msg.payload[0]?.key : ''\nreturn msg;",
+        "func": "msg.payload=msg.payload[0]?.key ? msg.payload[0]?.key : 'false'\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5899,6 +5927,2544 @@
         "x": 950,
         "y": 2100,
         "wires": []
+    },
+    {
+        "id": "e1b3134fac3e17d1",
+        "type": "http in",
+        "z": "5a97503883e96ee8",
+        "g": "b54f0e60ef6f071e",
+        "name": "",
+        "url": "/createFriendlyCHat",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "7c944329a6881b06"
+            ]
+        ]
+    },
+    {
+        "id": "98d0b42697728009",
+        "type": "http in",
+        "z": "5a97503883e96ee8",
+        "g": "b54f0e60ef6f071e",
+        "name": "",
+        "url": "/createUbosSupport",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "e76db1b613e35249"
+            ]
+        ]
+    },
+    {
+        "id": "e09645697f79414d",
+        "type": "http in",
+        "z": "5a97503883e96ee8",
+        "g": "b54f0e60ef6f071e",
+        "name": "",
+        "url": "/createHR",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 800,
+        "wires": [
+            [
+                "e206e611ece5a02b"
+            ]
+        ]
+    },
+    {
+        "id": "323e280e2f602e36",
+        "type": "http request",
+        "z": "5a97503883e96ee8",
+        "g": "b54f0e60ef6f071e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1610,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d399d7e2563d8e4",
+        "type": "http request",
+        "z": "5a97503883e96ee8",
+        "g": "b54f0e60ef6f071e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1610,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb96d23ed888929e",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "url": "/saveCredentialsWhatsApp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 1720,
+        "wires": [
+            [
+                "54e078af5c0d3adc"
+            ]
+        ]
+    },
+    {
+        "id": "fcbb92757366bf33",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 990,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "54e078af5c0d3adc",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsWhatsApp.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1720,
+        "wires": [
+            [
+                "604fb55d3034b5b3"
+            ]
+        ]
+    },
+    {
+        "id": "81f9b8c4177c260c",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 720,
+        "y": 1720,
+        "wires": [
+            [
+                "4e7b3768b3931cfb"
+            ]
+        ]
+    },
+    {
+        "id": "4e7b3768b3931cfb",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "return res",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1720,
+        "wires": [
+            [
+                "fcbb92757366bf33"
+            ]
+        ]
+    },
+    {
+        "id": "604fb55d3034b5b3",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 1720,
+        "wires": [
+            [
+                "81f9b8c4177c260c"
+            ]
+        ]
+    },
+    {
+        "id": "1f8a739ea5ee02cd",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1640,
+        "wires": [
+            [
+                "02f3af026c6e9af0"
+            ]
+        ]
+    },
+    {
+        "id": "f22993bbddeb18b5",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    WHATSAPP_PHONEID: data.whatsApp_phoneId ? data.whatsApp_phoneId.trim() :\"\",\n    WHATSAPP_TOKEN: data.whatsApp_token ? data.whatsApp_token.trim() : \"\"\n}\n\nglobal.set(\"WHATSAPP\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "746c06b58c3b2d30",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "scope": [
+            "fcbb92757366bf33"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 1600,
+        "wires": [
+            [
+                "02f3af026c6e9af0"
+            ]
+        ]
+    },
+    {
+        "id": "02f3af026c6e9af0",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsWhatsApp.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1620,
+        "wires": [
+            [
+                "97ecf733940516b3"
+            ]
+        ]
+    },
+    {
+        "id": "97ecf733940516b3",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 1620,
+        "wires": [
+            [
+                "e9e2f318883d6af3"
+            ]
+        ]
+    },
+    {
+        "id": "e9e2f318883d6af3",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "649b2f424f00fcf7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 1620,
+        "wires": [
+            [
+                "f22993bbddeb18b5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "80b27f596185b0b5",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "url": "/saveCredentialsMeta",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 1960,
+        "wires": [
+            [
+                "a1e983d79486f057"
+            ]
+        ]
+    },
+    {
+        "id": "5c07c1802edd7436",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "a1e983d79486f057",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsMeta.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1960,
+        "wires": [
+            [
+                "eb6e8f5ff083dd6b"
+            ]
+        ]
+    },
+    {
+        "id": "5a28a0e9ba4c93ae",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 680,
+        "y": 1960,
+        "wires": [
+            [
+                "d09342e7a96a3a1b"
+            ]
+        ]
+    },
+    {
+        "id": "d09342e7a96a3a1b",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "return res",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1960,
+        "wires": [
+            [
+                "5c07c1802edd7436"
+            ]
+        ]
+    },
+    {
+        "id": "eb6e8f5ff083dd6b",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 1960,
+        "wires": [
+            [
+                "5a28a0e9ba4c93ae"
+            ]
+        ]
+    },
+    {
+        "id": "788b05fb52c4fe79",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1880,
+        "wires": [
+            [
+                "db66ea7be2d27d87"
+            ]
+        ]
+    },
+    {
+        "id": "097d5a354e0f8ea6",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() :\"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\"\n}\n\nglobal.set(\"META\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5008af5f7461f232",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "scope": [
+            "5c07c1802edd7436"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 1840,
+        "wires": [
+            [
+                "db66ea7be2d27d87"
+            ]
+        ]
+    },
+    {
+        "id": "db66ea7be2d27d87",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsMeta.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1860,
+        "wires": [
+            [
+                "eb9f04e925a2c58e"
+            ]
+        ]
+    },
+    {
+        "id": "eb9f04e925a2c58e",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 1860,
+        "wires": [
+            [
+                "8a7b40691c947077"
+            ]
+        ]
+    },
+    {
+        "id": "8a7b40691c947077",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "e40f1639481a93e5",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 1860,
+        "wires": [
+            [
+                "097d5a354e0f8ea6"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "43f21d182d12a289",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "2345d5259ca0ca0c"
+            ]
+        ]
+    },
+    {
+        "id": "a047e4ad8f719e8b",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    OPENAI_API: data.openai_api ? data.openai_api.trim() :\"\",\n    OPENAI_MODEL: data.openai_api_model ? data.openai_api_model.trim() :\"\"\n}\n\nglobal.set(\"openai\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be6d111ee5097eaf",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "scope": [
+            "0225b679b27c7cb6"
+        ],
+        "uncaught": false,
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "2345d5259ca0ca0c"
+            ]
+        ]
+    },
+    {
+        "id": "2345d5259ca0ca0c",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsOpenAI.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "9e829c9ae4e26d49"
+            ]
+        ]
+    },
+    {
+        "id": "9e829c9ae4e26d49",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 480,
+        "y": 380,
+        "wires": [
+            [
+                "c00caad6107d0484"
+            ]
+        ]
+    },
+    {
+        "id": "c00caad6107d0484",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 380,
+        "wires": [
+            [
+                "a047e4ad8f719e8b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e9a0549584c42753",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "url": "/saveCredentialsOpenAI",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "0ab166afbc6563b7"
+            ]
+        ]
+    },
+    {
+        "id": "0ab166afbc6563b7",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "set filename",
+        "func": "if (msg.payload.role !== 'demo') {\n    msg.filename = '/data/credentialsOpenAI.json'\n\n    return [msg,null];\n}else{\n    msg.payload={\n        email: msg.payload.email,\n        key: msg.payload.openai_api  \n    }\n    msg.collection = 'credantials'\n\n    return[null,msg]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "e81089882f4d82a4"
+            ],
+            [
+                "2b5c56a07a23be97",
+                "5092087d9039a0cf",
+                "960a3e61829bb489"
+            ]
+        ]
+    },
+    {
+        "id": "02eef43416926f09",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 700,
+        "y": 460,
+        "wires": [
+            [
+                "54cbaf6226b86ab6"
+            ]
+        ]
+    },
+    {
+        "id": "e81089882f4d82a4",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "02eef43416926f09"
+            ]
+        ]
+    },
+    {
+        "id": "2ba640ea2406a74b",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    OPENAI_API: data.openai_api,\n    OPENAI_MODEL: data.openai_api_model\n}\n\nglobal.set(\"openai\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 460,
+        "wires": [
+            [
+                "1173e7cfd78aea8a"
+            ]
+        ]
+    },
+    {
+        "id": "54cbaf6226b86ab6",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsOpenAI.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 460,
+        "wires": [
+            [
+                "b714b761bc107b2b"
+            ]
+        ]
+    },
+    {
+        "id": "b714b761bc107b2b",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "9b518f139d898786"
+            ]
+        ]
+    },
+    {
+        "id": "9b518f139d898786",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1075,
+        "y": 460,
+        "wires": [
+            [
+                "2ba640ea2406a74b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1173e7cfd78aea8a",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "test OpenAI",
+        "func": "\n    msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.messages = [\n    { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\"},\n    { \"role\": \"user\", \"content\": \"hello\" }\n]\n    msg.input = \"Hello\"\n    return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 460,
+        "wires": [
+            [
+                "baf069bd70255c7f"
+            ]
+        ]
+    },
+    {
+        "id": "e6400901da94405f",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1890,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "bf8257455d77acac",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "response",
+        "func": "msg.payload = msg.payload && msg.statusCode === 200 ? \"Data saved successfully\" : msg.payload.error.message || msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 460,
+        "wires": [
+            [
+                "e6400901da94405f",
+                "e409e096e31ace53"
+            ]
+        ]
+    },
+    {
+        "id": "67c979cecf8bb16c",
+        "type": "catch",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "testPinecone",
+        "scope": [
+            "beb340776f09eee7"
+        ],
+        "uncaught": false,
+        "x": 1790,
+        "y": 500,
+        "wires": [
+            [
+                "0e9818cbfac7e687"
+            ]
+        ]
+    },
+    {
+        "id": "0e9818cbfac7e687",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "function 391",
+        "func": "// id: ${ msg.error.source.id }\n// name: ${ msg.error.source.name }`\nmsg.payload = msg.error.message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1915,
+        "y": 500,
+        "wires": [
+            [
+                "e6400901da94405f"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "baf069bd70255c7f",
+        "type": "openai-ubos",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1540,
+        "y": 460,
+        "wires": [
+            [
+                "bf8257455d77acac"
+            ]
+        ]
+    },
+    {
+        "id": "c1676b9bb7345473",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "url": "/saveCredentialsPrompts",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 1060,
+        "wires": [
+            [
+                "0a706b8b32d3e3b0"
+            ]
+        ]
+    },
+    {
+        "id": "dfe977bd7a67f872",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 990,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "0a706b8b32d3e3b0",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsPrompts.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1060,
+        "wires": [
+            [
+                "615cc22704b7c6e6"
+            ]
+        ]
+    },
+    {
+        "id": "f2c81b34257ed170",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 720,
+        "y": 1060,
+        "wires": [
+            [
+                "01eeca7d59048bc0"
+            ]
+        ]
+    },
+    {
+        "id": "01eeca7d59048bc0",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "return res",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1060,
+        "wires": [
+            [
+                "dfe977bd7a67f872"
+            ]
+        ]
+    },
+    {
+        "id": "615cc22704b7c6e6",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 1060,
+        "wires": [
+            [
+                "f2c81b34257ed170"
+            ]
+        ]
+    },
+    {
+        "id": "bbaaa6d2af9bb254",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1000,
+        "wires": [
+            [
+                "e084f337475f802b"
+            ]
+        ]
+    },
+    {
+        "id": "f1df07e95244e6fc",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "ENV",
+        "func": "const data = msg.payload\nlet words = data?.knowledge_base.split(' ');\n\nlet nameBase = words[0];\n\nlet typeBase = words[1];\n\nlet process_env = {\n    ANSWER_LENGTH: data.answer_length ? data.answer_length :\"\",\n    ANSWER_AS: data.answer_as ? data.answer_as : \"\",\n    TONE: data.tone ? data.tone : \"\",\n    LANGUAGE: data.language ? data.language : \"\",\n    PROMPT_CUSTOM: data.prompt_custom ? data.prompt_custom: \"\",\n    TYPE_BASE: typeBase ? typeBase:\"\",\n    NAME_BASE: nameBase ? nameBase:\"\",\n    ID: data.id_base ? data.id_base : \"\"\n}\n\nglobal.set(\"prompts\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9335d8cfb00a95d7",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "scope": [
+            "dfe977bd7a67f872"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 960,
+        "wires": [
+            [
+                "e084f337475f802b"
+            ]
+        ]
+    },
+    {
+        "id": "e084f337475f802b",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsPrompts.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 980,
+        "wires": [
+            [
+                "23e0235bad59815e"
+            ]
+        ]
+    },
+    {
+        "id": "23e0235bad59815e",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 980,
+        "wires": [
+            [
+                "c32d2d5b2f208e74"
+            ]
+        ]
+    },
+    {
+        "id": "c32d2d5b2f208e74",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "c479b9fa6206f5f0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 980,
+        "wires": [
+            [
+                "f1df07e95244e6fc"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f793aaa7e71bdbe7",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "url": "/saveCredentialsMsg",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 1260,
+        "wires": [
+            [
+                "0786c7b18b2894d5"
+            ]
+        ]
+    },
+    {
+        "id": "9f8a22311308457b",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 990,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "0786c7b18b2894d5",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsMsg.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1260,
+        "wires": [
+            [
+                "6ee3197ad8f541e5"
+            ]
+        ]
+    },
+    {
+        "id": "21c3b0081c02e46f",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 720,
+        "y": 1260,
+        "wires": [
+            [
+                "39fb3709bdc062b3"
+            ]
+        ]
+    },
+    {
+        "id": "39fb3709bdc062b3",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "return res",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1260,
+        "wires": [
+            [
+                "9f8a22311308457b"
+            ]
+        ]
+    },
+    {
+        "id": "6ee3197ad8f541e5",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 1260,
+        "wires": [
+            [
+                "21c3b0081c02e46f"
+            ]
+        ]
+    },
+    {
+        "id": "5bbed1a3b4598dd5",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1200,
+        "wires": [
+            [
+                "55a61cde9a1f0379"
+            ]
+        ]
+    },
+    {
+        "id": "c8d0f5e7463694d7",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    WELCOME: data.welcome ? data.welcome :\"\",\n    UNABLE: data.unable ? data.unable : \"\"\n}\n\nglobal.set(\"messages\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63f9ab4f77edaa65",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "scope": [
+            "9f8a22311308457b"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 1160,
+        "wires": [
+            [
+                "55a61cde9a1f0379"
+            ]
+        ]
+    },
+    {
+        "id": "55a61cde9a1f0379",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsMsg.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1180,
+        "wires": [
+            [
+                "7d0e7ea7c69fed74"
+            ]
+        ]
+    },
+    {
+        "id": "7d0e7ea7c69fed74",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 1180,
+        "wires": [
+            [
+                "3513b2ea589bb4a4"
+            ]
+        ]
+    },
+    {
+        "id": "3513b2ea589bb4a4",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "32d3112d56e6b1ab",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 1180,
+        "wires": [
+            [
+                "c8d0f5e7463694d7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b7d26d9f317a4ce9",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "url": "/saveCredentialsTelegram",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 1480,
+        "wires": [
+            [
+                "a33aa3cab944b729"
+            ]
+        ]
+    },
+    {
+        "id": "a44d45874ebeb754",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 990,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "a33aa3cab944b729",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsTelegram.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1480,
+        "wires": [
+            [
+                "77e03324263dd58d"
+            ]
+        ]
+    },
+    {
+        "id": "0f3a84ec943e5b13",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 720,
+        "y": 1480,
+        "wires": [
+            [
+                "24c4d892d84069d7"
+            ]
+        ]
+    },
+    {
+        "id": "24c4d892d84069d7",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "return res",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1480,
+        "wires": [
+            [
+                "a44d45874ebeb754"
+            ]
+        ]
+    },
+    {
+        "id": "77e03324263dd58d",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 1480,
+        "wires": [
+            [
+                "0f3a84ec943e5b13"
+            ]
+        ]
+    },
+    {
+        "id": "70087cd5c5a5c551",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1420,
+        "wires": [
+            [
+                "fda135fec557af97"
+            ]
+        ]
+    },
+    {
+        "id": "5ad1a8b7bc330500",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() :\"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\"\n}\n\nglobal.set(\"telegram\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d0bcba9e1b0867e",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "scope": [
+            "a44d45874ebeb754"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 1380,
+        "wires": [
+            [
+                "fda135fec557af97"
+            ]
+        ]
+    },
+    {
+        "id": "fda135fec557af97",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsTelegram.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1400,
+        "wires": [
+            [
+                "175fb1669ebe74b6"
+            ]
+        ]
+    },
+    {
+        "id": "175fb1669ebe74b6",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 1400,
+        "wires": [
+            [
+                "0dc15aa186445a0f"
+            ]
+        ]
+    },
+    {
+        "id": "0dc15aa186445a0f",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "faa44c8af53ff52c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 1400,
+        "wires": [
+            [
+                "5ad1a8b7bc330500"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d0e3e6de89b9f1ab",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "",
+        "url": "/getenvs",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 2080,
+        "wires": [
+            [
+                "734f87d6e57db2ee"
+            ]
+        ]
+    },
+    {
+        "id": "734f87d6e57db2ee",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "get settings",
+        "func": "\nmsg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API:  \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE:  \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n        ANSWER_LENGTH: \"\",\n        ANSWER_AS:  \"\",\n        TONE: \"\",\n        LANGUAGE: \"\",\n        PROMPT_CUSTOM: \"\",\n        TYPE_BASE: \"\",\n        NAME_BASE: \"\"\n    }\n\n    \n};\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2080,
+        "wires": [
+            [
+                "281de60d94f6055f"
+            ]
+        ]
+    },
+    {
+        "id": "281de60d94f6055f",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "653e53d7fb5ce764",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "",
+        "url": "/getenvsbots",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 2160,
+        "wires": [
+            [
+                "b058b242b8e6f650"
+            ]
+        ]
+    },
+    {
+        "id": "b058b242b8e6f650",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "get bots settings",
+        "func": "\nmsg.payload = {\n    meta: global.get('META') ? global.get('META') : {\n        META_TOKEN: \"\",\n        META_PAGEID: \"\"\n    },\n    whatsApp: global.get(\"WHATSAPP\") ? global.get(\"WHATSAPP\") : {\n        WHATSAPP_PHONEID: \"\",\n        WHATSAPP_TOKEN: \"\"\n    },\n   telegram: global.get('telegram') ? global.get('telegram') : {\n        BOT_NAME: \"\",\n        BOT_TOKEN: \"\"\n    }\n\n};\nreturn msg\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 2160,
+        "wires": [
+            [
+                "2dbe218776fe3204"
+            ]
+        ]
+    },
+    {
+        "id": "2dbe218776fe3204",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "4f917968caad45c9",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "f489d7a6e1121d20",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "create chroma collection",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\")?.OPENAI_API})\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\nconst collection = await client.createCollection({ name: \"default\", embeddingFunction: embedder }) \n\n//fill collection\nmsg.emb = msg.payload.data[0].embedding\nlet id = Date.now()\nlet collection2 = await client.getCollection({ name: \"default\"})\nconst create = await collection2.add({\n    ids: [`${msg.oldpayload.id}`],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.oldpayload.metadata.question, result: msg.oldpayload.metadata.result }],\n    documents: msg.oldpayload.url \n})\n\nmsg.payload = create\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            },
+            {
+                "var": "openai",
+                "module": "openai"
+            }
+        ],
+        "x": 2810,
+        "y": 400,
+        "wires": [
+            [
+                "8c5ec0a5190b9305"
+            ]
+        ]
+    },
+    {
+        "id": "8c5ec0a5190b9305",
+        "type": "debug",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "debug 567",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3030,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a8a0ef3147c433ad",
+        "type": "http request",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2590,
+        "y": 400,
+        "wires": [
+            [
+                "f489d7a6e1121d20"
+            ]
+        ]
+    },
+    {
+        "id": "732edd41e0cd69b5",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "create data for collection",
+        "func": "msg.payload ={};\nmsg.payload.metadata={};\nmsg.payload.metadata.question = \"What is UBOS2?\";\nmsg.payload.metadata.result =\"A cool company2\";\nmsg.payload.url=\"aboutUbos\"\n\nmsg.input=`${msg.payload.metadata.question}  ${msg.payload.metadata.result}`\n\nmsg.oldpayload = msg.payload;\nmsg.url = `https://api.openai.com/v1/embeddings`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n    'Authorization': `Bearer ${global.get(\"openai\")?.OPENAI_API}`\n};\nmsg.payload = {\n    input: msg.input,\n    model: \"text-embedding-ada-002\"\n}\nreturn msg; ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2370,
+        "y": 400,
+        "wires": [
+            [
+                "a8a0ef3147c433ad"
+            ]
+        ]
+    },
+    {
+        "id": "c1b0ed8caf6f54b5",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "create default knowlegebase",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    _id: objectid(),\n    select:true,\n    type:\"chroma\",\n    name: \"default\",\n    deleted:false\n}\nlet process_env = {\n    TYPE_BASE: msg.payload.type.trim(),\n    NAME_BASE: msg.payload.name.trim()\n}\n\nglobal.set(\"prompts\", process_env)\nglobal.set(\"knowledgebase\", process_env)\nglobal.set('base',1)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 2380,
+        "y": 360,
+        "wires": [
+            [
+                "cbf3a3250fb4f13a"
+            ]
+        ]
+    },
+    {
+        "id": "cbf3a3250fb4f13a",
+        "type": "link call",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de8a5792c00ad6cb",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": ">",
+        "func": "if(msg.payload?.length <= 0){\n    msg.url = env.get('nodered') +'/createFriendlyCHat'\n    return [msg,null]\n}{\n    return [null,msg]  \n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2130,
+        "y": 380,
+        "wires": [
+            [
+                "1a100f111ff758e3",
+                "fb4f92ede19d9f64"
+            ],
+            [
+                "d3b28d09c8bcb274"
+            ]
+        ]
+    },
+    {
+        "id": "1a100f111ff758e3",
+        "type": "debug",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "+",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2270,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e409e096e31ace53",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "Check is  default exists",
+        "func": "msg.collection = \"knowlegebase\";\n\nmsg.payload = {\n    type: \"chroma\",\n    name: \"default\",\n    deleted: false\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 380,
+        "wires": [
+            [
+                "94bf37ee3132ef6d"
+            ]
+        ]
+    },
+    {
+        "id": "94bf37ee3132ef6d",
+        "type": "link call",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1990,
+        "y": 380,
+        "wires": [
+            [
+                "de8a5792c00ad6cb"
+            ]
+        ]
+    },
+    {
+        "id": "2cd32bbc5f43b1e9",
+        "type": "inject",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "5ed03305ad9ca676"
+            ]
+        ]
+    },
+    {
+        "id": "e3b8c26d52822ba0",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    PINECONE_API: data.pinecone_api ? data.pinecone_api.trim():\"\",\n    PINECONE_ENV: data.pinecone_env ? data.pinecone_env.trim() : \"\",\n    PINECONE_INDEX: data.pinecone_index ? data.pinecone_index.trim() :\"\",\n    PINECONE_URL: data.pinecone_url ? data.pinecone_url.trim()  :\"\",\n}\n\nglobal.set(\"pinecone\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "219438abb376baad",
+        "type": "complete",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "scope": [
+            "0225b679b27c7cb6"
+        ],
+        "uncaught": false,
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "5ed03305ad9ca676"
+            ]
+        ]
+    },
+    {
+        "id": "5ed03305ad9ca676",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsPinecone.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "8fe2f86059898917"
+            ]
+        ]
+    },
+    {
+        "id": "8fe2f86059898917",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "22c15a24c4d0adfa"
+            ]
+        ]
+    },
+    {
+        "id": "22c15a24c4d0adfa",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 605,
+        "y": 100,
+        "wires": [
+            [
+                "e3b8c26d52822ba0"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "bb22e8b17e29062f",
+        "type": "http in",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "url": "/saveCredentialsPinecone",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "d856683ca512796f"
+            ]
+        ]
+    },
+    {
+        "id": "d856683ca512796f",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "set filename",
+        "func": "msg.filename = '/data/credentialsPinecone.json'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "8113cddbb6aa4825"
+            ]
+        ]
+    },
+    {
+        "id": "1b7e83724c91c6e7",
+        "type": "file",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 700,
+        "y": 180,
+        "wires": [
+            [
+                "8f308e031c38ea89"
+            ]
+        ]
+    },
+    {
+        "id": "8113cddbb6aa4825",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "1b7e83724c91c6e7"
+            ]
+        ]
+    },
+    {
+        "id": "bdf49e277f064e52",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    PINECONE_API: data.pinecone_api,\n    PINECONE_ENV: data.pinecone_env,\n    PINECONE_INDEX: data.pinecone_index,\n    PINECONE_URL: data.pinecone_url,\n}\n\nglobal.set(\"pinecone\", process_env)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 180,
+        "wires": [
+            [
+                "830545b6295c1a92"
+            ]
+        ]
+    },
+    {
+        "id": "8f308e031c38ea89",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "getEnvs",
+        "func": "msg.filename = '/data/credentialsPinecone.json'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 180,
+        "wires": [
+            [
+                "49144ed0f7859f63"
+            ]
+        ]
+    },
+    {
+        "id": "49144ed0f7859f63",
+        "type": "file in",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 980,
+        "y": 180,
+        "wires": [
+            [
+                "76ae71b5431d5418"
+            ]
+        ]
+    },
+    {
+        "id": "76ae71b5431d5418",
+        "type": "json",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1075,
+        "y": 180,
+        "wires": [
+            [
+                "bdf49e277f064e52"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "830545b6295c1a92",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "function 388",
+        "func": "const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 1,\n    \"includeMetadata\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 180,
+        "wires": [
+            [
+                "30a581e7169ce66b"
+            ]
+        ]
+    },
+    {
+        "id": "4c74ec1dd6830bda",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1890,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "30a581e7169ce66b",
+        "type": "pinecone-vector-ubos",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "demoversion1",
+        "actionType": "query",
+        "apiKey": "",
+        "environment": "",
+        "x": 1540,
+        "y": 180,
+        "wires": [
+            [
+                "e608cb0aed9c3293"
+            ]
+        ]
+    },
+    {
+        "id": "e608cb0aed9c3293",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "response",
+        "func": "msg.payload = msg.payload && msg.statusCode === 200 ? \"Data saved successfully\" : msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 180,
+        "wires": [
+            [
+                "4c74ec1dd6830bda"
+            ]
+        ]
+    },
+    {
+        "id": "90852342350e7d53",
+        "type": "catch",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "testPinecone",
+        "scope": [
+            "30a581e7169ce66b"
+        ],
+        "uncaught": false,
+        "x": 1790,
+        "y": 220,
+        "wires": [
+            [
+                "13a0b7d44f1afb32"
+            ]
+        ]
+    },
+    {
+        "id": "13a0b7d44f1afb32",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "945706dce188c905",
+        "name": "function 389",
+        "func": "// id: ${ msg.error.source.id }\n// name: ${ msg.error.source.name }`\nmsg.payload = msg.error.message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1915,
+        "y": 220,
+        "wires": [
+            [
+                "4c74ec1dd6830bda"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d3b28d09c8bcb274",
+        "type": "debug",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "-",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2b5c56a07a23be97",
+        "type": "debug",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "debug 752",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5092087d9039a0cf",
+        "type": "link call",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 590,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19eb532e09327098",
+        "type": "http response",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "960a3e61829bb489",
+        "type": "delay",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 695,
+        "y": 500,
+        "wires": [
+            [
+                "c58feab76db92813"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c58feab76db92813",
+        "type": "function",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "response",
+        "func": "msg.payload = \"Data saved successfully\" \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 500,
+        "wires": [
+            [
+                "19eb532e09327098"
+            ]
+        ]
+    },
+    {
+        "id": "fb4f92ede19d9f64",
+        "type": "http request",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2310,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53355054d0d9a19e",
+        "type": "http request",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2310,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc3079138c8427f1",
+        "type": "http request",
+        "z": "4cba6f8219137af4",
+        "g": "152119097abe3c6c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2310,
+        "y": 520,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "f97b0c9a1ee37a8c",
@@ -11106,7 +13672,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 90px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #fec518;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #fec518!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}",
+        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 90px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #fec518;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #fec518!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}\n\n.selectWithoutCross .cancel-icon {\n    display:none !important;\n}",
         "output": "str",
         "x": 260,
         "y": 60,
@@ -14047,2382 +16613,6 @@
         "x": 1070,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "bb96d23ed888929e",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "url": "/saveCredentialsWhatsApp",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 1720,
-        "wires": [
-            [
-                "54e078af5c0d3adc"
-            ]
-        ]
-    },
-    {
-        "id": "fcbb92757366bf33",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 990,
-        "y": 1720,
-        "wires": []
-    },
-    {
-        "id": "54e078af5c0d3adc",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsWhatsApp.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 1720,
-        "wires": [
-            [
-                "604fb55d3034b5b3"
-            ]
-        ]
-    },
-    {
-        "id": "81f9b8c4177c260c",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 720,
-        "y": 1720,
-        "wires": [
-            [
-                "4e7b3768b3931cfb"
-            ]
-        ]
-    },
-    {
-        "id": "4e7b3768b3931cfb",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 1720,
-        "wires": [
-            [
-                "fcbb92757366bf33"
-            ]
-        ]
-    },
-    {
-        "id": "604fb55d3034b5b3",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 590,
-        "y": 1720,
-        "wires": [
-            [
-                "81f9b8c4177c260c"
-            ]
-        ]
-    },
-    {
-        "id": "1f8a739ea5ee02cd",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1640,
-        "wires": [
-            [
-                "02f3af026c6e9af0"
-            ]
-        ]
-    },
-    {
-        "id": "f22993bbddeb18b5",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    WHATSAPP_PHONEID: data.whatsApp_phoneId ? data.whatsApp_phoneId.trim() :\"\",\n    WHATSAPP_TOKEN: data.whatsApp_token ? data.whatsApp_token.trim() : \"\"\n}\n\nglobal.set(\"WHATSAPP\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "746c06b58c3b2d30",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "scope": [
-            "fcbb92757366bf33"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 1600,
-        "wires": [
-            [
-                "02f3af026c6e9af0"
-            ]
-        ]
-    },
-    {
-        "id": "02f3af026c6e9af0",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsWhatsApp.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1620,
-        "wires": [
-            [
-                "97ecf733940516b3"
-            ]
-        ]
-    },
-    {
-        "id": "97ecf733940516b3",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 520,
-        "y": 1620,
-        "wires": [
-            [
-                "e9e2f318883d6af3"
-            ]
-        ]
-    },
-    {
-        "id": "e9e2f318883d6af3",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "649b2f424f00fcf7",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 1620,
-        "wires": [
-            [
-                "f22993bbddeb18b5"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "80b27f596185b0b5",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "url": "/saveCredentialsMeta",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 200,
-        "y": 1960,
-        "wires": [
-            [
-                "a1e983d79486f057"
-            ]
-        ]
-    },
-    {
-        "id": "5c07c1802edd7436",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 950,
-        "y": 1960,
-        "wires": []
-    },
-    {
-        "id": "a1e983d79486f057",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsMeta.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 1960,
-        "wires": [
-            [
-                "eb6e8f5ff083dd6b"
-            ]
-        ]
-    },
-    {
-        "id": "5a28a0e9ba4c93ae",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 680,
-        "y": 1960,
-        "wires": [
-            [
-                "d09342e7a96a3a1b"
-            ]
-        ]
-    },
-    {
-        "id": "d09342e7a96a3a1b",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 820,
-        "y": 1960,
-        "wires": [
-            [
-                "5c07c1802edd7436"
-            ]
-        ]
-    },
-    {
-        "id": "eb6e8f5ff083dd6b",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 550,
-        "y": 1960,
-        "wires": [
-            [
-                "5a28a0e9ba4c93ae"
-            ]
-        ]
-    },
-    {
-        "id": "788b05fb52c4fe79",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1880,
-        "wires": [
-            [
-                "db66ea7be2d27d87"
-            ]
-        ]
-    },
-    {
-        "id": "097d5a354e0f8ea6",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() :\"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\"\n}\n\nglobal.set(\"META\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 1860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5008af5f7461f232",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "scope": [
-            "5c07c1802edd7436"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 1840,
-        "wires": [
-            [
-                "db66ea7be2d27d87"
-            ]
-        ]
-    },
-    {
-        "id": "db66ea7be2d27d87",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsMeta.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1860,
-        "wires": [
-            [
-                "eb9f04e925a2c58e"
-            ]
-        ]
-    },
-    {
-        "id": "eb9f04e925a2c58e",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 520,
-        "y": 1860,
-        "wires": [
-            [
-                "8a7b40691c947077"
-            ]
-        ]
-    },
-    {
-        "id": "8a7b40691c947077",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "e40f1639481a93e5",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 1860,
-        "wires": [
-            [
-                "097d5a354e0f8ea6"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "43f21d182d12a289",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 400,
-        "wires": [
-            [
-                "2345d5259ca0ca0c"
-            ]
-        ]
-    },
-    {
-        "id": "a047e4ad8f719e8b",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    OPENAI_API: data.openai_api ? data.openai_api.trim() :\"\",\n    OPENAI_MODEL: data.openai_api_model ? data.openai_api_model.trim() :\"\"\n}\n\nglobal.set(\"openai\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "be6d111ee5097eaf",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "scope": [
-            "0225b679b27c7cb6"
-        ],
-        "uncaught": false,
-        "x": 130,
-        "y": 360,
-        "wires": [
-            [
-                "2345d5259ca0ca0c"
-            ]
-        ]
-    },
-    {
-        "id": "2345d5259ca0ca0c",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsOpenAI.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 380,
-        "wires": [
-            [
-                "9e829c9ae4e26d49"
-            ]
-        ]
-    },
-    {
-        "id": "9e829c9ae4e26d49",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 480,
-        "y": 380,
-        "wires": [
-            [
-                "c00caad6107d0484"
-            ]
-        ]
-    },
-    {
-        "id": "c00caad6107d0484",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 380,
-        "wires": [
-            [
-                "a047e4ad8f719e8b"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e9a0549584c42753",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "url": "/saveCredentialsOpenAI",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 180,
-        "y": 480,
-        "wires": [
-            [
-                "0ab166afbc6563b7"
-            ]
-        ]
-    },
-    {
-        "id": "0ab166afbc6563b7",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "set filename",
-        "func": "if (msg.payload.role !== 'demo') {\n    msg.filename = '/data/credentialsOpenAI.json'\n\n    return [msg,null];\n}else{\n    msg.payload={\n        email: msg.payload.email,\n        key: msg.payload.openai_api  \n    }\n    msg.collection = 'credantials'\n\n    return[null,msg]\n}",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 480,
-        "wires": [
-            [
-                "e81089882f4d82a4"
-            ],
-            [
-                "2b5c56a07a23be97",
-                "5092087d9039a0cf",
-                "960a3e61829bb489"
-            ]
-        ]
-    },
-    {
-        "id": "02eef43416926f09",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 700,
-        "y": 460,
-        "wires": [
-            [
-                "54cbaf6226b86ab6"
-            ]
-        ]
-    },
-    {
-        "id": "e81089882f4d82a4",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 570,
-        "y": 460,
-        "wires": [
-            [
-                "02eef43416926f09"
-            ]
-        ]
-    },
-    {
-        "id": "2ba640ea2406a74b",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    OPENAI_API: data.openai_api,\n    OPENAI_MODEL: data.openai_api_model\n}\n\nglobal.set(\"openai\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1190,
-        "y": 460,
-        "wires": [
-            [
-                "1173e7cfd78aea8a"
-            ]
-        ]
-    },
-    {
-        "id": "54cbaf6226b86ab6",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsOpenAI.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 460,
-        "wires": [
-            [
-                "b714b761bc107b2b"
-            ]
-        ]
-    },
-    {
-        "id": "b714b761bc107b2b",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 980,
-        "y": 460,
-        "wires": [
-            [
-                "9b518f139d898786"
-            ]
-        ]
-    },
-    {
-        "id": "9b518f139d898786",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1075,
-        "y": 460,
-        "wires": [
-            [
-                "2ba640ea2406a74b"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "1173e7cfd78aea8a",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "test OpenAI",
-        "func": "\n    msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.messages = [\n    { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\"},\n    { \"role\": \"user\", \"content\": \"hello\" }\n]\n    msg.input = \"Hello\"\n    return msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 460,
-        "wires": [
-            [
-                "baf069bd70255c7f"
-            ]
-        ]
-    },
-    {
-        "id": "e6400901da94405f",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1890,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "bf8257455d77acac",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "response",
-        "func": "msg.payload = msg.payload && msg.statusCode === 200 ? \"Data saved successfully\" : msg.payload.error.message || msg.payload\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1720,
-        "y": 460,
-        "wires": [
-            [
-                "e6400901da94405f",
-                "e409e096e31ace53"
-            ]
-        ]
-    },
-    {
-        "id": "67c979cecf8bb16c",
-        "type": "catch",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "testPinecone",
-        "scope": [
-            "beb340776f09eee7"
-        ],
-        "uncaught": false,
-        "x": 1790,
-        "y": 500,
-        "wires": [
-            [
-                "0e9818cbfac7e687"
-            ]
-        ]
-    },
-    {
-        "id": "0e9818cbfac7e687",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "function 391",
-        "func": "// id: ${ msg.error.source.id }\n// name: ${ msg.error.source.name }`\nmsg.payload = msg.error.message\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1915,
-        "y": 500,
-        "wires": [
-            [
-                "e6400901da94405f"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "baf069bd70255c7f",
-        "type": "openai-ubos",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1540,
-        "y": 460,
-        "wires": [
-            [
-                "bf8257455d77acac"
-            ]
-        ]
-    },
-    {
-        "id": "c1676b9bb7345473",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "url": "/saveCredentialsPrompts",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 230,
-        "y": 1060,
-        "wires": [
-            [
-                "0a706b8b32d3e3b0"
-            ]
-        ]
-    },
-    {
-        "id": "dfe977bd7a67f872",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 990,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "0a706b8b32d3e3b0",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsPrompts.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 1060,
-        "wires": [
-            [
-                "615cc22704b7c6e6"
-            ]
-        ]
-    },
-    {
-        "id": "f2c81b34257ed170",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 720,
-        "y": 1060,
-        "wires": [
-            [
-                "01eeca7d59048bc0"
-            ]
-        ]
-    },
-    {
-        "id": "01eeca7d59048bc0",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 1060,
-        "wires": [
-            [
-                "dfe977bd7a67f872"
-            ]
-        ]
-    },
-    {
-        "id": "615cc22704b7c6e6",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 590,
-        "y": 1060,
-        "wires": [
-            [
-                "f2c81b34257ed170"
-            ]
-        ]
-    },
-    {
-        "id": "bbaaa6d2af9bb254",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1000,
-        "wires": [
-            [
-                "e084f337475f802b"
-            ]
-        ]
-    },
-    {
-        "id": "f1df07e95244e6fc",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "ENV",
-        "func": "const data = msg.payload\nlet words = data?.knowledge_base.split(' ');\n\nlet nameBase = words[0];\n\nlet typeBase = words[1];\n\nlet process_env = {\n    ANSWER_LENGTH: data.answer_length ? data.answer_length :\"\",\n    ANSWER_AS: data.answer_as ? data.answer_as : \"\",\n    TONE: data.tone ? data.tone : \"\",\n    LANGUAGE: data.language ? data.language : \"\",\n    PROMPT_CUSTOM: data.prompt_custom ? data.prompt_custom: \"\",\n    TYPE_BASE: typeBase ? typeBase:\"\",\n    NAME_BASE: nameBase ? nameBase:\"\",\n    ID: data.id_base ? data.id_base : \"\"\n}\n\nglobal.set(\"prompts\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9335d8cfb00a95d7",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "scope": [
-            "dfe977bd7a67f872"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 960,
-        "wires": [
-            [
-                "e084f337475f802b"
-            ]
-        ]
-    },
-    {
-        "id": "e084f337475f802b",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsPrompts.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 980,
-        "wires": [
-            [
-                "23e0235bad59815e"
-            ]
-        ]
-    },
-    {
-        "id": "23e0235bad59815e",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 500,
-        "y": 980,
-        "wires": [
-            [
-                "c32d2d5b2f208e74"
-            ]
-        ]
-    },
-    {
-        "id": "c32d2d5b2f208e74",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "c479b9fa6206f5f0",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 980,
-        "wires": [
-            [
-                "f1df07e95244e6fc"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "f793aaa7e71bdbe7",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "url": "/saveCredentialsMsg",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 220,
-        "y": 1260,
-        "wires": [
-            [
-                "0786c7b18b2894d5"
-            ]
-        ]
-    },
-    {
-        "id": "9f8a22311308457b",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 990,
-        "y": 1260,
-        "wires": []
-    },
-    {
-        "id": "0786c7b18b2894d5",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsMsg.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 1260,
-        "wires": [
-            [
-                "6ee3197ad8f541e5"
-            ]
-        ]
-    },
-    {
-        "id": "21c3b0081c02e46f",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 720,
-        "y": 1260,
-        "wires": [
-            [
-                "39fb3709bdc062b3"
-            ]
-        ]
-    },
-    {
-        "id": "39fb3709bdc062b3",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 1260,
-        "wires": [
-            [
-                "9f8a22311308457b"
-            ]
-        ]
-    },
-    {
-        "id": "6ee3197ad8f541e5",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 590,
-        "y": 1260,
-        "wires": [
-            [
-                "21c3b0081c02e46f"
-            ]
-        ]
-    },
-    {
-        "id": "5bbed1a3b4598dd5",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1200,
-        "wires": [
-            [
-                "55a61cde9a1f0379"
-            ]
-        ]
-    },
-    {
-        "id": "c8d0f5e7463694d7",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    WELCOME: data.welcome ? data.welcome :\"\",\n    UNABLE: data.unable ? data.unable : \"\"\n}\n\nglobal.set(\"messages\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "63f9ab4f77edaa65",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "scope": [
-            "9f8a22311308457b"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 1160,
-        "wires": [
-            [
-                "55a61cde9a1f0379"
-            ]
-        ]
-    },
-    {
-        "id": "55a61cde9a1f0379",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsMsg.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1180,
-        "wires": [
-            [
-                "7d0e7ea7c69fed74"
-            ]
-        ]
-    },
-    {
-        "id": "7d0e7ea7c69fed74",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 500,
-        "y": 1180,
-        "wires": [
-            [
-                "3513b2ea589bb4a4"
-            ]
-        ]
-    },
-    {
-        "id": "3513b2ea589bb4a4",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "32d3112d56e6b1ab",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 1180,
-        "wires": [
-            [
-                "c8d0f5e7463694d7"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b7d26d9f317a4ce9",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "url": "/saveCredentialsTelegram",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 230,
-        "y": 1480,
-        "wires": [
-            [
-                "a33aa3cab944b729"
-            ]
-        ]
-    },
-    {
-        "id": "a44d45874ebeb754",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 990,
-        "y": 1480,
-        "wires": []
-    },
-    {
-        "id": "a33aa3cab944b729",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsTelegram.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 1480,
-        "wires": [
-            [
-                "77e03324263dd58d"
-            ]
-        ]
-    },
-    {
-        "id": "0f3a84ec943e5b13",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 720,
-        "y": 1480,
-        "wires": [
-            [
-                "24c4d892d84069d7"
-            ]
-        ]
-    },
-    {
-        "id": "24c4d892d84069d7",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 1480,
-        "wires": [
-            [
-                "a44d45874ebeb754"
-            ]
-        ]
-    },
-    {
-        "id": "77e03324263dd58d",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 590,
-        "y": 1480,
-        "wires": [
-            [
-                "0f3a84ec943e5b13"
-            ]
-        ]
-    },
-    {
-        "id": "70087cd5c5a5c551",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 1420,
-        "wires": [
-            [
-                "fda135fec557af97"
-            ]
-        ]
-    },
-    {
-        "id": "5ad1a8b7bc330500",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() :\"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\"\n}\n\nglobal.set(\"telegram\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 1400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3d0bcba9e1b0867e",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "scope": [
-            "a44d45874ebeb754"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 1380,
-        "wires": [
-            [
-                "fda135fec557af97"
-            ]
-        ]
-    },
-    {
-        "id": "fda135fec557af97",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsTelegram.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1400,
-        "wires": [
-            [
-                "175fb1669ebe74b6"
-            ]
-        ]
-    },
-    {
-        "id": "175fb1669ebe74b6",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 520,
-        "y": 1400,
-        "wires": [
-            [
-                "0dc15aa186445a0f"
-            ]
-        ]
-    },
-    {
-        "id": "0dc15aa186445a0f",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "faa44c8af53ff52c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 1400,
-        "wires": [
-            [
-                "5ad1a8b7bc330500"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "d0e3e6de89b9f1ab",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "",
-        "url": "/getenvs",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 150,
-        "y": 2080,
-        "wires": [
-            [
-                "734f87d6e57db2ee"
-            ]
-        ]
-    },
-    {
-        "id": "734f87d6e57db2ee",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "get settings",
-        "func": "\nmsg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API:  \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE:  \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n        ANSWER_LENGTH: \"\",\n        ANSWER_AS:  \"\",\n        TONE: \"\",\n        LANGUAGE: \"\",\n        PROMPT_CUSTOM: \"\",\n        TYPE_BASE: \"\",\n        NAME_BASE: \"\"\n    }\n\n    \n};\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 2080,
-        "wires": [
-            [
-                "281de60d94f6055f"
-            ]
-        ]
-    },
-    {
-        "id": "281de60d94f6055f",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 490,
-        "y": 2080,
-        "wires": []
-    },
-    {
-        "id": "653e53d7fb5ce764",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "",
-        "url": "/getenvsbots",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 170,
-        "y": 2160,
-        "wires": [
-            [
-                "b058b242b8e6f650"
-            ]
-        ]
-    },
-    {
-        "id": "b058b242b8e6f650",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "get bots settings",
-        "func": "\nmsg.payload = {\n    meta: global.get('META') ? global.get('META') : {\n        META_TOKEN: \"\",\n        META_PAGEID: \"\"\n    },\n    whatsApp: global.get(\"WHATSAPP\") ? global.get(\"WHATSAPP\") : {\n        WHATSAPP_PHONEID: \"\",\n        WHATSAPP_TOKEN: \"\"\n    },\n   telegram: global.get('telegram') ? global.get('telegram') : {\n        BOT_NAME: \"\",\n        BOT_TOKEN: \"\"\n    }\n\n};\nreturn msg\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 2160,
-        "wires": [
-            [
-                "2dbe218776fe3204"
-            ]
-        ]
-    },
-    {
-        "id": "2dbe218776fe3204",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "4f917968caad45c9",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 550,
-        "y": 2160,
-        "wires": []
-    },
-    {
-        "id": "f489d7a6e1121d20",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\")?.OPENAI_API})\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\nconst collection = await client.createCollection({ name: \"default\", embeddingFunction: embedder }) \n\n//fill collection\nmsg.emb = msg.payload.data[0].embedding\nlet id = Date.now()\nlet collection2 = await client.getCollection({ name: \"default\"})\nconst create = await collection2.add({\n    ids: [`${msg.oldpayload.id}`],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.oldpayload.metadata.question, result: msg.oldpayload.metadata.result }],\n    documents: msg.oldpayload.url \n})\n\nmsg.payload = create\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "chromadb",
-                "module": "chromadb"
-            },
-            {
-                "var": "openai",
-                "module": "openai"
-            }
-        ],
-        "x": 2810,
-        "y": 400,
-        "wires": [
-            [
-                "8c5ec0a5190b9305"
-            ]
-        ]
-    },
-    {
-        "id": "8c5ec0a5190b9305",
-        "type": "debug",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "debug 567",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3030,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "a8a0ef3147c433ad",
-        "type": "http request",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 2590,
-        "y": 400,
-        "wires": [
-            [
-                "f489d7a6e1121d20"
-            ]
-        ]
-    },
-    {
-        "id": "732edd41e0cd69b5",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "create data for collection",
-        "func": "msg.payload ={};\nmsg.payload.metadata={};\nmsg.payload.metadata.question = \"What is UBOS2?\";\nmsg.payload.metadata.result =\"A cool company2\";\nmsg.payload.url=\"aboutUbos\"\n\nmsg.input=`${msg.payload.metadata.question}  ${msg.payload.metadata.result}`\n\nmsg.oldpayload = msg.payload;\nmsg.url = `https://api.openai.com/v1/embeddings`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n    'Authorization': `Bearer ${global.get(\"openai\")?.OPENAI_API}`\n};\nmsg.payload = {\n    input: msg.input,\n    model: \"text-embedding-ada-002\"\n}\nreturn msg; ",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2370,
-        "y": 400,
-        "wires": [
-            [
-                "a8a0ef3147c433ad"
-            ]
-        ]
-    },
-    {
-        "id": "c1b0ed8caf6f54b5",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "create default knowlegebase",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    _id: objectid(),\n    select:true,\n    type:\"chroma\",\n    name: \"default\",\n    deleted:false\n}\nlet process_env = {\n    TYPE_BASE: msg.payload.type.trim(),\n    NAME_BASE: msg.payload.name.trim()\n}\n\n\nglobal.set(\"prompts\", process_env)\nglobal.set(\"knowledgebase\", process_env)\nglobal.set('base',1)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 2380,
-        "y": 360,
-        "wires": [
-            [
-                "cbf3a3250fb4f13a"
-            ]
-        ]
-    },
-    {
-        "id": "cbf3a3250fb4f13a",
-        "type": "link call",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "links": [
-            "8771d95b528d34d0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2630,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "de8a5792c00ad6cb",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": ">",
-        "func": "if(msg.payload?.length <= 0){\n    return [msg,null]\n}{\n    return [null,msg]  \n}\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2130,
-        "y": 380,
-        "wires": [
-            [
-                "732edd41e0cd69b5",
-                "c1b0ed8caf6f54b5",
-                "1a100f111ff758e3"
-            ],
-            [
-                "d3b28d09c8bcb274"
-            ]
-        ]
-    },
-    {
-        "id": "1a100f111ff758e3",
-        "type": "debug",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "+",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2270,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "e409e096e31ace53",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "Check is  default exists",
-        "func": "msg.collection = \"knowlegebase\";\n\nmsg.payload = {\n    type: \"chroma\",\n    name: \"default\",\n    deleted: false\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1800,
-        "y": 380,
-        "wires": [
-            [
-                "94bf37ee3132ef6d"
-            ]
-        ]
-    },
-    {
-        "id": "94bf37ee3132ef6d",
-        "type": "link call",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1990,
-        "y": 380,
-        "wires": [
-            [
-                "de8a5792c00ad6cb"
-            ]
-        ]
-    },
-    {
-        "id": "2cd32bbc5f43b1e9",
-        "type": "inject",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "5ed03305ad9ca676"
-            ]
-        ]
-    },
-    {
-        "id": "e3b8c26d52822ba0",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    PINECONE_API: data.pinecone_api ? data.pinecone_api.trim():\"\",\n    PINECONE_ENV: data.pinecone_env ? data.pinecone_env.trim() : \"\",\n    PINECONE_INDEX: data.pinecone_index ? data.pinecone_index.trim() :\"\",\n    PINECONE_URL: data.pinecone_url ? data.pinecone_url.trim()  :\"\",\n}\n\nglobal.set(\"pinecone\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "219438abb376baad",
-        "type": "complete",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "scope": [
-            "0225b679b27c7cb6"
-        ],
-        "uncaught": false,
-        "x": 130,
-        "y": 80,
-        "wires": [
-            [
-                "5ed03305ad9ca676"
-            ]
-        ]
-    },
-    {
-        "id": "5ed03305ad9ca676",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsPinecone.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 100,
-        "wires": [
-            [
-                "8fe2f86059898917"
-            ]
-        ]
-    },
-    {
-        "id": "8fe2f86059898917",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 480,
-        "y": 100,
-        "wires": [
-            [
-                "22c15a24c4d0adfa"
-            ]
-        ]
-    },
-    {
-        "id": "22c15a24c4d0adfa",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 605,
-        "y": 100,
-        "wires": [
-            [
-                "e3b8c26d52822ba0"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "bb22e8b17e29062f",
-        "type": "http in",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "url": "/saveCredentialsPinecone",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 190,
-        "y": 180,
-        "wires": [
-            [
-                "d856683ca512796f"
-            ]
-        ]
-    },
-    {
-        "id": "d856683ca512796f",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsPinecone.json'\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 180,
-        "wires": [
-            [
-                "8113cddbb6aa4825"
-            ]
-        ]
-    },
-    {
-        "id": "1b7e83724c91c6e7",
-        "type": "file",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 700,
-        "y": 180,
-        "wires": [
-            [
-                "8f308e031c38ea89"
-            ]
-        ]
-    },
-    {
-        "id": "8113cddbb6aa4825",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 570,
-        "y": 180,
-        "wires": [
-            [
-                "1b7e83724c91c6e7"
-            ]
-        ]
-    },
-    {
-        "id": "bdf49e277f064e52",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    PINECONE_API: data.pinecone_api,\n    PINECONE_ENV: data.pinecone_env,\n    PINECONE_INDEX: data.pinecone_index,\n    PINECONE_URL: data.pinecone_url,\n}\n\nglobal.set(\"pinecone\", process_env)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 180,
-        "wires": [
-            [
-                "830545b6295c1a92"
-            ]
-        ]
-    },
-    {
-        "id": "8f308e031c38ea89",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "getEnvs",
-        "func": "msg.filename = '/data/credentialsPinecone.json'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 180,
-        "wires": [
-            [
-                "49144ed0f7859f63"
-            ]
-        ]
-    },
-    {
-        "id": "49144ed0f7859f63",
-        "type": "file in",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 980,
-        "y": 180,
-        "wires": [
-            [
-                "76ae71b5431d5418"
-            ]
-        ]
-    },
-    {
-        "id": "76ae71b5431d5418",
-        "type": "json",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1075,
-        "y": 180,
-        "wires": [
-            [
-                "bdf49e277f064e52"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "830545b6295c1a92",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "function 388",
-        "func": "const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 1,\n    \"includeMetadata\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 180,
-        "wires": [
-            [
-                "30a581e7169ce66b"
-            ]
-        ]
-    },
-    {
-        "id": "4c74ec1dd6830bda",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1890,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "30a581e7169ce66b",
-        "type": "pinecone-vector-ubos",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "demoversion1",
-        "actionType": "query",
-        "apiKey": "",
-        "environment": "",
-        "x": 1540,
-        "y": 180,
-        "wires": [
-            [
-                "e608cb0aed9c3293"
-            ]
-        ]
-    },
-    {
-        "id": "e608cb0aed9c3293",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "response",
-        "func": "msg.payload = msg.payload && msg.statusCode === 200 ? \"Data saved successfully\" : msg.payload\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1720,
-        "y": 180,
-        "wires": [
-            [
-                "4c74ec1dd6830bda"
-            ]
-        ]
-    },
-    {
-        "id": "90852342350e7d53",
-        "type": "catch",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "testPinecone",
-        "scope": [
-            "30a581e7169ce66b"
-        ],
-        "uncaught": false,
-        "x": 1790,
-        "y": 220,
-        "wires": [
-            [
-                "13a0b7d44f1afb32"
-            ]
-        ]
-    },
-    {
-        "id": "13a0b7d44f1afb32",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "945706dce188c905",
-        "name": "function 389",
-        "func": "// id: ${ msg.error.source.id }\n// name: ${ msg.error.source.name }`\nmsg.payload = msg.error.message\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1915,
-        "y": 220,
-        "wires": [
-            [
-                "4c74ec1dd6830bda"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "d3b28d09c8bcb274",
-        "type": "debug",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "-",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2170,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "2b5c56a07a23be97",
-        "type": "debug",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "debug 752",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "5092087d9039a0cf",
-        "type": "link call",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "links": [
-            "8771d95b528d34d0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 590,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "19eb532e09327098",
-        "type": "http response",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 950,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "960a3e61829bb489",
-        "type": "delay",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 695,
-        "y": 500,
-        "wires": [
-            [
-                "c58feab76db92813"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "c58feab76db92813",
-        "type": "function",
-        "z": "4cba6f8219137af4",
-        "g": "152119097abe3c6c",
-        "name": "response",
-        "func": "msg.payload = \"Data saved successfully\" \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 500,
-        "wires": [
-            [
-                "19eb532e09327098"
-            ]
-        ]
     },
     {
         "id": "b1cbc1d37577fdbd",
