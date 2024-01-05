@@ -1,5 +1,21 @@
 [
     {
+        "id": "0a315059dbdd4de2",
+        "type": "tab",
+        "label": "Model Testing",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "92a270a4aa9ae09c",
+        "type": "tab",
+        "label": "DB Benchmark",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ebf7c602310ae1c1",
         "type": "tab",
         "label": "Demo",
@@ -164,6 +180,39 @@
         "color": "#DDAA99"
     },
     {
+        "id": "27ce80b8fbcd825f",
+        "type": "subflow",
+        "name": "ADA-VDB-GPT",
+        "info": "## Description\nThis \"subflow\" is designed to simplify the process of connecting various messengers to the bot, thanks to the standardization of input data.\n\n- **ADA** stands for OpenAI text-embedding-ada-002.\n- **VDB** stands for Vector DataBase, which can currently be Chroma or Pinecone. Chroma is automatically created during template installation and serves as the default database.\n- **GPT** stands for OpenAI GPT models.\n\nAccording to the provided data in INPUT, the subflow performs the following steps:\n\n1. Receives a message from user in the messenger in `chat.content`.\n2. Sends the content for embedding to ADA to generate vectors.\n3. After receiving the vectors, retrieves data from the chosen VDB.\n4. Sends a formatted prompt with data from VDB and settings to GPT.\n5. Returns the prepared response in `msg.payload` for further use or sending through the user's messenger.\n6. Stores the history in MongoDB, which was sequentially formed at all stages (`msg.history`), for further processing and display in the UI.\n\n\n---\n\n\n<details>\n<summary><strong>INPUT</strong></summary>\n\n**OPENAI_KEY: [Required]** This is the API key provided by OpenAI. It is necessary for authentication when making requests to the OpenAI API.<br />\n\n**CHROMA_LINK: [Required]** Link to your Chroma host <br />\n\n**BASE_URL: [Required]** Link to your NodeRed <br />\n\n**NUMBER_OF_ANSWERS_VDB:** [Optional] Number of vectors to be returned. <br />\n\n**chat.content: [Required]** Message from user. <br />\n\n**messengerType:** [Optional] <br />\n\n**BOT_NAME:** [Optional] <br />\n\n**PINECONE:** [Optional] <br />\n\n```\nmsg.payload = {\n    OPENAI_KEY: 'sn-123123-123-123-123123123',\n    CHROMA_LINK: 'http://chroma-123123-ubos-123123',\n    BASE_URL: 'https://MY-NedeRedName-123123123123.ubos.tech',\n    NUMBER_OF_ANSWERS_VDB: 2,\n    PREPARED_MESSAGES: {\n        WELCOME: 'First, a welcome message to user',\n        ERROR: 'Message in case of error',\n    },\n    chat: {\n        id: 'chatID123123123',\n        username: 'userenko',\n        content: 'Message from user',\n    },\n    messengerType: 'whatsapp',\n    BOT_NAME: 'MyBestBot',\n    DATABASE: {\n        'TYPE_BASE': 'chroma',\n        'NAME_BASE': 'Pizza-Recipes',\n    },\n    PINECONE: {\n        INDEX: 'sample',\n        API_KEY: '123123-123-123-123123123',\n        ENVIRONMENT: 'gcp-starter',\n        BASE_URL: 'https://sample-n1gj1lc.svc.gcp-starter.pinecone.io',\n    },\n}\n```\n</details>\n\n\n---\n\n\n<details>\n<summary><strong>OUTPUT</strong></summary>\n\n```\nmsg.payload = 'String type. With a ready message to the user';\n```\n\n</details>\n\n\n---\n\n\n<details>\n<summary><strong>Sample of msg.history object saved to MongoDB</strong></summary>\n\n```\nmsg.history = {\n    \"BOT_NAME\": \"mySuperBot\",\n    \"DATABASE\": {\n        \"TYPE_BASE\": \"pinecone\",\n        \"NAME_BASE\": \"mySuperColection\"\n    },\n    \"AI_SETTINGS\": {\n        \"ANSWER_AS\": \"Sales consultant\",\n        \"TONE\": \"Informal\",\n        \"LANGUAGE\": \"English\",\n        \"ANSWER_LENGTH\": \"Small\",\n        \"PROMPT_CUSTOM\": \"You are a polite assistant\",\n        \"OPENAI_MODEL\": \"gpt-3.5-turbo\"\n    },\n    \"fullPromptToAI\": \"Answer as an Sales consultant, Informal, English, and the response should be Small. Here's some additional guidance: You are a polite assistant. Question Vector 1, Answer Vector 1, Question Vector 2, Answer Vector 2\",\n    \"vectors\": [{\n        \"question\": \"Question Vector 1\",\n        \"result\": \"Answer Vector 1\",\n        \"distance\": 0.32726691,\n        \"document\": \"https://uk.wikipedia.org/wiki/sample-sample-sample-sample\"\n    },\n    {\n        \"question\": \"Question Vector 2\",\n        \"result\": \"Answer Vector 2\",\n        \"distance\": 0.416921144,\n        \"document\": \"https://uk.wikipedia.org/wiki/sample-sample-sample-sample\"\n    }\n    ],\n    \"question\": \"Who are you?\",\n    \"answer\": \"Hey there! I'm an AI assistant here to help you. How can I assist you today?\",\n    \"usage\": {\n        \"prompt_tokens\": 48,\n        \"completion_tokens\": 43,\n        \"total_tokens\": 91\n    },\n    \"startDate\": 1704443692257,\n    \"endDate\": 1704443695141\n};\n\n```\n\n</details>\n\n\n---\n\n",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "b99c8f2ed80cf673"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1160,
+                "y": 420,
+                "wires": [
+                    {
+                        "id": "255969ad75851a21",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "752a8b5a286babe5",
         "type": "group",
         "z": "f4036141cc030bcf",
@@ -205,9 +254,7 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 679,
-        "w": 672,
-        "h": 642
+        "y": 679
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -229,9 +276,7 @@
             "4ca2aafdce75631b"
         ],
         "x": 714,
-        "y": 679,
-        "w": 1012,
-        "h": 122
+        "y": 679
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -271,9 +316,7 @@
             "cda158a3d19d64d9"
         ],
         "x": 714,
-        "y": 839,
-        "w": 1452,
-        "h": 482
+        "y": 839
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -311,9 +354,7 @@
             "8ade01b7fdd836bc"
         ],
         "x": 854,
-        "y": 1359,
-        "w": 1172,
-        "h": 402
+        "y": 1359
     },
     {
         "id": "a89d39ed625d493a",
@@ -362,9 +403,7 @@
             "aed0f134a3d46198"
         ],
         "x": 14,
-        "y": 1359,
-        "w": 812,
-        "h": 642
+        "y": 1359
     },
     {
         "id": "152119097abe3c6c",
@@ -418,9 +457,7 @@
             "bc3079138c8427f1"
         ],
         "x": 34,
-        "y": 279,
-        "w": 3112,
-        "h": 302
+        "y": 279
     },
     {
         "id": "c479b9fa6206f5f0",
@@ -447,9 +484,7 @@
             "c32d2d5b2f208e74"
         ],
         "x": 74,
-        "y": 919,
-        "w": 992,
-        "h": 182
+        "y": 919
     },
     {
         "id": "32d3112d56e6b1ab",
@@ -476,9 +511,7 @@
             "3513b2ea589bb4a4"
         ],
         "x": 74,
-        "y": 1119,
-        "w": 992,
-        "h": 182
+        "y": 1119
     },
     {
         "id": "faa44c8af53ff52c",
@@ -505,9 +538,7 @@
             "0dc15aa186445a0f"
         ],
         "x": 74,
-        "y": 1339,
-        "w": 992,
-        "h": 182
+        "y": 1339
     },
     {
         "id": "649b2f424f00fcf7",
@@ -534,9 +565,7 @@
             "e9e2f318883d6af3"
         ],
         "x": 54,
-        "y": 1559,
-        "w": 1012,
-        "h": 202
+        "y": 1559
     },
     {
         "id": "e40f1639481a93e5",
@@ -563,9 +592,7 @@
             "8a7b40691c947077"
         ],
         "x": 54,
-        "y": 1799,
-        "w": 972,
-        "h": 202
+        "y": 1799
     },
     {
         "id": "4f917968caad45c9",
@@ -586,9 +613,7 @@
             "2dbe218776fe3204"
         ],
         "x": 54,
-        "y": 2039,
-        "w": 572,
-        "h": 162
+        "y": 2039
     },
     {
         "id": "a599b3138f375738",
@@ -668,9 +693,7 @@
             "b033bb0c16d50512"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 422
+        "y": 19
     },
     {
         "id": "4eae9dfe783940c7",
@@ -733,9 +756,7 @@
             "480c5804853edad3"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1912,
-        "h": 622
+        "y": 19
     },
     {
         "id": "90cc95e0240e9048",
@@ -819,9 +840,7 @@
             "13a0b7d44f1afb32"
         ],
         "x": 34,
-        "y": 39,
-        "w": 1932,
-        "h": 222
+        "y": 39
     },
     {
         "id": "8777f3383a4d7bd4",
@@ -861,9 +880,7 @@
             "86d3abb80ab75b41"
         ],
         "x": 24,
-        "y": 39,
-        "w": 1472,
-        "h": 462
+        "y": 39
     },
     {
         "id": "c87d755a788d45a5",
@@ -913,9 +930,7 @@
             "07dd748a613f4705"
         ],
         "x": 2334,
-        "y": 399,
-        "w": 1322,
-        "h": 702
+        "y": 399
     },
     {
         "id": "a40ce0519f786db3",
@@ -958,9 +973,7 @@
             "7705a529a359f8eb"
         ],
         "x": 2334,
-        "y": 19,
-        "w": 1352,
-        "h": 362
+        "y": 19
     },
     {
         "id": "566b1306d753e50d",
@@ -1073,9 +1086,7 @@
             "70013c8ece053415"
         ],
         "x": 14,
-        "y": 1259,
-        "w": 1312,
-        "h": 1462
+        "y": 1259
     },
     {
         "id": "3f798d6121d48971",
@@ -1170,9 +1181,7 @@
             "1681dd095372be95"
         ],
         "x": 14,
-        "y": 39,
-        "w": 2292,
-        "h": 1202
+        "y": 39
     },
     {
         "id": "0fb791f72a382f0a",
@@ -1356,7 +1365,7 @@
             "8c47990ef2ae9fdd",
             "0a8218ec22687496"
         ],
-        "x": 4,
+        "x": 14,
         "y": 19
     },
     {
@@ -1406,9 +1415,7 @@
             "9c1752948e5d077e"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1902,
-        "h": 402
+        "y": 559
     },
     {
         "id": "b54f0e60ef6f071e",
@@ -1483,9 +1490,7 @@
             "1d399d7e2563d8e4"
         ],
         "x": 24,
-        "y": 19,
-        "w": 1862,
-        "h": 942
+        "y": 19
     },
     {
         "id": "22baf3437ddf891a",
@@ -1561,9 +1566,7 @@
             "cd7beec48b6d0a13"
         ],
         "x": 34,
-        "y": 2059,
-        "w": 3652,
-        "h": 922
+        "y": 2059
     },
     {
         "id": "4b07803a52e468f5",
@@ -1624,6 +1627,11 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "92b09c9cd170f8a8",
+        "type": "remote-server-collection",
+        "host": "${VECTORDB-CHROMA-HOST-NAME}"
     },
     {
         "id": "7b7dced66ebb9ed0",
@@ -1917,6 +1925,1921 @@
         "wires": [
             [
                 "03114e6a44646360"
+            ]
+        ]
+    },
+    {
+        "id": "b99c8f2ed80cf673",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "Input Data Unification",
+        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        id: msg.payload.chat?.id,\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "e7a33163e49558c2"
+            ]
+        ]
+    },
+    {
+        "id": "e7a33163e49558c2",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "to AI embedding-ada",
+        "func": "msg.input = msg.UNIFIED_DATA.chat.content;\nmsg.model = \"text-embedding-ada-002\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "310415638cd1160d"
+            ]
+        ]
+    },
+    {
+        "id": "310415638cd1160d",
+        "type": "openai-ubos",
+        "z": "27ce80b8fbcd825f",
+        "name": "",
+        "model": "text-embedding-ada-002",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "96625c2724a13266"
+            ]
+        ]
+    },
+    {
+        "id": "96625c2724a13266",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": ">",
+        "func": "switch (true) {\n    case (msg.statusCode > 201 || msg.payload === \"Enter OPENAI_API_KEY\"): {\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"chroma\"): {\n        msg.type = 'chroma';\n\n        return [null, msg, null];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"pinecone\"): {\n        msg.type = 'pinecone';\n\n        return [msg, null, null];\n    }\n    default:\n        msg.payload = 'Please, check all settings including openAI key.';\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "efab86bd9e1090f0"
+            ],
+            [
+                "f5f406239f7034eb"
+            ],
+            [
+                "255969ad75851a21"
+            ]
+        ]
+    },
+    {
+        "id": "efab86bd9e1090f0",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "pinecone",
+        "func": "msg.PINECONE_API_KEY = msg.UNIFIED_DATA.PINECONE.API_KEY;\nmsg.PINECONE_ENVIRONMENT = msg.UNIFIED_DATA.PINECONE.ENVIRONMENT;\nmsg.PINECONE_BASE_URL = msg.UNIFIED_DATA.PINECONE.BASE_URL;\n\nmsg.payload = {\n    name: msg.UNIFIED_DATA.PINECONE.INDEX,\n    \"topK\": msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    \"includeMetadata\": true,\n    vector: msg.payload.data[0].embedding\n};\n\nnode.warn(msg.payload);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 80,
+        "wires": [
+            [
+                "64b9d37bc58a85b5"
+            ]
+        ]
+    },
+    {
+        "id": "255969ad75851a21",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "send to user from chat",
+        "func": "let responseChatGPT;\n\n// Перевірка, чи статус-код менший за 201 або вказаний API ключ неправильний\nif (msg.statusCode < 201 || msg.payload !== \"Enter OPENAI_API_KEY\") {\n\n    // Встановлення значення відповіді з першого повідомлення від OpenAI API (якщо воно існує)\n    responseChatGPT = (msg.type !== 'custom message') ? msg.payload?.choices[0]?.message?.content : msg.payload;\n} else {\n\n    // Отримання повідомлення про помилку або вивід статус-коду та відповіді\n    const errorMessage = typeof msg.payload === 'string'\n        ? msg.payload\n        : msg.payload?.error.message;\n\n    // Встановлення значення відповіді з глобального повідомлення (якщо воно існує), або виведення деталей помилки\n    responseChatGPT = msg.UNIFIED_DATA.PREPARED_MESSAGES\n        ? msg.UNIFIED_DATA.PREPARED_MESSAGES.ERROR\n        : `statusCode: ${msg.statusCode} \\npayload: ${errorMessage}`;\n}\n\nlet history = global.get(`history${msg.UNIFIED_DATA.chat.chatId}`) || [];\n\nmsg.history.answer = responseChatGPT;\nmsg.history.usage = msg.payload.usage\nmsg.payload = responseChatGPT;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 460,
+        "wires": [
+            [
+                "81202c0403dde33b"
+            ]
+        ]
+    },
+    {
+        "id": "64b9d37bc58a85b5",
+        "type": "pinecone-vector-ubos",
+        "z": "27ce80b8fbcd825f",
+        "name": "demoversion",
+        "actionType": "query",
+        "apiKey": "",
+        "environment": "",
+        "x": 1090,
+        "y": 80,
+        "wires": [
+            [
+                "1e4441c65c91be7d"
+            ]
+        ]
+    },
+    {
+        "id": "ad3b3c5b5929d833",
+        "type": "openai-ubos",
+        "z": "27ce80b8fbcd825f",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1490,
+        "y": 260,
+        "wires": [
+            [
+                "255969ad75851a21"
+            ]
+        ]
+    },
+    {
+        "id": "81202c0403dde33b",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "save history ",
+        "func": "msg.collection = \"chatHistory\";\nmsg.history = {\n    ...msg.history,\n    endDate: Date.now(),\n    chat_id: msg.UNIFIED_DATA.chat.id,\n    user_name: msg.UNIFIED_DATA.chat.username,\n};\nmsg.payload = msg.history;\nmsg.url = msg.UNIFIED_DATA.BASE_URL + `/saveUserMessage`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 480,
+        "wires": [
+            [
+                "5b8bf81f0090d87e"
+            ]
+        ]
+    },
+    {
+        "id": "1e4441c65c91be7d",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "create vector",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 80,
+        "wires": [
+            [
+                "ad3b3c5b5929d833"
+            ]
+        ]
+    },
+    {
+        "id": "5b8bf81f0090d87e",
+        "type": "link call",
+        "z": "27ce80b8fbcd825f",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1390,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "681658e9cbc33315",
+        "type": "chromadb-collection",
+        "z": "27ce80b8fbcd825f",
+        "remoteServer": "92b09c9cd170f8a8",
+        "name": "",
+        "collection": "",
+        "operation": "query",
+        "x": 1100,
+        "y": 260,
+        "wires": [
+            [
+                "fce050f17a55e8ae"
+            ]
+        ]
+    },
+    {
+        "id": "f5f406239f7034eb",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "Chroma",
+        "func": "// const vector = Array(1536).fill(0);\nconst vector = msg.payload.data[0].embedding;\n\nmsg.collection = msg.UNIFIED_DATA.DATABASE.NAME_BASE;\nmsg.payload = {\n    queryEmbeddings: vector,\n    nResults: msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    query_text: [msg.UNIFIED_DATA.chat.content],\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            },
+            {
+                "var": "openai",
+                "module": "openai"
+            }
+        ],
+        "x": 920,
+        "y": 260,
+        "wires": [
+            [
+                "681658e9cbc33315"
+            ]
+        ]
+    },
+    {
+        "id": "fce050f17a55e8ae",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "create vector",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.metadatas[0].map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 260,
+        "wires": [
+            [
+                "ad3b3c5b5929d833"
+            ]
+        ]
+    },
+    {
+        "id": "de08edeb1ce9b367",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/sendMessage",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "37c3848d07f96515"
+            ]
+        ]
+    },
+    {
+        "id": "979f96c6b7d1bd4e",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1d544d9c17784989",
+        "type": "subflow:27ce80b8fbcd825f",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "x": 490,
+        "y": 560,
+        "wires": [
+            [
+                "979f96c6b7d1bd4e"
+            ]
+        ]
+    },
+    {
+        "id": "37c3848d07f96515",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Prepare Data",
+        "func": "const data = global.get('modelTestingSettings');\nconst pinecone = global.get('pinecone');\nconst content = msg.payload.message.includes(`@${msg.BOT_NAME}`) ? msg.payload.message.replace(`@${msg.BOT_NAME}`, '') : msg.payload.message;\n\nmsg.payload = {\n    OPENAI_KEY: global.get('openai').OPENAI_API,\n    CHROMA_LINK: env.get('VECTORDB-CHROMA-HOST-NAME'),\n    BASE_URL: env.get(\"nodered\"),\n    PREPARED_MESSAGES: {\n        WELCOME: 'testTEST----WELCOME',\n        ERROR: 'testTEST----ERRRRORRR',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: data.ANSWER_AS,\n        TONE: data.TONE,\n        LANGUAGE: data.LANGUAGE,\n        ANSWER_LENGTH: data.ANSWER_LENGTH,\n        PROMPT_CUSTOM: data.PROMPT_CUSTOM,\n        OPENAI_MODEL: data.OPENAI_MODEL,\n    },\n    DATABASE: {\n        TYPE_BASE: data.TYPE_BASE,\n        NAME_BASE: data.NAME_BASE,\n    },\n    chat: {\n        content,\n    },\n    messengerType: null,\n    PINECONE: {\n        INDEX: pinecone.PINECONE_INDEX,\n        API_KEY: pinecone.PINECONE_API,\n        ENVIRONMENT: pinecone.PINECONE_ENV,\n        BASE_URL: pinecone.PINECONE_URL,\n    },\n    NUMBER_OF_ANSWERS_VDB: 2,\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "1d544d9c17784989"
+            ]
+        ]
+    },
+    {
+        "id": "79f2e7bf81624150",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/saveCredentialsModelTesting",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "7180c62234556bd7"
+            ]
+        ]
+    },
+    {
+        "id": "601dc19bd4143d81",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "saveCredentialsModelTesting",
+        "statusCode": "",
+        "headers": {},
+        "x": 980,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7180c62234556bd7",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Set Filename",
+        "func": "msg.filename = '/data/credentialsModelTesting.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "95223950257742e1"
+            ]
+        ]
+    },
+    {
+        "id": "de55e0ca470a3dd3",
+        "type": "file",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "f568a10c7e2a1365"
+            ]
+        ]
+    },
+    {
+        "id": "f568a10c7e2a1365",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Result",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n};\nmsg.statusCode = 200;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "601dc19bd4143d81"
+            ]
+        ]
+    },
+    {
+        "id": "95223950257742e1",
+        "type": "json",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "de55e0ca470a3dd3"
+            ]
+        ]
+    },
+    {
+        "id": "1f0442cbce152d53",
+        "type": "inject",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "e6d8eae54081d46f"
+            ]
+        ]
+    },
+    {
+        "id": "92f0939279700ed7",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "ENV",
+        "func": "const data = msg.payload\n\nnode.warn(data);\nlet words = data?.knowledge_base.split(' ');\nconst nameBase = words[0];\nconst typeBase = words[1];\n\nlet process_env = {\n    ANSWER_LENGTH: data.answer_length ? data.answer_length :\"\",\n    ANSWER_AS: data.answer_as ? data.answer_as : \"\",\n    TONE: data.tone ? data.tone : \"\",\n    LANGUAGE: data.language ? data.language : \"\",\n    PROMPT_CUSTOM: data.prompt_custom ? data.prompt_custom: \"\",\n    TYPE_BASE: typeBase ? typeBase:\"\",\n    NAME_BASE: nameBase ? nameBase:\"\",\n    ID: data.id_base ? data.id_base : \"\",\n    OPENAI_MODEL: data.ai_model ? data.ai_model : \"\",\n}\n\nglobal.set(\"modelTestingSettings\", process_env)\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fb1bab4d1e966e0",
+        "type": "complete",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "scope": [
+            "601dc19bd4143d81"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "e6d8eae54081d46f"
+            ]
+        ]
+    },
+    {
+        "id": "e6d8eae54081d46f",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "getEnvs CredentialsModelTesting",
+        "func": "msg.filename = '/data/credentialsModelTesting.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "80c3af51c982ae9c"
+            ]
+        ]
+    },
+    {
+        "id": "80c3af51c982ae9c",
+        "type": "file in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "8927d9efc4db739d"
+            ]
+        ]
+    },
+    {
+        "id": "8927d9efc4db739d",
+        "type": "json",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 685,
+        "y": 320,
+        "wires": [
+            [
+                "92f0939279700ed7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "38a72a4e333141b5",
+        "type": "inject",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "283baadeda4bc7ea"
+            ]
+        ]
+    },
+    {
+        "id": "283baadeda4bc7ea",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "get history",
+        "func": "msg.collection = \"chatHistory\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "e2d974d27bef0dcf"
+            ]
+        ]
+    },
+    {
+        "id": "e2d974d27bef0dcf",
+        "type": "link call",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "ab6453fc54d95ac0"
+            ]
+        ]
+    },
+    {
+        "id": "cbb89ac8d9885d15",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/getHistory",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "283baadeda4bc7ea"
+            ]
+        ]
+    },
+    {
+        "id": "55a13fb62b26c6e4",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ab6453fc54d95ac0",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "reverse",
+        "func": "msg.payload = msg.payload.reverse();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "55a13fb62b26c6e4"
+            ]
+        ]
+    },
+    {
+        "id": "8c0f0ee1385b9469",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/saveNewVector",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "54bce5412cf9b1b5"
+            ]
+        ]
+    },
+    {
+        "id": "54bce5412cf9b1b5",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "to AI embedding-ada",
+        "func": "msg.fromUI = msg.payload;\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = \"text-embedding-ada-002\";\n\nnode.warn(msg.fromUI);\n\nif (Array.isArray(msg.fromUI.question)) {\n    let newQuestions = '';\n\n    msg.fromUI.question.forEach(e => newQuestions += ` ${e.question}`);\n    msg.fromUI.question = newQuestions;\n}\n\nmsg.input = `${msg.fromUI.question} ${msg.fromUI.answer}`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 640,
+        "wires": [
+            [
+                "f281a8e775107e4d"
+            ]
+        ]
+    },
+    {
+        "id": "f281a8e775107e4d",
+        "type": "openai-ubos",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "model": "text-embedding-ada-002",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 540,
+        "y": 640,
+        "wires": [
+            [
+                "0fae79b8b218f845"
+            ]
+        ]
+    },
+    {
+        "id": "0fae79b8b218f845",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Chroma or Paincone",
+        "func": "\nswitch (msg.fromUI.dataBaseType) {\n    case 'chroma':\n        return [msg, null];\n    \n    case 'pinecone':\n        return [null, msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 640,
+        "wires": [
+            [
+                "6625b7bf3d125439"
+            ],
+            [
+                "7d437600dc24450b"
+            ]
+        ]
+    },
+    {
+        "id": "6625b7bf3d125439",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Chroma",
+        "func": "msg.collection = msg.fromUI.dataBaseName;\nmsg.payload = {\n    ids: [msg.fromUI.vID],\n    embeddings: msg.payload.data[0].embedding,\n    metadatas: [{ id: msg.fromUI.vID, question: msg.fromUI.question, result: msg.fromUI.answer }],\n};\n\nreturn msg;\n\n\nmsg.payload = {\n    ids: [\"id1\", \"id2\"],\n    embeddings: [\n        [1, 2, 3],\n        [4, 5, 6],\n    ],\n    metadatas: [{ key: \"value\" }, { key: \"value\" }],\n    documents: [\"document1\", \"document2\"],\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            }
+        ],
+        "x": 940,
+        "y": 600,
+        "wires": [
+            [
+                "e8f30c28114739f9"
+            ]
+        ]
+    },
+    {
+        "id": "7d437600dc24450b",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Pinecone",
+        "func": "msg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nmsg.actionType = 'upsert';\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [\n        {\n            id: new Date(),\n            values: msg.payload.data[0].embedding,\n            metadata: {\n                question: msg.fromUI.question,\n                result: msg.fromUI.answer\n            }\n        }\n    ]\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 680,
+        "wires": [
+            [
+                "e009782673c371fb"
+            ]
+        ]
+    },
+    {
+        "id": "e8f30c28114739f9",
+        "type": "chromadb-collection",
+        "z": "0a315059dbdd4de2",
+        "remoteServer": "92b09c9cd170f8a8",
+        "name": "",
+        "collection": "",
+        "operation": "add",
+        "x": 1120,
+        "y": 600,
+        "wires": [
+            [
+                "1cd7d016e50bc518"
+            ]
+        ]
+    },
+    {
+        "id": "e009782673c371fb",
+        "type": "pinecone-vector-ubos",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "actionType": "upsert",
+        "apiKey": "",
+        "environment": "",
+        "x": 1140,
+        "y": 680,
+        "wires": [
+            [
+                "1cd7d016e50bc518"
+            ]
+        ]
+    },
+    {
+        "id": "1cd7d016e50bc518",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 640,
+        "wires": [
+            [
+                "6e88bdab25be4923"
+            ]
+        ]
+    },
+    {
+        "id": "6e88bdab25be4923",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1430,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9ad7165bb564ec65",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/saveDefaultCredsForUI",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "c10918b8291a4ebb"
+            ]
+        ]
+    },
+    {
+        "id": "c10918b8291a4ebb",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Set Filename",
+        "func": "msg.filename = '/data/defaultCredsForUI_ModelTesting.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "fec172ef063bd06f"
+            ]
+        ]
+    },
+    {
+        "id": "fec172ef063bd06f",
+        "type": "json",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 490,
+        "y": 80,
+        "wires": [
+            [
+                "f631227d9f9051c5"
+            ]
+        ]
+    },
+    {
+        "id": "f631227d9f9051c5",
+        "type": "file",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 620,
+        "y": 80,
+        "wires": [
+            [
+                "43fe8240e922423f"
+            ]
+        ]
+    },
+    {
+        "id": "43fe8240e922423f",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "Result",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n};\nmsg.statusCode = 200;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 80,
+        "wires": [
+            [
+                "42d075657a54f2fd"
+            ]
+        ]
+    },
+    {
+        "id": "42d075657a54f2fd",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "saveDefaultCredsForUI",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "880297dd618d1c5b",
+        "type": "inject",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "9da37dc602b06848"
+            ]
+        ]
+    },
+    {
+        "id": "5f389a2115995585",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "ENV",
+        "func": "global.set(\"DefaultCredsForUI_ModelTesting\", msg.payload)\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55ad33da61bc5afe",
+        "type": "complete",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "scope": [
+            "601dc19bd4143d81"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "9da37dc602b06848"
+            ]
+        ]
+    },
+    {
+        "id": "9da37dc602b06848",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "getEnvs DefaultCredsForUI",
+        "func": "msg.filename = '/data/defaultCredsForUI_ModelTesting.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "0cc88bd51f9bb73d"
+            ]
+        ]
+    },
+    {
+        "id": "0cc88bd51f9bb73d",
+        "type": "file in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "d583fabe95cfe2ed"
+            ]
+        ]
+    },
+    {
+        "id": "d583fabe95cfe2ed",
+        "type": "json",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 645,
+        "y": 140,
+        "wires": [
+            [
+                "5f389a2115995585"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "beb4c6ef69ac8f34",
+        "type": "http in",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "url": "/getDefaultCredsForUI",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "8d3d6487b8489732"
+            ]
+        ]
+    },
+    {
+        "id": "8d3d6487b8489732",
+        "type": "function",
+        "z": "0a315059dbdd4de2",
+        "name": "get creds from global",
+        "func": "msg.payload = global.get('DefaultCredsForUI_ModelTesting');\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 720,
+        "wires": [
+            [
+                "f1a04d0d17f0a40d"
+            ]
+        ]
+    },
+    {
+        "id": "f1a04d0d17f0a40d",
+        "type": "http response",
+        "z": "0a315059dbdd4de2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0adfd4a6772111e7",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/updateVectorDB",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "3e2cce525f367000"
+            ]
+        ]
+    },
+    {
+        "id": "daa58feb94a34dad",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Chroma",
+        "func": "msg.collection = global.get('benchmarkSettings').NAME_BASE;\nmsg.payload = {\n    ids: [msg.fromUI.vID],\n    embeddings: msg.payload.data[0].embedding,\n    metadatas: [{ id: msg.fromUI.vID, question: msg.fromUI.question, result: msg.fromUI.answer }],\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            }
+        ],
+        "x": 1020,
+        "y": 380,
+        "wires": [
+            [
+                "59b6bd589c8e44b5"
+            ]
+        ]
+    },
+    {
+        "id": "fd0d9402b0957b54",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/enrichQuestions",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "f76f6ab69eff5230"
+            ]
+        ]
+    },
+    {
+        "id": "4170e9749e7e4267",
+        "type": "openai-ubos",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "4ff11fa848f4678d"
+            ]
+        ]
+    },
+    {
+        "id": "f76f6ab69eff5230",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "to openAI",
+        "func": "msg.fromUI = msg.payload;\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.messages = [\n    {\n        \"role\": \"system\",\n        \"content\": `Your task, based on the input text, is to generate 10 questions to the vector database, from which the user will receive the most accurate, best vector.\n        Do not enumerate questions!!!\nAlways return data in JSON!\nJSON data sample:\n[\n    {\n        \"question\": \"Is it generated question?\"\n    },\n    {\n        \"question\": \"Is it generated question?\"\n    },\n    {\n        \"question\": \"Is it generated question?\"\n    }\n]`\n    },\n    {\n        \"role\": \"user\",\n        \"content\": msg.fromUI.answer\n    }\n];\n\nmsg.temporaryQuestionBasket = [];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "4170e9749e7e4267"
+            ]
+        ]
+    },
+    {
+        "id": "4ff11fa848f4678d",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": " Parsing for UI table",
+        "func": "let resultAI = msg.payload.choices[0].message.content;\n\nif (resultAI[0] === '[') { // Check if GPT returned correct format JSON\n    resultAI = JSON.parse(resultAI); // If it correct as format JSON\n\n    msg.temporaryQuestionBasket.push(...resultAI);\n} else {\n    resultAI = { \"question\": resultAI } // If it NOT, just string with one question\n\n    msg.temporaryQuestionBasket.push(resultAI);\n}\n\n\nif (msg.temporaryQuestionBasket.length >= 10) {\n    msg.payload = msg.temporaryQuestionBasket;\n\n    return [msg, null]\n} else {\n    // Generate 1 more question\n    msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n    msg.messages = [\n        {\n            \"role\": \"system\",\n            \"content\": `Your task, based on the input text, is to generate 1 question to the vector database, from which the user will receive the most accurate, best vector.\n            Do not enumerate question!!!\n            Sample of returned question: 'Is it generated question?'\n            `\n        },\n        {\n            \"role\": \"user\",\n            \"content\": msg.fromUI.answer\n        }\n    ];\n\n    return [null, msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "4b8436253648dc64"
+            ],
+            [
+                "8fd8e53cd8ac8406"
+            ]
+        ]
+    },
+    {
+        "id": "4b8436253648dc64",
+        "type": "http response",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 870,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "787f594af15b38f4",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/updateEnrichedVector",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "3e2cce525f367000"
+            ]
+        ]
+    },
+    {
+        "id": "7b40c00f54c98ef0",
+        "type": "http response",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1510,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "60d946358f6f337c",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 420,
+        "wires": [
+            [
+                "7b40c00f54c98ef0"
+            ]
+        ]
+    },
+    {
+        "id": "9b0ef44c0d52f840",
+        "type": "openai-ubos",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "model": "text-embedding-ada-002",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "fc0500f9eb8a2885"
+            ]
+        ]
+    },
+    {
+        "id": "3e2cce525f367000",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "to AI embedding-ada",
+        "func": "msg.fromUI = msg.payload;\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = \"text-embedding-ada-002\";\n\nnode.warn(msg.fromUI);\n\nif (Array.isArray(msg.fromUI.question.data)) {\n    let newQuestions = '';\n\n    msg.fromUI.question.data.forEach(e => newQuestions += ` ${e.question}`);\n    msg.fromUI.question = newQuestions;\n}\n\nmsg.input = `${msg.fromUI.question} ${msg.fromUI.answer}`;\n\nnode.warn(msg.fromUI);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "9b0ef44c0d52f840"
+            ]
+        ]
+    },
+    {
+        "id": "fc0500f9eb8a2885",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Chroma or Paincone",
+        "func": "const dataBaseType = global.get('benchmarkSettings').TYPE_BASE;\n\nswitch (dataBaseType) {\n    case 'chroma':\n        return [msg, null];\n    \n    case 'pinecone':\n        return [null, msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "daa58feb94a34dad"
+            ],
+            [
+                "6b9b50ddd149d2e3"
+            ]
+        ]
+    },
+    {
+        "id": "12da75853c185491",
+        "type": "pinecone-vector-ubos",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "actionType": "update",
+        "apiKey": "",
+        "environment": "",
+        "x": 1220,
+        "y": 460,
+        "wires": [
+            [
+                "60d946358f6f337c"
+            ]
+        ]
+    },
+    {
+        "id": "6b9b50ddd149d2e3",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Pinecone",
+        "func": "msg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nmsg.actionType = 'update';\nmsg.payload = {\n    id: msg.fromUI.vID,\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    values: msg.payload.data[0].embedding,\n    setMetadata: {\n        url: env.get(\"nodered\"),\n        question: msg.fromUI.question,\n        result: msg.fromUI.answer,\n    },\n    namespace: ''\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 460,
+        "wires": [
+            [
+                "12da75853c185491"
+            ]
+        ]
+    },
+    {
+        "id": "59b6bd589c8e44b5",
+        "type": "chromadb-collection",
+        "z": "92a270a4aa9ae09c",
+        "remoteServer": "92b09c9cd170f8a8",
+        "name": "",
+        "collection": "",
+        "operation": "update",
+        "x": 1200,
+        "y": 380,
+        "wires": [
+            [
+                "60d946358f6f337c"
+            ]
+        ]
+    },
+    {
+        "id": "e6c2edff18dac9d9",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/getVectors",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "bee5954da69afc2c"
+            ]
+        ]
+    },
+    {
+        "id": "bee5954da69afc2c",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "to AI embedding-ada",
+        "func": "const dataBaseFull = msg.payload.dataBase.split(' ');\n\nmsg.fromUI = {\n    ...msg.payload,\n    dataBaseName: dataBaseFull[0],\n    dataBaseType: dataBaseFull[1],\n};\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = msg.payload.question;\nmsg.model = \"text-embedding-ada-002\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "b9a0f273eb51f204"
+            ]
+        ]
+    },
+    {
+        "id": "b9a0f273eb51f204",
+        "type": "openai-ubos",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "model": "text-embedding-ada-002",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "a98f6c7101467834"
+            ]
+        ]
+    },
+    {
+        "id": "a98f6c7101467834",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Chroma or Pinecone",
+        "func": "switch (msg.fromUI.dataBaseType) {\n    case 'chroma': \n        return [msg, null];\n    \n    case 'pinecone':\n        return [null, msg];\n}\n\nreturn msg;\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 80,
+        "wires": [
+            [
+                "792c0c342831a848"
+            ],
+            [
+                "f3c2cb305c680d24"
+            ]
+        ]
+    },
+    {
+        "id": "f3c2cb305c680d24",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Pinecone",
+        "func": "msg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    topK: msg.fromUI.numberOfAnswers,\n    vector: msg.payload.data[0].embedding,\n    \"includeMetadata\": true,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "3b499ec6e752f61e"
+            ]
+        ]
+    },
+    {
+        "id": "792c0c342831a848",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Chroma",
+        "func": "// const vector = Array(1536).fill(0);\nconst vector = msg.payload.data[0].embedding;\n\nmsg.collection = msg.fromUI.dataBaseName;\nmsg.payload = {\n    queryEmbeddings: vector,\n    nResults: msg.fromUI.numberOfAnswers,\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            },
+            {
+                "var": "openai",
+                "module": "openai"
+            }
+        ],
+        "x": 920,
+        "y": 40,
+        "wires": [
+            [
+                "f28826b74e7ccc00"
+            ]
+        ]
+    },
+    {
+        "id": "3b499ec6e752f61e",
+        "type": "pinecone-vector-ubos",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "actionType": "query",
+        "apiKey": "",
+        "environment": "",
+        "x": 1120,
+        "y": 120,
+        "wires": [
+            [
+                "dd59f1c51bcf6a44"
+            ]
+        ]
+    },
+    {
+        "id": "f28826b74e7ccc00",
+        "type": "chromadb-collection",
+        "z": "92a270a4aa9ae09c",
+        "remoteServer": "92b09c9cd170f8a8",
+        "name": "",
+        "collection": "",
+        "operation": "query",
+        "x": 1100,
+        "y": 40,
+        "wires": [
+            [
+                "dd59f1c51bcf6a44"
+            ]
+        ]
+    },
+    {
+        "id": "dd59f1c51bcf6a44",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Repackage for UI table",
+        "func": "let repackaged = null;\n\nswitch (msg.fromUI.dataBaseType) {\n    case 'chroma': {\n        const responce = msg.payload;\n\n        repackaged = responce.ids[0].map((id, i) => (\n            {\n                vID: id,\n                distance: responce.distances[0][i],\n                question: responce.metadatas[0][i].question,\n                answer: responce.metadatas[0][i].result,\n                edit: '',\n                enrich: '',\n            }\n        ));\n        break;\n    }\n\n    case 'pinecone': {\n        const responce = msg.payload.matches;\n        \n        repackaged = responce.map(e => (\n            {\n                vID: e.id,\n                distance: e.score,\n                question: e.metadata.question,\n                answer: e.metadata.result,\n                edit: '',\n                enrich: '',\n            }\n        ));\n        break;\n    }\n}\n\nmsg.payload = repackaged;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 80,
+        "wires": [
+            [
+                "59b53d7a21447640"
+            ]
+        ]
+    },
+    {
+        "id": "59b53d7a21447640",
+        "type": "http response",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1530,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fbd03b0e2579cd40",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/saveCredentials_Benchmark",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "6c85708fa5c8ae26"
+            ]
+        ]
+    },
+    {
+        "id": "6c85708fa5c8ae26",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Set Filename",
+        "func": "msg.filename = '/data/credentialsBenchmark.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 560,
+        "wires": [
+            [
+                "54c61e08daa4d3ba"
+            ]
+        ]
+    },
+    {
+        "id": "54c61e08daa4d3ba",
+        "type": "json",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [
+                "39612238f358928b"
+            ]
+        ]
+    },
+    {
+        "id": "39612238f358928b",
+        "type": "file",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 700,
+        "y": 560,
+        "wires": [
+            [
+                "d5b9a464d935b68b"
+            ]
+        ]
+    },
+    {
+        "id": "d5b9a464d935b68b",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "Result",
+        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n};\nmsg.statusCode = 200;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 560,
+        "wires": [
+            [
+                "37c4dfc633a7194c"
+            ]
+        ]
+    },
+    {
+        "id": "37c4dfc633a7194c",
+        "type": "http response",
+        "z": "92a270a4aa9ae09c",
+        "name": "saveCredentialsDBBenchmark",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0c35ae96d70d59dc",
+        "type": "complete",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "scope": [
+            "37c4dfc633a7194c"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "44e32974faa3b177"
+            ]
+        ]
+    },
+    {
+        "id": "44e32974faa3b177",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "getEnvs Credentials Benchmark",
+        "func": "msg.filename = '/data/credentialsBenchmark.json';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "1b4138a01adf8ce0"
+            ]
+        ]
+    },
+    {
+        "id": "c1c8601430fa5287",
+        "type": "inject",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "44e32974faa3b177"
+            ]
+        ]
+    },
+    {
+        "id": "1b4138a01adf8ce0",
+        "type": "file in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "854730930b8bf939"
+            ]
+        ]
+    },
+    {
+        "id": "854730930b8bf939",
+        "type": "json",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 685,
+        "y": 620,
+        "wires": [
+            [
+                "5d8328e9dd6fa902"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "5d8328e9dd6fa902",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "ENV",
+        "func": "const data = msg.payload;\nconst dataBase = msg.payload.selectedDB_Label.split(' ');\n\nlet process_env = {\n    label: data.selectedDB_Label,\n    value: data.selectedDB_Value,\n    NAME_BASE: dataBase[0],\n    TYPE_BASE: dataBase[1],\n}\n\nglobal.set(\"benchmarkSettings\", process_env);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b841a9bcf7e253f9",
+        "type": "http in",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "url": "/getDefaultCredsUI_Benchmark",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 740,
+        "wires": [
+            [
+                "5efa0d8f3e41b96d"
+            ]
+        ]
+    },
+    {
+        "id": "5efa0d8f3e41b96d",
+        "type": "function",
+        "z": "92a270a4aa9ae09c",
+        "name": "get creds from global",
+        "func": "msg.payload = global.get('benchmarkSettings');\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 740,
+        "wires": [
+            [
+                "d99c2601580e7c82"
+            ]
+        ]
+    },
+    {
+        "id": "d99c2601580e7c82",
+        "type": "http response",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "8fd8e53cd8ac8406",
+        "type": "delay",
+        "z": "92a270a4aa9ae09c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 300,
+        "wires": [
+            [
+                "4170e9749e7e4267"
             ]
         ]
     },
@@ -13694,7 +15617,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 90px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #fec518;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #fec518!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}\n\n.selectWithoutCross .cancel-icon {\n    display:none !important;\n}",
+        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 90px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #fec518;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #fec518!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}\n\n.selectWithoutCross .cancel-icon {\n    display:none !important;\n}\n\n/* DB Benchmark & ModelTesting pages ---START--- */\n.pseudoInput {\n    background: none !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInput input,\n.pseudoInput textarea {\n    background: #f9fafa !important;\n    border-radius: 10px !important;\n    color: #2E3D49 !important;\n}\n\n.inputRegular {\n    background-color: #F6F7F8 !important;\n    border-radius: 10px !important;\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div {\n    border-radius: 10px !important;\n    transition-delay: 999999s; /* prevents the hover from turning on */\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div:hover {\n    cursor: default !important; /* hover off */\n}\n\n.listVectorsText div>div>div>div>div>div>div {\n    padding: 10px !important;\n}\n\n\n\n.tableOfVectors .thead .tr .th:nth-child(1),\n.tableOfVectors .tbody .tr .td:nth-child(1) {\n    width: 45% !important;\n}\n\n.tableOfVectors .thead .tr .th:nth-child(2),\n.tableOfVectors .tbody .tr .td:nth-child(2) {\n    width: 50% !important;\n}\n\n.tableOfVectors .thead .tr .th:last-child,\n.tableOfVectors .tbody .tr .td:last-child {\n    width: 5% !important;\n}\n\n.Text_v_answer div>div>div>div>div>div>div{\n    padding: 4px !important;\n}\n/* DB Benchmark & ModelTesting pages ---FINISH--- */\n",
         "output": "str",
         "x": 260,
         "y": 60,

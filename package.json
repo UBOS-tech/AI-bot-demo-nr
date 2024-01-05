@@ -14,7 +14,8 @@
         "@martip/node-red-xlsx": "1.0.2",
         "chromadb": "1.5.11",
         "openai": "4.14.2",
-        "moment": "2.29.4"
+        "moment": "2.29.4",
+        "node-red-contrib-chromadb": "1.0.0"
     },
     "node-red": {
         "settings": {
