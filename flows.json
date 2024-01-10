@@ -1225,7 +1225,9 @@
             "351849c72297ad8d"
         ],
         "x": 14,
-        "y": 459
+        "y": 459,
+        "w": 1592,
+        "h": 342
     },
     {
         "id": "4f7253110e28cd3a",
@@ -1269,7 +1271,9 @@
             "2945567e1db9e42e"
         ],
         "x": 14,
-        "y": 839
+        "y": 839,
+        "w": 1812,
+        "h": 342
     },
     {
         "id": "69add6464c43aac4",
@@ -1313,7 +1317,9 @@
             "c27fb1cd190c5ed4"
         ],
         "x": 14,
-        "y": 1279
+        "y": 1279,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "b7522a9b786900f8",
@@ -1366,8 +1372,10 @@
             "8c47990ef2ae9fdd",
             "0a8218ec22687496"
         ],
-        "x": 4,
-        "y": 19
+        "x": 14,
+        "y": 19,
+        "w": 2312,
+        "h": 402
     },
     {
         "id": "37a7b2262ade6898",
@@ -1491,9 +1499,7 @@
             "1d399d7e2563d8e4"
         ],
         "x": 24,
-        "y": 19,
-        "w": 1862,
-        "h": 942
+        "y": 19
     },
     {
         "id": "22baf3437ddf891a",
@@ -1936,7 +1942,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "Input Data Unification",
-        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        type: msg.payload.chat?.type,\n        id: msg.payload.chat?.id,\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
+        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        type: msg.payload.chat?.type,\n        id: (msg.payload.chat?.id).toString(),\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16346,7 +16352,7 @@
         "z": "bc2279776f9fc918",
         "g": "0fb791f72a382f0a",
         "name": "chek user",
-        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: Number(senderID) \n}\n\nreturn msg;",
+        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: senderID\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16392,7 +16398,7 @@
         "z": "bc2279776f9fc918",
         "g": "0fb791f72a382f0a",
         "name": "save/update",
-        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted:false,\n        chat_id: Number(senderID) ,\n        user_name: Number(senderID) ,\n        type: 'messanger'\n    }\n\n    return [msg, null]\n}\n\n",
+        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        chat_id: senderID.toSting(),\n        user_name: Number(senderID),\n        type: 'messanger'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -16437,7 +16443,7 @@
         "z": "bc2279776f9fc918",
         "g": "0fb791f72a382f0a",
         "name": "save history ",
-        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.history.chat_id = Number(senderID) \n    msg.history.user_name = Number(senderID) \n    msg.history.type = 'messanger' \n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
+        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.history.chat_id = (senderID).toString();\n    msg.history.user_name = Number(senderID)\n    msg.history.type = 'messanger'\n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16736,7 +16742,7 @@
         "z": "bc2279776f9fc918",
         "g": "4f7253110e28cd3a",
         "name": "chek user",
-        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\n\nmsg.payload = {\n    chat_id: Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id)\n}\n\nreturn msg;",
+        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\n\nmsg.payload = {\n    chat_id: msg.old.entry[0].changes[0].value.contacts[0].wa_id\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16782,7 +16788,7 @@
         "z": "bc2279776f9fc918",
         "g": "4f7253110e28cd3a",
         "name": "save/update",
-        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        chat_id: Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id),\n        user_name: msg.old.entry[0].changes[0].value.contacts[0].profile.name,\n        type: 'whatsApp'\n    }\n\n    return [msg, null]\n}\n\n",
+        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        chat_id: (msg.old.entry[0].changes[0].value.contacts[0].wa_id).toString(),\n        user_name: msg.old.entry[0].changes[0].value.contacts[0].profile.name,\n        type: 'whatsApp'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -16826,7 +16832,7 @@
         "z": "bc2279776f9fc918",
         "g": "4f7253110e28cd3a",
         "name": "save history ",
-        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].changes[0].value.messages[0].text.body\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.type = 'whatsApp' \n    msg.history.chat_id = Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id)\n    msg.history.user_name = msg.old.entry[0].changes[0].value.contacts[0].profile.name\n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
+        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].changes[0].value.messages[0].text.body\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.type = 'whatsApp'\n    msg.history.chat_id = (msg.old.entry[0].changes[0].value.contacts[0].wa_id).toString();\n    msg.history.user_name = msg.old.entry[0].changes[0].value.contacts[0].profile.name\n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17107,7 +17113,7 @@
         "z": "bc2279776f9fc918",
         "g": "69add6464c43aac4",
         "name": "chek user",
-        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: Number(senderID) \n}\n\nreturn msg;",
+        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: senderID\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17153,7 +17159,7 @@
         "z": "bc2279776f9fc918",
         "g": "69add6464c43aac4",
         "name": "save/update",
-        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        chat_id: Number(senderID),\n        user_name: Number(senderID),\n        type: 'instagram' \n    }\n\n    return [msg, null]\n}\n\n",
+        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        chat_id: senderID.toString(),\n        user_name: Number(senderID),\n        type: 'instagram'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -17198,7 +17204,7 @@
         "z": "bc2279776f9fc918",
         "g": "69add6464c43aac4",
         "name": "save history ",
-        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.chat_id = Number(msg.senderID) \n    msg.history.user_name = Number(msg.senderID) \n    msg.history.type = 'instagram' \n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
+        "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.chat_id = msg.senderID.toString();\n    msg.history.user_name = Number(msg.senderID)\n    msg.history.type = 'instagram'\n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18072,7 +18078,7 @@
         "z": "bc2279776f9fc918",
         "g": "b7522a9b786900f8",
         "name": "chek user",
-        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\n\n\nmsg.payload = {\nchat_id: msg.originalMessage.from.id\n}\nreturn msg;",
+        "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\n\n\nmsg.payload = {\n    chat_id: msg.originalMessage.from.id\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18184,7 +18190,7 @@
         "z": "bc2279776f9fc918",
         "g": "b7522a9b786900f8",
         "name": "save/update",
-        "func": "if(msg.payload.length > 0){\n   return[null,msg]\n}\n\nelse{\n    msg.method=\"POST\"\n    msg.url = env.get(\"nodered\") +`/saveUser`;\n    msg.payload = {\n        deleted:false,\n        first_name: msg.originalMessage.from.first_name ? msg.originalMessage.from.first_name :'',\n        last_name: msg.originalMessage.from.last_name ? msg.originalMessage.from.last_name : '',\n        username: msg.originalMessage.from.username,\n        chat_id: msg.originalMessage.from.id,\n        language_code: msg.originalMessage.from.language_code,\n        type: 'telegram'\n    }\n    \nreturn[msg,null]\n}\n\n",
+        "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        deleted: false,\n        first_name: msg.originalMessage.from.first_name ? msg.originalMessage.from.first_name : '',\n        last_name: msg.originalMessage.from.last_name ? msg.originalMessage.from.last_name : '',\n        username: msg.originalMessage.from.username,\n        chat_id: msg.originalMessage.from.id,\n        language_code: msg.originalMessage.from.language_code,\n        type: 'telegram'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -18407,7 +18413,7 @@
         "z": "bc2279776f9fc918",
         "g": "b7522a9b786900f8",
         "name": "save history ",
-        "func": "msg.history.endDate = Date.now()\nmsg.history.chat_id = msg.originalMessage.from.id\nmsg.history.user_name = msg.originalMessage.from.username\nmsg.payload = msg.history\nmsg.url = env.get(\"nodered\") + `/saveUserMessage`;\nreturn msg;",
+        "func": "msg.history.endDate = Date.now()\nmsg.history.chat_id = msg.originalMessage.from.id.toString();\nmsg.history.user_name = msg.originalMessage.from.username\nmsg.payload = msg.history\nmsg.url = env.get(\"nodered\") + `/saveUserMessage`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18935,7 +18941,7 @@
         "z": "4004e7d2fbdbf6a9",
         "g": "90cc95e0240e9048",
         "name": "find users_chat",
-        "func": "msg.payload = {\n    chat_id: Number(msg.payload.chat_id) \n}\n\nmsg.collection = 'users_chat'\nreturn msg;",
+        "func": "msg.payload = {\n    chat_id: (msg.payload.chat_id).toString()\n}\n\nmsg.collection = 'users_chat'\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19127,7 +19133,7 @@
         "z": "4004e7d2fbdbf6a9",
         "g": "90cc95e0240e9048",
         "name": "find users",
-        "func": "msg.payload={\n    chat_id: Number(msg.payload.chat_id) \n}\nmsg.collection = 'users'\n\nreturn msg;",
+        "func": "msg.payload={\n    chat_id: (msg.payload.chat_id).toString()\n}\nmsg.collection = 'users'\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19420,7 +19426,7 @@
         "type": "function",
         "z": "4004e7d2fbdbf6a9",
         "name": "get users_messages",
-        "func": "msg.payload = {\n    chat_id: Number(msg.req.query.id)\n}\n\n\n\n\nmsg.length = Number(msg.req.query[\"number\"]);\n\n\nmsg.collection = 'users_messages'\n\nreturn msg;\n",
+        "func": "msg.payload = {\n    chat_id: (msg.req.query.id).toString()\n}\n\n\n\n\nmsg.length = Number(msg.req.query[\"number\"]);\n\n\nmsg.collection = 'users_messages'\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19470,7 +19476,7 @@
         "type": "function",
         "z": "4004e7d2fbdbf6a9",
         "name": "to app",
-        "func": "function transformData(data) {\n    const result = [];\n\n    // data.forEach(item => {\n    //     if (item.type === 'telegram') {\n    //         result.push({\n    //             type: item.user_name,\n    //             message: item.requestText,\n    //             date: moment(item.startDate).format('LLL')\n    //         });\n\n    //         result.push({\n    //             type: 'BOT',\n    //             message: item.answer,\n    //             date: moment(item.endDate).format('LLL')\n    //         });\n    //     }\n    // });\n    data.forEach(item => {\n            result.push({\n                type: item.user_name,\n                message: item.question,\n                date: moment(item.startDate).format('LLL')\n            });\n\n            result.push({\n                type: 'BOT',\n                message: item.answer,\n                date: moment(item.endDate).format('LLL')\n            });\n        \n    });\n\n    return result;\n}\n\nconst data = msg.payload\n\n\nconst result = transformData(data);\nif (result.length> msg.length){\n    msg.payload = result.slice(msg.length)\n}else{\n    msg.statusCode=400\n}\nmsg.payload =result\nreturn msg;",
+        "func": "function transformData(data) {\n    const result = [];\n\n    // data.forEach(item => {\n    //     if (item.type === 'telegram') {\n    //         result.push({\n    //             type: item.user_name,\n    //             message: item.requestText,\n    //             date: moment(item.startDate).format('LLL')\n    //         });\n\n    //         result.push({\n    //             type: 'BOT',\n    //             message: item.answer,\n    //             date: moment(item.endDate).format('LLL')\n    //         });\n    //     }\n    // });\n    data.forEach(item => {\n        result.push({\n            type: item.user_name,\n            message: item.question ? item.question : item.requestText,\n            date: moment(item.startDate).format('LLL')\n        });\n\n        result.push({\n            type: 'BOT',\n            message: item.answer,\n            date: moment(item.endDate).format('LLL')\n        });\n\n    });\n\n    return result;\n}\n\nconst data = msg.payload\n\n\nconst result = transformData(data);\nif (result.length > msg.length) {\n    msg.payload = result.slice(msg.length)\n} else {\n    msg.statusCode = 400\n}\nmsg.payload = result\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19541,7 +19547,7 @@
         "type": "function",
         "z": "4004e7d2fbdbf6a9",
         "name": "get users_messages",
-        "func": "msg.payload = {\n    // chat_id: Number(msg.req.query.id)\n}\n\n\n\n\n// msg.length = Number(msg.req.query[\"number\"]);\n\n\nmsg.collection = 'users_messages'\n\nreturn msg;\n",
+        "func": "msg.payload = {\n    // chat_id: (msg.req.query.id).toString()\n}\n\n\n\n\n// msg.length = Number(msg.req.query[\"number\"]);\n\n\nmsg.collection = 'users_messages'\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
