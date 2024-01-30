@@ -696,7 +696,9 @@
             "d85d31f6e5e71638"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -1363,8 +1365,10 @@
             "91a473e0cf00b81f",
             "69d78287c809cd74"
         ],
-        "x": 34,
-        "y": 2839
+        "x": 44,
+        "y": 2839,
+        "w": 922,
+        "h": 82
     },
     {
         "id": "6f179b2f1541424f",
@@ -1446,8 +1450,10 @@
             "8152a416e8e85460",
             "29b4e18584450fae"
         ],
-        "x": 0,
-        "y": 0
+        "x": 24,
+        "y": 19,
+        "w": 1842,
+        "h": 1068
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1702,8 +1708,10 @@
             "7546b8ee34e302ea",
             "10fad508f6725a5b"
         ],
-        "x": 0,
-        "y": 0
+        "x": 64,
+        "y": 899,
+        "w": 772,
+        "h": 162
     },
     {
         "id": "4b07803a52e468f5",
@@ -3484,6 +3492,52 @@
             [
                 "db31f5dfa738f3d8"
             ]
+        ]
+    },
+    {
+        "id": "78e064c8e75d945f",
+        "type": "inject",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1160,
+        "wires": [
+            [
+                "ed18aeb2b560d1ae"
+            ]
+        ]
+    },
+    {
+        "id": "ed18aeb2b560d1ae",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": "function 633",
+        "func": "const a = env.get('nodered');\nnode.warn(a);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1160,
+        "wires": [
+            []
         ]
     },
     {
@@ -5544,7 +5598,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "6f179b2f1541424f",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5893,7 +5947,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "6f179b2f1541424f",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo:true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6134,7 +6188,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "6f179b2f1541424f",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17330,7 +17384,7 @@
         "z": "d41b21524ec70b11",
         "g": "b2e9a721546c936c",
         "name": "get knowlegebase",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload = { deleted: false }\nreturn msg;",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.payload = { deleted: false, demo: { $ne: true } }\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17455,7 +17509,7 @@
         "z": "d41b21524ec70b11",
         "g": "b2e9a721546c936c",
         "name": "get knowledgeObjects",
-        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = { deleted: false }\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = { deleted: false, demo: { $ne: true } }\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
