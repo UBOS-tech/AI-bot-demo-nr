@@ -158,7 +158,7 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "f2c7538c371f884a"
+                        "id": "c21b28e4d5aec350"
                     }
                 ]
             }
@@ -170,6 +170,10 @@
                 "wires": [
                     {
                         "id": "0e56c45459226970",
+                        "port": 0
+                    },
+                    {
+                        "id": "4da1b5bb2b2535c6",
                         "port": 0
                     }
                 ]
@@ -188,54 +192,21 @@
         "in": [
             {
                 "x": 60,
-                "y": 260,
+                "y": 280,
                 "wires": [
                     {
-                        "id": "b99c8f2ed80cf673"
+                        "id": "018cf1864e7c2dcc"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1160,
-                "y": 420,
+                "x": 1200,
+                "y": 440,
                 "wires": [
                     {
-                        "id": "255969ad75851a21",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "94e1286393fc0c9f",
-        "type": "subflow",
-        "name": "ADA-VDB-GPT (2)",
-        "info": "## Description\nThis \"subflow\" is designed to simplify the process of connecting various messengers to the bot, thanks to the standardization of input data.\n\n- **ADA** stands for OpenAI text-embedding-ada-002.\n- **VDB** stands for Vector DataBase, which can currently be Chroma or Pinecone. Chroma is automatically created during template installation and serves as the default database.\n- **GPT** stands for OpenAI GPT models.\n\nAccording to the provided data in INPUT, the subflow performs the following steps:\n\n1. Receives a message from user in the messenger in `chat.content`.\n2. Sends the content for embedding to ADA to generate vectors.\n3. After receiving the vectors, retrieves data from the chosen VDB.\n4. Sends a formatted prompt with data from VDB and settings to GPT.\n5. Returns the prepared response in `msg.payload` for further use or sending through the user's messenger.\n6. Stores the history in MongoDB, which was sequentially formed at all stages (`msg.history`), for further processing and display in the UI.\n\n\n---\n\n\n<details>\n<summary><strong>INPUT</strong></summary>\n\n**OPENAI_KEY: [Required]** This is the API key provided by OpenAI. It is necessary for authentication when making requests to the OpenAI API.<br />\n\n**CHROMA_LINK: [Required]** Link to your Chroma host <br />\n\n**BASE_URL: [Required]** Link to your NodeRed <br />\n\n**NUMBER_OF_ANSWERS_VDB:** [Optional] Number of vectors to be returned. <br />\n\n**chat.content: [Required]** Message from user. <br />\n\n**messengerType:** [Optional] <br />\n\n**BOT_NAME:** [Optional] <br />\n\n**PINECONE:** [Optional] <br />\n\n```\nmsg.payload = {\n    OPENAI_KEY: 'sn-123123-123-123-123123123',\n    CHROMA_LINK: 'http://chroma-123123-ubos-123123',\n    BASE_URL: 'https://MY-NedeRedName-123123123123.ubos.tech',\n    NUMBER_OF_ANSWERS_VDB: 2,\n    PREPARED_MESSAGES: {\n        WELCOME: 'First, a welcome message to user',\n        ERROR: 'Message in case of error',\n    },\n    chat: {\n        id: 'chatID123123123',\n        username: 'userenko',\n        content: 'Message from user',\n        type: 'whatsapp',\n    },\n    BOT_NAME: 'MyBestBot',\n    DATABASE: {\n        'TYPE_BASE': 'chroma',\n        'NAME_BASE': 'Pizza-Recipes',\n    },\n    PINECONE: {\n        INDEX: 'sample',\n        API_KEY: '123123-123-123-123123123',\n        ENVIRONMENT: 'gcp-starter',\n        BASE_URL: 'https://sample-n1gj1lc.svc.gcp-starter.pinecone.io',\n    },\n}\n```\n</details>\n\n\n---\n\n\n<details>\n<summary><strong>OUTPUT</strong></summary>\n\n```\nmsg.payload = 'String type. With a ready message to the user';\n```\n\n</details>\n\n\n---\n\n\n<details>\n<summary><strong>Sample of msg.history object saved to MongoDB</strong></summary>\n\n```\nmsg.history = {\n    \"BOT_NAME\": \"mySuperBot\",\n    \"DATABASE\": {\n        \"TYPE_BASE\": \"pinecone\",\n        \"NAME_BASE\": \"mySuperColection\"\n    },\n    \"AI_SETTINGS\": {\n        \"ANSWER_AS\": \"Sales consultant\",\n        \"TONE\": \"Informal\",\n        \"LANGUAGE\": \"English\",\n        \"ANSWER_LENGTH\": \"Small\",\n        \"PROMPT_CUSTOM\": \"You are a polite assistant\",\n        \"OPENAI_MODEL\": \"gpt-3.5-turbo\"\n    },\n    \"fullPromptToAI\": \"Answer as an Sales consultant, Informal, English, and the response should be Small. Here's some additional guidance: You are a polite assistant. Question Vector 1, Answer Vector 1, Question Vector 2, Answer Vector 2\",\n    \"vectors\": [{\n        \"question\": \"Question Vector 1\",\n        \"result\": \"Answer Vector 1\",\n        \"distance\": 0.32726691,\n        \"document\": \"https://uk.wikipedia.org/wiki/sample-sample-sample-sample\"\n    },\n    {\n        \"question\": \"Question Vector 2\",\n        \"result\": \"Answer Vector 2\",\n        \"distance\": 0.416921144,\n        \"document\": \"https://uk.wikipedia.org/wiki/sample-sample-sample-sample\"\n    }\n    ],\n    \"question\": \"Who are you?\",\n    \"answer\": \"Hey there! I'm an AI assistant here to help you. How can I assist you today?\",\n    \"usage\": {\n        \"prompt_tokens\": 48,\n        \"completion_tokens\": 43,\n        \"total_tokens\": 91\n    },\n    \"startDate\": 1704443692257,\n    \"endDate\": 1704443695141\n};\n\n```\n\n</details>\n\n\n---\n",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 260,
-                "wires": [
-                    {
-                        "id": "9932f982f2b85e0c"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1160,
-                "y": 420,
-                "wires": [
-                    {
-                        "id": "bb9fc97818087d7b",
+                        "id": "3677128a83383333",
                         "port": 0
                     }
                 ]
@@ -731,7 +702,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1961,67 +1934,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f2c7538c371f884a",
-        "type": "function",
-        "z": "52166c6adc5d5d26",
-        "name": "find all",
-        "func": "msg.collection = \"knowlegebase\"\nlet process_env = {\n    ID: msg.old._id,\n    TYPE_BASE: msg.old.type,\n    NAME_BASE: msg.old.name\n}\n\nglobal.set(\"prompts\", process_env)\n\n\nmsg.payload = {\n    _id: { $ne: objectid(msg.old._id) },\n    deleted: false\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "955e2d71c507c639"
-            ]
-        ]
-    },
-    {
-        "id": "955e2d71c507c639",
-        "type": "link call",
-        "z": "52166c6adc5d5d26",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 370,
-        "y": 80,
-        "wires": [
-            [
-                "3aaaa2f09a8a1381"
-            ]
-        ]
-    },
-    {
-        "id": "3aaaa2f09a8a1381",
-        "type": "function",
-        "z": "52166c6adc5d5d26",
-        "name": "create array",
-        "func": "msg.array = msg.payload\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 80,
+        "x": 1010,
+        "y": 220,
         "wires": [
             []
         ]
@@ -2036,8 +1950,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 850,
-        "y": 140,
+        "x": 750,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2058,8 +1972,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 640,
-        "y": 140,
+        "x": 540,
+        "y": 540,
         "wires": [
             [
                 "03114e6a44646360"
@@ -2067,26 +1981,149 @@
         ]
     },
     {
-        "id": "b99c8f2ed80cf673",
+        "id": "c21b28e4d5aec350",
         "type": "function",
-        "z": "27ce80b8fbcd825f",
-        "name": "Input Data Unification",
-        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        type: msg.payload.chat?.type,\n        id: msg.payload.chat?.id && msg.payload.chat?.id.toString(),\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
+        "z": "52166c6adc5d5d26",
+        "name": "find all",
+        "func": "msg.collection = \"knowlegebase\"\nlet process_env = {\n    ID: msg.old._id,\n    TYPE_BASE: msg.old.type,\n    NAME_BASE: msg.old.name\n}\n\nglobal.set(\"prompts\", process_env)\n\n\nmsg.payload = {\n    _id: { $ne: objectid(msg.old._id) },\n    deleted: false\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "daf04c52e5e215e1"
+            ]
+        ]
+    },
+    {
+        "id": "daf04c52e5e215e1",
+        "type": "link call",
+        "z": "52166c6adc5d5d26",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "81b6e840b833087c"
+            ]
+        ]
+    },
+    {
+        "id": "81b6e840b833087c",
+        "type": "function",
+        "z": "52166c6adc5d5d26",
+        "name": "create array",
+        "func": "msg.array = msg.payload\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 200,
-        "y": 260,
+        "x": 510,
+        "y": 80,
         "wires": [
             [
-                "e7a33163e49558c2"
+                "f2ce323afb8655b3"
             ]
         ]
     },
     {
-        "id": "e7a33163e49558c2",
+        "id": "f2ce323afb8655b3",
+        "type": "array-loop",
+        "z": "52166c6adc5d5d26",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 700,
+        "y": 80,
+        "wires": [
+            [
+                "4da1b5bb2b2535c6"
+            ],
+            [
+                "a74508c2d541dd8a"
+            ]
+        ]
+    },
+    {
+        "id": "a17d0db59eb08d14",
+        "type": "link call",
+        "z": "52166c6adc5d5d26",
+        "name": "",
+        "links": [
+            "d5c0ee67d630e0f2"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 860,
+        "y": 140,
+        "wires": [
+            [
+                "f2ce323afb8655b3"
+            ]
+        ]
+    },
+    {
+        "id": "4da1b5bb2b2535c6",
+        "type": "function",
+        "z": "52166c6adc5d5d26",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully created\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a74508c2d541dd8a",
+        "type": "function",
+        "z": "52166c6adc5d5d26",
+        "name": "change select",
+        "func": "msg.query={\n    _id:objectid(msg.payload._id)\n}\nmsg.payload={\n    $set:{\n        select:false\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "a17d0db59eb08d14"
+            ]
+        ]
+    },
+    {
+        "id": "da1fd06ad3f10b0c",
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "to AI embedding-ada",
@@ -2096,16 +2133,35 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 260,
+        "x": 460,
+        "y": 280,
         "wires": [
             [
-                "310415638cd1160d"
+                "258090fc50e92b81"
             ]
         ]
     },
     {
-        "id": "310415638cd1160d",
+        "id": "018cf1864e7c2dcc",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "Input Data Unification",
+        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        type: msg.payload.chat?.type,\n        id: msg.payload.chat?.id && msg.payload.chat?.id.toString(),\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "da1fd06ad3f10b0c"
+            ]
+        ]
+    },
+    {
+        "id": "258090fc50e92b81",
         "type": "openai-ubos",
         "z": "27ce80b8fbcd825f",
         "name": "",
@@ -2121,16 +2177,16 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 620,
-        "y": 260,
+        "x": 660,
+        "y": 280,
         "wires": [
             [
-                "96625c2724a13266"
+                "3ffdb941a28abab1"
             ]
         ]
     },
     {
-        "id": "96625c2724a13266",
+        "id": "3ffdb941a28abab1",
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": ">",
@@ -2140,25 +2196,25 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
-        "y": 260,
+        "x": 810,
+        "y": 280,
         "wires": [
             [
-                "efab86bd9e1090f0",
-                "fd71939f7c474f99"
+                "20d4b9e5daacd0f6",
+                "7cb251a0fa3f1eb5"
             ],
             [
-                "f5f406239f7034eb",
-                "fd71939f7c474f99"
+                "88aeefc112b748d2",
+                "7cb251a0fa3f1eb5"
             ],
             [
-                "255969ad75851a21",
-                "fd71939f7c474f99"
+                "3677128a83383333",
+                "7cb251a0fa3f1eb5"
             ]
         ]
     },
     {
-        "id": "efab86bd9e1090f0",
+        "id": "20d4b9e5daacd0f6",
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "pinecone",
@@ -2168,130 +2224,33 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 80,
-        "wires": [
-            [
-                "64b9d37bc58a85b5"
-            ]
-        ]
-    },
-    {
-        "id": "255969ad75851a21",
-        "type": "function",
-        "z": "27ce80b8fbcd825f",
-        "name": "send to user from chat",
-        "func": "let responseChatGPT;\n\n// Перевірка, чи статус-код менший за 201 або вказаний API ключ неправильний\nif (msg.statusCode < 201 || msg.payload !== \"Enter OPENAI_API_KEY\") {\n\n    // Встановлення значення відповіді з першого повідомлення від OpenAI API (якщо воно існує)\n    responseChatGPT = (msg.type !== 'custom message') ? msg.payload?.choices[0]?.message?.content : msg.payload;\n} else {\n\n    // Отримання повідомлення про помилку або вивід статус-коду та відповіді\n    const errorMessage = typeof msg.payload === 'string'\n        ? msg.payload\n        : msg.payload?.error.message;\n\n    // Встановлення значення відповіді з глобального повідомлення (якщо воно існує), або виведення деталей помилки\n    responseChatGPT = msg.UNIFIED_DATA.PREPARED_MESSAGES\n        ? msg.UNIFIED_DATA.PREPARED_MESSAGES.ERROR\n        : `statusCode: ${msg.statusCode} \\npayload: ${errorMessage}`;\n}\n\nlet history = global.get(`history${msg.UNIFIED_DATA.chat.chatId}`) || [];\n\nmsg.history.answer = responseChatGPT;\nmsg.history.usage = msg.payload.usage\nmsg.payload = responseChatGPT;\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
         "x": 960,
-        "y": 460,
+        "y": 100,
         "wires": [
             [
-                "81202c0403dde33b"
+                "2bd82ed72cf97054"
             ]
         ]
     },
     {
-        "id": "64b9d37bc58a85b5",
-        "type": "pinecone-vector-ubos",
+        "id": "7cb251a0fa3f1eb5",
+        "type": "debug",
         "z": "27ce80b8fbcd825f",
-        "name": "demoversion",
-        "actionType": "query",
-        "apiKey": "",
-        "environment": "",
-        "x": 1090,
-        "y": 80,
-        "wires": [
-            [
-                "1e4441c65c91be7d"
-            ]
-        ]
+        "name": "debug 778",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 340,
+        "wires": []
     },
     {
-        "id": "ad3b3c5b5929d833",
-        "type": "openai-ubos",
-        "z": "27ce80b8fbcd825f",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1490,
-        "y": 260,
-        "wires": [
-            [
-                "255969ad75851a21"
-            ]
-        ]
-    },
-    {
-        "id": "81202c0403dde33b",
-        "type": "function",
-        "z": "27ce80b8fbcd825f",
-        "name": "save history ",
-        "func": "msg.collection = \"users_messages\";\nmsg.history = {\n    ...msg.history,\n    endDate: Date.now(),\n    chat_id: msg.UNIFIED_DATA.chat.id,\n    user_name: msg.UNIFIED_DATA.chat.username,\n    type: msg.UNIFIED_DATA.chat.type\n};\nmsg.payload = msg.history;\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1210,
-        "y": 480,
-        "wires": [
-            [
-                "5b8bf81f0090d87e"
-            ]
-        ]
-    },
-    {
-        "id": "1e4441c65c91be7d",
-        "type": "function",
-        "z": "27ce80b8fbcd825f",
-        "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 80,
-        "wires": [
-            [
-                "ad3b3c5b5929d833"
-            ]
-        ]
-    },
-    {
-        "id": "5b8bf81f0090d87e",
-        "type": "link call",
-        "z": "27ce80b8fbcd825f",
-        "name": "",
-        "links": [
-            "8771d95b528d34d0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1390,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f5f406239f7034eb",
+        "id": "88aeefc112b748d2",
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "Chroma",
@@ -2310,162 +2269,18 @@
                 "module": "openai"
             }
         ],
-        "x": 920,
-        "y": 260,
+        "x": 960,
+        "y": 280,
         "wires": [
-            []
+            [
+                "17c61ad43fed7c57"
+            ]
         ]
     },
     {
-        "id": "fce050f17a55e8ae",
+        "id": "3677128a83383333",
         "type": "function",
         "z": "27ce80b8fbcd825f",
-        "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.metadatas[0].map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1290,
-        "y": 260,
-        "wires": [
-            [
-                "ad3b3c5b5929d833"
-            ]
-        ]
-    },
-    {
-        "id": "fd71939f7c474f99",
-        "type": "debug",
-        "z": "27ce80b8fbcd825f",
-        "name": "debug 778",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "9932f982f2b85e0c",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": "Input Data Unification",
-        "func": "const UNIFIED_DATA = {\n    BOT_NAME: msg.payload.BOT_NAME || null,\n    DATABASE: {\n        'TYPE_BASE': msg.payload.DATABASE?.TYPE_BASE || null,\n        'NAME_BASE': msg.payload.DATABASE?.NAME_BASE || null,\n    },\n    NUMBER_OF_ANSWERS_VDB: msg.payload.NUMBER_OF_ANSWERS_VDB ? msg.payload.NUMBER_OF_ANSWERS_VDB : 2, \n    PINECONE: {\n        INDEX: msg.payload.PINECONE?.INDEX || null,\n        API_KEY: msg.payload.PINECONE?.API_KEY || null,\n        ENVIRONMENT: msg.payload.PINECONE?.ENVIRONMENT || null,\n        BASE_URL: msg.payload.PINECONE?.BASE_URL || null,\n    },\n    CHROMA_LINK: msg.payload.CHROMA_LINK,\n    OPENAI_KEY: msg.payload.OPENAI_KEY,\n    BASE_URL: msg.payload.BASE_URL,\n    PREPARED_MESSAGES: {\n        WELCOME: msg.payload.PREPARED_MESSAGES?.WELCOME ? msg.payload.PREPARED_MESSAGES.WELCOME : 'HELLO! 🙂',\n        ERROR: msg.payload.PREPARED_MESSAGES?.ERROR ? msg.payload.PREPARED_MESSAGES.ERROR : 'Oops something went wrong 😔',\n    },\n    AI_SETTINGS: {\n        ANSWER_AS: msg.payload.AI_SETTINGS?.ANSWER_AS || 'Friend',\n        TONE: msg.payload.AI_SETTINGS?.TONE || 'Formal',\n        LANGUAGE: msg.payload.AI_SETTINGS?.LANGUAGE || 'English',\n        ANSWER_LENGTH: msg.payload.AI_SETTINGS?.ANSWER_LENGTH || 'Small',\n        PROMPT_CUSTOM: msg.payload.AI_SETTINGS?.PROMPT_CUSTOM || 'You are a polite assistant',\n        OPENAI_MODEL: msg.payload.AI_SETTINGS?.OPENAI_MODEL || 'gpt-3.5-turbo',\n    },\n    chat: {\n        type: msg.payload.chat?.type,\n        id: msg.payload.chat?.id && msg.payload.chat?.id.toString(),\n        username: msg.payload.chat?.username,\n        content: msg.payload.chat?.content,\n    },\n    startDate: Date.now(),\n};\n\nnode.warn(UNIFIED_DATA);\n\nmsg.OPENAI_API_KEY = UNIFIED_DATA.OPENAI_KEY;\nmsg.UNIFIED_DATA = UNIFIED_DATA;\nmsg.history = {\n    BOT_NAME: UNIFIED_DATA.BOT_NAME,\n    DATABASE: UNIFIED_DATA.DATABASE,\n    AI_SETTINGS: UNIFIED_DATA.AI_SETTINGS,\n    question: UNIFIED_DATA.chat.content,\n    startDate: UNIFIED_DATA.startDate,\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 200,
-        "y": 260,
-        "wires": [
-            [
-                "304b96f373d7eeb1"
-            ]
-        ]
-    },
-    {
-        "id": "304b96f373d7eeb1",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": "to AI embedding-ada",
-        "func": "msg.input = msg.UNIFIED_DATA.chat.content;\nmsg.model = \"text-embedding-ada-002\";\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 260,
-        "wires": [
-            [
-                "ef353082207224be"
-            ]
-        ]
-    },
-    {
-        "id": "ef353082207224be",
-        "type": "openai-ubos",
-        "z": "94e1286393fc0c9f",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 620,
-        "y": 260,
-        "wires": [
-            [
-                "8bedc53a98d759ad"
-            ]
-        ]
-    },
-    {
-        "id": "8bedc53a98d759ad",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": ">",
-        "func": "switch (true) {\n    case (msg.statusCode > 201 || msg.payload === \"Enter OPENAI_API_KEY\"): {\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"chroma\"): {\n        msg.type = 'chroma';\n\n        return [null, msg, null];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"pinecone\" &&\n        msg.UNIFIED_DATA.PINECONE.API_KEY !== null // in case we lost data in global\n    ): {\n            msg.type = 'pinecone';\n\n            return [msg, null, null];\n        }\n    default:\n        msg.payload = '⚙️ Please, check all settings including openAI key and Knowledge base. ⚙️';\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n}\n",
-        "outputs": 3,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 260,
-        "wires": [
-            [
-                "63b1ad110f39245c",
-                "d3e0b1fc753b08a9"
-            ],
-            [
-                "0eb8e0b8b360d30e",
-                "d3e0b1fc753b08a9"
-            ],
-            [
-                "bb9fc97818087d7b",
-                "d3e0b1fc753b08a9"
-            ]
-        ]
-    },
-    {
-        "id": "63b1ad110f39245c",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": "pinecone",
-        "func": "msg.PINECONE_API_KEY = msg.UNIFIED_DATA.PINECONE.API_KEY;\nmsg.PINECONE_ENVIRONMENT = msg.UNIFIED_DATA.PINECONE.ENVIRONMENT;\nmsg.PINECONE_BASE_URL = msg.UNIFIED_DATA.PINECONE.BASE_URL;\n\nmsg.payload = {\n    name: msg.UNIFIED_DATA.PINECONE.INDEX,\n    \"topK\": msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    \"includeMetadata\": true,\n    vector: msg.payload.data[0].embedding\n};\n\nnode.warn(msg.payload);\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 920,
-        "y": 80,
-        "wires": [
-            [
-                "61cb7e1e73c7dad3"
-            ]
-        ]
-    },
-    {
-        "id": "bb9fc97818087d7b",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
         "name": "send to user from chat",
         "func": "let responseChatGPT;\n\n// Перевірка, чи статус-код менший за 201 або вказаний API ключ неправильний\nif (msg.statusCode < 201 || msg.payload !== \"Enter OPENAI_API_KEY\") {\n\n    // Встановлення значення відповіді з першого повідомлення від OpenAI API (якщо воно існує)\n    responseChatGPT = (msg.type !== 'custom message') ? msg.payload?.choices[0]?.message?.content : msg.payload;\n} else {\n\n    // Отримання повідомлення про помилку або вивід статус-коду та відповіді\n    const errorMessage = typeof msg.payload === 'string'\n        ? msg.payload\n        : msg.payload?.error.message;\n\n    // Встановлення значення відповіді з глобального повідомлення (якщо воно існує), або виведення деталей помилки\n    responseChatGPT = msg.UNIFIED_DATA.PREPARED_MESSAGES\n        ? msg.UNIFIED_DATA.PREPARED_MESSAGES.ERROR\n        : `statusCode: ${msg.statusCode} \\npayload: ${errorMessage}`;\n}\n\nlet history = global.get(`history${msg.UNIFIED_DATA.chat.chatId}`) || [];\n\nmsg.history.answer = responseChatGPT;\nmsg.history.usage = msg.payload.usage\nmsg.payload = responseChatGPT;\n\nreturn msg;\n",
         "outputs": 1,
@@ -2473,34 +2288,50 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 460,
+        "x": 1000,
+        "y": 480,
         "wires": [
             [
-                "1f5f757eb6330320"
+                "7f5f8f7f9a4f088d"
             ]
         ]
     },
     {
-        "id": "61cb7e1e73c7dad3",
+        "id": "2bd82ed72cf97054",
         "type": "pinecone-vector-ubos",
-        "z": "94e1286393fc0c9f",
+        "z": "27ce80b8fbcd825f",
         "name": "demoversion",
         "actionType": "query",
         "apiKey": "",
         "environment": "",
-        "x": 1090,
-        "y": 80,
+        "x": 1130,
+        "y": 100,
         "wires": [
             [
-                "5b36ee6803187a07"
+                "efc2c7680dbc24cc"
             ]
         ]
     },
     {
-        "id": "b1db7864e152f6c8",
+        "id": "17c61ad43fed7c57",
+        "type": "chromadb-collection",
+        "z": "27ce80b8fbcd825f",
+        "remoteServer": "92b09c9cd170f8a8",
+        "name": "",
+        "collection": "",
+        "operation": "query",
+        "x": 1140,
+        "y": 280,
+        "wires": [
+            [
+                "be9cfd37213efd9a"
+            ]
+        ]
+    },
+    {
+        "id": "4b0147ed32666687",
         "type": "openai-ubos",
-        "z": "94e1286393fc0c9f",
+        "z": "27ce80b8fbcd825f",
         "name": "genarate unswer",
         "model": "gpt-3.5-turbo",
         "temperature": 0.02,
@@ -2514,18 +2345,18 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1490,
-        "y": 260,
+        "x": 1530,
+        "y": 280,
         "wires": [
             [
-                "bb9fc97818087d7b"
+                "3677128a83383333"
             ]
         ]
     },
     {
-        "id": "1f5f757eb6330320",
+        "id": "7f5f8f7f9a4f088d",
         "type": "function",
-        "z": "94e1286393fc0c9f",
+        "z": "27ce80b8fbcd825f",
         "name": "save history ",
         "func": "msg.collection = \"users_messages\";\nmsg.history = {\n    ...msg.history,\n    endDate: Date.now(),\n    chat_id: msg.UNIFIED_DATA.chat.id,\n    user_name: msg.UNIFIED_DATA.chat.username,\n    type: msg.UNIFIED_DATA.chat.type\n};\nmsg.payload = msg.history;\n\nreturn msg;\n",
         "outputs": 1,
@@ -2533,19 +2364,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
-        "y": 480,
+        "x": 1250,
+        "y": 500,
         "wires": [
             [
-                "72245df673a18710",
-                "d1c750537f5a4d08"
+                "758552b189761490"
             ]
         ]
     },
     {
-        "id": "5b36ee6803187a07",
+        "id": "efc2c7680dbc24cc",
         "type": "function",
-        "z": "94e1286393fc0c9f",
+        "z": "27ce80b8fbcd825f",
         "name": "create vector",
         "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
         "outputs": 1,
@@ -2553,107 +2383,48 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1270,
-        "y": 80,
+        "x": 1310,
+        "y": 100,
         "wires": [
             [
-                "b1db7864e152f6c8"
+                "4b0147ed32666687"
             ]
         ]
     },
     {
-        "id": "72245df673a18710",
+        "id": "be9cfd37213efd9a",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "create vector",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.metadatas[0].map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 280,
+        "wires": [
+            [
+                "4b0147ed32666687"
+            ]
+        ]
+    },
+    {
+        "id": "758552b189761490",
         "type": "link call",
-        "z": "94e1286393fc0c9f",
+        "z": "27ce80b8fbcd825f",
         "name": "",
         "links": [
             "a142709ade270efa"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1390,
-        "y": 480,
+        "x": 1450,
+        "y": 500,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "0eb8e0b8b360d30e",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": "Chroma",
-        "func": "// const vector = Array(1536).fill(0); // basic with zeros vectors for testing\nconst vector = msg.payload.data[0].embedding;\n\nmsg.collection = msg.UNIFIED_DATA.DATABASE.NAME_BASE;\nmsg.payload = {\n    queryEmbeddings: vector,\n    nResults: msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    query_text: [msg.UNIFIED_DATA.chat.content],\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "chromadb",
-                "module": "chromadb"
-            },
-            {
-                "var": "openai",
-                "module": "openai"
-            }
-        ],
-        "x": 920,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c64622a391f36f3a",
-        "type": "function",
-        "z": "94e1286393fc0c9f",
-        "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result);\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.metadatas[0].map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1290,
-        "y": 260,
-        "wires": [
-            [
-                "b1db7864e152f6c8"
-            ]
-        ]
-    },
-    {
-        "id": "d3e0b1fc753b08a9",
-        "type": "debug",
-        "z": "94e1286393fc0c9f",
-        "name": "debug 778",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "d1c750537f5a4d08",
-        "type": "debug",
-        "z": "94e1286393fc0c9f",
-        "name": "debug 785",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1250,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "bf596eb6b97b1752",
@@ -2684,19 +2455,6 @@
         "wires": []
     },
     {
-        "id": "274f6c95fab0efa2",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "71cb7453ba91face",
-        "name": "",
-        "x": 490,
-        "y": 560,
-        "wires": [
-            [
-                "85ea80ed20bd46fc"
-            ]
-        ]
-    },
-    {
         "id": "fdf066d698790894",
         "type": "function",
         "z": "71cb7453ba91face",
@@ -2710,9 +2468,7 @@
         "x": 310,
         "y": 560,
         "wires": [
-            [
-                "274f6c95fab0efa2"
-            ]
+            []
         ]
     },
     {
@@ -5956,7 +5712,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "6f179b2f1541424f",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo:true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Friend-Data',\n    type: \"Files\",\n    file: `Friend-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo:true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6197,7 +5953,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "6f179b2f1541424f",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Support-Data',\n    type: \"Files\",\n    file: `Support-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8437,20 +8193,6 @@
         "wires": []
     },
     {
-        "id": "68f8d11c5e84bb07",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "f48a32dcae7a25f2",
-        "name": "",
-        "x": 580,
-        "y": 2520,
-        "wires": [
-            [
-                "451509eebdbcb518",
-                "f12c95c43f110748"
-            ]
-        ]
-    },
-    {
         "id": "50602f5310ba8bfe",
         "type": "function",
         "z": "f48a32dcae7a25f2",
@@ -8464,9 +8206,7 @@
         "x": 410,
         "y": 2520,
         "wires": [
-            [
-                "68f8d11c5e84bb07"
-            ]
+            []
         ]
     },
     {
@@ -17267,7 +17007,7 @@
         "z": "d41b21524ec70b11",
         "g": "b2e9a721546c936c",
         "name": "to mongoDB",
-        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n\n    deleted: false\n\n}\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    demo: { $ne: true },\n    deleted: false\n\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19117,20 +18857,6 @@
         ]
     },
     {
-        "id": "b618d53f78794cd7",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "7e6aa2730f443095",
-        "g": "565b460efc424949",
-        "name": "",
-        "x": 740,
-        "y": 260,
-        "wires": [
-            [
-                "bc82d5b33fad169c"
-            ]
-        ]
-    },
-    {
         "id": "ec2a8976af1ab25c",
         "type": "function",
         "z": "7e6aa2730f443095",
@@ -19146,7 +18872,6 @@
         "y": 260,
         "wires": [
             [
-                "b618d53f78794cd7",
                 "191d6397de1f2fbb"
             ]
         ]
@@ -19205,7 +18930,6 @@
         "y": 600,
         "wires": [
             [
-                "2ec588fe31325a60",
                 "6e6dc6f37d2246ba"
             ]
         ]
@@ -19227,20 +18951,6 @@
         "x": 550,
         "y": 640,
         "wires": []
-    },
-    {
-        "id": "2ec588fe31325a60",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "7e6aa2730f443095",
-        "g": "dc22c8cd00559c20",
-        "name": "",
-        "x": 720,
-        "y": 600,
-        "wires": [
-            [
-                "1ac9fb5f6956b43f"
-            ]
-        ]
     },
     {
         "id": "1ac9fb5f6956b43f",
@@ -19278,7 +18988,6 @@
         "y": 1140,
         "wires": [
             [
-                "39ee5faa9486aed1",
                 "1e70dcbea7611d3b"
             ]
         ]
@@ -19300,20 +19009,6 @@
         "x": 610,
         "y": 1180,
         "wires": []
-    },
-    {
-        "id": "39ee5faa9486aed1",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "7e6aa2730f443095",
-        "g": "df2783a5bd032b64",
-        "name": "",
-        "x": 780,
-        "y": 1140,
-        "wires": [
-            [
-                "bdd1597318162d39"
-            ]
-        ]
     },
     {
         "id": "bdd1597318162d39",
@@ -19351,7 +19046,6 @@
         "y": 1620,
         "wires": [
             [
-                "fa2032845cbe2a4e",
                 "0e084b539c7c6335"
             ]
         ]
@@ -19373,21 +19067,6 @@
         "x": 610,
         "y": 1660,
         "wires": []
-    },
-    {
-        "id": "fa2032845cbe2a4e",
-        "type": "subflow:94e1286393fc0c9f",
-        "z": "7e6aa2730f443095",
-        "g": "498a6f869d4e009a",
-        "name": "",
-        "x": 780,
-        "y": 1620,
-        "wires": [
-            [
-                "eb3f6fe23b148c9c",
-                "f255e6f698e8c7f2"
-            ]
-        ]
     },
     {
         "id": "eb3f6fe23b148c9c",
