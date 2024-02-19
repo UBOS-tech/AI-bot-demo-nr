@@ -258,9 +258,7 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 679,
-        "w": 672,
-        "h": 642
+        "y": 679
     },
     {
         "id": "23033541e553eb36",
@@ -282,9 +280,7 @@
             "39f863832fe14deb"
         ],
         "x": 714,
-        "y": 679,
-        "w": 1012,
-        "h": 122
+        "y": 679
     },
     {
         "id": "2bad0f12f5a9659f",
@@ -324,9 +320,7 @@
             "10d15004c30b1bb5"
         ],
         "x": 714,
-        "y": 839,
-        "w": 1452,
-        "h": 482
+        "y": 839
     },
     {
         "id": "7382602cc2b54357",
@@ -364,9 +358,7 @@
             "a42302c6b56d6335"
         ],
         "x": 854,
-        "y": 1359,
-        "w": 1172,
-        "h": 402
+        "y": 1359
     },
     {
         "id": "628c8aecc019f08b",
@@ -415,9 +407,7 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1359,
-        "w": 812,
-        "h": 642
+        "y": 1359
     },
     {
         "id": "b2e9a721546c936c",
@@ -461,10 +451,14 @@
             "ac28fa444438740d",
             "29e8cc38a78022ce",
             "2710be5a8526ba3e",
-            "d85d31f6e5e71638"
+            "d85d31f6e5e71638",
+            "f42471de14bb6f8e",
+            "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -560,9 +554,7 @@
             "5e4b1f6bcc4fc94c"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1912,
-        "h": 622
+        "y": 19
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -1051,9 +1043,7 @@
             "166fae3726e1c702"
         ],
         "x": 34,
-        "y": 2059,
-        "w": 3652,
-        "h": 922
+        "y": 2059
     },
     {
         "id": "96ff04cf0133a4da",
@@ -1071,10 +1061,8 @@
             "91a473e0cf00b81f",
             "69d78287c809cd74"
         ],
-        "x": 34,
-        "y": 2839,
-        "w": 932,
-        "h": 82
+        "x": 44,
+        "y": 2839
     },
     {
         "id": "6f179b2f1541424f",
@@ -1157,9 +1145,7 @@
             "29b4e18584450fae"
         ],
         "x": 24,
-        "y": 19,
-        "w": 1842,
-        "h": 1068
+        "y": 19
     },
     {
         "id": "d5f3c34635f35708",
@@ -1704,7 +1690,10 @@
             "6d8866248dfa9982",
             "bca1b3b1b1c5d719",
             "ac77ccc7ab44f8b4",
-            "0c63060d614dd0f5"
+            "0c63060d614dd0f5",
+            "3324634c09c548bf",
+            "3d046ba4c916941d",
+            "98d191edffa2ef5e"
         ],
         "x": 44,
         "y": 59,
@@ -1735,9 +1724,26 @@
             "10fad508f6725a5b"
         ],
         "x": 64,
-        "y": 899,
-        "w": 772,
-        "h": 162
+        "y": 899
+    },
+    {
+        "id": "18e308d36025c38f",
+        "type": "group",
+        "z": "561be8df1dd04335",
+        "name": "Check quest",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a67762fee3725fd4",
+            "5c447cd6e78fb9b2",
+            "ec6c400f12d9fa78",
+            "d0b4fc85e5fed281"
+        ],
+        "x": 14,
+        "y": 2799,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "4b07803a52e468f5",
@@ -4861,7 +4867,8 @@
         "y": 300,
         "wires": [
             [
-                "c79244f4f2abc1d9"
+                "c79244f4f2abc1d9",
+                "ffb7c8ece15c5f20"
             ]
         ]
     },
@@ -5335,6 +5342,91 @@
         "x": 170,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "ffb7c8ece15c5f20",
+        "type": "function",
+        "z": "88bba2923a31d3e7",
+        "name": "function 637",
+        "func": "msg.usage = msg.payload?.usage;\n\nmsg.collection = 'users_messages';\nmsg.payload = { email: msg.email };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 285,
+        "y": 360,
+        "wires": [
+            [
+                "3324634c09c548bf"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3324634c09c548bf",
+        "type": "link call",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 345,
+        "y": 360,
+        "wires": [
+            [
+                "3d046ba4c916941d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3d046ba4c916941d",
+        "type": "function",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "function 635",
+        "func": "if (msg.payload.length > 1 && msg.statusCode === 200) {\n    msg.method = \"POST\";\n    msg.url = \"http://localhost:1880/checkUserQuest\";\n\n    msg.payload = {\n        questId: \"65ce8b11d3c0480011b0dfad\", // Basic | AI chat bot\n        data: msg.usage\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 405,
+        "y": 360,
+        "wires": [
+            [
+                "98d191edffa2ef5e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "98d191edffa2ef5e",
+        "type": "http request",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 465,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "l": false
     },
     {
         "id": "bea87d6cc1a8ffcf",
@@ -8238,7 +8330,9 @@
         "x": 410,
         "y": 2520,
         "wires": [
-            []
+            [
+                "88e4556701e3ddda"
+            ]
         ]
     },
     {
@@ -8748,6 +8842,19 @@
             ],
             [
                 "952660bbf79e91b4"
+            ]
+        ]
+    },
+    {
+        "id": "88e4556701e3ddda",
+        "type": "subflow:27ce80b8fbcd825f",
+        "z": "f48a32dcae7a25f2",
+        "name": "",
+        "x": 580,
+        "y": 2520,
+        "wires": [
+            [
+                "451509eebdbcb518"
             ]
         ]
     },
@@ -17368,7 +17475,8 @@
         "y": 440,
         "wires": [
             [
-                "9c4b61a5066b93c2"
+                "9c4b61a5066b93c2",
+                "3422465e9d16734b"
             ]
         ]
     },
@@ -17710,6 +17818,51 @@
         "x": 1030,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "3422465e9d16734b",
+        "type": "function",
+        "z": "d41b21524ec70b11",
+        "g": "b2e9a721546c936c",
+        "name": "function 636",
+        "func": "if (parseInt(msg.payload.total) >= 100) {\n    msg.method = \"POST\";\n    msg.url = \"http://localhost:1880/checkUserQuest\";\n\n    msg.payload = {\n        questId: \"65cf2d4fd3c0480011b0dfb6\", // INTERMEDIATE | AI chat bot\n        data: { success: true }\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 575,
+        "y": 400,
+        "wires": [
+            [
+                "f42471de14bb6f8e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f42471de14bb6f8e",
+        "type": "http request",
+        "z": "d41b21524ec70b11",
+        "g": "b2e9a721546c936c",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 645,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "l": false
     },
     {
         "id": "1f3847a732f60a22",
@@ -26186,5 +26339,81 @@
                 "fb3904267594997d"
             ]
         ]
+    },
+    {
+        "id": "a67762fee3725fd4",
+        "type": "http in",
+        "z": "561be8df1dd04335",
+        "g": "18e308d36025c38f",
+        "name": "",
+        "url": "/checkUserQuest",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 2840,
+        "wires": [
+            [
+                "5c447cd6e78fb9b2"
+            ]
+        ]
+    },
+    {
+        "id": "5c447cd6e78fb9b2",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "g": "18e308d36025c38f",
+        "name": "req",
+        "func": "msg.method = \"POST\";\nmsg.url = `http://nodered-svc.nodered:1880/quest/finishQuest`;\n\nmsg.payload = {\n    userId: env.get(\"USER_ID\"),\n    ...msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2840,
+        "wires": [
+            [
+                "ec6c400f12d9fa78"
+            ]
+        ]
+    },
+    {
+        "id": "ec6c400f12d9fa78",
+        "type": "http request",
+        "z": "561be8df1dd04335",
+        "g": "18e308d36025c38f",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 425,
+        "y": 2840,
+        "wires": [
+            [
+                "d0b4fc85e5fed281"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d0b4fc85e5fed281",
+        "type": "http response",
+        "z": "561be8df1dd04335",
+        "g": "18e308d36025c38f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 2840,
+        "wires": []
     }
 ]
