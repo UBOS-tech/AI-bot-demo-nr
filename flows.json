@@ -464,9 +464,7 @@
             "d85d31f6e5e71638"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -499,9 +497,7 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 422
+        "y": 19
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -668,7 +664,9 @@
             "e5114daa61488a15"
         ],
         "x": 2334,
-        "y": 399
+        "y": 399,
+        "w": 1322,
+        "h": 702
     },
     {
         "id": "d304cf774581307a",
@@ -712,7 +710,9 @@
             "94579d632128cd68"
         ],
         "x": 2334,
-        "y": 19
+        "y": 19,
+        "w": 1352,
+        "h": 362
     },
     {
         "id": "1ad265cdd5feb53e",
@@ -825,7 +825,9 @@
             "5568b48503199d40"
         ],
         "x": 14,
-        "y": 1259
+        "y": 1259,
+        "w": 1312,
+        "h": 1462
     },
     {
         "id": "42b214503281ca7c",
@@ -920,7 +922,9 @@
             "f447882cf9d10a8c"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 2292,
+        "h": 1202
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -1067,9 +1071,9 @@
             "91a473e0cf00b81f",
             "69d78287c809cd74"
         ],
-        "x": 44,
+        "x": 34,
         "y": 2839,
-        "w": 922,
+        "w": 932,
         "h": 82
     },
     {
@@ -1158,34 +1162,6 @@
         "h": 1068
     },
     {
-        "id": "3b00cbad37634582",
-        "type": "group",
-        "z": "f48a32dcae7a25f2",
-        "g": "6f179b2f1541424f",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "85e8a6c284890bdf",
-            "d85a9a2bdebb993e",
-            "64c38b065779a6ba",
-            "4448a086d3644f88",
-            "43105ddd9787adf4",
-            "7546b8ee34e302ea",
-            "10fad508f6725a5b"
-        ],
-        "x": 64,
-        "y": 899,
-        "w": 772,
-        "h": 162
-    },
-    {
         "id": "d5f3c34635f35708",
         "type": "group",
         "z": "7e6aa2730f443095",
@@ -1213,12 +1189,11 @@
             "75f237308b6bf867",
             "fdabb9a2863f4f8f",
             "ca333a2f720b8f48",
-            "38fa734109685e32",
-            "f558364db4b5984b"
+            "38fa734109685e32"
         ],
-        "x": 54,
+        "x": 64,
         "y": 39,
-        "w": 1282,
+        "w": 1272,
         "h": 382
     },
     {
@@ -1250,7 +1225,6 @@
             "42747b248a3f5e9f",
             "d6fb626c700b8c18",
             "b95126fdb0138f55",
-            "f1fbfd3fc7f7f638",
             "1532d34b97a987c7"
         ],
         "x": 74,
@@ -1289,7 +1263,6 @@
             "f37d7f5653fefc6b",
             "860abfba7d56164e",
             "8098a62084a88a1f",
-            "d4e6535531ec969a",
             "5274b2fd8878f639"
         ],
         "x": 64,
@@ -1327,7 +1300,6 @@
             "5f6f2ccf5caf187e",
             "e43238c20fc13636",
             "7944d72a8e06b6db",
-            "081fceadbc5aa75e",
             "f7307a19280a4d92"
         ],
         "x": 74,
@@ -1738,6 +1710,34 @@
         "y": 59,
         "w": 1472,
         "h": 462
+    },
+    {
+        "id": "3b00cbad37634582",
+        "type": "group",
+        "z": "f48a32dcae7a25f2",
+        "g": "6f179b2f1541424f",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "85e8a6c284890bdf",
+            "d85a9a2bdebb993e",
+            "64c38b065779a6ba",
+            "4448a086d3644f88",
+            "43105ddd9787adf4",
+            "7546b8ee34e302ea",
+            "10fad508f6725a5b"
+        ],
+        "x": 64,
+        "y": 899,
+        "w": 772,
+        "h": 162
     },
     {
         "id": "4b07803a52e468f5",
@@ -3303,52 +3303,6 @@
             [
                 "db31f5dfa738f3d8"
             ]
-        ]
-    },
-    {
-        "id": "78e064c8e75d945f",
-        "type": "inject",
-        "z": "71cb7453ba91face",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 180,
-        "y": 1160,
-        "wires": [
-            [
-                "ed18aeb2b560d1ae"
-            ]
-        ]
-    },
-    {
-        "id": "ed18aeb2b560d1ae",
-        "type": "function",
-        "z": "71cb7453ba91face",
-        "name": "function 633",
-        "func": "const a = env.get('nodered');\nnode.warn(a);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 1160,
-        "wires": [
-            []
         ]
     },
     {
@@ -10578,7 +10532,7 @@
         "z": "5e7416993281e99d",
         "g": "6f53df0634427ab8",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() : \"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"telegram\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() : \"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    // knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    // knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"telegram\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
