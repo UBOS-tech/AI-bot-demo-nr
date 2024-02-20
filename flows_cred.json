@@ -3,25 +3,12 @@
         "user": "${AIBOTDB-MONGO-USER-NAME}",
         "password": "${AIBOTDB-MONGO-PASSWORD}"
     },
-    "30a581e7169ce66b": {},
-    "baf069bd70255c7f": {},
     "4b07803a52e468f5": {
         "token": "{global.get('telegram').BOT_TOKEN}"
     },
-    "c1d982bbf3464838": {},
     "a32b312f472ff9d3": {
         "token": "6851144846:AAFN9436UTwqQRcevfxhLM-nVHoo8gvk_Sg"
     },
-    "fb4f92ede19d9f64": {},
-    "323e280e2f602e36": {},
-    "ad3b3c5b5929d833": {},
-    "4170e9749e7e4267": {},
-    "310415638cd1160d": {},
-    "9b0ef44c0d52f840": {},
-    "64b9d37bc58a85b5": {},
-    "b9a0f273eb51f204": {},
-    "e009782673c371fb": {},
-    "9ffebe85851d2606": {},
-    "2052acd5dde5e3e8": {},
-    "1d399d7e2563d8e4": {}
+    "2e682b4264e3c155": {},
+    "290dd574c1b5afa1": {}
 }
