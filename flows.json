@@ -456,7 +456,9 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -654,7 +656,9 @@
             "e5114daa61488a15"
         ],
         "x": 2334,
-        "y": 399
+        "y": 399,
+        "w": 1322,
+        "h": 702
     },
     {
         "id": "d304cf774581307a",
@@ -698,7 +702,9 @@
             "94579d632128cd68"
         ],
         "x": 2334,
-        "y": 19
+        "y": 19,
+        "w": 1352,
+        "h": 362
     },
     {
         "id": "1ad265cdd5feb53e",
@@ -811,7 +817,9 @@
             "5568b48503199d40"
         ],
         "x": 14,
-        "y": 1259
+        "y": 1259,
+        "w": 1312,
+        "h": 1462
     },
     {
         "id": "42b214503281ca7c",
@@ -906,7 +914,9 @@
             "f447882cf9d10a8c"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 2292,
+        "h": 1202
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -955,7 +965,9 @@
             "bd6c2ef535cd2431"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 1902,
+        "h": 402
     },
     {
         "id": "78ec20634862824d",
@@ -1244,7 +1256,9 @@
             "eaf66c35a0857e01"
         ],
         "x": 74,
-        "y": 279
+        "y": 279,
+        "w": 3112,
+        "h": 302
     },
     {
         "id": "55b42f036281abed",
@@ -1271,7 +1285,9 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "44336aabd4cc8aba",
@@ -1298,7 +1314,9 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "6f53df0634427ab8",
@@ -1328,7 +1346,9 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1355,7 +1375,9 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1212,
+        "h": 202
     },
     {
         "id": "af65f71384d80c06",
@@ -1382,7 +1404,9 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1403,7 +1427,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2519,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1438,7 +1464,9 @@
             "c542eb9521c6b170"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 1932,
+        "h": 222
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1468,7 +1496,9 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 1192,
+        "h": 202
     },
     {
         "id": "d8a434ae844324e0",
@@ -1495,7 +1525,9 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279
+        "y": 2279,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1529,7 +1561,9 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 639
+        "y": 639,
+        "w": 1232,
+        "h": 422
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1573,7 +1607,9 @@
             "98d191edffa2ef5e"
         ],
         "x": 44,
-        "y": 59
+        "y": 59,
+        "w": 1472,
+        "h": 462
     },
     {
         "id": "18e308d36025c38f",
@@ -1590,7 +1626,9 @@
             "d0b4fc85e5fed281"
         ],
         "x": 14,
-        "y": 2799
+        "y": 2799,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "478d796d1a70f361",
@@ -7414,7 +7452,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents:  msg.nameBase + '.txt'\n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents:  msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7707,7 +7745,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nmsg.nameBase = 'Friendly-Chat';\nmsg.typeBase = 'chroma';\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\nconst collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\"\nmsg.knowlegebaseId = objectid()\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true\n}\nreturn msg;\n\n",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'Friendly-Chat';\nmsg.typeBase = 'chroma';\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder })\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\"\nmsg.knowlegebaseId = objectid()\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true\n}\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8094,7 +8132,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt' \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt' \n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8273,7 +8311,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase })\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt'\n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase })\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8610,7 +8648,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "Fill standard prompt",
-        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Technical support\",\n    \"tone\": \"Formal\",\n    \"language\": \"English\",\n    \"prompt_custom\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
+        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Technical support\",\n    \"tone\": \"Formal\",\n    \"language\": \"Portuguese\",\n    \"prompt_custom\": \"As the HR representative of UBOS Company, assume the role and respond to user inquiries based on the provided information:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8630,7 +8668,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "Fill standard prompt",
-        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Technical support\",\n    \"tone\": \"Formal\",\n    \"language\": \"English\",\n    \"prompt_custom\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
+        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Technical support\",\n    \"tone\": \"Formal\",\n    \"language\": \"Ukrainian\",\n    \"prompt_custom\": \"Assume the role of a support bot for UBOS Company. Provide responses to user questions in line with the information available.:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8706,7 +8744,9 @@
         "x": 180,
         "y": 1080,
         "wires": [
-            []
+            [
+                "39d64a121b1f0d72"
+            ]
         ]
     },
     {
@@ -8808,7 +8848,9 @@
         "x": 180,
         "y": 1040,
         "wires": [
-            []
+            [
+                "270cd5f14ea98f9f"
+            ]
         ]
     },
     {
@@ -11436,7 +11478,7 @@
         "z": "5e7416993281e99d",
         "g": "21ac3a19bfa57a66",
         "name": "get settings",
-        "func": "\nmsg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API:  \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE:  \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n        ANSWER_LENGTH: \"\",\n        ANSWER_AS:  \"\",\n        TONE: \"\",\n        LANGUAGE: \"\",\n        PROMPT_CUSTOM: \"\",\n        TYPE_BASE: \"\",\n        NAME_BASE: \"\"\n    },    \n};\nreturn msg",
+        "func": "\nmsg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API:  \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE:  \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n        ANSWER_LENGTH: \"\",\n        ANSWER_AS:  \"\",\n        TONE: \"\",\n        LANGUAGE: \"\",\n        PROMPT_CUSTOM: \"\",\n        TYPE_BASE: \"\",\n        NAME_BASE: \"\"\n    },\n    otherTechVars: global.get(\"otherTechVars\"),\n};\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12433,7 +12475,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 220,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "72e75fc6c28edbbb"
@@ -12449,7 +12491,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1180,
-        "y": 880,
+        "y": 840,
         "wires": []
     },
     {
@@ -12458,17 +12500,18 @@
         "z": "5e7416993281e99d",
         "g": "7348d6f27f4f25e5",
         "name": "set filename",
-        "func": "msg.filename = '/data/customPrompts.json'\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
+        "func": "node.warn(msg.payload.isPromptDefault);\n\nif (msg.payload.isPromptDefault === false) {\n    const updateOtherTechVars = {\n        ...global.get('otherTechVars'),\n        isPromptDefault: false,\n    };\n\n    global.set(\"otherTechVars\", updateOtherTechVars);\n}\n\nmsg.filename = '/data/customPrompts.json';\n\ndelete msg.payload.isPromptDefault;\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
-                "c68696d78b845950"
+                "c68696d78b845950",
+                "9f87374d7ebf2d3b"
             ]
         ]
     },
@@ -12485,7 +12528,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 860,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "d6b7c1633ade4e77"
@@ -12498,14 +12541,14 @@
         "z": "5e7416993281e99d",
         "g": "7348d6f27f4f25e5",
         "name": "return res",
-        "func": "msg.payload={\n    success: true,\n    payload: \"Data saved successfully\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
+        "func": "msg.payload = {\n    success: true,\n    payload: \"Data saved successfully\"\n};\n\nmsg.statusCode = 200;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 1000,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "26837d2e12d903d5"
@@ -12522,7 +12565,7 @@
         "action": "",
         "pretty": false,
         "x": 730,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "feabf115ddcd503f"
@@ -12565,7 +12608,7 @@
         "z": "5e7416993281e99d",
         "g": "7348d6f27f4f25e5",
         "name": "ENV",
-        "func": "const data = msg.payload;\n\n\nlet process_env = data;\n\nglobal.set(\"customPrompts\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\nlet process_env = data;\n\nglobal.set(\"customPrompts\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12738,7 +12781,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 500,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "6502eb7bffdb7f2b"
@@ -12755,7 +12798,7 @@
         "action": "obj",
         "pretty": false,
         "x": 595,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "9464348869bc10b2"
@@ -12776,7 +12819,7 @@
         "finalize": "",
         "libs": [],
         "x": 710,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "89dadc7992ba36b7"
