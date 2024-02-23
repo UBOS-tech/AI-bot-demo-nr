@@ -202,7 +202,7 @@
         ],
         "out": [
             {
-                "x": 1200,
+                "x": 1240,
                 "y": 440,
                 "wires": [
                     {
@@ -456,9 +456,7 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -656,7 +654,7 @@
             "e5114daa61488a15"
         ],
         "x": 2334,
-        "y": 399,
+        "y": 559,
         "w": 1322,
         "h": 702
     },
@@ -698,13 +696,15 @@
             "c6bdf397d6253db5",
             "7c508ff184afbc6a",
             "9de4cd2a05b57af9",
-            "84f00a58be3f059c",
-            "94579d632128cd68"
+            "94579d632128cd68",
+            "fedea034da0b6756",
+            "1770bf776c30c186",
+            "04fe1fa2488772f8"
         ],
         "x": 2334,
-        "y": 19,
-        "w": 1352,
-        "h": 362
+        "y": 39,
+        "w": 1332,
+        "h": 502
     },
     {
         "id": "1ad265cdd5feb53e",
@@ -1062,9 +1062,7 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2839,
-        "w": 932,
-        "h": 82
+        "y": 2839
     },
     {
         "id": "d5f3c34635f35708",
@@ -1094,7 +1092,8 @@
             "75f237308b6bf867",
             "fdabb9a2863f4f8f",
             "ca333a2f720b8f48",
-            "38fa734109685e32"
+            "38fa734109685e32",
+            "bb8dcd37c0b9c95b"
         ],
         "x": 64,
         "y": 39
@@ -1256,9 +1255,7 @@
             "eaf66c35a0857e01"
         ],
         "x": 74,
-        "y": 279,
-        "w": 3112,
-        "h": 302
+        "y": 279
     },
     {
         "id": "55b42f036281abed",
@@ -1285,9 +1282,7 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "44336aabd4cc8aba",
@@ -1314,9 +1309,7 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "6f53df0634427ab8",
@@ -1346,9 +1339,7 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299,
-        "w": 1192,
-        "h": 222
+        "y": 1299
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1375,9 +1366,7 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559,
-        "w": 1212,
-        "h": 202
+        "y": 1559
     },
     {
         "id": "af65f71384d80c06",
@@ -1404,9 +1393,7 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799,
-        "w": 1152,
-        "h": 202
+        "y": 1799
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1427,9 +1414,7 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519,
-        "w": 572,
-        "h": 162
+        "y": 2519
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1464,9 +1449,7 @@
             "c542eb9521c6b170"
         ],
         "x": 74,
-        "y": 19,
-        "w": 1932,
-        "h": 222
+        "y": 19
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1496,9 +1479,7 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039,
-        "w": 1192,
-        "h": 202
+        "y": 2039
     },
     {
         "id": "d8a434ae844324e0",
@@ -1525,9 +1506,7 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279,
-        "w": 1232,
-        "h": 202
+        "y": 2279
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1561,9 +1540,7 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 639,
-        "w": 1232,
-        "h": 422
+        "y": 639
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1721,9 +1698,7 @@
             "204e41e815b84721"
         ],
         "x": 44,
-        "y": 39,
-        "w": 1922,
-        "h": 1168
+        "y": 39
     },
     {
         "id": "204e41e815b84721",
@@ -1749,9 +1724,7 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959,
-        "w": 852,
-        "h": 222
+        "y": 959
     },
     {
         "id": "d2fba984a07da085",
@@ -2262,8 +2235,8 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": ">",
-        "func": "switch (true) {\n    case (msg.statusCode > 201 || msg.payload === \"Enter OPENAI_API_KEY\"): {\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"chroma\"): {\n        msg.type = 'chroma';\n\n        return [null, msg, null];\n    }\n    case (msg.UNIFIED_DATA.DATABASE.TYPE_BASE === \"pinecone\" &&\n        msg.UNIFIED_DATA.PINECONE.API_KEY !== null // in case we lost data in global\n    ): {\n            msg.type = 'pinecone';\n\n            return [msg, null, null];\n        }\n    default:\n        msg.payload = '⚙️ Please, check all settings including openAI key and Knowledge base. ⚙️';\n        msg.type = 'custom message';\n\n        return [null, null, msg];\n}\n",
-        "outputs": 3,
+        "func": "const typeBase = msg.UNIFIED_DATA.DATABASE.TYPE_BASE;\n\nswitch (true) {\n    case (typeBase === \"pinecone\" &&\n        msg.UNIFIED_DATA.PINECONE.API_KEY !== null // in case we lost data in global\n    ): {\n            msg.type = 'pinecone';\n\n            return [msg, null, null];\n        }\n\n    case (typeBase === \"chroma\"): {\n        msg.type = 'chroma';\n\n        return [null, msg, null];\n    }\n\n    case (typeBase === null): {\n            msg.type = 'onlyGPT';\n\n            return [null, null, msg, null];\n        }\n\n    case (msg.statusCode > 201 || msg.payload === \"Enter OPENAI_API_KEY\"): {\n        msg.type = 'custom message';\n\n        return [null, null, null, msg];\n    }\n\n    default:\n        msg.payload = '⚙️ Please, check all settings including openAI key and Knowledge base. ⚙️';\n        msg.type = 'custom message';\n\n        return [null, null, null, msg];\n}\n",
+        "outputs": 4,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -2272,16 +2245,16 @@
         "y": 280,
         "wires": [
             [
-                "20d4b9e5daacd0f6",
-                "7cb251a0fa3f1eb5"
+                "20d4b9e5daacd0f6"
             ],
             [
-                "88aeefc112b748d2",
-                "7cb251a0fa3f1eb5"
+                "88aeefc112b748d2"
             ],
             [
-                "3677128a83383333",
-                "7cb251a0fa3f1eb5"
+                "625f2429f567775e"
+            ],
+            [
+                "3677128a83383333"
             ]
         ]
     },
@@ -2290,36 +2263,19 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "pinecone",
-        "func": "msg.PINECONE_API_KEY = msg.UNIFIED_DATA.PINECONE.API_KEY;\nmsg.PINECONE_ENVIRONMENT = msg.UNIFIED_DATA.PINECONE.ENVIRONMENT;\nmsg.PINECONE_BASE_URL = msg.UNIFIED_DATA.PINECONE.BASE_URL;\n\nmsg.payload = {\n    name: msg.UNIFIED_DATA.PINECONE.INDEX,\n    \"topK\": msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    \"includeMetadata\": true,\n    vector: msg.payload.data[0].embedding\n};\n\nnode.warn(msg.payload);\n\nreturn msg;\n",
+        "func": "msg.PINECONE_API_KEY = msg.UNIFIED_DATA.PINECONE.API_KEY;\nmsg.PINECONE_ENVIRONMENT = msg.UNIFIED_DATA.PINECONE.ENVIRONMENT;\nmsg.PINECONE_BASE_URL = msg.UNIFIED_DATA.PINECONE.BASE_URL;\n\nmsg.payload = {\n    name: msg.UNIFIED_DATA.PINECONE.INDEX,\n    \"topK\": msg.UNIFIED_DATA.NUMBER_OF_ANSWERS_VDB,\n    \"includeMetadata\": true,\n    vector: msg.payload.data[0].embedding\n};\n\nnode.warn(msg);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 100,
+        "x": 1000,
+        "y": 120,
         "wires": [
             [
                 "2bd82ed72cf97054"
             ]
         ]
-    },
-    {
-        "id": "7cb251a0fa3f1eb5",
-        "type": "debug",
-        "z": "27ce80b8fbcd825f",
-        "name": "debug 778",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "88aeefc112b748d2",
@@ -2341,8 +2297,8 @@
                 "module": "openai"
             }
         ],
-        "x": 960,
-        "y": 280,
+        "x": 1000,
+        "y": 240,
         "wires": [
             [
                 "17c61ad43fed7c57"
@@ -2360,7 +2316,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
+        "x": 1040,
         "y": 480,
         "wires": [
             [
@@ -2376,8 +2332,8 @@
         "actionType": "query",
         "apiKey": "",
         "environment": "",
-        "x": 1130,
-        "y": 100,
+        "x": 1170,
+        "y": 120,
         "wires": [
             [
                 "efc2c7680dbc24cc"
@@ -2392,8 +2348,8 @@
         "name": "",
         "collection": "",
         "operation": "query",
-        "x": 1140,
-        "y": 280,
+        "x": 1180,
+        "y": 240,
         "wires": [
             [
                 "be9cfd37213efd9a"
@@ -2417,7 +2373,7 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1530,
+        "x": 1630,
         "y": 280,
         "wires": [
             [
@@ -2436,7 +2392,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1250,
+        "x": 1290,
         "y": 500,
         "wires": [
             [
@@ -2449,14 +2405,14 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
+        "func": "node.warn(msg);\n\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1310,
-        "y": 100,
+        "x": 1350,
+        "y": 120,
         "wires": [
             [
                 "4b0147ed32666687"
@@ -2474,8 +2430,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 280,
+        "x": 1370,
+        "y": 240,
         "wires": [
             [
                 "4b0147ed32666687"
@@ -2492,10 +2448,29 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1450,
+        "x": 1490,
         "y": 500,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "625f2429f567775e",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "to GPT only",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 340,
+        "wires": [
+            [
+                "4b0147ed32666687"
+            ]
         ]
     },
     {
@@ -5392,7 +5367,7 @@
         "g": "4aa44aa75910cb5b",
         "name": "",
         "links": [
-            "2677414dc3b763e4"
+            "4af50c02f9967b49"
         ],
         "linkType": "static",
         "timeout": "30",
@@ -5411,7 +5386,7 @@
         "z": "88bba2923a31d3e7",
         "g": "4aa44aa75910cb5b",
         "name": "function 635",
-        "func": "if (msg.payload.length > 1 && msg.statusCode === 200) {\n    msg.method = \"POST\";\n    msg.url = \"http://localhost:1880/checkUserQuest\";\n\n    msg.payload = {\n        questId: \"65ce8b11d3c0480011b0dfad\", // Basic | AI chat bot\n        data: msg.usage\n    }\n    return msg;\n}",
+        "func": "if (msg.payload.length > 1 && msg.statusCode === 200) {\n    msg.method = \"POST\";\n    msg.url = \"http://localhost:1880/checkUserQuest\";\n\n    msg.payload = {\n        questId: \"65cf27f3d3c0480011b0dfb5\", // Basic | AI chat bot\n        data: msg.usage\n    }\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10378,7 +10353,7 @@
         "z": "5e7416993281e99d",
         "g": "55b42f036281abed",
         "name": "ENV",
-        "func": "const data = msg.payload\nlet words = data?.knowledge_base.split(' ');\n\nlet nameBase = words[0];\n\nlet typeBase = words[1];\n\nlet process_env = {\n    ANSWER_LENGTH: data.answer_length ? data.answer_length :\"\",\n    ANSWER_AS: data.answer_as ? data.answer_as : \"\",\n    TONE: data.tone ? data.tone : \"\",\n    LANGUAGE: data.language ? data.language : \"\",\n    PROMPT_CUSTOM: data.prompt_custom ? data.prompt_custom: \"\",\n    TYPE_BASE: typeBase ? typeBase:\"\",\n    NAME_BASE: nameBase ? nameBase:\"\",\n    ID: data.id_base ? data.id_base : \"\"\n}\n\nglobal.set(\"prompts\", process_env)\nreturn msg;",
+        "func": "const data = msg.payload\nlet words = data?.knowledge_base.split(' ');\n\nlet nameBase = words[0];\n\nlet typeBase = words[1];\n\nlet process_env = {\n    ANSWER_LENGTH: data.answer_length ? data.answer_length : \"\",\n    ANSWER_AS: data.answer_as ? data.answer_as : \"\",\n    TONE: data.tone ? data.tone : \"\",\n    LANGUAGE: data.language ? data.language : \"\",\n    PROMPT_CUSTOM: data.prompt_custom ? data.prompt_custom : \"\",\n    TYPE_BASE: typeBase ? typeBase : \"\",\n    NAME_BASE: nameBase ? nameBase : \"\",\n    ID: data.id_base ? data.id_base : \"\"\n}\n\nglobal.set(\"prompts\", process_env)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10842,7 +10817,7 @@
         "z": "5e7416993281e99d",
         "g": "6f53df0634427ab8",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() : \"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    // knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    // knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"telegram\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\n\nlet process_env = {\n    BOT_NAME: data.bot_name ? data.bot_name.trim() : \"\",\n    BOT_TOKEN: data.bot_token ? data.bot_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base,\n};\n\nglobal.set(\"telegram\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11133,7 +11108,7 @@
         "z": "5e7416993281e99d",
         "g": "20f41552a8bf93e6",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    WHATSAPP_PHONEID: data.whatsApp_phoneId ? data.whatsApp_phoneId.trim() : \"\",\n    WHATSAPP_TOKEN: data.whatsApp_token ? data.whatsApp_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"WHATSAPP\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\n\nlet process_env = {\n    WHATSAPP_PHONEID: data.whatsApp_phoneId ? data.whatsApp_phoneId.trim() : \"\",\n    WHATSAPP_TOKEN: data.whatsApp_token ? data.whatsApp_token.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base,\n};\n\nglobal.set(\"WHATSAPP\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11365,7 +11340,7 @@
         "z": "5e7416993281e99d",
         "g": "af65f71384d80c06",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() : \"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"META\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() : \"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base,\n};\n\nglobal.set(\"META\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11478,7 +11453,7 @@
         "z": "5e7416993281e99d",
         "g": "21ac3a19bfa57a66",
         "name": "get settings",
-        "func": "\nmsg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API:  \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE:  \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n        ANSWER_LENGTH: \"\",\n        ANSWER_AS:  \"\",\n        TONE: \"\",\n        LANGUAGE: \"\",\n        PROMPT_CUSTOM: \"\",\n        TYPE_BASE: \"\",\n        NAME_BASE: \"\"\n    },\n    otherTechVars: global.get(\"otherTechVars\"),\n};\nreturn msg",
+        "func": "msg.payload = {\n    pinecone: global.get('pinecone') ? global.get('pinecone') : {\n        PINECONE_API: \"\",\n        PINECONE_ENV: \"\",\n        PINECONE_INDEX: \"\",\n        PINECONE_URL: \"\",\n    },\n    messages: global.get(\"messages\") ? global.get(\"messages\") : {\n        WELCOME: \"\",\n        UNABLE: \"\"\n    },\n    openai: global.get('openai') ? global.get('openai') : {\n        OPENAI_API: \"\",\n        OPENAI_MODEL: \"\",\n    },\n    // prompts: global.get(\"prompts\") ? global.get(\"prompts\") : {\n    //     ANSWER_LENGTH: \"\",\n    //     ANSWER_AS:  \"\",\n    //     TONE: \"\",\n    //     LANGUAGE: \"\",\n    //     PROMPT_CUSTOM: \"\",\n    //     TYPE_BASE: \"\",\n    //     NAME_BASE: \"\"\n    // },\n    otherTechVars: global.get(\"otherTechVars\"),\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12084,7 +12059,7 @@
         "z": "5e7416993281e99d",
         "g": "fcdce1b1fa2970b8",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() : \"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"instagram\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\n\nlet process_env = {\n    META_TOKEN: data.meta_token ? data.meta_token.trim() : \"\",\n    META_PAGEID: data.response_pageId ? data.response_pageId.trim() : \"\",\n    knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base,\n};\n\nglobal.set(\"instagram\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12375,7 +12350,7 @@
         "z": "5e7416993281e99d",
         "g": "d8a434ae844324e0",
         "name": "ENV",
-        "func": "const data = msg.payload;\nconst defaultKnowledgeBaseName = global.get(\"prompts\")?.NAME_BASE;\nconst defaultKnowledgeBaseType = global.get(\"prompts\")?.TYPE_BASE;\nconst defaultIdBase = global.get(\"prompts\")?.ID;\n\nlet process_env = {\n    knowledge_baseName: data.knowledge_baseName ? data.knowledge_baseName : defaultKnowledgeBaseName,\n    knowledge_baseType: data.knowledge_baseType ? data.knowledge_baseType : defaultKnowledgeBaseType,\n    id_base: data.id_base ? data.id_base : defaultIdBase,\n};\n\nglobal.set(\"customChat\", process_env);\n\nreturn msg;\n",
+        "func": "const data = msg.payload;\n\nlet process_env = {\n    knowledge_baseName: data.knowledge_baseName,\n    knowledge_baseType: data.knowledge_baseType,\n    id_base: data.id_base,\n};\n\nglobal.set(\"customChat\", process_env);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19006,7 +18981,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1070,
+        "x": 1090,
         "y": 720,
         "wires": [
             []
@@ -19921,7 +19896,8 @@
         "y": 260,
         "wires": [
             [
-                "75f237308b6bf867"
+                "75f237308b6bf867",
+                "bb8dcd37c0b9c95b"
             ]
         ]
     },
@@ -19966,6 +19942,24 @@
                 "a4f983e9cde1cf5d"
             ]
         ]
+    },
+    {
+        "id": "bb8dcd37c0b9c95b",
+        "type": "debug",
+        "z": "7e6aa2730f443095",
+        "g": "d5f3c34635f35708",
+        "name": "debug 790",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 300,
+        "wires": []
     },
     {
         "id": "8bcfa72a275e228d",
@@ -20768,7 +20762,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2440,
-        "y": 520,
+        "y": 680,
         "wires": [
             [
                 "77a508418c098c54",
@@ -20794,7 +20788,7 @@
             }
         ],
         "x": 3300,
-        "y": 680,
+        "y": 840,
         "wires": [
             [
                 "9790cc4eb1ad54de",
@@ -20813,7 +20807,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2460,
-        "y": 720,
+        "y": 880,
         "wires": [
             [
                 "655ae3d6de1db179",
@@ -20830,7 +20824,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3580,
-        "y": 700,
+        "y": 860,
         "wires": []
     },
     {
@@ -20846,7 +20840,7 @@
         "finalize": "",
         "libs": [],
         "x": 3440,
-        "y": 700,
+        "y": 860,
         "wires": [
             [
                 "8c904407b9381043"
@@ -20864,7 +20858,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2480,
-        "y": 980,
+        "y": 1140,
         "wires": [
             [
                 "4e56c80bcba37cfb",
@@ -20890,7 +20884,7 @@
             }
         ],
         "x": 2810,
-        "y": 940,
+        "y": 1100,
         "wires": [
             [
                 "2e682b4264e3c155"
@@ -20906,7 +20900,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3350,
-        "y": 920,
+        "y": 1080,
         "wires": []
     },
     {
@@ -20927,7 +20921,7 @@
             }
         ],
         "x": 3140,
-        "y": 940,
+        "y": 1100,
         "wires": [
             [
                 "70d7a8a64de8fb64",
@@ -20953,7 +20947,7 @@
         "senderr": false,
         "headers": [],
         "x": 2970,
-        "y": 940,
+        "y": 1100,
         "wires": [
             [
                 "ae3eaeaa32cf3bf9"
@@ -20972,7 +20966,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 3470,
-        "y": 660,
+        "y": 820,
         "wires": [
             []
         ]
@@ -20989,7 +20983,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 3300,
-        "y": 960,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -21009,7 +21003,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2610,
-        "y": 780,
+        "y": 940,
         "wires": []
     },
     {
@@ -21027,7 +21021,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2830,
-        "y": 900,
+        "y": 1060,
         "wires": []
     },
     {
@@ -21043,7 +21037,7 @@
         "finalize": "",
         "libs": [],
         "x": 2660,
-        "y": 720,
+        "y": 880,
         "wires": [
             [
                 "8bf82a2245e73bd0"
@@ -21063,7 +21057,7 @@
         "apiKey": "",
         "environment": "",
         "x": 3140,
-        "y": 680,
+        "y": 840,
         "wires": [
             [
                 "6aaa2a508d618863",
@@ -21089,7 +21083,7 @@
             }
         ],
         "x": 3015,
-        "y": 680,
+        "y": 840,
         "wires": [
             [
                 "49a24827544e80d6",
@@ -21117,7 +21111,7 @@
         },
         "OPENAI_API_KEY": "",
         "x": 2890,
-        "y": 680,
+        "y": 840,
         "wires": [
             [
                 "beb68ab316d75f9f"
@@ -21139,7 +21133,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3280,
-        "y": 720,
+        "y": 880,
         "wires": []
     },
     {
@@ -21157,7 +21151,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3040,
-        "y": 740,
+        "y": 900,
         "wires": []
     },
     {
@@ -21175,7 +21169,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3150,
-        "y": 480,
+        "y": 640,
         "wires": []
     },
     {
@@ -21191,7 +21185,7 @@
         "finalize": "",
         "libs": [],
         "x": 2760,
-        "y": 480,
+        "y": 640,
         "wires": [
             [
                 "e59bd24ec20c7266"
@@ -21207,7 +21201,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3150,
-        "y": 440,
+        "y": 600,
         "wires": []
     },
     {
@@ -21220,7 +21214,7 @@
         "apiKey": "",
         "environment": "",
         "x": 2950,
-        "y": 480,
+        "y": 640,
         "wires": [
             [
                 "43bdb6107c4d99af",
@@ -22720,7 +22714,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2460,
-        "y": 180,
+        "y": 260,
         "wires": [
             [
                 "b6e02421fee303fc",
@@ -22745,8 +22739,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 2870,
-        "y": 160,
+        "x": 2850,
+        "y": 220,
         "wires": [
             [
                 "b181ee80bb2f2246"
@@ -22764,8 +22758,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 3090,
-        "y": 160,
+        "x": 3070,
+        "y": 220,
         "wires": [
             [
                 "012e3af4ebe8a2a1"
@@ -22780,8 +22774,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3350,
-        "y": 100,
+        "x": 3270,
+        "y": 80,
         "wires": []
     },
     {
@@ -22797,7 +22791,7 @@
         "finalize": "",
         "libs": [],
         "x": 3230,
-        "y": 160,
+        "y": 220,
         "wires": [
             [
                 "ad82b90017c98561"
@@ -22820,7 +22814,7 @@
         "finalize": "",
         "libs": [],
         "x": 3370,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "fca7046922e8e22a"
@@ -22835,8 +22829,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3490,
-        "y": 200,
+        "x": 3590,
+        "y": 260,
         "wires": []
     },
     {
@@ -22850,7 +22844,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2470,
-        "y": 100,
+        "y": 80,
         "wires": [
             [
                 "69c722728accb0ec",
@@ -22864,7 +22858,7 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": "fromApp",
-        "func": "msg.old = msg.payload\nmsg.collection = \"knowlegebase\"\n\nmsg.query={\n    _id:objectid(msg.old._id)\n}\nmsg.payload={\n$set:{\n    select:true\n}\n}\nreturn msg;",
+        "func": "msg.old = msg.payload;\nmsg.collection = \"knowlegebase\";\n\nmsg.query = {\n    _id: objectid(msg.old._id)\n};\n\nmsg.payload = {\n    $set: {\n        select: true\n    }\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22875,8 +22869,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 2740,
-        "y": 100,
+        "x": 2680,
+        "y": 80,
         "wires": [
             [
                 "d2473b40dd80d353"
@@ -22894,8 +22888,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2920,
-        "y": 100,
+        "x": 2860,
+        "y": 80,
         "wires": [
             [
                 "9e91d03c941fd080"
@@ -22908,8 +22902,8 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": "",
-        "x": 3160,
-        "y": 100,
+        "x": 3080,
+        "y": 80,
         "wires": [
             [
                 "775de8ce404d0a5d",
@@ -22924,7 +22918,7 @@
         "g": "d304cf774581307a",
         "name": "",
         "x": 3420,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "3e56f15bba0a4a5c"
@@ -22939,8 +22933,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3610,
-        "y": 160,
+        "x": 3590,
+        "y": 180,
         "wires": []
     },
     {
@@ -22964,8 +22958,8 @@
                 "module": "openai"
             }
         ],
-        "x": 2830,
-        "y": 220,
+        "x": 2850,
+        "y": 300,
         "wires": [
             [
                 "3d422afc9d9cc23e"
@@ -22986,8 +22980,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3090,
-        "y": 220,
+        "x": 3050,
+        "y": 300,
         "wires": []
     },
     {
@@ -22996,14 +22990,14 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": ">",
-        "func": "if (msg.payload.type ==='chroma'){\n    return [msg,msg]\n}else{\n    return [msg,null]\n}\n",
+        "func": "if (msg.payload.type === 'chroma') {\n\n    return [msg, msg]\n} else {\n\n    return [msg, null]\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2630,
-        "y": 180,
+        "x": 2650,
+        "y": 260,
         "wires": [
             [
                 "c56994d8c6acfcf8"
@@ -23019,7 +23013,7 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": "to mongoDB select",
-        "func": "if (msg.payload.role !== 'demo') {\n    msg.collection = \"knowlegebase\"\n    msg.payload = {\n        deleted: false\n    }\n    return [msg, null];\n}else{\n    return [null, msg];\n}\n",
+        "func": "if (msg.payload.role !== 'demo') {\n    msg.collection = \"knowlegebase\";\n    msg.payload = {\n        deleted: false\n    };\n\n    return [msg, null];\n}else{\n\n    return [null, msg];\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -23030,8 +23024,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 2710,
-        "y": 280,
+        "x": 2690,
+        "y": 440,
         "wires": [
             [
                 "a243624363a7fef4"
@@ -23052,7 +23046,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2460,
-        "y": 280,
+        "y": 440,
         "wires": [
             [
                 "b8c363e90c87cbba"
@@ -23070,12 +23064,12 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2910,
-        "y": 260,
+        "x": 2890,
+        "y": 380,
         "wires": [
             [
-                "3d422afc9d9cc23e",
-                "94579d632128cd68"
+                "94579d632128cd68",
+                "04fe1fa2488772f8"
             ]
         ]
     },
@@ -23087,8 +23081,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3510,
-        "y": 260,
+        "x": 3590,
+        "y": 380,
         "wires": []
     },
     {
@@ -23105,8 +23099,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2510,
-        "y": 240,
+        "x": 2490,
+        "y": 300,
         "wires": []
     },
     {
@@ -23234,8 +23228,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2910,
-        "y": 60,
+        "x": 2510,
+        "y": 120,
         "wires": []
     },
     {
@@ -23252,8 +23246,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3310,
-        "y": 60,
+        "x": 3110,
+        "y": 120,
         "wires": []
     },
     {
@@ -23279,7 +23273,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 2500,
-        "y": 340,
+        "y": 480,
         "wires": [
             [
                 "b8c363e90c87cbba"
@@ -23666,7 +23660,7 @@
             }
         ],
         "x": 2790,
-        "y": 540,
+        "y": 700,
         "wires": [
             [
                 "eb34d21632674fe4",
@@ -23683,7 +23677,7 @@
         "statusCode": "",
         "headers": {},
         "x": 2950,
-        "y": 540,
+        "y": 700,
         "wires": []
     },
     {
@@ -23699,7 +23693,7 @@
         "finalize": "",
         "libs": [],
         "x": 2590,
-        "y": 520,
+        "y": 680,
         "wires": [
             [
                 "9283d7cc99aa3075"
@@ -23724,7 +23718,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2570,
-        "y": 480,
+        "y": 640,
         "wires": []
     },
     {
@@ -23742,7 +23736,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3170,
-        "y": 520,
+        "y": 680,
         "wires": []
     },
     {
@@ -23764,7 +23758,7 @@
         },
         "OPENAI_API_KEY": "",
         "x": 2860,
-        "y": 780,
+        "y": 940,
         "wires": [
             [
                 "7e6a176c53a30645"
@@ -23793,7 +23787,7 @@
             }
         ],
         "x": 3070,
-        "y": 800,
+        "y": 960,
         "wires": [
             [
                 "77f3bf6b414afa9d",
@@ -23816,7 +23810,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3290,
-        "y": 800,
+        "y": 960,
         "wires": []
     },
     {
@@ -23832,7 +23826,7 @@
         "finalize": "",
         "libs": [],
         "x": 2670,
-        "y": 980,
+        "y": 1140,
         "wires": [
             [
                 "b2fec9dc58b19eda",
@@ -23866,7 +23860,7 @@
             }
         ],
         "x": 2880,
-        "y": 1020,
+        "y": 1180,
         "wires": [
             [
                 "ae3eaeaa32cf3bf9",
@@ -23889,7 +23883,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3090,
-        "y": 1060,
+        "y": 1220,
         "wires": []
     },
     {
@@ -26317,15 +26311,16 @@
         "id": "1770bf776c30c186",
         "type": "function",
         "z": "561be8df1dd04335",
+        "g": "d304cf774581307a",
         "name": "function 611",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.fromApp = msg.payload\nmsg.payload={\n    demo: true\n}\nreturn msg;",
+        "func": "msg.collection = \"knowlegebase\";\nmsg.fromApp = msg.payload\nmsg.payload = {\n    demo: true\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2730,
-        "y": 320,
+        "x": 2890,
+        "y": 500,
         "wires": [
             [
                 "fedea034da0b6756"
@@ -26336,14 +26331,15 @@
         "id": "fedea034da0b6756",
         "type": "link call",
         "z": "561be8df1dd04335",
+        "g": "d304cf774581307a",
         "name": "",
         "links": [
             "4af50c02f9967b49"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2910,
-        "y": 320,
+        "x": 3050,
+        "y": 500,
         "wires": [
             [
                 "c6bdf397d6253db5"
@@ -26362,8 +26358,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3090,
-        "y": 320,
+        "x": 3210,
+        "y": 500,
         "wires": [
             [
                 "9de4cd2a05b57af9"
@@ -26382,8 +26378,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3430,
-        "y": 320,
+        "x": 3530,
+        "y": 500,
         "wires": [
             [
                 "94579d632128cd68"
@@ -26401,25 +26397,13 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 3250,
-        "y": 320,
+        "x": 3370,
+        "y": 500,
         "wires": [
             [
                 "7c508ff184afbc6a"
             ]
         ]
-    },
-    {
-        "id": "84f00a58be3f059c",
-        "type": "http response",
-        "z": "561be8df1dd04335",
-        "g": "d304cf774581307a",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 3590,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "ec06091a7169454f",
@@ -26530,14 +26514,14 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": "function 633",
-        "func": "msg.payload=msg.payload.map((e)=>{\n    return{\n        ...e,\n        label: e.name,\n        value: e._id\n    }\n})\nreturn msg;",
+        "func": "msg.payload = msg.payload.map((e) => {\n\n    return {\n        ...e,\n        label: e.name,\n        value: e._id\n    }\n})\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3230,
-        "y": 260,
+        "x": 3430,
+        "y": 380,
         "wires": [
             [
                 "fb3904267594997d"
@@ -26618,6 +26602,24 @@
         "headers": {},
         "x": 530,
         "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "04fe1fa2488772f8",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "d304cf774581307a",
+        "name": "debug 791",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2890,
+        "y": 420,
         "wires": []
     }
 ]
