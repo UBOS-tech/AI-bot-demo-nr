@@ -652,7 +652,6 @@
             "fd0a5db568e0e201",
             "49a24827544e80d6",
             "beb68ab316d75f9f",
-            "8bf82a2245e73bd0",
             "815a8167a00731fb",
             "c7397c231fb198c2",
             "e09f21afcab47e15",
@@ -664,12 +663,13 @@
             "13cb300434fd0697",
             "77a508418c098c54",
             "f56e3ab34c6ec223",
-            "6c14f0972b57517b",
             "7e6a176c53a30645",
             "77f3bf6b414afa9d",
             "8b3909912726c770",
             "585d9d6095d0ca5b",
-            "e5114daa61488a15"
+            "e5114daa61488a15",
+            "0664e6c3fa1f6132",
+            "f58cc1c13181dcf1"
         ],
         "x": 2334,
         "y": 559,
@@ -772,7 +772,6 @@
             "dd97c27257cf5895",
             "734651b67273e405",
             "59a0473709ced9b7",
-            "aae70283121bbce4",
             "d23ca9071f281b3b",
             "1b109b08caaf72bd",
             "b7a031b77066e8f1",
@@ -780,12 +779,10 @@
             "7d12ac50cacd23c4",
             "3f883a77bd7c56d5",
             "b32a68096d7a239f",
-            "4ed8d299742231f8",
             "2b0d6af74c339f5f",
             "fcedf888b4c3c629",
             "ad16831bc9d852f1",
             "c9823494178e65bf",
-            "6c0f2a4c89a5771d",
             "5e27a3af0de4127f",
             "f4843018fb5174f6",
             "dd8eb35354758aac",
@@ -802,7 +799,6 @@
             "1e613e1d29fb5dfe",
             "0737785e8dc761f5",
             "d3947bc6a74a55a6",
-            "e08724d74efda804",
             "4df2bc0ad523211e",
             "986601d67845f75e",
             "cb9d6d7726422bdd",
@@ -813,30 +809,35 @@
             "5750dd0653043398",
             "7d3ba3bdf3df4409",
             "fd386349507dd91f",
-            "ad1da758dd92b865",
             "eadc0afe94a79478",
             "e02e18afcd7b246a",
-            "86d4eabfc0d39da7",
             "f557d0d86f087cdd",
             "20eb7f6487d550d0",
             "6b434b32d14226a4",
             "681a34d55bf0226b",
-            "5910c0a6a4410c7d",
             "6d0e0420186ad940",
             "62304227d13174c5",
             "196ad74f771d85df",
             "d4569548a5f8f438",
             "f7da8a2810c6029e",
-            "b0d07b0258f92c78",
             "ff5ac9811d26fb42",
             "f977661ebe071bce",
             "db2dbbb87ffe61bf",
             "5568b48503199d40",
-            "f76f2a021a272f3c",
             "a4d5073f86bac61a",
             "beb60e5c829cdb4d",
             "1209cc0fb0a890cd",
-            "f2de3aef43efb57a"
+            "f2de3aef43efb57a",
+            "c59352ee6aec7d0d",
+            "e656959b6bb65df8",
+            "a609f6927ac45615",
+            "d5550fe9f265b396",
+            "22f96893b0c97739",
+            "0b4ff76f2b117a6a",
+            "42f4b904318f58db",
+            "e153d69d12f7bf65",
+            "eabf87c97c2af554",
+            "76aba1958ede1343"
         ],
         "x": 34,
         "y": 1259,
@@ -930,7 +931,6 @@
             "3ce6ccf8da8fc72b",
             "2fc53649d85fbcbf",
             "512b87abf9741244",
-            "2ec3f27d2f96a363",
             "792d250eeba455aa",
             "7215a96dd0aa3b06",
             "f447882cf9d10a8c"
@@ -953,9 +953,7 @@
         "nodes": [
             "a478b692e78a5971",
             "fa04406d012e6462",
-            "9679cfed5bb711d8",
             "893c38ecdd1dc989",
-            "7a4c974983179eab",
             "66bd9091bd2aef53",
             "fc0e7d42e99bc0df",
             "44f83dfbece6abe5",
@@ -984,11 +982,13 @@
             "a525da402d0e5951",
             "c65e3faa54f5bb92",
             "772eac6cc3a332be",
-            "bd6c2ef535cd2431"
+            "bd6c2ef535cd2431",
+            "4737e8eb4e3bf517",
+            "ea3c9a01daa0a075"
         ],
         "x": 34,
         "y": 559,
-        "w": 1902,
+        "w": 1992,
         "h": 402
     },
     {
@@ -1119,8 +1119,7 @@
             "fdabb9a2863f4f8f",
             "ca333a2f720b8f48",
             "38fa734109685e32",
-            "bb8dcd37c0b9c95b",
-            "ae73e7e346bad2fc"
+            "bb8dcd37c0b9c95b"
         ],
         "x": 74,
         "y": 39,
@@ -1267,7 +1266,6 @@
             "139b56b09fa92b48",
             "89b9d71dd5b48135",
             "89a3547980a3c139",
-            "4d9b8c0ef8046a28",
             "538f70fb1fe7c27b",
             "6f7b89e9a9f27359",
             "653f906f8c2ecf21",
@@ -1286,7 +1284,9 @@
             "7f7e2007a018670f",
             "4badd197346ea811",
             "eaaca9d693f47d9e",
-            "eaf66c35a0857e01"
+            "eaf66c35a0857e01",
+            "ddd8ee138059b10f",
+            "d2af17549ceaa392"
         ],
         "x": 74,
         "y": 279,
@@ -1496,7 +1496,8 @@
             "c542eb9521c6b170",
             "db94a28e127db79b",
             "4eb4d1856cf27c1e",
-            "47c72873e240dab7"
+            "47c72873e240dab7",
+            "0ec04c582bf41c8a"
         ],
         "x": 74,
         "y": 19,
@@ -1613,9 +1614,7 @@
         "nodes": [
             "5505d3f982d8e70c",
             "04cc19e341015799",
-            "d7dcaf7d9ce304df",
             "1c5b12605ee6d6e3",
-            "08a710694decd9ad",
             "b03f2f801d20442f",
             "836f18c0d9d56092",
             "983da08a3ede580e",
@@ -1639,11 +1638,13 @@
             "0c63060d614dd0f5",
             "3324634c09c548bf",
             "3d046ba4c916941d",
-            "98d191edffa2ef5e"
+            "98d191edffa2ef5e",
+            "a85ba356b00c51b0",
+            "3e35edc6870bb62a"
         ],
         "x": 44,
         "y": 59,
-        "w": 1472,
+        "w": 1502,
         "h": 462
     },
     {
@@ -1689,7 +1690,6 @@
             "e5db4b27f7bbbd5f",
             "b09542bff4b17693",
             "108d14ed5668c038",
-            "e61194346804118b",
             "e623f1993c6d0d2b",
             "1c2e897da68dfde0",
             "f1b45018a7b20ff5",
@@ -1720,7 +1720,6 @@
             "6addb13fd1402595",
             "32de476e5ec89dca",
             "7ace8b2ff958d9ad",
-            "a81085a00e61d05e",
             "e6592499f08a90d6",
             "0431f5b14f0d1603",
             "bcac0c30aea87fea",
@@ -1728,7 +1727,6 @@
             "12dacb4c5be15603",
             "616c010e956c3185",
             "e0a9c094315f9304",
-            "42234da9daaa538d",
             "7b5d495036e6a204",
             "7e45068f64403ca1",
             "045e64a281902a97",
@@ -1753,7 +1751,10 @@
             "87237730834477a3",
             "e4c8bd17eedcaeed",
             "42f5817a459be45e",
-            "204e41e815b84721"
+            "204e41e815b84721",
+            "f84c2cc6c68ba6a7",
+            "6905d97ea2de0acf",
+            "58b8200a69e4d828"
         ],
         "x": 44,
         "y": 39,
@@ -1828,6 +1829,18 @@
             [
                 "8de776c48f74e5b9",
                 "f48e056edf5892dd"
+            ]
+        ]
+    },
+    {
+        "id": "8161750f4f47fda0",
+        "type": "junction",
+        "z": "27ce80b8fbcd825f",
+        "x": 1500,
+        "y": 280,
+        "wires": [
+            [
+                "61328cedf50576b3"
             ]
         ]
     },
@@ -2273,7 +2286,7 @@
         "y": 280,
         "wires": [
             [
-                "258090fc50e92b81"
+                "37b26fc0aa550d90"
             ]
         ]
     },
@@ -2293,30 +2306,6 @@
         "wires": [
             [
                 "da1fd06ad3f10b0c"
-            ]
-        ]
-    },
-    {
-        "id": "258090fc50e92b81",
-        "type": "openai-ubos",
-        "z": "27ce80b8fbcd825f",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 660,
-        "y": 280,
-        "wires": [
-            [
-                "3ffdb941a28abab1"
             ]
         ]
     },
@@ -2426,8 +2415,7 @@
         "y": 120,
         "wires": [
             [
-                "efc2c7680dbc24cc",
-                "a9519d741eaacef0"
+                "efc2c7680dbc24cc"
             ]
         ]
     },
@@ -2444,30 +2432,6 @@
         "wires": [
             [
                 "be9cfd37213efd9a"
-            ]
-        ]
-    },
-    {
-        "id": "4b0147ed32666687",
-        "type": "openai-ubos",
-        "z": "27ce80b8fbcd825f",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1630,
-        "y": 280,
-        "wires": [
-            [
-                "3677128a83383333"
             ]
         ]
     },
@@ -2505,7 +2469,7 @@
         "y": 120,
         "wires": [
             [
-                "4b0147ed32666687"
+                "8161750f4f47fda0"
             ]
         ]
     },
@@ -2524,7 +2488,7 @@
         "y": 240,
         "wires": [
             [
-                "4b0147ed32666687"
+                "8161750f4f47fda0"
             ]
         ]
     },
@@ -2559,25 +2523,59 @@
         "y": 340,
         "wires": [
             [
-                "4b0147ed32666687"
+                "8161750f4f47fda0"
             ]
         ]
     },
     {
-        "id": "a9519d741eaacef0",
-        "type": "debug",
+        "id": "37b26fc0aa550d90",
+        "type": "openai-ubos",
         "z": "27ce80b8fbcd825f",
-        "name": "debug 800",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 180,
-        "wires": []
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "3ffdb941a28abab1"
+            ]
+        ]
+    },
+    {
+        "id": "61328cedf50576b3",
+        "type": "openai-ubos",
+        "z": "27ce80b8fbcd825f",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1620,
+        "y": 280,
+        "wires": [
+            [
+                "3677128a83383333"
+            ]
+        ]
     },
     {
         "id": "bf596eb6b97b1752",
@@ -2991,31 +2989,7 @@
         "y": 640,
         "wires": [
             [
-                "79b0fa7c8d7158ac"
-            ]
-        ]
-    },
-    {
-        "id": "79b0fa7c8d7158ac",
-        "type": "openai-ubos",
-        "z": "71cb7453ba91face",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 540,
-        "y": 640,
-        "wires": [
-            [
-                "de4dbe8bea29fd0d"
+                "0e17791da17ef446"
             ]
         ]
     },
@@ -3427,6 +3401,31 @@
         ]
     },
     {
+        "id": "0e17791da17ef446",
+        "type": "openai-ubos",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 540,
+        "y": 640,
+        "wires": [
+            [
+                "de4dbe8bea29fd0d"
+            ]
+        ]
+    },
+    {
         "id": "e02a6f3b999ea6b6",
         "type": "http in",
         "z": "a0451234ff05c29f",
@@ -3485,30 +3484,6 @@
         ]
     },
     {
-        "id": "acd6b56f5d498248",
-        "type": "openai-ubos",
-        "z": "a0451234ff05c29f",
-        "name": "",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.5,
-        "max_tokens": 2000,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 500,
-        "y": 240,
-        "wires": [
-            [
-                "9f7f20aceb1ee00b"
-            ]
-        ]
-    },
-    {
         "id": "61d5cc4bd8cea74c",
         "type": "function",
         "z": "a0451234ff05c29f",
@@ -3523,7 +3498,7 @@
         "y": 240,
         "wires": [
             [
-                "acd6b56f5d498248"
+                "6e9ef3615f654361"
             ]
         ]
     },
@@ -3608,30 +3583,6 @@
         ]
     },
     {
-        "id": "866cc5ae9d86812c",
-        "type": "openai-ubos",
-        "z": "a0451234ff05c29f",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 620,
-        "y": 420,
-        "wires": [
-            [
-                "76a204897ab25ee1"
-            ]
-        ]
-    },
-    {
         "id": "1c8ecb835ac1ee06",
         "type": "function",
         "z": "a0451234ff05c29f",
@@ -3646,7 +3597,7 @@
         "y": 420,
         "wires": [
             [
-                "866cc5ae9d86812c"
+                "4fda29115b94df09"
             ]
         ]
     },
@@ -3739,31 +3690,7 @@
         "y": 80,
         "wires": [
             [
-                "68cf113046a0fab5"
-            ]
-        ]
-    },
-    {
-        "id": "68cf113046a0fab5",
-        "type": "openai-ubos",
-        "z": "a0451234ff05c29f",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 520,
-        "y": 80,
-        "wires": [
-            [
-                "e0a5c346aec729ad"
+                "5824e30670745419"
             ]
         ]
     },
@@ -4170,7 +4097,7 @@
         "y": 300,
         "wires": [
             [
-                "acd6b56f5d498248"
+                "6e9ef3615f654361"
             ]
         ]
     },
@@ -4207,6 +4134,81 @@
         ]
     },
     {
+        "id": "5824e30670745419",
+        "type": "openai-ubos",
+        "z": "a0451234ff05c29f",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "e0a5c346aec729ad"
+            ]
+        ]
+    },
+    {
+        "id": "6e9ef3615f654361",
+        "type": "openai-ubos",
+        "z": "a0451234ff05c29f",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "9f7f20aceb1ee00b"
+            ]
+        ]
+    },
+    {
+        "id": "4fda29115b94df09",
+        "type": "openai-ubos",
+        "z": "a0451234ff05c29f",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "76a204897ab25ee1"
+            ]
+        ]
+    },
+    {
         "id": "a478b692e78a5971",
         "type": "function",
         "z": "88bba2923a31d3e7",
@@ -4222,8 +4224,8 @@
         "y": 680,
         "wires": [
             [
-                "9679cfed5bb711d8",
-                "3ab52837b239e540"
+                "3ab52837b239e540",
+                "4737e8eb4e3bf517"
             ]
         ]
     },
@@ -4247,31 +4249,6 @@
         ]
     },
     {
-        "id": "9679cfed5bb711d8",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4a77a41c6602f9d6",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 960,
-        "y": 800,
-        "wires": [
-            [
-                "44f83dfbece6abe5"
-            ]
-        ]
-    },
-    {
         "id": "893c38ecdd1dc989",
         "type": "function",
         "z": "88bba2923a31d3e7",
@@ -4287,36 +4264,9 @@
         "y": 760,
         "wires": [
             [
-                "7a4c974983179eab"
+                "ea3c9a01daa0a075"
             ]
         ]
-    },
-    {
-        "id": "7a4c974983179eab",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4a77a41c6602f9d6",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1505,
-        "y": 760,
-        "wires": [
-            [
-                "91fa2101168dca73",
-                "c65e3faa54f5bb92"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "66bd9091bd2aef53",
@@ -4403,8 +4353,8 @@
         "y": 820,
         "wires": [
             [
-                "7a4c974983179eab",
-                "a98cfb1e16cbe099"
+                "a98cfb1e16cbe099",
+                "ea3c9a01daa0a075"
             ]
         ]
     },
@@ -4420,7 +4370,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1660,
+        "x": 1750,
         "y": 760,
         "wires": [
             [
@@ -4446,7 +4396,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1840,
+        "x": 1930,
         "y": 760,
         "wires": [
             []
@@ -4748,7 +4698,7 @@
         "y": 600,
         "wires": [
             [
-                "9679cfed5bb711d8"
+                "4737e8eb4e3bf517"
             ],
             [
                 "1573008514834eb6"
@@ -4864,7 +4814,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1790,
+        "x": 1880,
         "y": 800,
         "wires": []
     },
@@ -4918,8 +4868,8 @@
         "y": 160,
         "wires": [
             [
-                "d7dcaf7d9ce304df",
-                "beae0f4b261933d2"
+                "beae0f4b261933d2",
+                "a85ba356b00c51b0"
             ]
         ]
     },
@@ -4943,32 +4893,6 @@
         ]
     },
     {
-        "id": "d7dcaf7d9ce304df",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4aa44aa75910cb5b",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 350,
-        "y": 300,
-        "wires": [
-            [
-                "c79244f4f2abc1d9",
-                "ffb7c8ece15c5f20"
-            ]
-        ]
-    },
-    {
         "id": "1c5b12605ee6d6e3",
         "type": "function",
         "z": "88bba2923a31d3e7",
@@ -4984,35 +4908,9 @@
         "y": 260,
         "wires": [
             [
-                "08a710694decd9ad"
+                "3e35edc6870bb62a"
             ]
         ]
-    },
-    {
-        "id": "08a710694decd9ad",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4aa44aa75910cb5b",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1085,
-        "y": 280,
-        "wires": [
-            [
-                "3195ba502c52f21f"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "b03f2f801d20442f",
@@ -5120,8 +5018,8 @@
         "y": 300,
         "wires": [
             [
-                "08a710694decd9ad",
-                "f60512750bf45925"
+                "f60512750bf45925",
+                "3e35edc6870bb62a"
             ]
         ]
     },
@@ -5137,7 +5035,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1290,
         "y": 280,
         "wires": [
             [
@@ -5162,7 +5060,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1420,
+        "x": 1450,
         "y": 280,
         "wires": [
             []
@@ -5522,6 +5420,111 @@
             []
         ],
         "l": false
+    },
+    {
+        "id": "a85ba356b00c51b0",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "c79244f4f2abc1d9"
+            ]
+        ]
+    },
+    {
+        "id": "3e35edc6870bb62a",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1120,
+        "y": 280,
+        "wires": [
+            [
+                "3195ba502c52f21f"
+            ]
+        ]
+    },
+    {
+        "id": "4737e8eb4e3bf517",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4a77a41c6602f9d6",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 960,
+        "y": 800,
+        "wires": [
+            [
+                "44f83dfbece6abe5"
+            ]
+        ]
+    },
+    {
+        "id": "ea3c9a01daa0a075",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4a77a41c6602f9d6",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1580,
+        "y": 800,
+        "wires": [
+            [
+                "91fa2101168dca73",
+                "c65e3faa54f5bb92"
+            ]
+        ]
     },
     {
         "id": "04e6e4279b387b31",
@@ -7571,33 +7574,7 @@
         "y": 860,
         "wires": [
             [
-                "e61194346804118b"
-            ]
-        ]
-    },
-    {
-        "id": "e61194346804118b",
-        "type": "openai-ubos",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1400,
-        "y": 860,
-        "wires": [
-            [
-                "b09542bff4b17693",
-                "1c2e897da68dfde0"
+                "58b8200a69e4d828"
             ]
         ]
     },
@@ -7725,7 +7702,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1210,
+        "x": 1230,
         "y": 160,
         "wires": [
             [
@@ -7773,7 +7750,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
+        "x": 1250,
         "y": 120,
         "wires": []
     },
@@ -7809,11 +7786,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
+        "x": 1230,
         "y": 260,
         "wires": [
             [
-                "a81085a00e61d05e"
+                "f84c2cc6c68ba6a7"
             ]
         ]
     },
@@ -8101,7 +8078,7 @@
         "y": 560,
         "wires": [
             [
-                "42234da9daaa538d"
+                "6905d97ea2de0acf"
             ]
         ]
     },
@@ -8193,7 +8170,7 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 1440,
+        "x": 1460,
         "y": 160,
         "wires": [
             [
@@ -8225,7 +8202,7 @@
                 "module": "openai"
             }
         ],
-        "x": 1610,
+        "x": 1630,
         "y": 260,
         "wires": [
             [
@@ -8251,38 +8228,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 1630,
+        "x": 1650,
         "y": 120,
         "wires": [
             [
                 "0431f5b14f0d1603",
                 "a06fa1b3895fc9b1"
-            ]
-        ]
-    },
-    {
-        "id": "a81085a00e61d05e",
-        "type": "openai-ubos",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1380,
-        "y": 260,
-        "wires": [
-            [
-                "32de476e5ec89dca",
-                "bcac0c30aea87fea"
             ]
         ]
     },
@@ -8300,7 +8251,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
+        "x": 1850,
         "y": 260,
         "wires": []
     },
@@ -8315,7 +8266,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1790,
+        "x": 1810,
         "y": 120,
         "wires": [
             []
@@ -8333,7 +8284,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1515,
+        "x": 1535,
         "y": 300,
         "wires": [
             [
@@ -8353,7 +8304,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1640,
+        "x": 1660,
         "y": 300,
         "wires": [
             []
@@ -8435,32 +8386,6 @@
             [
                 "7e45068f64403ca1",
                 "3f47db4fa8a02235"
-            ]
-        ]
-    },
-    {
-        "id": "42234da9daaa538d",
-        "type": "openai-ubos",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1400,
-        "y": 560,
-        "wires": [
-            [
-                "616c010e956c3185",
-                "045e64a281902a97"
             ]
         ]
     },
@@ -8610,7 +8535,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1780,
+        "x": 1800,
         "y": 160,
         "wires": [
             []
@@ -9147,6 +9072,87 @@
         "x": 1480,
         "y": 1660,
         "wires": []
+    },
+    {
+        "id": "f84c2cc6c68ba6a7",
+        "type": "openai-ubos",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1400,
+        "y": 260,
+        "wires": [
+            [
+                "32de476e5ec89dca",
+                "bcac0c30aea87fea"
+            ]
+        ]
+    },
+    {
+        "id": "6905d97ea2de0acf",
+        "type": "openai-ubos",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1400,
+        "y": 560,
+        "wires": [
+            [
+                "616c010e956c3185",
+                "045e64a281902a97"
+            ]
+        ]
+    },
+    {
+        "id": "58b8200a69e4d828",
+        "type": "openai-ubos",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1400,
+        "y": 860,
+        "wires": [
+            [
+                "b09542bff4b17693",
+                "1c2e897da68dfde0"
+            ]
+        ]
     },
     {
         "id": "deed4bf57d130045",
@@ -9829,7 +9835,7 @@
         "y": 460,
         "wires": [
             [
-                "4d9b8c0ef8046a28"
+                "ddd8ee138059b10f"
             ]
         ]
     },
@@ -9886,31 +9892,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "4d9b8c0ef8046a28",
-        "type": "openai-ubos",
-        "z": "5e7416993281e99d",
-        "g": "dd4d6fdf1b601b09",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1580,
-        "y": 460,
-        "wires": [
-            [
-                "89b9d71dd5b48135"
-            ]
-        ]
     },
     {
         "id": "538f70fb1fe7c27b",
@@ -11940,7 +11921,7 @@
         "type": "pinecone-vector-ubos",
         "z": "5e7416993281e99d",
         "g": "d5b48aa89e9f41a1",
-        "name": "demoversion1",
+        "name": "",
         "actionType": "query",
         "apiKey": "",
         "environment": "",
@@ -13021,6 +13002,68 @@
         "x": 1990,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "ddd8ee138059b10f",
+        "type": "openai-ubos",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1580,
+        "y": 460,
+        "wires": [
+            [
+                "89b9d71dd5b48135"
+            ]
+        ]
+    },
+    {
+        "id": "0ec04c582bf41c8a",
+        "type": "catch",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "",
+        "scope": [
+            "d8182f2910dcd33f"
+        ],
+        "uncaught": false,
+        "x": 1830,
+        "y": 220,
+        "wires": [
+            [
+                "c542eb9521c6b170"
+            ]
+        ]
+    },
+    {
+        "id": "d2af17549ceaa392",
+        "type": "catch",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "",
+        "scope": [
+            "ddd8ee138059b10f"
+        ],
+        "uncaught": false,
+        "x": 1830,
+        "y": 500,
+        "wires": [
+            [
+                "89a3547980a3c139"
+            ]
+        ]
     },
     {
         "id": "8e8669b0fb5ca927",
@@ -18711,8 +18754,7 @@
         "wires": [
             [
                 "12d33bcda39c0668",
-                "877f2e04d71b4d11",
-                "ae73e7e346bad2fc"
+                "877f2e04d71b4d11"
             ],
             []
         ]
@@ -20184,23 +20226,6 @@
         "wires": []
     },
     {
-        "id": "ae73e7e346bad2fc",
-        "type": "debug",
-        "z": "7e6aa2730f443095",
-        "g": "d5f3c34635f35708",
-        "name": "debug 802",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 260,
-        "y": 260,
-        "wires": []
-    },
-    {
         "id": "8bcfa72a275e228d",
         "type": "http in",
         "z": "87c010715c532181",
@@ -21279,10 +21304,10 @@
         "y": 880,
         "wires": [
             [
-                "8bf82a2245e73bd0"
+                "0664e6c3fa1f6132"
             ],
             [
-                "6c14f0972b57517b"
+                "f58cc1c13181dcf1"
             ]
         ]
     },
@@ -21330,31 +21355,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "8bf82a2245e73bd0",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "9f3a08dadb8626c3",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 2890,
-        "y": 840,
-        "wires": [
-            [
-                "beb68ab316d75f9f"
-            ]
-        ]
     },
     {
         "id": "815a8167a00731fb",
@@ -22224,32 +22224,6 @@
         "l": false
     },
     {
-        "id": "aae70283121bbce4",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 640,
-        "y": 1780,
-        "wires": [
-            [
-                "59a0473709ced9b7",
-                "1209cc0fb0a890cd"
-            ]
-        ]
-    },
-    {
         "id": "d23ca9071f281b3b",
         "type": "function",
         "z": "561be8df1dd04335",
@@ -22290,10 +22264,10 @@
         "y": 1840,
         "wires": [
             [
-                "aae70283121bbce4"
+                "c59352ee6aec7d0d"
             ],
             [
-                "b0d07b0258f92c78"
+                "e656959b6bb65df8"
             ]
         ]
     },
@@ -22397,31 +22371,6 @@
         "l": false
     },
     {
-        "id": "4ed8d299742231f8",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 720,
-        "y": 2120,
-        "wires": [
-            [
-                "b32a68096d7a239f"
-            ]
-        ]
-    },
-    {
         "id": "2b0d6af74c339f5f",
         "type": "function",
         "z": "561be8df1dd04335",
@@ -22437,11 +22386,11 @@
         "y": 2120,
         "wires": [
             [
-                "4ed8d299742231f8",
-                "d4569548a5f8f438"
+                "d4569548a5f8f438",
+                "a609f6927ac45615"
             ],
             [
-                "5910c0a6a4410c7d"
+                "d5550fe9f265b396"
             ]
         ]
     },
@@ -22497,35 +22446,10 @@
         "y": 2700,
         "wires": [
             [
-                "6c0f2a4c89a5771d"
+                "eabf87c97c2af554"
             ],
             [
-                "ad1da758dd92b865"
-            ]
-        ]
-    },
-    {
-        "id": "6c0f2a4c89a5771d",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 540,
-        "y": 2680,
-        "wires": [
-            [
-                "5e27a3af0de4127f"
+                "76aba1958ede1343"
             ]
         ]
     },
@@ -22798,31 +22722,6 @@
         "l": false
     },
     {
-        "id": "e08724d74efda804",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 800,
-        "y": 2460,
-        "wires": [
-            [
-                "d3947bc6a74a55a6"
-            ]
-        ]
-    },
-    {
         "id": "4df2bc0ad523211e",
         "type": "function",
         "z": "561be8df1dd04335",
@@ -22838,11 +22737,11 @@
         "y": 2580,
         "wires": [
             [
-                "e08724d74efda804",
-                "28ffaf7eb1fd26d1"
+                "28ffaf7eb1fd26d1",
+                "22f96893b0c97739"
             ],
             [
-                "86d4eabfc0d39da7"
+                "0b4ff76f2b117a6a"
             ]
         ]
     },
@@ -23389,32 +23288,6 @@
         ]
     },
     {
-        "id": "ad1da758dd92b865",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 540,
-        "y": 2720,
-        "wires": [
-            [
-                "fd386349507dd91f",
-                "beb60e5c829cdb4d"
-            ]
-        ]
-    },
-    {
         "id": "eadc0afe94a79478",
         "type": "debug",
         "z": "561be8df1dd04335",
@@ -23529,33 +23402,6 @@
         ]
     },
     {
-        "id": "86d4eabfc0d39da7",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 780,
-        "y": 2580,
-        "wires": [
-            [
-                "e02e18afcd7b246a",
-                "20eb7f6487d550d0",
-                "5568b48503199d40"
-            ]
-        ]
-    },
-    {
         "id": "f557d0d86f087cdd",
         "type": "debug",
         "z": "561be8df1dd04335",
@@ -23638,33 +23484,6 @@
             [
                 "6d0e0420186ad940",
                 "dd8eb35354758aac"
-            ]
-        ]
-    },
-    {
-        "id": "5910c0a6a4410c7d",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 600,
-        "y": 2220,
-        "wires": [
-            [
-                "681a34d55bf0226b",
-                "62304227d13174c5",
-                "f76f2a021a272f3c"
             ]
         ]
     },
@@ -23769,32 +23588,6 @@
             [
                 "ff5ac9811d26fb42",
                 "f94215791e094c88"
-            ]
-        ]
-    },
-    {
-        "id": "b0d07b0258f92c78",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 640,
-        "y": 1900,
-        "wires": [
-            [
-                "f7da8a2810c6029e",
-                "f977661ebe071bce"
             ]
         ]
     },
@@ -23955,31 +23748,6 @@
         "x": 2770,
         "y": 720,
         "wires": []
-    },
-    {
-        "id": "6c14f0972b57517b",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "g": "9f3a08dadb8626c3",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 2860,
-        "y": 940,
-        "wires": [
-            [
-                "7e6a176c53a30645"
-            ]
-        ]
     },
     {
         "id": "7e6a176c53a30645",
@@ -24406,6 +24174,7 @@
         "id": "42f4b904318f58db",
         "type": "function",
         "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
         "name": "status",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -24413,8 +24182,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 2640,
+        "x": 990,
+        "y": 2680,
         "wires": [
             [
                 "e153d69d12f7bf65"
@@ -24425,11 +24194,12 @@
         "id": "e153d69d12f7bf65",
         "type": "http response",
         "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1150,
-        "y": 2640,
+        "x": 1110,
+        "y": 2680,
         "wires": []
     },
     {
@@ -25919,8 +25689,7 @@
         "y": 80,
         "wires": [
             [
-                "512b87abf9741244",
-                "2ec3f27d2f96a363"
+                "512b87abf9741244"
             ]
         ],
         "l": false
@@ -26001,24 +25770,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "2ec3f27d2f96a363",
-        "type": "debug",
-        "z": "561be8df1dd04335",
-        "g": "42b214503281ca7c",
-        "name": "debug 558",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 330,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "792d250eeba455aa",
@@ -26105,8 +25856,8 @@
         "y": 3040,
         "wires": [
             [
-                "b53ff7b9ab9fe14c",
-                "894e526981ec3839"
+                "894e526981ec3839",
+                "fb94efdd7c9a719e"
             ]
         ]
     },
@@ -26135,31 +25886,6 @@
         "wires": [
             [
                 "4d61d7f706d382d7"
-            ]
-        ]
-    },
-    {
-        "id": "b53ff7b9ab9fe14c",
-        "type": "openai-ubos",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "model": "text-embedding-ada-002",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1140,
-        "y": 3040,
-        "wires": [
-            [
-                "d4e3c0018b9a87d0",
-                "ceedf828143a9f10"
             ]
         ]
     },
@@ -26840,24 +26566,6 @@
         "wires": []
     },
     {
-        "id": "f76f2a021a272f3c",
-        "type": "debug",
-        "z": "561be8df1dd04335",
-        "g": "1ad265cdd5feb53e",
-        "name": "debug 792",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 370,
-        "y": 2220,
-        "wires": []
-    },
-    {
         "id": "a4d5073f86bac61a",
         "type": "debug",
         "z": "561be8df1dd04335",
@@ -26997,5 +26705,295 @@
         "x": 2110,
         "y": 1660,
         "wires": []
+    },
+    {
+        "id": "0664e6c3fa1f6132",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "9f3a08dadb8626c3",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 2860,
+        "y": 840,
+        "wires": [
+            [
+                "beb68ab316d75f9f"
+            ]
+        ]
+    },
+    {
+        "id": "f58cc1c13181dcf1",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "9f3a08dadb8626c3",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 2860,
+        "y": 960,
+        "wires": [
+            [
+                "7e6a176c53a30645"
+            ]
+        ]
+    },
+    {
+        "id": "c59352ee6aec7d0d",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 640,
+        "y": 1760,
+        "wires": [
+            [
+                "59a0473709ced9b7"
+            ]
+        ]
+    },
+    {
+        "id": "e656959b6bb65df8",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 640,
+        "y": 1900,
+        "wires": [
+            [
+                "f7da8a2810c6029e",
+                "f977661ebe071bce"
+            ]
+        ]
+    },
+    {
+        "id": "a609f6927ac45615",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 720,
+        "y": 2120,
+        "wires": [
+            [
+                "b32a68096d7a239f"
+            ]
+        ]
+    },
+    {
+        "id": "d5550fe9f265b396",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 600,
+        "y": 2180,
+        "wires": [
+            [
+                "62304227d13174c5",
+                "681a34d55bf0226b"
+            ]
+        ]
+    },
+    {
+        "id": "22f96893b0c97739",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 760,
+        "y": 2460,
+        "wires": [
+            [
+                "d3947bc6a74a55a6"
+            ]
+        ]
+    },
+    {
+        "id": "0b4ff76f2b117a6a",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 740,
+        "y": 2600,
+        "wires": [
+            [
+                "5568b48503199d40",
+                "e02e18afcd7b246a",
+                "20eb7f6487d550d0"
+            ]
+        ]
+    },
+    {
+        "id": "eabf87c97c2af554",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 540,
+        "y": 2680,
+        "wires": [
+            [
+                "5e27a3af0de4127f"
+            ]
+        ]
+    },
+    {
+        "id": "76aba1958ede1343",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 540,
+        "y": 2720,
+        "wires": [
+            [
+                "fd386349507dd91f",
+                "beb60e5c829cdb4d"
+            ]
+        ]
+    },
+    {
+        "id": "fb94efdd7c9a719e",
+        "type": "openai-ubos",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "messages": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1140,
+        "y": 3040,
+        "wires": [
+            [
+                "d4e3c0018b9a87d0"
+            ]
+        ]
     }
 ]
