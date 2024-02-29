@@ -466,9 +466,7 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -620,9 +618,7 @@
             "71cd22f3e06a84bc"
         ],
         "x": 34,
-        "y": 19,
-        "w": 892,
-        "h": 562
+        "y": 19
     },
     {
         "id": "9f3a08dadb8626c3",
@@ -669,12 +665,14 @@
             "585d9d6095d0ca5b",
             "e5114daa61488a15",
             "0664e6c3fa1f6132",
-            "f58cc1c13181dcf1"
+            "f58cc1c13181dcf1",
+            "e44521ccd19c79c6",
+            "83e748ec96c13946"
         ],
         "x": 2334,
         "y": 559,
-        "w": 1322,
-        "h": 702
+        "w": 1332,
+        "h": 782
     },
     {
         "id": "d304cf774581307a",
@@ -837,7 +835,11 @@
             "42f4b904318f58db",
             "e153d69d12f7bf65",
             "eabf87c97c2af554",
-            "76aba1958ede1343"
+            "76aba1958ede1343",
+            "2e9f40767ad997f4",
+            "9535311b6e134e56",
+            "a13ac4faa9787ceb",
+            "2a6a66b31c5f460c"
         ],
         "x": 34,
         "y": 1259,
@@ -931,9 +933,14 @@
             "3ce6ccf8da8fc72b",
             "2fc53649d85fbcbf",
             "512b87abf9741244",
-            "792d250eeba455aa",
-            "7215a96dd0aa3b06",
-            "f447882cf9d10a8c"
+            "f447882cf9d10a8c",
+            "b379540367fecbcc",
+            "f133aa115adbe52e",
+            "c4606b684c81524a",
+            "43faf2023edc40d9",
+            "bbf348e87fee05f9",
+            "9d12bda7c8fbbd04",
+            "d680089b3b18a2ac"
         ],
         "x": 14,
         "y": 39,
@@ -987,9 +994,7 @@
             "ea3c9a01daa0a075"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1992,
-        "h": 402
+        "y": 559
     },
     {
         "id": "78ec20634862824d",
@@ -1122,9 +1127,7 @@
             "bb8dcd37c0b9c95b"
         ],
         "x": 74,
-        "y": 39,
-        "w": 1272,
-        "h": 382
+        "y": 39
     },
     {
         "id": "d5a9a22192fa1989",
@@ -1158,9 +1161,7 @@
             "1532d34b97a987c7"
         ],
         "x": 74,
-        "y": 499,
-        "w": 1412,
-        "h": 362
+        "y": 499
     },
     {
         "id": "df739382769ae8ae",
@@ -1196,9 +1197,7 @@
             "5274b2fd8878f639"
         ],
         "x": 64,
-        "y": 1399,
-        "w": 1412,
-        "h": 382
+        "y": 1399
     },
     {
         "id": "9c9bc0ca2320ad1b",
@@ -1233,9 +1232,7 @@
             "f7307a19280a4d92"
         ],
         "x": 74,
-        "y": 919,
-        "w": 1412,
-        "h": 422
+        "y": 919
     },
     {
         "id": "dd4d6fdf1b601b09",
@@ -1289,9 +1286,7 @@
             "d2af17549ceaa392"
         ],
         "x": 74,
-        "y": 279,
-        "w": 3112,
-        "h": 302
+        "y": 279
     },
     {
         "id": "55b42f036281abed",
@@ -1318,9 +1313,7 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "44336aabd4cc8aba",
@@ -1347,9 +1340,7 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "6f53df0634427ab8",
@@ -1379,9 +1370,7 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299,
-        "w": 1192,
-        "h": 222
+        "y": 1299
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1408,9 +1397,7 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559,
-        "w": 1212,
-        "h": 202
+        "y": 1559
     },
     {
         "id": "af65f71384d80c06",
@@ -1437,9 +1424,7 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799,
-        "w": 1152,
-        "h": 202
+        "y": 1799
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1460,9 +1445,7 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519,
-        "w": 572,
-        "h": 162
+        "y": 2519
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1500,9 +1483,7 @@
             "0ec04c582bf41c8a"
         ],
         "x": 74,
-        "y": 19,
-        "w": 2152,
-        "h": 242
+        "y": 19
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1532,9 +1513,7 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039,
-        "w": 1192,
-        "h": 202
+        "y": 2039
     },
     {
         "id": "d8a434ae844324e0",
@@ -1561,9 +1540,7 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279,
-        "w": 1232,
-        "h": 202
+        "y": 2279
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1597,9 +1574,7 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 639,
-        "w": 1232,
-        "h": 422
+        "y": 639
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1643,9 +1618,7 @@
             "3e35edc6870bb62a"
         ],
         "x": 44,
-        "y": 59,
-        "w": 1502,
-        "h": 462
+        "y": 59
     },
     {
         "id": "18e308d36025c38f",
@@ -3405,7 +3378,7 @@
         "type": "openai-ubos",
         "z": "71cb7453ba91face",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -4138,7 +4111,7 @@
         "type": "openai-ubos",
         "z": "a0451234ff05c29f",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -4188,7 +4161,7 @@
         "type": "openai-ubos",
         "z": "a0451234ff05c29f",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -4214,7 +4187,7 @@
         "z": "88bba2923a31d3e7",
         "g": "4a77a41c6602f9d6",
         "name": "check command",
-        "func": "// msg.fromApp = msg.payload\n\n// msg.OPENAI_API_KEY = global.get(\"openai\")?.OPENAI_API;\n\n\nmsg.history = {\n    requestText: msg.input,\n    startDate: Date.now(),\n    type: 'demo',\n    email: msg.fromApp.email + '_' + msg.fromApp.dbname\n}\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n// msg.input = msg.fromApp.message;\n// msg.content = msg.fromApp.message;\n\nreturn msg\n",
+        "func": "// msg.fromApp = msg.payload\n\n// msg.OPENAI_API_KEY = global.get(\"openai\")?.OPENAI_API;\n\n\nmsg.history = {\n    requestText: msg.input,\n    startDate: Date.now(),\n    type: 'demo',\n    email: msg.fromApp.email + '_' + msg.fromApp.dbname\n}\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n// msg.input = msg.fromApp.message;\n// msg.content = msg.fromApp.message;\nmsg.model = \"text-embedding-ada-002\";\n\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4858,7 +4831,7 @@
         "z": "88bba2923a31d3e7",
         "g": "4aa44aa75910cb5b",
         "name": "check command",
-        "func": "msg.fromApp = msg.payload\nmsg.email = msg.req.query.email\nmsg.reqFromApp = msg.req.query\nmsg.OPENAI_API_KEY = global.get(\"openai\")?.OPENAI_API;\nmsg.BOT_NAME = global.get('telegram')?.BOT_NAME;\nmsg.PINECONE_INDEX = global.get(\"pinecone\")?.PINECONE_INDEX;\nmsg.PINECONE_API_KEY = global.get(\"pinecone\")?.PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\")?.PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\")?.PINECONE_URL;\nmsg.id = 1111111;\n\nmsg.history = {\n    requestText: msg.payload.message.toLowerCase(),\n    startDate: Date.now(),\n    type: 'demo'\n}\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = msg.payload.message;\nmsg.content = msg.payload.message;\nreturn msg\n",
+        "func": "msg.fromApp = msg.payload\nmsg.email = msg.req.query.email\nmsg.reqFromApp = msg.req.query\nmsg.OPENAI_API_KEY = global.get(\"openai\")?.OPENAI_API;\nmsg.BOT_NAME = global.get('telegram')?.BOT_NAME;\nmsg.PINECONE_INDEX = global.get(\"pinecone\")?.PINECONE_INDEX;\nmsg.PINECONE_API_KEY = global.get(\"pinecone\")?.PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\")?.PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\")?.PINECONE_URL;\nmsg.id = 1111111;\n\nmsg.history = {\n    requestText: msg.payload.message.toLowerCase(),\n    startDate: Date.now(),\n    type: 'demo'\n}\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = msg.payload.message;\nmsg.content = msg.payload.message;\nmsg.model = \"text-embedding-ada-002\";\n\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5427,7 +5400,7 @@
         "z": "88bba2923a31d3e7",
         "g": "4aa44aa75910cb5b",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -5443,7 +5416,8 @@
         "y": 300,
         "wires": [
             [
-                "c79244f4f2abc1d9"
+                "c79244f4f2abc1d9",
+                "ffb7c8ece15c5f20"
             ]
         ]
     },
@@ -5479,7 +5453,7 @@
         "z": "88bba2923a31d3e7",
         "g": "4a77a41c6602f9d6",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -7564,7 +7538,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`\n\nmsg.ids = Date.now().toString()\nreturn msg",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7780,7 +7754,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`\n\nmsg.ids = Date.now().toString()\nreturn msg",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8068,7 +8042,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`\n\nmsg.ids = Date.now().toString()\nreturn msg\n",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21051,8 +21025,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 3300,
-        "y": 840,
+        "x": 3310,
+        "y": 940,
         "wires": [
             [
                 "9790cc4eb1ad54de",
@@ -21070,8 +21044,8 @@
         "method": "put",
         "upload": false,
         "swaggerDoc": "",
-        "x": 2460,
-        "y": 880,
+        "x": 2470,
+        "y": 980,
         "wires": [
             [
                 "655ae3d6de1db179",
@@ -21087,8 +21061,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3580,
-        "y": 860,
+        "x": 3590,
+        "y": 960,
         "wires": []
     },
     {
@@ -21103,8 +21077,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3440,
-        "y": 860,
+        "x": 3450,
+        "y": 960,
         "wires": [
             [
                 "8c904407b9381043"
@@ -21122,7 +21096,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2480,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "4e56c80bcba37cfb",
@@ -21148,7 +21122,7 @@
             }
         ],
         "x": 2810,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "2e682b4264e3c155"
@@ -21164,7 +21138,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3350,
-        "y": 1080,
+        "y": 1160,
         "wires": []
     },
     {
@@ -21185,7 +21159,7 @@
             }
         ],
         "x": 3140,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "70d7a8a64de8fb64",
@@ -21211,7 +21185,7 @@
         "senderr": false,
         "headers": [],
         "x": 2970,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "ae3eaeaa32cf3bf9"
@@ -21229,8 +21203,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 3470,
-        "y": 820,
+        "x": 3480,
+        "y": 920,
         "wires": [
             []
         ]
@@ -21247,7 +21221,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 3300,
-        "y": 1120,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -21266,8 +21240,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2610,
-        "y": 940,
+        "x": 2620,
+        "y": 1040,
         "wires": []
     },
     {
@@ -21285,7 +21259,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2830,
-        "y": 1060,
+        "y": 1140,
         "wires": []
     },
     {
@@ -21300,8 +21274,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2660,
-        "y": 880,
+        "x": 2670,
+        "y": 980,
         "wires": [
             [
                 "0664e6c3fa1f6132"
@@ -21320,8 +21294,8 @@
         "actionType": "update",
         "apiKey": "",
         "environment": "",
-        "x": 3140,
-        "y": 840,
+        "x": 3150,
+        "y": 940,
         "wires": [
             [
                 "6aaa2a508d618863",
@@ -21346,8 +21320,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 3015,
-        "y": 840,
+        "x": 3025,
+        "y": 940,
         "wires": [
             [
                 "49a24827544e80d6",
@@ -21370,8 +21344,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3280,
-        "y": 880,
+        "x": 3290,
+        "y": 980,
         "wires": []
     },
     {
@@ -21388,8 +21362,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3040,
-        "y": 900,
+        "x": 3050,
+        "y": 1000,
         "wires": []
     },
     {
@@ -21406,7 +21380,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2990,
+        "x": 3150,
         "y": 640,
         "wires": []
     },
@@ -21416,7 +21390,7 @@
         "z": "561be8df1dd04335",
         "g": "9f3a08dadb8626c3",
         "name": "from pinecone",
-        "func": "const vector = Array(1536).fill(0);\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 100,\n    \"includeMetadata\": true,\n    // \"includeValues\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
+        "func": "const vector = Array(1536).fill(0);\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 500,\n    \"includeMetadata\": true,\n    // \"includeValues\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21438,7 +21412,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 3130,
+        "x": 3310,
         "y": 600,
         "wires": []
     },
@@ -21455,8 +21429,8 @@
         "y": 600,
         "wires": [
             [
-                "43bdb6107c4d99af",
-                "e09f21afcab47e15"
+                "e09f21afcab47e15",
+                "e44521ccd19c79c6"
             ]
         ]
     },
@@ -21656,7 +21630,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "func": "msg.old=msg.payload\nmsg.url = msg.payload.link.trim();\nreturn msg",
+        "func": "msg.old = msg.payload;\nmsg.url = msg.payload.link.trim();\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21681,7 +21655,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "Scrape",
-        "func": "const { JSDOM } = jsdom;\n\nconst html = msg.payload;\n\nconst dom = new JSDOM(`${html}`);\ndom.window.document.querySelectorAll('style').forEach(link => {\n    link.remove();\n});\ndom.window.document.querySelectorAll('script').forEach(link => {\n    link.remove();\n});\nconst document = dom.window.document;\nconst pageText = document.body.textContent;\nmsg.text = pageText;\n\n\nlet table = dom.window.document.querySelector('table');\n\nlet ckeckTable = table?.textContent ? true : false;\n\n\nif (ckeckTable) {\n    const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n        const text = td.textContent.trim();\n        return text !== \"\" ? text : undefined;\n    }).filter(Boolean);\n\n    const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n    const tableData = rows.map(row => {\n        const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n        return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n    });\n\n    let tables = JSON.stringify(tableData);\n    node.warn(tables)\n    msg.pageContent = pageText + '\\n\\n' + tables;\n} else {\n     msg.pageContent = pageText;\n}\n\n\n    const MAX_LENGTH = 500;\n\n   msg.result = [];\n    let currentParagraph = '';\n\n    const sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\n    for (const sentence of sentences) {\n        if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n            currentParagraph += sentence;\n        } else {\n            msg.result.push(currentParagraph.trim());\n            currentParagraph = sentence;\n        }\n    }\n\n    if (currentParagraph.trim() !== '') {\n        msg.result.push(currentParagraph.trim());\n    }\n\n\n\nmsg.payload={...msg.old,\n    text: msg.result}\n\n\n\nmsg.url = env.get(\"nodered\") + `/createVector`\nreturn msg;\n",
+        "func": "const { JSDOM } = jsdom;\n\nconst html = msg.payload;\n\nconst dom = new JSDOM(`${html}`);\ndom.window.document.querySelectorAll('style').forEach(link => {\n    link.remove();\n});\ndom.window.document.querySelectorAll('script').forEach(link => {\n    link.remove();\n});\nconst document = dom.window.document;\nconst pageText = document.body.textContent;\nmsg.text = pageText;\n\n\nlet table = dom.window.document.querySelector('table');\n\nlet ckeckTable = table?.textContent ? true : false;\n\n\nif (ckeckTable) {\n    const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n        const text = td.textContent.trim();\n        return text !== \"\" ? text : undefined;\n    }).filter(Boolean);\n\n    const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n    const tableData = rows.map(row => {\n        const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n        return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n    });\n\n    let tables = JSON.stringify(tableData);\n    node.warn(tables)\n    msg.pageContent = pageText + '\\n\\n' + tables;\n} else {\n    msg.pageContent = pageText;\n}\n\n\nconst MAX_LENGTH = 500;\n\nmsg.result = [];\nlet currentParagraph = '';\n\nconst sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        msg.result.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    msg.result.push(currentParagraph.trim());\n}\n\n\n\nmsg.payload = {\n    ...msg.old,\n    text: msg.result\n}\n\n\n\nmsg.url = env.get(\"nodered\") + `/createVector`\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21715,7 +21689,8 @@
         "wires": [
             [
                 "41690b89e2213b18",
-                "beb4e680e67de340"
+                "beb4e680e67de340",
+                "2a6a66b31c5f460c"
             ]
         ]
     },
@@ -21745,7 +21720,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "check .pdf other",
-        "func": "msg.old=msg.payload\nif (msg.payload.link.includes(\".pdf\")){\n    return[msg, null]\n}else{\n    return[null, msg]\n}\n",
+        "func": "msg.old = msg.payload;\n\nif (msg.payload.link.includes(\".pdf\")) {\n\n    return [msg, null];\n} else {\n\n    return [null, msg];\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -21788,7 +21763,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 373",
-        "func": "msg.pageContent = msg.payload.text\n\n\n    const MAX_LENGTH = 500;\n\n    msg.result = [];\n    let currentParagraph = '';\n\n    const sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\n    for (const sentence of sentences) {\n        if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n            currentParagraph += sentence;\n        } else {\n            msg.result.push(currentParagraph.trim());\n            currentParagraph = sentence;\n        }\n    }\n\n    if (currentParagraph.trim() !== '') {\n        msg.result.push(currentParagraph.trim());\n    }\n\n\nmsg.payload = msg.old\nmsg.payload.text = msg.result\n\nmsg.url = env.get(\"nodered\") + `/createVector`;\nreturn msg;\n",
+        "func": "msg.pageContent = msg.payload.text\n\nconst MAX_LENGTH = 500;\n\nmsg.result = [];\nlet currentParagraph = '';\n\nconst sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        msg.result.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    msg.result.push(currentParagraph.trim());\n}\n\nmsg.payload = {\n    ...msg.old,\n    text: msg.result,\n};\n\nmsg.url = env.get(\"nodered\") + `/createVector`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21798,7 +21773,8 @@
         "y": 1540,
         "wires": [
             [
-                "9633e216848e9e0a"
+                "9633e216848e9e0a",
+                "2a6a66b31c5f460c"
             ]
         ],
         "l": false
@@ -21850,7 +21826,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "Create Pages",
-        "func": "msg.pageContent = msg.payload\n\n\n    const MAX_LENGTH = 500;\n\n    msg.result = [];\n    let currentParagraph = '';\n\n    const sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\n    for (const sentence of sentences) {\n        if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n            currentParagraph += sentence;\n        } else {\n            msg.result.push(currentParagraph.trim());\n            currentParagraph = sentence;\n        }\n    }\n\n    if (currentParagraph.trim() !== '') {\n        msg.result.push(currentParagraph.trim());\n    }\n\n\nmsg.payload = msg.old\nmsg.payload.text = msg.result\n\nmsg.url = env.get(\"nodered\") + `/createVector`;\nreturn msg;\n",
+        "func": "msg.pageContent = msg.payload;\n\nconst MAX_LENGTH = 500;\n\nmsg.result = [];\nlet currentParagraph = '';\n\nconst sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        msg.result.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    msg.result.push(currentParagraph.trim());\n}\n\nmsg.payload = {\n    ...msg.old,\n    text: msg.result,\n};\n\nmsg.url = env.get(\"nodered\") + `/createVector`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21860,7 +21836,8 @@
         "y": 1580,
         "wires": [
             [
-                "275a9ad44f1c645a"
+                "275a9ad44f1c645a",
+                "2a6a66b31c5f460c"
             ]
         ]
     },
@@ -21936,7 +21913,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "\n\nmsg.collection = \"knowledgeObjects\"\n\nlet question = msg.tobase.question;\nlet result = msg.tobase.result;\n\nlet url = msg.old.link\n\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: msg.old.link, question:question, result:result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "\n\nmsg.collection = \"knowledgeObjects\"\n\nlet question = msg.tobase.question;\nlet result = msg.tobase.result;\nconst source = msg.old.source;\nlet url = msg.old.link\n\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: msg.old.link,\n            question,\n            result,\n            source,\n         },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22129,7 +22106,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 374",
-        "func": "msg._id = objectid(msg.payload._id);\nmsg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\nmsg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\nmsg.old = msg.payload\nmsg.array = msg.payload.text\nreturn msg;",
+        "func": "msg._id = objectid(msg.payload._id);\nmsg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\nmsg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\nmsg.array = msg.payload.text;\nmsg.old = msg.payload;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22201,7 +22178,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 380",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\n\n// msg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.actionType = 'upsert';\nmsg.ids = Date.now().toString();\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    // name: 'dimko2',\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n// msg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_INDEX;\n\nreturn msg;\n",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\nconst source = msg.old.source;\n\n// msg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.actionType = 'upsert';\nmsg.ids = Date.now().toString();\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    // name: 'dimko2',\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n// msg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_INDEX;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22254,7 +22231,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`\n\nmsg.ids = Date.now().toString()\nif (msg.typeBase === \"chroma\") { return [null, msg] }\nelse {\n    return [msg, null]\n}",
+        "func": "msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.ids = Date.now().toString();\n\nif (msg.typeBase === \"chroma\") {\n    \n    return [null, msg]\n} else {\n\n    return [msg, null]\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -22277,7 +22254,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "\nmsg.collection = \"knowledgeObjects\"\n\n\nmsg.query = { \"_id\": msg.old._id }\n\n\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: msg.old.link, result: msg.input, question: msg.input},\n      }\n   }\n\n};\nreturn msg;\n\n\n\n   ",
+        "func": "\nmsg.collection = \"knowledgeObjects\"\nmsg.query = { \"_id\": msg.old._id }\nconst source = msg.old.source;\n\nmsg.payload = {\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: msg.old.link,\n            result: msg.input,\n            question: msg.input,\n            source,\n         },\n      }\n   }\n\n};\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22349,7 +22326,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 381",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nconst url = msg.old.link\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nconst url = msg.old.link\nconst source = msg.old.source;\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22390,7 +22367,8 @@
                 "a609f6927ac45615"
             ],
             [
-                "d5550fe9f265b396"
+                "d5550fe9f265b396",
+                "9535311b6e134e56"
             ]
         ]
     },
@@ -22426,7 +22404,8 @@
         "y": 2700,
         "wires": [
             [
-                "c9823494178e65bf"
+                "c9823494178e65bf",
+                "a13ac4faa9787ceb"
             ]
         ]
     },
@@ -22436,7 +22415,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "msg.tobase = msg.payload;\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload.question }, ${msg.payload.result}`\n\n\n\nif (msg.payload.typeBase === \"chroma\"){\n    return [null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "msg.tobase = msg.payload;\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload.question }, ${msg.payload.result}`\n\nif (msg.payload.typeBase === \"chroma\"){\n    return [null,msg]\n}else{\n    return[msg,null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -22459,7 +22438,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 387",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.tobase.question \nconst result = msg.tobase.result\nconst url = msg.tobase.name\nmsg.ids = msg.tobase.id\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding;\nmsg.vector = msg.payload.data[0].embedding;\nconst question = msg.tobase.question;\nconst result = msg.tobase.result;\nconst url = msg.tobase.name;\nconst source = msg.tobase.source;\n\nmsg.ids = msg.tobase.id;\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }],\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22700,7 +22679,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "function 401",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.input\nconst result = msg.input\nconst url = msg.old.link\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.input\nconst result = msg.input\nconst url = msg.old.link\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23263,7 +23242,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nmsg.emb = msg.payload.data[0].embedding\nmsg.ids = msg.tobase.id\nlet collection2 = await client.getCollection({ name: msg.tobase.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.tobase.question , result: msg.tobase.result, id: msg.ids}],\n    documents: msg.tobase.name \n})\nnode.warn([{ question: msg.tobase.question , result: msg.tobase.result }])\nmsg.payload = create\n\nreturn msg;",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst source = msg.tobase.source;\n\nmsg.emb = msg.payload.data[0].embedding;\nmsg.ids = msg.tobase.id;\nlet collection2 = await client.getCollection({ name: msg.tobase.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    documents: msg.tobase.name,\n    metadatas: [{\n        question: msg.tobase.question,\n        result: msg.tobase.result,\n        id: msg.ids,\n        source,\n    }],\n})\nnode.warn([{ question: msg.tobase.question , result: msg.tobase.result }])\nmsg.payload = create\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23463,7 +23442,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: question, result: result, id: msg.ids}],\n    documents: msg.old.link \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nconst source = msg.old.source;\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question,\n        result,\n        id: msg.ids,\n        source,\n    }],\n    documents: msg.old.link \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23511,7 +23490,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nlet question = msg.tobase.question;\nlet result = msg.tobase.result;\n\nlet url = msg.old.link\n\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: msg.old.link, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nlet question = msg.tobase.question;\nlet result = msg.tobase.result;\nconst source = msg.old.source;\nlet url = msg.old.link\n\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: msg.old.link,\n            question,\n            result,\n            source,\n         },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23567,7 +23546,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\n\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question, result, id: msg.ids, link: url }],\n    documents: msg.old.link \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\nconst source = msg.old.source;\n\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question,\n        result,\n        id: msg.ids,\n        link: url,\n        source,\n    }],\n    documents: msg.old.link \n})\nnode.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23615,7 +23594,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url,\n            question,\n            result\n         },\n      }\n   }\n\n};\n\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\nconst source = msg.old.source;\n\nmsg.query = { \"_id\": msg.old._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url,\n            question,\n            result,\n            source,\n         },\n      }\n   }\n\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23653,7 +23632,7 @@
         "z": "561be8df1dd04335",
         "g": "9f3a08dadb8626c3",
         "name": "from Chroma",
-        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 100\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
+        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 500\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23672,8 +23651,8 @@
         "y": 680,
         "wires": [
             [
-                "eb34d21632674fe4",
-                "f56e3ab34c6ec223"
+                "f56e3ab34c6ec223",
+                "83e748ec96c13946"
             ]
         ]
     },
@@ -23685,7 +23664,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2930,
+        "x": 3130,
         "y": 680,
         "wires": []
     },
@@ -23695,7 +23674,7 @@
         "z": "561be8df1dd04335",
         "g": "9f3a08dadb8626c3",
         "name": ">",
-        "func": "if (msg.payload.typeBase === \"chroma\") {\n\n    return [null, msg]\n} else {\n\n    return [msg, null]\n}\n",
+        "func": "msg.fromUI = msg.payload;\n\nif (msg.payload.typeBase === \"chroma\") {\n\n    return [null, msg]\n} else {\n\n    return [msg, null]\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -23745,8 +23724,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2770,
-        "y": 720,
+        "x": 2750,
+        "y": 740,
         "wires": []
     },
     {
@@ -23770,8 +23749,8 @@
                 "module": "openai"
             }
         ],
-        "x": 3070,
-        "y": 960,
+        "x": 3080,
+        "y": 1060,
         "wires": [
             [
                 "77f3bf6b414afa9d",
@@ -23793,8 +23772,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3290,
-        "y": 960,
+        "x": 3300,
+        "y": 1060,
         "wires": []
     },
     {
@@ -23810,7 +23789,7 @@
         "finalize": "",
         "libs": [],
         "x": 2670,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "b2fec9dc58b19eda",
@@ -23844,7 +23823,7 @@
             }
         ],
         "x": 2880,
-        "y": 1180,
+        "y": 1260,
         "wires": [
             [
                 "ae3eaeaa32cf3bf9",
@@ -23867,290 +23846,8 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3090,
-        "y": 1220,
+        "y": 1300,
         "wires": []
-    },
-    {
-        "id": "f0bff69d327dc543",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "get file",
-        "func": "msg.filepath = msg.decodedFilename\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1090,
-        "y": 580,
-        "wires": [
-            [
-                "0043b6658db3deb1"
-            ]
-        ]
-    },
-    {
-        "id": "0043b6658db3deb1",
-        "type": "file in",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "filename": "filepath",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 1260,
-        "y": 580,
-        "wires": [
-            [
-                "0ca5fc162929eca8"
-            ]
-        ]
-    },
-    {
-        "id": "0ca5fc162929eca8",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "encoding file",
-        "func": "\nlet text = msg.payload\n\nmsg.totaCharacters = msg.payload.length\nlet parts = text.split(/\\n/g).map(part => part.trim()).filter(part => part.length > 0);\n\nlet result = [];\nlet obj = {};\nfor (let i = 0; i < parts.length; i++) {\n    if (parts[i].endsWith(\"?\")) {\n        if (Object.keys(obj).length > 0) { // if 'obj' has keys\n            result.push(obj);\n            // @ts-ignore\n            obj = {};\n        }\n        obj[\"A\"] = parts[i];\n    } else {\n        if (obj[\"B\"]) {\n            obj[\"B\"] += ' ' + parts[i];\n        } else {\n            obj[\"B\"] = parts[i];\n        }\n    }\n}\n\nif (Object.keys(obj).length > 0) {\n    result.push(obj);\n}\n\nmsg.array = result;\n\nif (msg.array.length > 1 ){\n    return [msg,null]\n}else{\n    return [null,msg]\n}\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 580,
-        "wires": [
-            [
-                "0e429bc0b68c3133"
-            ],
-            [
-                "3e1ca53358163c76"
-            ]
-        ]
-    },
-    {
-        "id": "5a3095ed10653d4d",
-        "type": "debug",
-        "z": "561be8df1dd04335",
-        "name": "FAQ",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1670,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "3a5f1e972d5a1cfb",
-        "type": "debug",
-        "z": "561be8df1dd04335",
-        "name": "FILES",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1670,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "0e429bc0b68c3133",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "FAQ",
-        "func": "// msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + `${msg.contentPayload.name}.txt`;\n\n\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.contentPayload.id),\n    name: msg.contentPayload.name,\n    type: \"FAQ\",\n    file: `${msg.contentPayload.name}.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1670,
-        "y": 540,
-        "wires": [
-            [
-                "5a3095ed10653d4d",
-                "5af5c44129e82b35",
-                "30d666ced1b4cc59"
-            ]
-        ]
-    },
-    {
-        "id": "3e1ca53358163c76",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "FILES",
-        "func": "\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.contentPayload.id),\n    name: msg.contentPayload.name,\n    type: \"Files\",\n    file: `${msg.contentPayload.name}.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1670,
-        "y": 620,
-        "wires": [
-            [
-                "3a5f1e972d5a1cfb",
-                "5af5c44129e82b35",
-                "18967a141703ba5f"
-            ]
-        ]
-    },
-    {
-        "id": "3cdb274884ab514b",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "status",
-        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2030,
-        "y": 580,
-        "wires": [
-            [
-                "c1f3289e219c777b"
-            ]
-        ]
-    },
-    {
-        "id": "c1f3289e219c777b",
-        "type": "http response",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 2150,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "5af5c44129e82b35",
-        "type": "link call",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "links": [
-            "a142709ade270efa"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1850,
-        "y": 580,
-        "wires": [
-            [
-                "3cdb274884ab514b"
-            ]
-        ]
-    },
-    {
-        "id": "4032a8a7fdf8276c",
-        "type": "http request",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 2030,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "18967a141703ba5f",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "getLinkInfo",
-        "func": "\n\nmsg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId ,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/getFileInfo`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1850,
-        "y": 660,
-        "wires": [
-            [
-                "4032a8a7fdf8276c"
-            ]
-        ]
-    },
-    {
-        "id": "c3781f0dfcfcf130",
-        "type": "http request",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 2030,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "30d666ced1b4cc59",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "getLinkInfo",
-        "func": "msg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQ`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1850,
-        "y": 500,
-        "wires": [
-            [
-                "c3781f0dfcfcf130"
-            ]
-        ]
     },
     {
         "id": "5568b48503199d40",
@@ -24216,7 +23913,8 @@
         "y": 380,
         "wires": [
             [
-                "e11127f6031d2675"
+                "e11127f6031d2675",
+                "c38d15a08962bd8e"
             ]
         ]
     },
@@ -24444,7 +24142,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "Manualy",
-        "func": "msg.oldPayload = msg.oldPayloadforlink\nmsg.payload ={\n    knowledgeBaseId: objectid(msg.oldPayloadforlink.id),\n    name: msg.oldPayload.name,\n    type:msg.oldPayload.type,\n    deleted:false\n}\nreturn msg;",
+        "func": "msg.oldPayload = {\n    ...msg.oldPayloadforlink,\n    source: `manual-${new Date().getTime()}`,\n}\n\nmsg.payload ={\n    knowledgeBaseId: objectid(msg.oldPayloadforlink.id),\n    name: msg.oldPayload.name,\n    type:msg.oldPayload.type,\n    deleted:false,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24511,7 +24209,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "update",
-        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\n\nlet url = msg.oldPayload.name\nmsg.ids = Date.now().toString()\n\nmsg.query = { \"_id\":objectid(msg.payload[0]._id)}\nmsg.payload = {\n\n    \"$push\": {\n        \"vectors\": {\n            id: msg.ids ,\n            pinecone: false,\n            metadata: { url: url, question: question, result },\n        },\n    }\n\n};\nreturn msg;\n",
+        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\nlet url = msg.oldPayload.name;\nconst source = msg.oldPayload.source;\n\nmsg.ids = Date.now().toString()\n\nmsg.query = { \"_id\":objectid(msg.payload[0]._id)}\nmsg.payload = {\n\n    \"$push\": {\n        \"vectors\": {\n            id: msg.ids ,\n            pinecone: false,\n            metadata: {\n                url,\n                question,\n                result,\n                source,\n            },\n        },\n    }\n\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24538,7 +24236,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "insert",
-        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\nmsg.ids = Date.now().toString()\nlet url = msg.oldPayload.name\n\nlet vector = {\n    id: msg.ids,\n            pinecone: false,\n            metadata: { url: url, question: question, result },\n        }\n        \nmsg.payload = {\n    _id:objectid() ,\n    knowledgeBaseId: objectid(msg.oldPayloadforlink.id),\n    url: url,\n    type: msg.type,\n    name: msg.oldPayload.name,\n    vectors: [vector],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg;",
+        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\nmsg.ids = Date.now().toString();\nlet url = msg.oldPayload.name;\nconst source = msg.oldPayload.source;\n\nlet vector = {\n    id: msg.ids,\n    pinecone: false,\n    metadata: {\n        url,\n        question,\n        result,\n        source,\n    },\n};\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.oldPayloadforlink.id),\n    url: url,\n    type: msg.type,\n    name: msg.oldPayload.name,\n    vectors: [vector],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24701,8 +24399,7 @@
                 "4a6189ba10c4be8f"
             ],
             [
-                "c38d15a08962bd8e",
-                "792d250eeba455aa"
+                "f133aa115adbe52e"
             ],
             [
                 "8c05dad1bbcda226"
@@ -24735,7 +24432,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "LINK",
-        "func": "\nmsg.url = msg.oldPayloadforlink.link;\n\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId:objectid(msg.oldPayloadforlink.id),\n    url: msg.url,\n    type: \"Link\",\n    name: msg.oldPayloadforlink.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg",
+        "func": "msg.url = msg.oldPayloadforlink.link;\nmsg.contentPayload.source = msg.contentPayload.link;\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.oldPayloadforlink.id),\n    url: msg.url,\n    type: \"Link\",\n    name: msg.oldPayloadforlink.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    source: msg.contentPayload.source,\n};\n\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24750,7 +24447,8 @@
         "y": 180,
         "wires": [
             [
-                "7e8aedcac8294b72"
+                "7e8aedcac8294b72",
+                "d680089b3b18a2ac"
             ]
         ]
     },
@@ -24835,10 +24533,12 @@
         "y": 960,
         "wires": [
             [
-                "c46ab893f306d4ad"
+                "c46ab893f306d4ad",
+                "b379540367fecbcc"
             ],
             [
-                "378d39baabf74d89"
+                "378d39baabf74d89",
+                "b379540367fecbcc"
             ]
         ]
     },
@@ -24884,7 +24584,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "FAQ",
-        "func": "msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + msg.req.files[0].originalname\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId:objectid(msg.oldPayload.id),\n    name: msg.req.files[0].originalname,\n    type: \"FAQ\",\n    file: msg.req.files[0].originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;",
+        "func": "msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + msg.req.files[0].originalname\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId:objectid(msg.oldPayload.id),\n    name: msg.req.files[0].originalname,\n    type: \"FAQ\",\n    file: msg.req.files[0].originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.req.files[0].originalname,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24911,7 +24611,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "FILES",
-        "func": "msg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.oldPayload?.id),\n    name: msg.req?.files[0]?.originalname,\n    type: \"Files\",\n    file: msg.req?.files[0]?.originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;",
+        "func": "msg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.oldPayload?.id),\n    name: msg.req?.files[0]?.originalname,\n    type: \"Files\",\n    file: msg.req?.files[0]?.originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.req.files[0].originalname,\n};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25046,7 +24746,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "getLinkInfo",
-        "func": "\n\nmsg.payload = {\n    _id: msg.old._id,\n    knowledgeBaseId: msg.old.knowledgeBaseId,\n    link: msg.url,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/getLinkInfo`\nreturn msg;",
+        "func": "msg.payload = {\n    _id: msg.old._id,\n    knowledgeBaseId: msg.old.knowledgeBaseId,\n    link: msg.url,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase,\n    source: msg.contentPayload.source,\n};\n\nmsg.url = env.get(\"nodered\") + `/getLinkInfo`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25089,7 +24789,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "getLinkInfo",
-        "func": "\n\nmsg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId ,\n    link: msg.decodedFilename,\n    typeBase: msg.oldPayload.typeBase,\n    nameBase: msg.oldPayload.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/getFileInfo`\nreturn msg;",
+        "func": "\n\nmsg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId ,\n    link: msg.decodedFilename,\n    typeBase: msg.oldPayload.typeBase,\n    nameBase: msg.oldPayload.nameBase,\n    source: msg.payload.source,\n}\n\nmsg.url = env.get(\"nodered\") + `/getFileInfo`\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25099,7 +24799,8 @@
         "y": 1040,
         "wires": [
             [
-                "a5978698b056892e"
+                "a5978698b056892e",
+                "b379540367fecbcc"
             ]
         ]
     },
@@ -25132,7 +24833,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "getLinkInfo",
-        "func": "msg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.oldPayload.typeBase,\n    nameBase: msg.oldPayload.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQ`\nreturn msg;",
+        "func": "msg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.oldPayload.typeBase,\n    nameBase: msg.oldPayload.nameBase,\n    source: msg.payload.source,\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQ`\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25199,7 +24900,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "create vector",
-        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\n\nlet url = msg.oldPayload.name\n\n\n\nmsg.payload = {\n    id: msg.ids,\n    name: url,\n    question: question,\n    result: result,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQmanualy`\nreturn msg;",
+        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\nlet url = msg.oldPayload.name;\nconst source = msg.oldPayload.source;\n\nmsg.payload = {\n    id: msg.ids,\n    name: url,\n    question: question,\n    result: result,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase,\n    source,\n};\n\nmsg.url = env.get(\"nodered\") + `/FAQmanualy`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25242,7 +24943,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "update vector",
-        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\n\nlet url = msg.oldPayload.name\n\n\n\nmsg.payload = {\n    id: msg.ids,\n    name: url,\n    question: question,\n    result: result,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQmanualy`\nreturn msg;",
+        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\nlet url = msg.oldPayload.name;\nconst source = msg.oldPayload.source;\n\nmsg.payload = {\n    id: msg.ids,\n    name: url,\n    question,\n    result,\n    typeBase: msg.typeBase,\n    nameBase: msg.nameBase,\n    source,\n};\n\nmsg.url = env.get(\"nodered\") + `/FAQmanualy`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25270,8 +24971,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 440,
+        "x": 200,
+        "y": 420,
         "wires": []
     },
     {
@@ -25770,46 +25471,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "792d250eeba455aa",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "g": "42b214503281ca7c",
-        "name": "TEXT",
-        "func": "msg.payload = msg.contentPayload.text\nnode.warn(msg.payload)\nmsg.decodedFilename  = `/data/storage/${msg.contentPayload.name}.txt`\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 600,
-        "wires": [
-            [
-                "7215a96dd0aa3b06"
-            ]
-        ]
-    },
-    {
-        "id": "7215a96dd0aa3b06",
-        "type": "file",
-        "z": "561be8df1dd04335",
-        "g": "42b214503281ca7c",
-        "name": "Save to .txt",
-        "filename": "decodedFilename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 930,
-        "y": 600,
-        "wires": [
-            [
-                "f0bff69d327dc543"
-            ]
-        ]
     },
     {
         "id": "f447882cf9d10a8c",
@@ -26619,100 +26280,12 @@
         ]
     },
     {
-        "id": "36a4c09fe202818f",
-        "type": "function",
-        "z": "561be8df1dd04335",
-        "name": "function 640",
-        "func": "// const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.headers = {\n   'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    accept: 'application/json',\n    'content-type': 'application/json',\n}\n\nmsg.payload = { \"vectors\": [{ \"id\": \"1709115082477\", \"pinecone\": true, \"values\": [-0.010175746, -0.021284109, -0.010667605, -0.014065909, -0.0017566417, 0.022536116, -0.008821535, -0.028157368, 0.00026329662, -0.017221477, 0.018000785, 0.029664887, -0.0067263404, -0.01961051, -0.0031044648, 0.005142169, 0.029690437, -0.0019147394, 0.042644873, -0.02133521, -0.00987552, 0.00222295, 0.008795984, -0.020862514, -0.0049824747, 0.01573951, 0.020632554, -0.02174403, 0.020428145, -0.01287778, 0.0013973286, -0.008214695, -0.011683264, -0.01874177, -0.01709372, -0.010903954, -0.016135553, -0.024618534, 0.022459462, 0.008023062, 0.018141318, 0.0010867224, -0.0010060766, -0.013037475, -0.012341206, -0.00877682, 0.008827923, -0.0132227205, -0.023225997, 0.0033791398, 0.0119962655, 0.004426737, -0.022318931, 0.0002347512, -0.0015793806, -0.00016937619, 0.011108363, 0.008783208, 0.0046535037, -0.008010286, 0.0019195302, -0.0030565565, -0.037432436, 0.015011301, -0.0022660678, -0.011172241, -0.00020840157, -0.0069626886, 0.003519671, -0.0016751974, 0.037074722, 0.029434927, 0.0055861203, -0.016531594, 0.043436956, 0.011076424, -0.009773315, 0.0040370817, -0.015292364, -0.015726734, 0.010271563, -0.017821928, -0.01519016, -0.003947653, -0.0068477085, 0.014270318, 0.011101975, 0.0033695581, -0.0058831526, 0.0049537295, 0.0012264552, 0.022229502, 0.006164215, 0.034800667, -0.0037783764, 0.014513054, -0.0024321503, 0.010629279, 0.0023698693, -0.018179644, 0.011095587, 0.011357487, -0.02341763, -0.004723769, -0.02353261, -0.02298326, 0.022689423, -0.01204098, 0.030329216, -0.0061833784, -0.04042192, 0.015816163, 0.0029080403, -0.03395748, 0.025870541, -0.0030278114, 0.0138615, -0.0094283745, -0.0061897663, -0.029383823, 0.011932388, 0.005535018, 0.017336456, -0.016046124, 0.0033344252, -0.005480722, -0.03063583, 0.009996888, -0.007345956, -0.002529564, 0.038250074, 0.02928162, 0.006981852, -0.006231287, -0.007895306, -0.0017646264, -0.015956694, 0.022727748, -0.035516102, -0.04284928, 0.0025199824, 0.026023848, -0.027799653, -0.002801045, 0.003704917, 0.010329053, 0.030712483, -0.0019818111, 0.00886625, -0.004458676, 0.0038997445, -0.013618764, 0.013784846, -0.0013438308, -0.002467283, 0.0107698105, -0.01475579, 0.008055001, -0.0069051986, 0.0074417726, 0.0044650636, 0.012219838, 0.022561667, -0.0069690766, 0.00025591074, 0.025908867, 0.025538376, 0.026726505, 0.014078684, -0.015726734, -0.0047429325, -0.0023459152, -0.019048383, 0.009485865, -0.00643889, 0.018537361, 0.004611983, 0.012839453, -0.023059914, 0.000121867015, -0.026113277, 0.006176991, 0.024248043, 0.021590723, -0.0053338027, -0.00791447, 0.033318702, -0.005269925, 0.007320405, -0.015202935, 0.007697284, 0.03244996, 0.0074864873, -0.0100990925, -0.72156453, -0.023698693, 0.0056787436, -0.012379533, 0.007971959, 0.013184394, 0.018818423, 0.01906116, -0.029332722, 0.003160358, -0.0019626478, 0.0072884657, 0.015254037, -0.014628034, -0.012596718, -0.0036091001, -0.000044714514, -0.0016736004, 0.008725719, -0.0062791957, -0.011082812, -0.006994628, -0.017017066, -0.00921119, 0.023558162, -0.002497625, 0.009390048, 0.011370262, -0.0007617437, -0.008623513, -0.017719723, 0.029026108, 0.0029751123, -0.014078684, 0.05013136, -0.0107825855, -0.015777836, 0.023430405, 0.016991515, 0.018000785, -0.013938153, 0.0019323059, 0.01042487, 0.00061682076, 0.010705932, -0.0011378247, 0.0060077147, -0.0009006781, 0.007262915, -0.024989026, 0.004493809, -0.0011106766, -0.016071673, 0.002171848, -0.012954433, -0.00036669895, 0.020019326, -0.024899596, -0.007837815, 0.0066113602, -0.0130821895, -0.003283323, -0.019265568, -0.019125037, -0.011414977, 0.03372752, -0.024937924, -0.0010356201, 0.008380777, 0.00811249, -0.034724016, 0.0059981328, -0.018780096, -0.019393323, -0.00051102304, 0.0072309757, 0.025257314, 0.0037687947, -0.01365709, 0.010763423, 0.022817178, -0.010865627, -0.020517575, -0.0021606693, 0.027901858, -0.011753529, -0.016672127, 0.015803387, 0.0034174665, -0.0004247879, 0.019176139, 0.027339732, -0.01452583, -0.019457202, -0.0029080403, 0.001249611, 0.0030150358, 0.0105015235, -0.0036793659, -0.0056755496, -0.010054378, -0.010086317, -0.0046758605, 0.00013823571, 0.0035995184, 0.019406099, -0.011153078, 0.023034362, 0.04305369, -0.024707964, 0.007109608, -0.011357487, -0.010226849, -0.015483998, 0.0019690355, -0.033344254, 0.003998755, 0.021756805, 0.007262915, -0.015637305, 0.024439676, -0.011625774, 0.021360762, -0.000949385, 0.023788122, 0.01409146, -0.00045073827, -0.01686376, -0.017464211, -0.012558391, -0.008246634, -0.0073842825, 0.03109575, -0.0010252399, 0.020900842, -0.0061865724, 0.03756019, -0.003246593, 0.014794117, -0.012845841, -0.008553248, -0.006355849, 0.0032002816, -0.0029575457, -0.020338716, -0.008463819, 0.00066233374, -0.0036953352, -0.0126797585, -0.0015354645, -0.012641432, 0.001954663, -0.022944935, 0.014998525, 0.0072373636, 0.014142563, -0.021003047, -0.012922495, -0.008208307, -0.0060971435, 0.001654437, 0.024963474, -0.007946408, 0.0058607953, -0.0032449963, -0.012845841, 0.01221345, 0.008923739, -0.0031108526, -0.03349756, 0.0034078849, -0.0124050835, -0.006656075, 0.011945163, 0.01608445, 0.011683264, -0.017630294, -0.012309267, 0.01158106, -0.0016831821, 0.010763423, -0.009160087, -0.029383823, 0.0020361075, 0.028745046, -0.0052156285, 0.0072756903, 0.028540635, -0.015586202, 0.01004799, -0.01270531, 0.0053753234, 0.012960821, 0.023583712, 0.0010132629, 0.012277328, 0.0034877323, 0.00046471157, 0.0066432995, 0.027390834, 0.030712483, 0.0034877323, 0.022766076, -0.020543126, -0.0060332655, -0.040984046, 0.008284961, -0.029128313, 0.014513054, 0.017259803, 0.012124022, -0.0027563304, -0.007908082, -0.008700167, 0.009089822, 0.027135322, -0.006282389, 0.01565008, -0.022127297, -0.021360762, 0.008994006, -0.021552397, 0.010514298, 0.00038087185, -0.022012318, 0.031146854, 0.004877076, -0.000586878, 0.009466701, -0.0059118974, -0.008955679, 0.0056659677, 0.0033727519, 0.02211452, 0.006566646, -0.012871392, 0.009562518, -0.0070712813, 0.015586202, 0.016569922, -0.019648835, 0.008821535, 0.026828708, -0.0133504765, 0.011785468, 0.009370885, 0.042644873, -0.0022069807, 0.0047365446, 0.0022309348, -0.013133292, -0.0016512432, -0.0027898664, 0.0040913783, 0.020172633, -0.017668622, 0.025883317, 0.0006423719, 0.014193664, 0.014934648, 0.022944935, 0.004825974, 0.009083434, -0.007262915, 0.011344711, -0.013069414, 0.00017756053, 0.0022069807, -0.006592197, 0.017017066, -0.0074481606, -0.018716218, -0.0014532218, -0.008514921, 0.018128542, -0.003548416, -0.009275068, -0.012085695, 0.026036624, 0.018575687, -0.00074138265, -0.030482523, 0.007416222, 0.0100990925, -0.009945786, -0.013950929, -0.024133062, 0.010999771, 0.0031348069, 0.010354604, 0.003947653, 0.02130966, 0.0047141872, -0.008425492, -0.0030629442, -0.014372523, 0.033804175, -0.011964327, 0.0000047939598, 0.0016232965, -0.009964949, -0.0016799882, -0.016659351, -0.008840699, 0.0071479348, 0.014730238, -0.0052315984, -0.0029335916, 0.0036250695, -0.0012432232, 0.016697677, 0.011932388, -0.014423625, 0.005777754, 0.0037879583, 0.027620794, -0.00093980326, 0.00068069866, 0.025167884, -0.0076078554, -0.019252792, -0.010303502, -0.0077611622, -0.0014779744, 0.076602355, 0.028361779, -0.0016480492, 0.0072118123, 0.000323781, 0.012009041, 0.0063111344, -0.030329216, -0.008968454, -0.00052220165, 0.009057883, -0.010188522, 0.021003047, 0.004656697, 0.021782357, -0.012334818, 0.005844826, -0.023366528, -0.0020041685, -0.011114751, 0.0052507618, -0.010552625, 0.015458447, 0.023289874, -0.004988862, -0.00023095845, 0.008399941, 0.032986537, 0.020466473, -0.022229502, -0.017860254, -0.0038294788, -0.012583942, 0.008368002, -0.01094228, 0.0018796065, -0.0015897606, 0.0038646117, 0.023749795, -0.005244374, 0.018128542, 0.025104007, 0.012635045, -0.012973597, 0.018843975, -0.04167393, -0.008106103, 0.014589707, -0.013529334, -0.006435696, 0.0332676, 0.010271563, -0.018205196, -0.016416615, 0.0007118391, 0.011153078, 0.009894683, -0.010028827, -0.0025966358, -0.013618764, 0.011849347, -0.03193894, 0.0010715515, -0.0020345105, -0.0013047056, -0.026023848, -0.0046535037, -0.00063478644, -0.019150589, -0.0006439689, -0.0016640187, -0.011600222, -0.016876535, -0.0005074299, 0.020632554, 0.01952108, 0.0016640187, 0.009977724, 0.013925377, 0.0066049728, 0.0025503242, -0.024784617, -0.019227242, -0.012596718, -0.013938153, -0.0071798735, 0.0006595391, -0.0051645264, -0.013580437, 0.008118878, 0.014244767, -0.018307399, 0.0142958695, -0.0166338, 0.0039029384, -0.0057969172, 0.00027008366, 0.013797621, -0.016276084, 0.0011378247, 0.020249287, -0.023596488, 0.0044075735, -0.007856979, 0.00993301, 0.0083424505, 0.00055453985, 0.031376813, -0.02951158, -0.0166338, 0.000068718626, -0.016339961, 0.0051166182, 0.003519671, 0.0122709405, 0.016608248, 0.0042574606, 0.0038965505, 0.012117634, 0.0040402757, -0.0048291674, -0.012481737, 0.025781112, 0.0050048316, -0.0015035255, 0.012750025, 0.0018875913, -0.040549677, -0.013797621, 0.0075056506, 0.016212206, 0.02841288, -0.001462005, -0.010322665, -0.01631441, -0.01342713, 0.005084679, 0.015624529, -0.013950929, -0.015943918, -0.017438661, 0.0036218758, 0.0044203494, -0.023954205, -0.02298326, -0.034749568, -0.010022439, 0.008380777, 0.007920857, 0.02639434, -0.021347987, 0.011689652, -0.017106496, -0.020274838, -0.00053058565, -0.030686934, -0.0077803256, 0.013133292, 0.03311429, 0.0009222369, 0.011402201, 0.007435385, 0.000093321585, -0.007895306, -0.022970485, 0.015637305, -0.021667376, 0.002433747, -0.018792871, 0.015151833, 0.03017591, 0.0032274297, -0.0063175224, -0.0058160806, -0.0018508615, 0.012596718, -0.01752809, -0.00246888, -0.015637305, -0.028898353, -0.012226226, 0.005362548, -0.0056723556, -0.0011306384, -0.002741958, 0.006681626, 0.029664887, 0.011568284, 0.018895077, -0.0013286598, 0.015151833, -0.0032657564, 0.022152849, 0.01224539, -0.008055001, -0.019393323, -0.011836571, -0.0079272445, -0.019342221, 0.013094965, 0.0026365595, -0.005081485, 0.0033727519, -0.0022692615, -0.0043500834, 0.01752809, -0.02142464, -0.019482752, 0.012149572, 0.0071159955, -0.00087991776, -0.023149343, 0.00031439893, -0.025896091, 0.008642677, 0.010290726, -0.021233007, 0.014385298, -0.0033344252, -0.029562682, 0.0138615, -0.00505274, 0.0126669835, 0.0013925377, 0.037125822, 0.012085695, -0.004120123, -0.023123791, 0.010431257, -0.008221083, -0.0013462263, 0.0032609657, -0.003526059, -0.0006479612, -0.009575294, 0.013094965, 0.004219134, -0.005196465, -0.04479117, 0.013733744, 0.022625545, 0.0033440068, -0.018754546, -0.011395814, -0.023289874, -0.007256527, 0.0042606546, 0.011210567, -0.005033577, -0.015445671, -0.020172633, 0.008208307, -0.009108986, 0.03883775, -0.007518426, -0.00541365, -0.00433092, 0.00059805665, 0.009377273, 0.0088918, 0.0009741376, 0.018550135, -0.022497788, 0.013580437, 0.0033631702, -0.0033599765, -0.016212206, 0.0020999853, -0.018205196, 0.02316212, -0.024069184, 0.0042574606, 0.00987552, 0.024222491, -0.00061522383, 0.005809693, -0.0003467371, -0.003070929, -0.016327186, -0.013184394, 0.024363022, 0.015458447, 0.0021239393, -0.0022932158, -0.010578177, -0.021092476, -0.02174403, -0.0058799586, 0.0056563863, -0.010705932, 0.0049792808, -0.01342713, 0.0003736856, -0.0031380008, 0.0029048466, 0.0025519212, 0.023685917, 0.022459462, -0.024388574, 0.024937924, -0.0057138763, -0.0070265667, -0.0074481606, 0.010744259, -0.022804402, -0.0244269, 0.02520621, -0.00877682, -0.024145838, -0.0210797, 0.011434141, 0.019329445, 0.004152062, 0.008265797, 0.025461722, 0.0061546336, 0.00095497427, -0.02520621, -0.0038805811, 0.01567563, -0.018486258, -0.0017119271, 0.015726734, -0.02284273, -0.013554886, 0.01048236, 0.018115766, -0.00909621, -0.021271333, -0.0052827005, -0.01310774, 0.019738264, -0.013376027, -0.011153078, -0.007856979, 0.0012376339, -0.0005313841, 0.011945163, -0.02087529, -0.0020568676, 0.020479247, 0.02110525, -0.0030294084, -0.0005218024, -0.009275068, -0.00012196683, -0.00811249, 0.0011026919, -0.025576703, -0.023992531, -0.013682641, 0.016595474, 0.00005205049, 0.0069051986, -0.019891571, 0.002076031, -0.016659351, -0.0030453778, 0.003791152, 0.010801749, 0.020504799, 0.009677499, -0.008514921, 0.01954663, 0.010520686, 0.031044649, -0.005573345, -0.01986602, -0.008099715, -0.012833065, 0.019661611, 0.007876142, -0.03968094, -0.018064665, 0.009524192, -0.014180889, 0.013337701, 0.007460936, -0.0069435253, -0.0018460706, 0.00032238365, 0.0013182798, 0.011191404, -0.0016991516, 0.012724473, -0.012430635, -0.009805255, 0.010878403, 0.0060332655, -0.0043500834, -0.016493268, 0.0052220165, -0.014691912, 0.012577554, -0.013011924, -0.019022832, 0.012871392, -0.02497625, 0.02252334, 0.0105079105, -0.00953058, 0.026011072, -0.011006159, -0.00033176574, -0.00788253, 0.0073012416, -0.018064665, -0.008035837, 0.02321322, -0.0051325876, -0.006295165, 0.0021894143, 0.009952174, -0.018869525, 0.008368002, 0.010124643, -0.01619943, -0.011485242, 0.013075802, 0.011913224, -0.016391063, 0.010897566, 0.0020520769, -0.011472467, 0.0035963245, -0.012928883, -0.0048451372, 0.004174419, -0.0045832377, 0.0022916188, 0.0059821634, -0.024797393, 0.0034462116, 0.011338323, -0.0016464524, -0.011504406, 0.21606053, 0.00007680317, -0.016927637, 0.019457202, -0.009798867, 0.007518426, 0.01608445, -0.027109772, -0.007908082, 0.016327186, -0.0077867135, 0.0051198117, -0.021820683, -0.007876142, 0.013618764, -0.016339961, -0.032756574, -0.011638549, -0.027518589, -0.033804175, -0.018000785, -0.003069332, -0.0014276706, -0.0166338, 0.0388633, -0.00303899, -0.00802945, 0.027569693, 0.015816163, -0.003765601, -0.0074545485, 0.0009853162, -0.0049569234, -0.012603105, -0.021922888, -0.016927637, -0.0056531923, -0.0022516951, 0.023123791, 0.017349232, -0.0064644413, 0.004369247, 0.011414977, -0.007052118, -0.003340813, 0.021616274, -0.0117215905, -0.013963704, -0.010041603, 0.0055477936, -0.041980542, 0.017208701, 0.00505274, 0.01954663, -0.0009126552, -0.0043245326, 0.021233007, -0.01573951, -0.013478233, -0.0017278966, -0.016557146, 0.02061978, -0.015369018, 0.018473482, -0.021475744, 0.02064533, -0.021718478, -0.00018334948, 0.01010548, -0.028131818, 0.0054296195, -0.008553248, -0.0016736004, -0.001865234, -0.045378845, -0.033344254, 0.02084974, 0.018728994, 0.0076270187, 0.016621023, -0.01432142, -0.008214695, -0.0037240803, 0.0084702065, -0.004334114, -0.025346743, 0.02018541, -0.008195532, 0.0063750125, -0.005969388, -0.011970715, -0.020313166, -0.0014324614, -0.0033759458, 0.018435156, -0.0017678203, 0.004129705, 0.025653357, -0.008444656, -0.0014564156, -0.0059821634, 0.014538605, 0.022791628, 0.01567563, -0.012718085, 0.014283094, -0.0059214793, 0.023724245, -0.007946408, -0.0344685, -0.007154322, -0.02584499, 0.007831428, 0.006937138, -0.013963704, 0.0063622366, 0.0009789285, -0.0012695729, 0.006237675, -0.0038773871, -0.0020121532, -0.011625774, 0.018486258, -0.0022612768, 0.00070225744, -0.019073935, -0.020108756, 0.010450421, 0.02197399, -0.046298686, 0.015509549, -0.022932159, 0.010744259, -0.01397648, 0.0053178333, -0.0046854424, 0.0147046875, 0.0064197266, -0.007428997, -0.0052795066, 0.003040587, -0.013887051, 0.023340976, 0.0073395683, -0.0018572493, -0.010686769, 0.021347987, -0.024478003, -0.0028713106, 0.0058639892, -0.024299145, 0.012219838, -0.0046503097, -0.014691912, 0.012379533, -0.012622269, -0.02341763, -0.0321178, -0.012622269, 0.005030383, -0.024567433, 0.011338323, 0.023366528, -0.013037475, -0.00040282987, -0.00788253, -0.16690011, 0.02307269, 0.0029080403, 0.0012104858, -0.0074992627, -0.0011993072, 0.037330233, -0.019648835, -0.0068413205, 0.008764045, 0.01582894, -0.002951158, -0.021692928, -0.010373767, 0.008719331, -0.0126797585, -0.01094228, 0.0061833784, 0.036614798, 0.018499034, 0.016071673, -0.0039252955, 0.011804632, -0.027211975, -0.005295476, -0.004056245, 0.007250139, 0.015036852, -0.022919383, -0.012890556, 0.003736856, -0.0014204843, 0.012430635, 0.017745275, 0.006451666, 0.010903954, -0.0043756347, -0.021820683, -0.014819668, 0.029026108, 0.01975104, 0.0033312314, 0.009773315, -0.0037240803, 0.0022165624, 0.019214466, 0.0075375894, -0.013554886, 0.012277328, -0.019789366, -0.0038582238, -0.027748551, 0.009192026, -0.0045928196, 0.016442167, 0.007684509, 0.0006922765, 0.014500278, -0.004998444, -0.0069051986, -0.0050048316, -0.025129557, 0.005519049, -0.01697874, -0.006352655, 0.00017895787, -0.016850984, 0.008572412, -0.028361779, 0.0025359518, -0.008687392, -0.020377044, 0.017400334, -0.017042618, -0.009070659, -0.0023650785, 0.0048930454, 0.016531594, 0.012104858, 0.0024305533, -0.016301634, 0.037841257, -0.0044107675, 0.0068477085, 0.007205425, -0.0003716894, -0.010961444, -0.006937138, -0.008067776, -0.026956465, 0.019968225, -0.012596718, -0.016480492, -0.02472074, 0.0043788287, 0.031121302, 0.0012815499, 0.0019897958, 0.006221705, -0.006649687, 0.013925377, 0.014781341, -0.036921415, 0.015509549, 0.043436956, -0.003733662, 0.007735611, 0.016339961, 0.03237331, -0.009025944, -0.011427753, 0.0024465227, 0.028029613, 0.011951551, -0.0029623366, 0.009964949, 0.008457431, -0.01126167, 0.00921119, -0.011216955, 0.043666918, 0.0004335711, 0.0071798735, 0.004701412, -0.020364268, -0.021475744, -0.07925967, -0.008176369, 0.014628034, 0.012750025, -0.0036378452, 0.016467717, 0.0051741083, 0.0009893087, 0.002496028, 0.029690437, -0.005036771, -0.027416386, -0.0002988287, -0.019125037, 0.021003047, 0.0036410391, -0.0036091001, -0.029179415, -0.009019556, 0.028208472, 0.007345956, 0.0057713664, 0.006413339, -0.015279588, -0.013376027, 0.0037176926, -0.023353752, 0.018358503, 0.020568676, -0.00077731395, -0.015317915, -0.009747764, 0.01920169, -0.049339272, -0.0024752677, -0.014283094, -0.02621548, -0.015867265, 0.023315426, -0.007077669, -0.0042319093, 0.006116307, -0.001236037, -0.016442167, -0.0032306237, -0.008987618, -0.022178398, 0.03191339, -0.010865627, -0.010360992, -0.016339961, 0.00794002, -0.031632327, -0.0038805811, 0.013912602, 0.015790612, 0.01204098, 0.02261277, -0.0061865724, 0.015637305, -0.007869755, 0.012449798, -0.0011633759, 0.028438432, -0.006592197, -0.01039293, -0.02488682, -0.02110525, 0.0321178, -0.035465, -0.012187899, 0.0036186818, -0.015254037, 0.025589477, -0.010967832, 0.014078684, -0.03147902, 0.0014196859, 0.011708815, -0.026522094, -0.0041009597, -0.02353261, 0.019917123, -0.0020233318, 0.02078586, 0.007741999, 0.0121304095, -0.007684509, 0.0015921561, -0.020568676, 0.0038326727, 0.022421135, 0.030354768, -0.009658335, -0.00072980474, 0.0061546336, -0.004241491, -0.006662463, 0.0012927286, 0.013567661, -0.008221083, -0.01103171, -0.07067449, 0.022280604, -0.009779703, 0.010833688, 0.009939398, 0.004640728, -0.002861729, -0.023813672, -0.015943918, 0.0023267518, -0.01365709, 0.015943918, -0.0063047465, -0.004001949, -0.020951943, -0.030354768, 0.0044107675, 0.020198185, 0.009396436, 0.0111850165, 0.009517804, -0.0030341991, 0.015637305, 0.012641432, -0.014423625, -0.016889311, -0.014283094, 0.0049601174, -0.02038982, -0.009984112, 0.026752055, -0.02263832, 0.008693779, 0.03748354, -0.01094228, -0.02229338, -0.0036793659, 0.0072437515, 0.004426737, 0.015586202, -0.035183936, -0.03658925, 0.0020904036, -0.0032865168, -0.0130821895, -0.0040881843, -0.009006781, 0.0060460414, 0.010533462, -0.006592197, 0.017464211, 0.017924132, -0.010322665, -0.027646346, -0.010437645, -0.025244538, 0.015330691, 0.014219216, -0.007077669, -0.023187669, 0.030150358, -0.010986995, 0.0051645264, -0.008847086, 0.0016328782, -0.015164608, -0.022446686, 0.021233007, 0.013439906, -0.025155108, -0.025282864, -0.006681626, -0.00008543666, 0.004877076, 0.030967996, 0.01048236, 0.009952174, -0.00091904297, -0.016710453, 0.020683657, 0.01833295, -0.0042319093, -0.031376813, 0.022817178, 0.03748354, 0.022766076, 0.0042925933, 0.0013462263, 0.0012528049, 0.025129557, -0.026062174, 0.01599502, 0.0014117011, 0.008629901, 0.010016051, 0.01654437, -0.0021015822, 0.004672667, 0.016697677, 0.03612933, -0.0052315984, 0.006681626, 0.0064037573, -0.034698464, -0.006119501, 0.020019326, -0.024503553, -0.010380155, -0.0075375894, 0.0052795066, 0.004238297, -0.005368936, 0.0034557933, 0.019917123, -0.013733744, 0.009849968, -0.010859239, -0.009849968, -0.03063583, 0.009070659, 0.02119468, 0.023852, 0.03395748, -0.0012847438, 0.019240016, -0.0045640743, 0.008380777, -0.028566187, 0.02032594, 0.0060332655, 0.017694172, -0.004640728, -0.008674616, -0.02139909, -0.029460477, 0.012111246, -0.006288777, 0.01432142, -0.016173879, 0.072309755, 0.0048994333, -0.000949385, -0.005094261, 0.0010324263, 0.0033791398, -0.00698824, -0.014666361, -0.025474498, 0.009703049, 0.01542012, -0.0044618696, 0.011900449, -0.03482622, -0.009722213, 0.002947964, -0.013248272, 0.016621023, -0.022996036, 0.0046183704, 0.0001836489, 0.0051293937, 0.017655846, -0.00052100397, -0.025934419, -0.0166338, 0.016608248, 0.015036852, -0.011018934, -0.022497788, 0.014244767, 0.0071798735, -0.042440463, 0.0065858094, 0.01709372, -0.02041537, -0.018831199, -0.005027189, 0.014142563, 0.027595242, -0.0029288006, 0.028566187, -0.029204967, -0.028361779, 0.016506044, 0.026100501, -0.011740754, -0.010329053, 0.0032960984], \"metadata\": { \"url\": \"https://ubos.tech/\", \"question\": \", \", \"result\": \", \" } }] }\n\nreturn msg;\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1650,
-        "y": 1720,
-        "wires": [
-            [
-                "35b7ab2b16a5e92b"
-            ]
-        ]
-    },
-    {
-        "id": "33927367a47c32c9",
-        "type": "inject",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1540,
-        "y": 1640,
-        "wires": [
-            [
-                "36a4c09fe202818f"
-            ]
-        ]
-    },
-    {
-        "id": "35b7ab2b16a5e92b",
-        "type": "http request",
-        "z": "561be8df1dd04335",
-        "name": "",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1850,
-        "y": 1720,
-        "wires": [
-            [
-                "bb064cd0f4a4f6c7"
-            ]
-        ]
-    },
-    {
-        "id": "bb064cd0f4a4f6c7",
-        "type": "debug",
-        "z": "561be8df1dd04335",
-        "name": "debug 799",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2110,
-        "y": 1660,
-        "wires": []
-    },
-    {
         "id": "0664e6c3fa1f6132",
         "type": "openai-ubos",
         "z": "561be8df1dd04335",
         "g": "9f3a08dadb8626c3",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26724,8 +26297,8 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 2860,
-        "y": 840,
+        "x": 2870,
+        "y": 940,
         "wires": [
             [
                 "beb68ab316d75f9f"
@@ -26738,7 +26311,7 @@
         "z": "561be8df1dd04335",
         "g": "9f3a08dadb8626c3",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26750,8 +26323,8 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 2860,
-        "y": 960,
+        "x": 2870,
+        "y": 1060,
         "wires": [
             [
                 "7e6a176c53a30645"
@@ -26764,7 +26337,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26780,7 +26353,8 @@
         "y": 1760,
         "wires": [
             [
-                "59a0473709ced9b7"
+                "59a0473709ced9b7",
+                "2e9f40767ad997f4"
             ]
         ]
     },
@@ -26790,7 +26364,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26817,7 +26391,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26843,7 +26417,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26870,7 +26444,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26896,7 +26470,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26924,7 +26498,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26950,7 +26524,7 @@
         "z": "561be8df1dd04335",
         "g": "1ad265cdd5feb53e",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26976,7 +26550,7 @@
         "type": "openai-ubos",
         "z": "561be8df1dd04335",
         "name": "",
-        "model": "gpt-3.5-turbo",
+        "model": "text-embedding-ada-002",
         "temperature": 0.5,
         "max_tokens": 60,
         "messages": "",
@@ -26995,5 +26569,520 @@
                 "d4e3c0018b9a87d0"
             ]
         ]
+    },
+    {
+        "id": "2e9f40767ad997f4",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "debug 800",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "e44521ccd19c79c6",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "g": "9f3a08dadb8626c3",
+        "name": "filter by source",
+        "func": "if (msg.fromUI.source === 'ALL') {\n\n    return msg;\n} else {\n    msg.payload.matches = msg.payload.matches.filter(e => e.metadata.source === msg.fromUI.source);\n\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3160,
+        "y": 600,
+        "wires": [
+            [
+                "43bdb6107c4d99af",
+                "e09f21afcab47e15"
+            ]
+        ]
+    },
+    {
+        "id": "83e748ec96c13946",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "g": "9f3a08dadb8626c3",
+        "name": "filter by source",
+        "func": "if (msg.fromUI.source === 'ALL') {\n\n    return msg;\n} else {\n    msg.payload.metadatas[0] = msg.payload.metadatas[0].filter(e => e.source === msg.fromUI.source);\n\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2960,
+        "y": 680,
+        "wires": [
+            [
+                "eb34d21632674fe4",
+                "f56e3ab34c6ec223"
+            ]
+        ]
+    },
+    {
+        "id": "9535311b6e134e56",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "debug 801",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "b379540367fecbcc",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 802",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "a13ac4faa9787ceb",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "debug 803",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "f133aa115adbe52e",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "TEXT",
+        "func": "msg.contentPayload.source = `text-${new Date().getTime()}`;\n\nmsg.payload = msg.contentPayload.text;\nnode.warn(msg.payload);\n\nmsg.decodedFilename = `/data/storage/${msg.contentPayload.name}.txt`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 580,
+        "wires": [
+            [
+                "c4606b684c81524a",
+                "bbf348e87fee05f9"
+            ]
+        ]
+    },
+    {
+        "id": "c4606b684c81524a",
+        "type": "file",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "Save to .txt",
+        "filename": "decodedFilename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "43faf2023edc40d9",
+                "bbf348e87fee05f9"
+            ]
+        ]
+    },
+    {
+        "id": "43faf2023edc40d9",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "get file",
+        "func": "msg.filepath = msg.decodedFilename\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1050,
+        "y": 580,
+        "wires": [
+            [
+                "e372c316075c1b6a",
+                "bbf348e87fee05f9"
+            ]
+        ]
+    },
+    {
+        "id": "e372c316075c1b6a",
+        "type": "file in",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1320,
+        "y": 580,
+        "wires": [
+            [
+                "97d431dc12791909",
+                "9d12bda7c8fbbd04"
+            ]
+        ]
+    },
+    {
+        "id": "97d431dc12791909",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "encoding file",
+        "func": "\nlet text = msg.payload\n\nmsg.totaCharacters = msg.payload.length\nlet parts = text.split(/\\n/g).map(part => part.trim()).filter(part => part.length > 0);\n\nlet result = [];\nlet obj = {};\nfor (let i = 0; i < parts.length; i++) {\n    if (parts[i].endsWith(\"?\")) {\n        if (Object.keys(obj).length > 0) { // if 'obj' has keys\n            result.push(obj);\n            // @ts-ignore\n            obj = {};\n        }\n        obj[\"A\"] = parts[i];\n    } else {\n        if (obj[\"B\"]) {\n            obj[\"B\"] += ' ' + parts[i];\n        } else {\n            obj[\"B\"] = parts[i];\n        }\n    }\n}\n\nif (Object.keys(obj).length > 0) {\n    result.push(obj);\n}\n\nmsg.array = result;\n\nif (msg.array.length > 1 ){\n    return [msg,null]\n}else{\n    return [null,msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 580,
+        "wires": [
+            [
+                "1155a11c9f6066d2",
+                "9d12bda7c8fbbd04"
+            ],
+            [
+                "258c3319e1dd5004",
+                "9d12bda7c8fbbd04"
+            ]
+        ]
+    },
+    {
+        "id": "1155a11c9f6066d2",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "FAQ",
+        "func": "// msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + `${msg.contentPayload.name}.txt`;\n\n\n\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.contentPayload.id),\n    name: msg.contentPayload.name,\n    type: \"FAQ\",\n    file: `${msg.contentPayload.name}.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.contentPayload.source,\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1730,
+        "y": 540,
+        "wires": [
+            [
+                "2224c0b79e54623d",
+                "93a717ef4ea41a12",
+                "86fdec9c9582b8bc"
+            ]
+        ]
+    },
+    {
+        "id": "258c3319e1dd5004",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "FILES",
+        "func": "\nmsg.payload = {\n    _id: objectid(),\n    knowledgeBaseId: objectid(msg.contentPayload.id),\n    name: msg.contentPayload.name,\n    type: \"Files\",\n    file: `${msg.contentPayload.name}.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.contentPayload.source,\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1730,
+        "y": 620,
+        "wires": [
+            [
+                "e9d7b70beae062cb",
+                "93a717ef4ea41a12",
+                "132585fe884abf3e"
+            ]
+        ]
+    },
+    {
+        "id": "2224c0b79e54623d",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "name": "FAQ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "93a717ef4ea41a12",
+        "type": "link call",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1910,
+        "y": 580,
+        "wires": [
+            [
+                "697641d3c552a816"
+            ]
+        ]
+    },
+    {
+        "id": "86fdec9c9582b8bc",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "getLinkInfo",
+        "func": "msg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase,\n    source: msg.contentPayload.source,\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQ`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 500,
+        "wires": [
+            [
+                "9ec2bf00d98c40c1"
+            ]
+        ]
+    },
+    {
+        "id": "e9d7b70beae062cb",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "name": "FILES",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "132585fe884abf3e",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "getLinkInfo",
+        "func": "msg.payload = {\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase,\n    source: msg.contentPayload.source,\n};\n\nmsg.url = env.get(\"nodered\") + `/getFileInfo`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 660,
+        "wires": [
+            [
+                "74b1aa9974c9848c"
+            ]
+        ]
+    },
+    {
+        "id": "697641d3c552a816",
+        "type": "function",
+        "z": "561be8df1dd04335",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2090,
+        "y": 580,
+        "wires": [
+            [
+                "04cda68db2eabc30"
+            ]
+        ]
+    },
+    {
+        "id": "9ec2bf00d98c40c1",
+        "type": "http request",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2090,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74b1aa9974c9848c",
+        "type": "http request",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2090,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04cda68db2eabc30",
+        "type": "http response",
+        "z": "561be8df1dd04335",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2210,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "bbf348e87fee05f9",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 804",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9d12bda7c8fbbd04",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 805",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2a6a66b31c5f460c",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "1ad265cdd5feb53e",
+        "name": "debug 806",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "d680089b3b18a2ac",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 807",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 240,
+        "wires": []
     }
 ]
