@@ -258,9 +258,7 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 679,
-        "w": 672,
-        "h": 642
+        "y": 679
     },
     {
         "id": "23033541e553eb36",
@@ -282,9 +280,7 @@
             "39f863832fe14deb"
         ],
         "x": 714,
-        "y": 679,
-        "w": 1012,
-        "h": 122
+        "y": 679
     },
     {
         "id": "2bad0f12f5a9659f",
@@ -324,9 +320,7 @@
             "10d15004c30b1bb5"
         ],
         "x": 714,
-        "y": 839,
-        "w": 1452,
-        "h": 482
+        "y": 839
     },
     {
         "id": "7382602cc2b54357",
@@ -364,9 +358,7 @@
             "a42302c6b56d6335"
         ],
         "x": 854,
-        "y": 1359,
-        "w": 1172,
-        "h": 402
+        "y": 1359
     },
     {
         "id": "628c8aecc019f08b",
@@ -415,9 +407,7 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1359,
-        "w": 812,
-        "h": 642
+        "y": 1359
     },
     {
         "id": "b2e9a721546c936c",
@@ -499,9 +489,7 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 422
+        "y": 19
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -564,9 +552,7 @@
             "5e4b1f6bcc4fc94c"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1912,
-        "h": 622
+        "y": 19
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -940,12 +926,15 @@
             "43faf2023edc40d9",
             "bbf348e87fee05f9",
             "9d12bda7c8fbbd04",
-            "d680089b3b18a2ac"
+            "d680089b3b18a2ac",
+            "cefbc767b29a20d5",
+            "94dc227526986fe4",
+            "e2059985463b3624"
         ],
         "x": 14,
-        "y": 39,
+        "y": -1,
         "w": 2292,
-        "h": 1202
+        "h": 1242
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -1070,9 +1059,7 @@
             "166fae3726e1c702"
         ],
         "x": 34,
-        "y": 2059,
-        "w": 3652,
-        "h": 922
+        "y": 2059
     },
     {
         "id": "96ff04cf0133a4da",
@@ -7335,7 +7322,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nmsg.nameBase = 'HumanResources';\nmsg.typeBase = 'chroma';\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder })\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true\n}\n\nreturn msg;\n",
+        "func": "//create collection\nmsg.nameBase = 'HumanResources';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder });\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    // select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7369,7 +7356,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid();\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'HR-Data',\n    type: \"Files\",\n    file: `HR-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7464,7 +7451,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "function 594",
-        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result\nreturn msg;",
+        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7508,7 +7495,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents:  msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: msg.input,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents:  msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7538,7 +7525,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString();\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7576,7 +7563,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase+'.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.input;\nconst result = msg.input;\n\nlet url = msg.nameBase+'.txt';\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId };\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: url,\n            question: question,\n            result: result,\n            source: msg.source,\n         },\n      }\n   }\n\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7665,7 +7652,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "function 597",
-        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result\nreturn msg;",
+        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7691,7 +7678,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Friend-Data',\n    type: \"Files\",\n    file: `Friend-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo:true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Friend-Data',\n    type: \"Files\",\n    file: `Friend-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo:true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.source,\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7754,7 +7741,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg",
+        "func": "msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString();\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7774,7 +7761,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'Friendly-Chat';\nmsg.typeBase = 'chroma';\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder })\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\"\nmsg.knowlegebaseId = objectid()\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true\n}\nreturn msg;\n\n",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'Friendly-Chat';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder });\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7849,7 +7836,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nmsg.nameBase = 'UBOS-Support';\nmsg.typeBase = 'chroma';\n// msg.nameBase = 'test1';\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\nconst collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\"\nmsg.knowlegebaseId = objectid()\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true\n}\nreturn msg;\n\n",
+        "func": "//create collection\nmsg.nameBase = 'UBOS-Support';\nmsg.typeBase = 'chroma';\n// msg.nameBase = 'test1';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder });\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    // select: false,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7933,7 +7920,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Support-Data',\n    type: \"Files\",\n    file: `Support-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters\n};\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid();\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Support-Data',\n    type: \"Files\",\n    file: `Support-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7998,7 +7985,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "function 598",
-        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result\nreturn msg;",
+        "func": "// msg._id = objectid(msg.payload._id);\n// msg.typeBase = msg.payload.typeBase.replace(/\\\\\"/g, '');\n// msg.nameBase = msg.payload.nameBase.replace(/\\\\\"/g, '');\n// msg.old = msg.payload\nmsg.array = msg.result;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8042,7 +8029,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString()\nreturn msg\n",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload}, ${msg.payload}`;\nmsg.model = \"text-embedding-ada-002\";\n\nmsg.ids = Date.now().toString();\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8161,7 +8148,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase})\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt' \n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n\n\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input;\nconst result = msg.input;\nmsg.emb = msg.payload.data[0].embedding;\n\nlet collection2 = await client.getCollection({ name: msg.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: msg.input,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt' \n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8252,7 +8239,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase + '.txt'\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.input;\nconst result = msg.input;\n\nlet url = msg.nameBase + '.txt';\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId };\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: url,\n            question: question,\n            result: result,\n            source: msg.source,\n         },\n      }\n   }\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8313,7 +8300,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create chroma collection",
-        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input\nconst result = msg.input\nmsg.emb = msg.payload.data[0].embedding\n\nlet collection2 = await client.getCollection({ name: msg.nameBase })\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{ question: msg.input, result: result, id: msg.ids }],\n    documents: msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create\n\nreturn msg;\n",
+        "func": "//create collection\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\n//fill collection\nconst question = msg.input;\nconst result = msg.input;\nmsg.emb = msg.payload.data[0].embedding;\n\nlet collection2 = await client.getCollection({ name: msg.nameBase });\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: msg.input,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt'\n})\n// node.warn([{ question: question, result: result }])\nmsg.payload = create;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8343,7 +8330,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId) }\nmsg.payload = {\n    $set: {\n     status:\"Saved\",\n        select: true,\n\n    }\n}\n\nmsg.url = env.get('nodered') + '/createHR'\n\nreturn msg;\n",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId) }\nmsg.payload = {\n    $set: {\n        status: \"Saved\",\n        // select: true,\n\n    }\n}\n\nmsg.url = env.get('nodered') + '/createHR'\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8404,7 +8391,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.input\nconst result = msg.input\n\nlet url = msg.nameBase + '.txt'\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: { url: url, question: question, result: result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.input;\nconst result = msg.input;\n\nlet url = msg.nameBase + '.txt';\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId };\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         pinecone: true,\n         metadata: {\n            url: url,\n            question: question,\n            result: result,\n            source: msg.source,\n         },\n      }\n   }\n\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22825,7 +22812,7 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": "create new knowlegebase",
-        "func": "msg.collection = \"knowlegebase\"\n\nmsg.payload ={\n    _id: objectid(),\n    select:msg.payload.select,\n    type:msg.payload.type,\n    name: msg.payload.name,\n    deleted:false,\n    email: msg.payload.email\n}\nmsg.old = msg.payload\nreturn msg;",
+        "func": "msg.collection = \"knowlegebase\";\n\nmsg.payload = {\n    _id: objectid(),\n    select: msg.payload.select,\n    type: msg.payload.type,\n    name: msg.payload.name,\n    deleted: false,\n    email: msg.payload.email,\n};\nmsg.old = msg.payload;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22881,7 +22868,7 @@
         "z": "561be8df1dd04335",
         "g": "d304cf774581307a",
         "name": ">",
-        "func": "if (msg.old.select === true) {\n    return [msg, null]\n} \nelse{\n    return[null,msg]\n}\n",
+        "func": "if (msg.old.select === true) {\n    return [msg, null]\n}\nelse {\n    return [null, msg]\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -25162,7 +25149,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "to mongoDB select",
-        "func": "msg.collection = \"knowledgeObjects\"\nif (msg.payload && msg.payload[0]?._id){\n    msg.payload = {\n    knowledgeBaseId:objectid(msg.payload[0]._id),\n    deleted: false\n\n}\nreturn [msg,null]\n}else{\n   return [null,msg]\n}\n\n",
+        "func": "msg.collection = \"knowledgeObjects\"\nif (msg.payload && msg.payload[0]?._id) {\n    msg.payload = {\n        knowledgeBaseId: objectid(msg.payload[0]._id),\n        deleted: false\n\n    }\n    return [msg, null]\n} else {\n    return [null, msg]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -25177,10 +25164,12 @@
         "y": 80,
         "wires": [
             [
-                "8e264a7789ddfa3e"
+                "8e264a7789ddfa3e",
+                "94dc227526986fe4"
             ],
             [
-                "f447882cf9d10a8c"
+                "f447882cf9d10a8c",
+                "cefbc767b29a20d5"
             ]
         ]
     },
@@ -25199,7 +25188,8 @@
         "y": 80,
         "wires": [
             [
-                "597107f26414b02f"
+                "597107f26414b02f",
+                "e2059985463b3624"
             ]
         ]
     },
@@ -25221,7 +25211,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "sort result",
-        "func": "function sortObjectsByType(data) {\n    let result = {\n        \"FAQ\": [],\n        \"Files\": [],\n        \"Link\": [],\n        \"Manual\": []\n    };\n\n    data.forEach(item => {\n        if (result[item.type]) {\n            result[item.type].push(item);\n        } else {\n            result[item.type] = [item];\n        }\n    });\n\n    return result;\n}\n\nconst dataArray =msg.payload\n\nlet array = msg.payload.filter(item => \"totaCharacters\" in item)\n\narray = array.map(e => e.totaCharacters)\nfunction sumArray(arr) {\n    return arr.reduce((acc, currentValue) => acc + currentValue, 0);\n}\n\nmsg.result = sumArray(array);\n\nmsg.payload = {sortdata:sortObjectsByType(dataArray),\n    total: msg.result};\n\nreturn msg\n",
+        "func": "function sortObjectsByType(data) {\n    let result = {\n        \"FAQ\": [],\n        \"Files\": [],\n        \"Link\": [],\n        \"Manual\": []\n    };\n\n    data.forEach(item => {\n        if (result[item.type]) {\n            result[item.type].push(item);\n        } else {\n            result[item.type] = [item];\n        }\n    });\n\n    return result;\n}\n\nconst dataArray = msg.payload;\n\nlet array = msg.payload.filter(item => \"totaCharacters\" in item)\n\narray = array.map(e => e.totaCharacters)\nfunction sumArray(arr) {\n    return arr.reduce((acc, currentValue) => acc + currentValue, 0);\n}\n\nmsg.result = sumArray(array);\n\nmsg.payload = {\n    sortdata: sortObjectsByType(dataArray),\n    total: msg.result\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -25232,7 +25222,7 @@
         "wires": [
             [
                 "76d24d2ff1f5abd0",
-                "2841de158db2074b"
+                "e2059985463b3624"
             ]
         ]
     },
@@ -25286,8 +25276,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 120,
+        "x": 890,
+        "y": 220,
         "wires": []
     },
     {
@@ -25375,7 +25365,7 @@
         "z": "561be8df1dd04335",
         "g": "42b214503281ca7c",
         "name": "to mongoDB select",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload = {\n    deleted: false,\n    select:true\n}\nreturn msg;",
+        "func": "msg.collection = \"knowlegebase\";\n\nmsg.payload = {\n    deleted: false,\n    select: true,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -27083,6 +27073,60 @@
         "statusType": "auto",
         "x": 670,
         "y": 240,
+        "wires": []
+    },
+    {
+        "id": "cefbc767b29a20d5",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 808",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "94dc227526986fe4",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 809",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e2059985463b3624",
+        "type": "debug",
+        "z": "561be8df1dd04335",
+        "g": "42b214503281ca7c",
+        "name": "debug 810",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 40,
         "wires": []
     }
 ]
