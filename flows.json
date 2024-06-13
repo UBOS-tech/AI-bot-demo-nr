@@ -603,7 +603,9 @@
             "bc14a5fb4ccb2e6c"
         ],
         "x": 2334,
-        "y": 559
+        "y": 559,
+        "w": 1332,
+        "h": 782
     },
     {
         "id": "d304cf774581307a",
@@ -650,7 +652,9 @@
             "8b92e0401ab4f059"
         ],
         "x": 2334,
-        "y": 39
+        "y": 39,
+        "w": 1332,
+        "h": 502
     },
     {
         "id": "1ad265cdd5feb53e",
@@ -773,7 +777,9 @@
             "7244a08ebbf74597"
         ],
         "x": 14,
-        "y": 1259
+        "y": 1259,
+        "w": 1412,
+        "h": 1542
     },
     {
         "id": "42b214503281ca7c",
@@ -875,7 +881,9 @@
             "e2059985463b3624"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 2292,
+        "h": 1242
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -918,11 +926,13 @@
             "c65e3faa54f5bb92",
             "772eac6cc3a332be",
             "bd6c2ef535cd2431",
-            "56be6bf1ba5dcbf3",
-            "2719dd4924611be5"
+            "2719dd4924611be5",
+            "e2587f083bd395b0"
         ],
         "x": 84,
-        "y": 559
+        "y": 559,
+        "w": 1992,
+        "h": 402
     },
     {
         "id": "78ec20634862824d",
@@ -1018,8 +1028,10 @@
             "91a473e0cf00b81f",
             "69d78287c809cd74"
         ],
-        "x": 34,
-        "y": 2839
+        "x": 44,
+        "y": 2839,
+        "w": 922,
+        "h": 82
     },
     {
         "id": "d5f3c34635f35708",
@@ -1203,14 +1215,12 @@
             "7f7e2007a018670f",
             "4badd197346ea811",
             "d2af17549ceaa392",
-            "ba9aee400ec14528",
             "9f7b94ddc99b253e",
-            "ec60d63d348e5b8f"
+            "ec60d63d348e5b8f",
+            "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279,
-        "w": 2372,
-        "h": 302
+        "y": 279
     },
     {
         "id": "55b42f036281abed",
@@ -1237,9 +1247,7 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "44336aabd4cc8aba",
@@ -1266,9 +1274,7 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "6f53df0634427ab8",
@@ -1298,9 +1304,7 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299,
-        "w": 1192,
-        "h": 222
+        "y": 1299
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1327,9 +1331,7 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559,
-        "w": 1212,
-        "h": 202
+        "y": 1559
     },
     {
         "id": "af65f71384d80c06",
@@ -1356,9 +1358,7 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799,
-        "w": 1152,
-        "h": 202
+        "y": 1799
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1379,9 +1379,7 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519,
-        "w": 572,
-        "h": 162
+        "y": 2519
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1419,9 +1417,7 @@
             "0ec04c582bf41c8a"
         ],
         "x": 74,
-        "y": 19,
-        "w": 2152,
-        "h": 242
+        "y": 19
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1451,9 +1447,7 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039,
-        "w": 1192,
-        "h": 202
+        "y": 2039
     },
     {
         "id": "d8a434ae844324e0",
@@ -1480,9 +1474,7 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279,
-        "w": 1232,
-        "h": 202
+        "y": 2279
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1516,9 +1508,7 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599,
-        "w": 1232,
-        "h": 422
+        "y": 599
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1559,11 +1549,13 @@
             "3d046ba4c916941d",
             "98d191edffa2ef5e",
             "b5e7257a9c0d3132",
-            "f208e774f178a5fe",
-            "f72dd9f2dd1d99dd"
+            "7382f45973f58d96",
+            "25cb1d879bc1212c"
         ],
         "x": 44,
-        "y": 59
+        "y": 59,
+        "w": 1552,
+        "h": 462
     },
     {
         "id": "18e308d36025c38f",
@@ -1580,7 +1572,9 @@
             "d0b4fc85e5fed281"
         ],
         "x": 34,
-        "y": 2859
+        "y": 2859,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "478d796d1a70f361",
@@ -1669,12 +1663,14 @@
             "42f5817a459be45e",
             "204e41e815b84721",
             "be704c5b2578e5ab",
-            "aa5123a3e7119e7f",
-            "64459309311ccc27",
-            "e099a655cef8a20c"
+            "ef3aaf7051c8b1ba",
+            "3a1c3beeb8dc1c7f",
+            "a04d4b824dd30e89"
         ],
         "x": 44,
-        "y": 39
+        "y": 39,
+        "w": 1922,
+        "h": 1168
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1776,7 +1772,9 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 222
     },
     {
         "id": "d2fba984a07da085",
@@ -1789,18 +1787,6 @@
             [
                 "8de776c48f74e5b9",
                 "f48e056edf5892dd"
-            ]
-        ]
-    },
-    {
-        "id": "8161750f4f47fda0",
-        "type": "junction",
-        "z": "27ce80b8fbcd825f",
-        "x": 1500,
-        "y": 240,
-        "wires": [
-            [
-                "44892bd58b768aa2"
             ]
         ]
     },
@@ -2242,8 +2228,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 280,
+        "x": 480,
+        "y": 160,
         "wires": [
             [
                 "c2929b1d70626da0"
@@ -2265,8 +2251,8 @@
         "y": 280,
         "wires": [
             [
-                "da1fd06ad3f10b0c",
-                "05581058c3e812ae"
+                "05581058c3e812ae",
+                "9e4440add4a3146a"
             ]
         ]
     },
@@ -2406,7 +2392,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "node.warn(msg);\n\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.messages = [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
+        "func": "node.warn(msg);\n\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.payload = {\n    model: msg.model,\n    messages: [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.payload = {\n    model: msg.model,\n    messages: msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2416,7 +2402,7 @@
         "y": 120,
         "wires": [
             [
-                "8161750f4f47fda0"
+                "7c04e7208bd841eb"
             ]
         ]
     },
@@ -2425,7 +2411,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0]?.content;\nmsg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
+        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n   msg.payload = {\n       model: msg.model,\n       messages:[\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0]?.content;\nmsg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2435,7 +2421,7 @@
         "y": 240,
         "wires": [
             [
-                "8161750f4f47fda0"
+                "7c04e7208bd841eb"
             ]
         ]
     },
@@ -2460,7 +2446,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "to GPT only",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.statusCode !== 200) {\n\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n} else {\n    msg.messages = [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\n\nreturn msg;\n",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.statusCode !== 200) {\n\n    msg.payload = {\n        model: msg.model,\n        messages:  [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2470,8 +2456,8 @@
         "y": 320,
         "wires": [
             [
-                "8161750f4f47fda0",
-                "e3f4932c531ff0e9"
+                "e3f4932c531ff0e9",
+                "7c04e7208bd841eb"
             ]
         ]
     },
@@ -2492,37 +2478,10 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 660,
-        "y": 280,
+        "x": 680,
+        "y": 140,
         "wires": [
-            [
-                "3ffdb941a28abab1"
-            ]
-        ]
-    },
-    {
-        "id": "44892bd58b768aa2",
-        "type": "openai-ubos",
-        "z": "27ce80b8fbcd825f",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 4000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1620,
-        "y": 240,
-        "wires": [
-            [
-                "3677128a83383333"
-            ]
+            []
         ]
     },
     {
@@ -2591,6 +2550,73 @@
         "x": 1210,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "9e4440add4a3146a",
+        "type": "function",
+        "z": "27ce80b8fbcd825f",
+        "name": "to AI embedding-ada",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n// msg.model = \"text-embedding-ada-002\";\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\n\n\nmsg.input = msg.input = msg.UNIFIED_DATA.chat.content;\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "082be0cb81df45d0"
+            ]
+        ]
+    },
+    {
+        "id": "082be0cb81df45d0",
+        "type": "http request",
+        "z": "27ce80b8fbcd825f",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "3ffdb941a28abab1"
+            ]
+        ]
+    },
+    {
+        "id": "7c04e7208bd841eb",
+        "type": "http request",
+        "z": "27ce80b8fbcd825f",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1590,
+        "y": 260,
+        "wires": [
+            [
+                "3677128a83383333"
+            ]
+        ]
     },
     {
         "id": "bf596eb6b97b1752",
@@ -2994,7 +3020,7 @@
         "type": "function",
         "z": "71cb7453ba91face",
         "name": "to AI embedding-ada",
-        "func": "msg.fromUI = msg.payload;\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = \"text-embedding-ada-002\";\n\nnode.warn(msg.fromUI);\n\nif (Array.isArray(msg.fromUI.question)) {\n    let newQuestions = '';\n\n    msg.fromUI.question.forEach(e => newQuestions += ` ${e.question}`);\n    msg.fromUI.question = newQuestions;\n}\n\nmsg.input = `${msg.fromUI.question} ${msg.fromUI.answer}`;\n\nreturn msg;\n",
+        "func": "msg.fromUI = msg.payload;\n\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n\n// msg.model = \"text-embedding-ada-002\";\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\n\nnode.warn(msg.fromUI);\n\nif (Array.isArray(msg.fromUI.question)) {\n    let newQuestions = '';\n\n    msg.fromUI.question.forEach(e => newQuestions += ` ${e.question}`);\n    msg.fromUI.question = newQuestions;\n}\n\nmsg.input = `${msg.fromUI.question} ${msg.fromUI.answer}`;\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3004,7 +3030,7 @@
         "y": 640,
         "wires": [
             [
-                "813e257ee8ed37cf"
+                "00356666c6398a9c"
             ]
         ]
     },
@@ -3416,23 +3442,22 @@
         ]
     },
     {
-        "id": "813e257ee8ed37cf",
-        "type": "openai-ubos",
+        "id": "00356666c6398a9c",
+        "type": "http request",
         "z": "71cb7453ba91face",
         "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 540,
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
         "y": 640,
         "wires": [
             [
@@ -4240,7 +4265,7 @@
         "wires": [
             [
                 "3ab52837b239e540",
-                "56be6bf1ba5dcbf3"
+                "e2587f083bd395b0"
             ]
         ]
     },
@@ -4678,7 +4703,7 @@
         "y": 600,
         "wires": [
             [
-                "56be6bf1ba5dcbf3"
+                "e2587f083bd395b0"
             ],
             [
                 "1573008514834eb6"
@@ -4849,7 +4874,7 @@
         "wires": [
             [
                 "beae0f4b261933d2",
-                "f208e774f178a5fe"
+                "7382f45973f58d96"
             ]
         ]
     },
@@ -4888,7 +4913,7 @@
         "y": 260,
         "wires": [
             [
-                "f72dd9f2dd1d99dd"
+                "25cb1d879bc1212c"
             ]
         ]
     },
@@ -4999,7 +5024,7 @@
         "wires": [
             [
                 "f60512750bf45925",
-                "f72dd9f2dd1d99dd"
+                "25cb1d879bc1212c"
             ]
         ]
     },
@@ -5420,86 +5445,6 @@
         "wires": []
     },
     {
-        "id": "f208e774f178a5fe",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4aa44aa75910cb5b",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 340,
-        "y": 300,
-        "wires": [
-            [
-                "c79244f4f2abc1d9",
-                "ffb7c8ece15c5f20"
-            ]
-        ]
-    },
-    {
-        "id": "f72dd9f2dd1d99dd",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4aa44aa75910cb5b",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1170,
-        "y": 280,
-        "wires": [
-            [
-                "b5e7257a9c0d3132",
-                "3195ba502c52f21f"
-            ]
-        ]
-    },
-    {
-        "id": "56be6bf1ba5dcbf3",
-        "type": "openai-ubos",
-        "z": "88bba2923a31d3e7",
-        "g": "4a77a41c6602f9d6",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1000,
-        "y": 800,
-        "wires": [
-            [
-                "44f83dfbece6abe5"
-            ]
-        ]
-    },
-    {
         "id": "2719dd4924611be5",
         "type": "openai-ubos",
         "z": "88bba2923a31d3e7",
@@ -5523,6 +5468,85 @@
             [
                 "91fa2101168dca73",
                 "c65e3faa54f5bb92"
+            ]
+        ]
+    },
+    {
+        "id": "7382f45973f58d96",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "c79244f4f2abc1d9",
+                "ffb7c8ece15c5f20"
+            ]
+        ]
+    },
+    {
+        "id": "25cb1d879bc1212c",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4aa44aa75910cb5b",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1160,
+        "y": 280,
+        "wires": [
+            [
+                "3195ba502c52f21f"
+            ]
+        ]
+    },
+    {
+        "id": "e2587f083bd395b0",
+        "type": "openai-ubos",
+        "z": "88bba2923a31d3e7",
+        "g": "4a77a41c6602f9d6",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1000,
+        "y": 780,
+        "wires": [
+            [
+                "44f83dfbece6abe5"
             ]
         ]
     },
@@ -7406,7 +7430,7 @@
         "y": 860,
         "wires": [
             [
-                "e099a655cef8a20c"
+                "ef3aaf7051c8b1ba"
             ]
         ]
     },
@@ -7622,7 +7646,7 @@
         "y": 260,
         "wires": [
             [
-                "aa5123a3e7119e7f"
+                "a04d4b824dd30e89"
             ]
         ]
     },
@@ -7912,7 +7936,7 @@
         "y": 560,
         "wires": [
             [
-                "64459309311ccc27"
+                "3a1c3beeb8dc1c7f"
             ]
         ]
     },
@@ -8914,7 +8938,78 @@
         "wires": []
     },
     {
-        "id": "aa5123a3e7119e7f",
+        "id": "ff7624549c7b7c20",
+        "type": "debug",
+        "z": "f48a32dcae7a25f2",
+        "name": "debug 814",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 688.6666259765625,
+        "y": 593.9999389648438,
+        "wires": []
+    },
+    {
+        "id": "ef3aaf7051c8b1ba",
+        "type": "openai-ubos",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1400,
+        "y": 880,
+        "wires": [
+            [
+                "b09542bff4b17693",
+                "1c2e897da68dfde0"
+            ]
+        ]
+    },
+    {
+        "id": "3a1c3beeb8dc1c7f",
+        "type": "openai-ubos",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "",
+        "model": "text-davinci-003",
+        "temperature": 0.5,
+        "max_tokens": 60,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1420,
+        "y": 580,
+        "wires": [
+            [
+                "616c010e956c3185",
+                "045e64a281902a97"
+            ]
+        ]
+    },
+    {
+        "id": "a04d4b824dd30e89",
         "type": "openai-ubos",
         "z": "f48a32dcae7a25f2",
         "g": "478d796d1a70f361",
@@ -8935,81 +9030,10 @@
         "y": 260,
         "wires": [
             [
-                "bcac0c30aea87fea",
-                "32de476e5ec89dca"
+                "32de476e5ec89dca",
+                "bcac0c30aea87fea"
             ]
         ]
-    },
-    {
-        "id": "64459309311ccc27",
-        "type": "openai-ubos",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1400,
-        "y": 560,
-        "wires": [
-            [
-                "616c010e956c3185",
-                "045e64a281902a97"
-            ]
-        ]
-    },
-    {
-        "id": "e099a655cef8a20c",
-        "type": "openai-ubos",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1400,
-        "y": 860,
-        "wires": [
-            [
-                "b09542bff4b17693",
-                "1c2e897da68dfde0"
-            ]
-        ]
-    },
-    {
-        "id": "ff7624549c7b7c20",
-        "type": "debug",
-        "z": "f48a32dcae7a25f2",
-        "name": "debug 814",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 688.6666259765625,
-        "y": 593.9999389648438,
-        "wires": []
     },
     {
         "id": "deed4bf57d130045",
@@ -9683,7 +9707,7 @@
         "z": "5e7416993281e99d",
         "g": "dd4d6fdf1b601b09",
         "name": "test OpenAI",
-        "func": "\n    msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.messages = [\n    { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\"},\n    { \"role\": \"user\", \"content\": \"hello\" }\n]\n    msg.input = \"Hello\"\n    return msg;\n",
+        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.payload = {\n    model: msg.model,\n    messages:  [\n    { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\"},\n    { \"role\": \"user\", \"content\": \"hello\" }\n]}\n    // msg.input = \"Hello\"\n    return msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9693,7 +9717,7 @@
         "y": 460,
         "wires": [
             [
-                "ba9aee400ec14528"
+                "1a38379bdaa684a2"
             ]
         ]
     },
@@ -12635,33 +12659,6 @@
         ]
     },
     {
-        "id": "ba9aee400ec14528",
-        "type": "openai-ubos",
-        "z": "5e7416993281e99d",
-        "g": "dd4d6fdf1b601b09",
-        "name": "",
-        "model": "text-davinci-003",
-        "temperature": 0.5,
-        "max_tokens": 60,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1560,
-        "y": 400,
-        "wires": [
-            [
-                "89b9d71dd5b48135",
-                "9f7b94ddc99b253e"
-            ]
-        ]
-    },
-    {
         "id": "9f7b94ddc99b253e",
         "type": "debug",
         "z": "5e7416993281e99d",
@@ -12696,6 +12693,31 @@
         "x": 610,
         "y": 420,
         "wires": []
+    },
+    {
+        "id": "1a38379bdaa684a2",
+        "type": "http request",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1590,
+        "y": 440,
+        "wires": [
+            [
+                "89b9d71dd5b48135"
+            ]
+        ]
     },
     {
         "id": "10d15004c30b1bb5",
@@ -27300,7 +27322,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 690,
         "y": 160,
         "wires": []
     },
