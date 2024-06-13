@@ -595,9 +595,7 @@
             "bd6c2ef535cd2431"
         ],
         "x": 44,
-        "y": 539,
-        "w": 1992,
-        "h": 402
+        "y": 539
     },
     {
         "id": "78ec20634862824d",
@@ -1216,9 +1214,7 @@
             "2ec04621afffe645"
         ],
         "x": 44,
-        "y": 59,
-        "w": 1552,
-        "h": 462
+        "y": 59
     },
     {
         "id": "478d796d1a70f361",
@@ -2393,7 +2389,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nmsg.url = 'https://api.openai.com/v1/chat/completions'\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nif (msg.statusCode !== 200) {\n\n   msg.payload = {\n       model: msg.model,\n       messages:[\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.payload.messages[0].content;\nmsg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
+        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nmsg.url = 'https://api.openai.com/v1/chat/completions'\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nif (msg.statusCode !== 200) {\n\n   msg.payload = {\n       model: msg.model,\n       messages:[\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.payload.messages[0].content;\n// msg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n//     return {\n//         ...msg.payload.metadatas[0][i],\n//         distance: msg.payload.distances[0][i],\n//         document: msg.payload.documents[0][i],\n//     }\n// })\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
