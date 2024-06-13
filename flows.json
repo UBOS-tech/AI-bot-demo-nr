@@ -266,7 +266,9 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 739
+        "y": 739,
+        "w": 672,
+        "h": 642
     },
     {
         "id": "23033541e553eb36",
@@ -288,7 +290,9 @@
             "39f863832fe14deb"
         ],
         "x": 714,
-        "y": 719
+        "y": 719,
+        "w": 1012,
+        "h": 122
     },
     {
         "id": "2bad0f12f5a9659f",
@@ -328,7 +332,9 @@
             "10d15004c30b1bb5"
         ],
         "x": 714,
-        "y": 859
+        "y": 859,
+        "w": 1452,
+        "h": 482
     },
     {
         "id": "7382602cc2b54357",
@@ -366,7 +372,9 @@
             "a42302c6b56d6335"
         ],
         "x": 854,
-        "y": 1359
+        "y": 1359,
+        "w": 1172,
+        "h": 402
     },
     {
         "id": "628c8aecc019f08b",
@@ -415,7 +423,9 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1359
+        "y": 1359,
+        "w": 812,
+        "h": 642
     },
     {
         "id": "b2e9a721546c936c",
@@ -497,7 +507,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -603,9 +615,7 @@
             "bc14a5fb4ccb2e6c"
         ],
         "x": 2334,
-        "y": 559,
-        "w": 1332,
-        "h": 782
+        "y": 559
     },
     {
         "id": "d304cf774581307a",
@@ -652,9 +662,7 @@
             "8b92e0401ab4f059"
         ],
         "x": 2334,
-        "y": 39,
-        "w": 1332,
-        "h": 502
+        "y": 39
     },
     {
         "id": "1ad265cdd5feb53e",
@@ -777,9 +785,7 @@
             "7244a08ebbf74597"
         ],
         "x": 14,
-        "y": 1259,
-        "w": 1412,
-        "h": 1542
+        "y": 1259
     },
     {
         "id": "42b214503281ca7c",
@@ -881,9 +887,7 @@
             "e2059985463b3624"
         ],
         "x": 14,
-        "y": -1,
-        "w": 2292,
-        "h": 1242
+        "y": -1
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -930,9 +934,7 @@
             "e2587f083bd395b0"
         ],
         "x": 84,
-        "y": 559,
-        "w": 1992,
-        "h": 402
+        "y": 559
     },
     {
         "id": "78ec20634862824d",
@@ -1010,7 +1012,9 @@
             "9b6d3faff2ed4839"
         ],
         "x": 34,
-        "y": 2059
+        "y": 2059,
+        "w": 3652,
+        "h": 922
     },
     {
         "id": "96ff04cf0133a4da",
@@ -1029,9 +1033,7 @@
             "69d78287c809cd74"
         ],
         "x": 44,
-        "y": 2839,
-        "w": 922,
-        "h": 82
+        "y": 2839
     },
     {
         "id": "d5f3c34635f35708",
@@ -1220,7 +1222,9 @@
             "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279
+        "y": 279,
+        "w": 2372,
+        "h": 302
     },
     {
         "id": "55b42f036281abed",
@@ -1247,7 +1251,9 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "44336aabd4cc8aba",
@@ -1274,7 +1280,9 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "6f53df0634427ab8",
@@ -1304,7 +1312,9 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1331,7 +1341,9 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1212,
+        "h": 202
     },
     {
         "id": "af65f71384d80c06",
@@ -1358,7 +1370,9 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1379,7 +1393,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2519,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1417,7 +1433,9 @@
             "0ec04c582bf41c8a"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 2152,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1447,7 +1465,9 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 1192,
+        "h": 202
     },
     {
         "id": "d8a434ae844324e0",
@@ -1474,7 +1494,9 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279
+        "y": 2279,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1508,7 +1530,9 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599
+        "y": 599,
+        "w": 1232,
+        "h": 422
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1553,9 +1577,7 @@
             "25cb1d879bc1212c"
         ],
         "x": 44,
-        "y": 59,
-        "w": 1552,
-        "h": 462
+        "y": 59
     },
     {
         "id": "18e308d36025c38f",
@@ -1572,9 +1594,7 @@
             "d0b4fc85e5fed281"
         ],
         "x": 34,
-        "y": 2859,
-        "w": 592,
-        "h": 82
+        "y": 2859
     },
     {
         "id": "478d796d1a70f361",
@@ -1668,9 +1688,7 @@
             "a04d4b824dd30e89"
         ],
         "x": 44,
-        "y": 39,
-        "w": 1922,
-        "h": 1168
+        "y": 39
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1746,7 +1764,9 @@
             "893dff2ad4952be1"
         ],
         "x": 14,
-        "y": 99
+        "y": 99,
+        "w": 2072,
+        "h": 622
     },
     {
         "id": "204e41e815b84721",
@@ -1772,9 +1792,7 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959,
-        "w": 852,
-        "h": 222
+        "y": 959
     },
     {
         "id": "d2fba984a07da085",
@@ -2392,7 +2410,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "node.warn(msg);\n\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.payload = {\n    model: msg.model,\n    messages: [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.payload = {\n    model: msg.model,\n    messages: msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
+        "func": "node.warn(msg);\nmsg.url = 'https://api.openai.com/v1/chat/completions'\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\nmsg.headers = {\n  \"Content-Type\": \"application/json\",\n  \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\nif (msg.payload === \"RequestError: getaddrinfo ENOTFOUND undefined : http://undefined/query\" || msg.statusCode === 'ENOTFOUND') {\n  msg.payload = {\n    model: msg.model,\n    messages: [\n    { \"role\": \"system\", \"content\": totalPrompt },\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n} else {\n  const vectorsForPrompt = msg.payload?.matches\n    .map(vector => vector.metadata.result)\n    .join(', ');\n\n  node.warn(msg.payload?.matches);\n  node.warn(vectorsForPrompt);\n\n  msg.payload = {\n    model: msg.model,\n    messages: msg.messages = [\n    { \"role\": \"system\", \"content\": `${totalPrompt}. ${vectorsForPrompt}`},\n    { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n  ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\nmsg.history.vectors = msg.payload.matches.map((vector, i) => {\n  return {\n    question: vector.metadata.question,\n    result: vector.metadata.result,\n    distance: vector.score,\n    document: vector.metadata.url,\n  }\n})\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2411,7 +2429,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "create vector",
-        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\n\nif (msg.statusCode !== 200) {\n\n   msg.payload = {\n       model: msg.model,\n       messages:[\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0]?.content;\nmsg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
+        "func": "node.warn(msg.payload);\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nmsg.url = 'https://api.openai.com/v1/chat/completions'\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nlet result = msg.payload.metadatas[0].filter(e => e !== null).map(e => e.result)\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nif (msg.statusCode !== 200) {\n\n   msg.payload = {\n       model: msg.model,\n       messages:[\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt + \". \" + JSON.stringify(result) },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0]?.content;\nmsg.history.vectors = msg.payload.metadatas[0]?.map((_, i) => {\n    return {\n        ...msg.payload.metadatas[0][i],\n        distance: msg.payload.distances[0][i],\n        document: msg.payload.documents[0][i],\n    }\n})\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2446,7 +2464,7 @@
         "type": "function",
         "z": "27ce80b8fbcd825f",
         "name": "to GPT only",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\n\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\n\nif (msg.statusCode !== 200) {\n\n    msg.payload = {\n        model: msg.model,\n        messages:  [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\n\nreturn msg;\n",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nmsg.url = 'https://api.openai.com/v1/chat/completions'\nlet PROMPT = msg.UNIFIED_DATA.AI_SETTINGS;\nlet totalPrompt = `Answer as an ${PROMPT.ANSWER_AS}, ${PROMPT.TONE}, ${PROMPT.LANGUAGE}, and the response should be ${PROMPT.ANSWER_LENGTH}. Here's some additional guidance: ${PROMPT.PROMPT_CUSTOM}`;\n\nmsg.model = msg.UNIFIED_DATA.AI_SETTINGS.OPENAI_MODEL;\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nif (msg.statusCode !== 200) {\n\n    msg.payload = {\n        model: msg.model,\n        messages:  [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n} else {\n    msg.payload = {\n        model: msg.model,\n        messages: [\n        { \"role\": \"system\", \"content\": totalPrompt },\n        { \"role\": \"user\", \"content\": msg.UNIFIED_DATA.chat.content }\n    ]}\n}\n\nmsg.history.fullPromptToAI = msg.messages[0].content;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9707,7 +9725,7 @@
         "z": "5e7416993281e99d",
         "g": "dd4d6fdf1b601b09",
         "name": "test OpenAI",
-        "func": "\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.payload = {\n    model: msg.model,\n    messages:  [\n    { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\"},\n    { \"role\": \"user\", \"content\": \"hello\" }\n]}\n    // msg.input = \"Hello\"\n    return msg;\n",
+        "func": "msg.url = 'https://api.openai.com/v1/chat/completions'\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${global.get(\"openai\").OPENAI_API}`\n}\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.model = global.get(\"openai\").OPENAI_MODEL;\n\nmsg.payload = {\n    model: msg.model,\n    messages: [\n        { \"role\": \"system\", \"content\": \"Be polite and friendly.Don’t use slang.Don’t use emojis\" },\n        { \"role\": \"user\", \"content\": \"hello\" }\n    ]\n}\n// msg.input = \"Hello\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
