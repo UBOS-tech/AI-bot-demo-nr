@@ -266,9 +266,7 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 739,
-        "w": 672,
-        "h": 642
+        "y": 739
     },
     {
         "id": "23033541e553eb36",
@@ -290,9 +288,7 @@
             "39f863832fe14deb"
         ],
         "x": 714,
-        "y": 719,
-        "w": 1012,
-        "h": 122
+        "y": 719
     },
     {
         "id": "2bad0f12f5a9659f",
@@ -332,9 +328,7 @@
             "10d15004c30b1bb5"
         ],
         "x": 714,
-        "y": 859,
-        "w": 1452,
-        "h": 482
+        "y": 859
     },
     {
         "id": "7382602cc2b54357",
@@ -372,9 +366,7 @@
             "a42302c6b56d6335"
         ],
         "x": 854,
-        "y": 1359,
-        "w": 1172,
-        "h": 402
+        "y": 1359
     },
     {
         "id": "628c8aecc019f08b",
@@ -423,9 +415,7 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1359,
-        "w": 812,
-        "h": 642
+        "y": 1359
     },
     {
         "id": "b2e9a721546c936c",
@@ -557,8 +547,7 @@
             "5cd893ede34c2edb",
             "1b07b671b402e285",
             "71cd22f3e06a84bc",
-            "c20f006fc113de9c",
-            "dda9da93d35eba3e"
+            "c20f006fc113de9c"
         ],
         "x": 34,
         "y": 19
@@ -683,9 +672,7 @@
             "9b6d3faff2ed4839"
         ],
         "x": 34,
-        "y": 2059,
-        "w": 3652,
-        "h": 922
+        "y": 2059
     },
     {
         "id": "96ff04cf0133a4da",
@@ -739,7 +726,7 @@
             "852b2a54af90ad6a",
             "b7408a0e68d108ab"
         ],
-        "x": 74,
+        "x": 64,
         "y": 39
     },
     {
@@ -893,7 +880,9 @@
             "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279
+        "y": 279,
+        "w": 2372,
+        "h": 302
     },
     {
         "id": "55b42f036281abed",
@@ -920,7 +909,9 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "44336aabd4cc8aba",
@@ -947,7 +938,9 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "6f53df0634427ab8",
@@ -977,7 +970,9 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -1004,7 +999,9 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1212,
+        "h": 202
     },
     {
         "id": "af65f71384d80c06",
@@ -1031,7 +1028,9 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -1052,7 +1051,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2519,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -1079,18 +1080,22 @@
             "7cc35f67ee411a69",
             "d7028718c4d49d2f",
             "ef3b978082bb6fdc",
-            "e9ed00cca727004a",
             "99766ae124788165",
-            "d8182f2910dcd33f",
             "12036ee86f2394d9",
             "c542eb9521c6b170",
             "db94a28e127db79b",
             "4eb4d1856cf27c1e",
             "47c72873e240dab7",
-            "0ec04c582bf41c8a"
+            "0ec04c582bf41c8a",
+            "995f5d8e881f201b",
+            "3db438964b91e5ca",
+            "69ab628d99600faf",
+            "ac1e3105391deadf"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 2152,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -1120,7 +1125,9 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 1192,
+        "h": 202
     },
     {
         "id": "d8a434ae844324e0",
@@ -1147,7 +1154,9 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279
+        "y": 2279,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1181,7 +1190,9 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599
+        "y": 599,
+        "w": 1232,
+        "h": 422
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1396,9 +1407,7 @@
             "893dff2ad4952be1"
         ],
         "x": 14,
-        "y": 99,
-        "w": 2072,
-        "h": 622
+        "y": 99
     },
     {
         "id": "1dc750e7d01e594b",
@@ -1428,7 +1437,6 @@
             "8eb9d6990d487867",
             "f14fd3df90ca5561",
             "4ffeeba62cb60541",
-            "8415988a8ecbe970",
             "3cd02c14dac07e94",
             "77c4ad9f2a2e434d",
             "93e5abb9c37fc2e4",
@@ -1447,10 +1455,15 @@
             "3cca20597d31f491",
             "12c36bc942c295e4",
             "01f6312712e207af",
-            "e5da741d63701d2d"
+            "e5da741d63701d2d",
+            "10ce49bfb8192a6f",
+            "b21a11085c0d4413",
+            "6603ab90d40345c4",
+            "f86b4e4a27d325f0",
+            "e075bd3462c565cd"
         ],
         "x": 2334,
-        "y": 559
+        "y": 599
     },
     {
         "id": "5e1b78e4b4dca086",
@@ -1618,9 +1631,15 @@
             "be34c59c99836e92",
             "85b4185b383dba90",
             "c45025cee2fdcd4f",
-            "9fbc84a68b97c2e9"
+            "9fbc84a68b97c2e9",
+            "aa8cf13a48f45939",
+            "fa305a2d24d8c360",
+            "2d950b4ca3b61c20",
+            "05630bb94ec5b2cc",
+            "a032a81bfc2b43b8",
+            "5687398f960d8ac5"
         ],
-        "x": 54,
+        "x": 34,
         "y": 1259
     },
     {
@@ -1741,6 +1760,28 @@
         ],
         "x": 34,
         "y": 2859
+    },
+    {
+        "id": "20c961b383179af0",
+        "type": "group",
+        "z": "82bc9ba4d7ff197c",
+        "name": "PINECONE",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "22d38eb751246fa9",
+            "52e7027bfb02c152",
+            "6a68d673674199fb",
+            "334e53f109fb9972",
+            "54ee3590970cd1a2",
+            "946648dcafc73007",
+            "4d039ac0b803a921"
+        ],
+        "x": 34,
+        "y": 3259
     },
     {
         "id": "204e41e815b84721",
@@ -3741,10 +3782,12 @@
         "y": 80,
         "wires": [
             [
-                "13b30721befec670"
+                "13b30721befec670",
+                "e57164a562d0efa8"
             ],
             [
-                "e6aab4e96cfec383"
+                "e6aab4e96cfec383",
+                "e57164a562d0efa8"
             ]
         ]
     },
@@ -4234,6 +4277,23 @@
                 "76a204897ab25ee1"
             ]
         ]
+    },
+    {
+        "id": "e57164a562d0efa8",
+        "type": "debug",
+        "z": "a0451234ff05c29f",
+        "name": "debug 841",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 20,
+        "wires": []
     },
     {
         "id": "a478b692e78a5971",
@@ -11483,7 +11543,8 @@
         "y": 180,
         "wires": [
             [
-                "e9ed00cca727004a"
+                "995f5d8e881f201b",
+                "47c72873e240dab7"
             ]
         ]
     },
@@ -11547,27 +11608,6 @@
         "l": false
     },
     {
-        "id": "e9ed00cca727004a",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "d5b48aa89e9f41a1",
-        "name": "function 388",
-        "func": "const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 1,\n    \"includeMetadata\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 180,
-        "wires": [
-            [
-                "47c72873e240dab7",
-                "d8182f2910dcd33f"
-            ]
-        ]
-    },
-    {
         "id": "99766ae124788165",
         "type": "http response",
         "z": "5e7416993281e99d",
@@ -11578,24 +11618,6 @@
         "x": 1940,
         "y": 180,
         "wires": []
-    },
-    {
-        "id": "d8182f2910dcd33f",
-        "type": "pinecone-vector-ubos",
-        "z": "5e7416993281e99d",
-        "g": "d5b48aa89e9f41a1",
-        "name": "",
-        "actionType": "query",
-        "apiKey": "",
-        "environment": "",
-        "x": 1580,
-        "y": 180,
-        "wires": [
-            [
-                "12036ee86f2394d9",
-                "db94a28e127db79b"
-            ]
-        ]
     },
     {
         "id": "12036ee86f2394d9",
@@ -12675,6 +12697,90 @@
                 "89b9d71dd5b48135"
             ]
         ]
+    },
+    {
+        "id": "3db438964b91e5ca",
+        "type": "http request",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1590,
+        "y": 180,
+        "wires": [
+            [
+                "ac1e3105391deadf",
+                "12036ee86f2394d9",
+                "69ab628d99600faf"
+            ]
+        ]
+    },
+    {
+        "id": "995f5d8e881f201b",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "pinecone",
+        "func": "const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/query`;\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    \"namespace\": global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 1,\n    \"includeMetadata\": true,\n    vector\n\n}\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 180,
+        "wires": [
+            [
+                "3db438964b91e5ca",
+                "ac1e3105391deadf"
+            ]
+        ]
+    },
+    {
+        "id": "ac1e3105391deadf",
+        "type": "debug",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "debug 845",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1690,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "69ab628d99600faf",
+        "type": "debug",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "debug 846",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 60,
+        "wires": []
     },
     {
         "id": "10d15004c30b1bb5",
@@ -20896,41 +21002,11 @@
         "wires": []
     },
     {
-        "id": "dda9da93d35eba3e",
-        "type": "inject",
-        "z": "87c010715c532181",
-        "g": "c7c1d01c718f9fc8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 340,
-        "wires": [
-            [
-                "129e15555ad6194c"
-            ]
-        ]
-    },
-    {
         "id": "722d56f94f5e4c0a",
         "type": "debug",
         "z": "b05f06180ae94375",
         "name": "debug 815",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -21121,7 +21197,7 @@
         "type": "debug",
         "z": "b05f06180ae94375",
         "name": "debug 820",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -21660,7 +21736,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2440,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "314908ca4068caa8",
@@ -21686,11 +21762,12 @@
             }
         ],
         "x": 3310,
-        "y": 940,
+        "y": 1020,
         "wires": [
             [
                 "675996adb25ffa03",
-                "3c23fd1b1a5842e9"
+                "3c23fd1b1a5842e9",
+                "e075bd3462c565cd"
             ]
         ]
     },
@@ -21705,7 +21782,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2470,
-        "y": 980,
+        "y": 1060,
         "wires": [
             [
                 "8d1253505be54fe1",
@@ -21722,7 +21799,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3590,
-        "y": 960,
+        "y": 1040,
         "wires": []
     },
     {
@@ -21738,7 +21815,7 @@
         "finalize": "",
         "libs": [],
         "x": 3450,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "49dd79e82d33f56b"
@@ -21756,7 +21833,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 2470,
-        "y": 1220,
+        "y": 1300,
         "wires": [
             [
                 "c41027a5547f9e8f",
@@ -21782,7 +21859,7 @@
             }
         ],
         "x": 2810,
-        "y": 1180,
+        "y": 1260,
         "wires": [
             [
                 "b8644eee4f7f15a1"
@@ -21798,7 +21875,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3350,
-        "y": 1160,
+        "y": 1240,
         "wires": []
     },
     {
@@ -21819,7 +21896,7 @@
             }
         ],
         "x": 3140,
-        "y": 1180,
+        "y": 1260,
         "wires": [
             [
                 "424e7d61a4ed9e17",
@@ -21845,7 +21922,7 @@
         "senderr": false,
         "headers": [],
         "x": 2970,
-        "y": 1180,
+        "y": 1260,
         "wires": [
             [
                 "43e456f9948974b8"
@@ -21864,7 +21941,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 3480,
-        "y": 920,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -21881,7 +21958,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 3300,
-        "y": 1200,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -21901,7 +21978,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2620,
-        "y": 1040,
+        "y": 1120,
         "wires": []
     },
     {
@@ -21919,7 +21996,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2830,
-        "y": 1140,
+        "y": 1220,
         "wires": []
     },
     {
@@ -21928,14 +22005,14 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "create vector",
-        "func": "msg.fromApp = msg.payload;\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload.result}, ${msg.payload.question}`;\n\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\nif (msg.payload.typeBase === \"chroma\") {\n\n    return [null, msg]\n} else {\n\n    return [msg, null]\n}\n",
+        "func": "msg.fromApp = msg.payload;\nmsg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.input = `${msg.payload.result}, ${msg.payload.question}`;\n\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\nmsg.typeBase = msg.payload.typeBase;\n\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\n\nif (msg.typeBase === \"chroma\") {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 2670,
-        "y": 980,
+        "y": 1060,
         "wires": [
             [
                 "01f6312712e207af"
@@ -21954,12 +22031,11 @@
         "actionType": "update",
         "apiKey": "",
         "environment": "",
-        "x": 3150,
-        "y": 940,
+        "x": 3170,
+        "y": 920,
         "wires": [
             [
-                "da7b9c6f9ac0121f",
-                "8415988a8ecbe970"
+                "da7b9c6f9ac0121f"
             ]
         ]
     },
@@ -21969,7 +22045,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "function 372",
-        "func": "msg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nconst vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = msg.fromApp.id;\nconst url = msg.fromApp.url;\nmsg.actionType='update'\nmsg.payload = {\n    id: id,\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    setMetadata: { url: url, question: question, result: result },\n    values: vector,\n    namespase:''\n};\n\nreturn msg;",
+        "func": "msg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nconst vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = msg.fromApp.id;\n// const url = msg.fromApp.url;\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/update`;\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    id: id,\n    namespace: global.get(\"pinecone\").PINECONE_INDEX,\n    // setMetadata: { url: url, question: question, result: result },\n    setMetadata: { question, result },\n    values: vector,\n    // namespase:''\n};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -21981,32 +22057,14 @@
             }
         ],
         "x": 3025,
-        "y": 940,
+        "y": 1000,
         "wires": [
             [
-                "f14fd3df90ca5561",
-                "3cd02c14dac07e94"
+                "3cd02c14dac07e94",
+                "f86b4e4a27d325f0"
             ]
         ],
         "l": false
-    },
-    {
-        "id": "8415988a8ecbe970",
-        "type": "debug",
-        "z": "82bc9ba4d7ff197c",
-        "g": "1dc750e7d01e594b",
-        "name": "debug 502",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3290,
-        "y": 980,
-        "wires": []
     },
     {
         "id": "3cd02c14dac07e94",
@@ -22023,7 +22081,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3050,
-        "y": 1000,
+        "y": 1080,
         "wires": []
     },
     {
@@ -22040,8 +22098,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3150,
-        "y": 640,
+        "x": 3430,
+        "y": 740,
         "wires": []
     },
     {
@@ -22050,17 +22108,18 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "from pinecone",
-        "func": "const vector = Array(1536).fill(0);\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 500,\n    \"includeMetadata\": true,\n    // \"includeValues\": true,\n    vector\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nreturn msg;\n",
+        "func": "const vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/query`;\n// msg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/list?namespace=${global.get(\"pinecone\").PINECONE_INDEX}`;\n\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    \"namespace\": global.get(\"pinecone\").PINECONE_INDEX,\n    \"topK\": 600,\n    \"includeMetadata\": true,\n    vector\n\n}\n\n// msg.payload = {\n//     name: global.get(\"pinecone\").PINECONE_INDEX,\n//     \"topK\": 600,\n//     \"includeMetadata\": true,\n//     // \"includeValues\": true,\n//     vector\n// };\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 2780,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
-                "42b0bf0b59a045db"
+                "b21a11085c0d4413",
+                "6603ab90d40345c4"
             ]
         ]
     },
@@ -22073,7 +22132,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3310,
-        "y": 600,
+        "y": 680,
         "wires": []
     },
     {
@@ -22085,8 +22144,9 @@
         "actionType": "query",
         "apiKey": "",
         "environment": "",
-        "x": 2970,
-        "y": 600,
+        "projectId": "",
+        "x": 3290,
+        "y": 780,
         "wires": [
             [
                 "77c4ad9f2a2e434d",
@@ -22834,7 +22894,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "function 380",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\nconst source = msg.old.source;\n\n// msg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.actionType = 'upsert';\nmsg.ids = Date.now().toString();\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    // name: 'dimko2',\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n// msg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_INDEX;\n\nreturn msg;\n",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\n\nconst question = msg.input;\nconst result = msg.input;\nconst url = msg.old.link;\nconst source = msg.old.source;\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n// msg.url = `https://atest-ddebbcd.svc.aped-4627-b74a.pinecone.io/vectors/upsert`\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\n// msg.actionType = 'upsert';\nmsg.ids = Date.now().toString();\n\nmsg.payload = {\n    namespace: global.get(\"pinecone\").PINECONE_INDEX,\n    // name: 'dimko2',\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n// msg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_INDEX;\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22845,13 +22905,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 805,
-        "y": 1760,
+        "x": 735,
+        "y": 1780,
         "wires": [
             [
                 "ab1b3f7904bdd90b",
-                "453b64e5110846b8",
-                "f86fa4758477fc0a"
+                "aa8cf13a48f45939"
             ]
         ],
         "l": false
@@ -22968,7 +23027,8 @@
         "actionType": "upsert",
         "apiKey": "",
         "environment": "",
-        "x": 1090,
+        "projectId": "",
+        "x": 1290,
         "y": 2120,
         "wires": [
             [
@@ -22982,7 +23042,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "function 381",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nconst url = msg.old.link\nconst source = msg.old.source;\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.tobase.question\nconst result = msg.tobase.result\nconst url = msg.old.link\nconst source = msg.old.source;\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    namespace: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22993,12 +23053,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 875,
+        "x": 865,
         "y": 2120,
         "wires": [
             [
                 "976a07940b142b19",
-                "6f616eb76e1048d3"
+                "fa305a2d24d8c360"
             ]
         ],
         "l": false
@@ -23056,8 +23116,8 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 2700,
+        "x": 150,
+        "y": 2740,
         "wires": [
             [
                 "46c119c67abc9089",
@@ -23071,14 +23131,14 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "create vector",
-        "func": "msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nmsg.tobase = msg.payload;\nmsg.input = `${msg.payload.question }, ${msg.payload.result}`\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\nif (msg.payload.typeBase === \"chroma\"){\n    return [null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\nmsg.tobase = msg.payload;\nmsg.input = `${msg.payload.question }, ${msg.payload.result}`\nmsg.typeBase = msg.payload.typeBase;\n\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\n\nif (msg.typeBase === \"chroma\") {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2700,
+        "x": 330,
+        "y": 2740,
         "wires": [
             [
                 "0b45ea21f97c5d9f"
@@ -23094,7 +23154,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "function 387",
-        "func": "const vector = msg.payload.data[0].embedding;\nmsg.vector = msg.payload.data[0].embedding;\nconst question = msg.tobase.question;\nconst result = msg.tobase.result;\nconst url = msg.tobase.name;\nconst source = msg.tobase.source;\n\nmsg.ids = msg.tobase.id;\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }],\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nreturn msg;\n",
+        "func": "const vector = msg.payload.data[0].embedding;\nmsg.vector = msg.payload.data[0].embedding;\nconst question = msg.tobase.question;\nconst result = msg.tobase.result;\nconst url = msg.tobase.name;\nconst source = msg.tobase.source;\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.ids = msg.tobase.id;\nmsg.payload = {\n    namespace: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source,\n        }\n    }],\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API;\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV;\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23105,11 +23165,12 @@
                 "module": "objectid"
             }
         ],
-        "x": 725,
-        "y": 2680,
+        "x": 655,
+        "y": 2720,
         "wires": [
             [
-                "5ee7791b4f10fdc7"
+                "2d950b4ca3b61c20",
+                "a032a81bfc2b43b8"
             ]
         ],
         "l": false
@@ -23124,7 +23185,7 @@
         "apiKey": "",
         "environment": "",
         "x": 850,
-        "y": 2680,
+        "y": 2660,
         "wires": [
             [
                 "0f4b6a441e5aa1f7"
@@ -23321,7 +23382,7 @@
         "actionType": "upsert",
         "apiKey": "",
         "environment": "",
-        "x": 1050,
+        "x": 1330,
         "y": 2460,
         "wires": [
             [
@@ -23335,7 +23396,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "function 401",
-        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.input\nconst result = msg.input\nconst url = msg.old.link\n\nmsg.payload = {\n    name: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding\nmsg.vector = msg.payload.data[0].embedding\nconst question = msg.input\nconst result = msg.input\nconst url = msg.old.link\nconst source = msg.old.source;\n\nmsg.url = `${global.get(\"pinecone\").PINECONE_URL}/vectors/upsert`;\n\nmsg.headers = {\n    'Api-Key': global.get(\"pinecone\").PINECONE_API,\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    namespace: global.get(\"pinecone\").PINECONE_INDEX,\n    vectors: [{\n        id: msg.ids,\n        pinecone: true,\n        values: vector,\n        metadata: {\n            url,\n            question,\n            result,\n            source\n        }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"pinecone\").PINECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"pinecone\").PINECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"pinecone\").PINECONE_URL\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23351,7 +23412,7 @@
         "wires": [
             [
                 "e7f12b95ea273e37",
-                "c749824139ee8948"
+                "5687398f960d8ac5"
             ]
         ],
         "l": false
@@ -23914,8 +23975,8 @@
                 "module": "openai"
             }
         ],
-        "x": 790,
-        "y": 2720,
+        "x": 750,
+        "y": 2760,
         "wires": [
             [
                 "9c92bcd8e3bd095b",
@@ -23937,8 +23998,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1010,
-        "y": 2720,
+        "x": 930,
+        "y": 2800,
         "wires": []
     },
     {
@@ -24289,7 +24350,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "from Chroma",
-        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 500\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
+        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 500\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24305,7 +24366,7 @@
             }
         ],
         "x": 2770,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "389416ec67b1e346",
@@ -24322,7 +24383,7 @@
         "statusCode": "",
         "headers": {},
         "x": 3130,
-        "y": 680,
+        "y": 760,
         "wires": []
     },
     {
@@ -24338,10 +24399,11 @@
         "finalize": "",
         "libs": [],
         "x": 2610,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
-                "93e5abb9c37fc2e4"
+                "93e5abb9c37fc2e4",
+                "10ce49bfb8192a6f"
             ],
             [
                 "8136e26d0f17c981",
@@ -24364,7 +24426,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2450,
-        "y": 680,
+        "y": 760,
         "wires": []
     },
     {
@@ -24381,8 +24443,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2750,
-        "y": 740,
+        "x": 2990,
+        "y": 820,
         "wires": []
     },
     {
@@ -24407,7 +24469,7 @@
             }
         ],
         "x": 3080,
-        "y": 1060,
+        "y": 1140,
         "wires": [
             [
                 "ec75b52718c6aa6a",
@@ -24430,7 +24492,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3300,
-        "y": 1060,
+        "y": 1140,
         "wires": []
     },
     {
@@ -24446,7 +24508,7 @@
         "finalize": "",
         "libs": [],
         "x": 2670,
-        "y": 1220,
+        "y": 1300,
         "wires": [
             [
                 "7c889b1001467282",
@@ -24480,7 +24542,7 @@
             }
         ],
         "x": 2880,
-        "y": 1260,
+        "y": 1340,
         "wires": [
             [
                 "43e456f9948974b8",
@@ -24503,7 +24565,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3090,
-        "y": 1300,
+        "y": 1380,
         "wires": []
     },
     {
@@ -24537,7 +24599,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 2680,
+        "y": 2740,
         "wires": [
             [
                 "b72363f2813b2987"
@@ -24553,7 +24615,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1130,
-        "y": 2680,
+        "y": 2740,
         "wires": []
     },
     {
@@ -26158,8 +26220,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 2760,
+        "x": 570,
+        "y": 2800,
         "wires": []
     },
     {
@@ -26766,7 +26828,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "debug 793",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -26783,7 +26845,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "debug 797",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -26804,7 +26866,7 @@
         "actionType": "upsert",
         "apiKey": "",
         "environment": "",
-        "x": 980,
+        "x": 1140,
         "y": 1760,
         "wires": [
             [
@@ -26827,8 +26889,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 1820,
+        "x": 1290,
+        "y": 1840,
         "wires": []
     },
     {
@@ -26837,14 +26899,14 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "filter by source",
-        "func": "if (msg.fromUI.source === 'ALL') {\n\n    return msg;\n} else {\n    msg.payload.matches = msg.payload.matches.filter(e => e.metadata.source === msg.fromUI.source);\n\n    return msg;\n}\n",
+        "func": "const pageSize = 20;\nconst currentPage = parseInt(msg.fromUI.page) || 1;\nlet totalCount = msg.payload.matches.length;\n\nconst startIndex = (currentPage - 1) * pageSize;\nconst endIndex = startIndex + pageSize;\nlet paginatedResults = msg.payload.matches.slice(startIndex, endIndex);\n\nif (msg.fromUI.source === 'ALL') {\n    msg.payload.matches = paginatedResults.sort((a, b) => a?.metadata?.source?.localeCompare(b?.metadata?.source));\n    msg.payload.totalCount = totalCount;\n\n    return msg;\n} else {\n    // msg.payload.matches = msg.payload.matches.filter(e => e.metadata.source === msg.fromUI.source);\n    msg.payload.matches = msg.payload.matches.filter(e => e.metadata.source === msg.fromUI.source);\n    totalCount = msg.payload.matches.length;\n    paginatedResults = msg.payload.matches.slice(startIndex, endIndex);\n    msg.payload.matches = paginatedResults;\n    msg.payload.totalCount = totalCount;\n\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 3160,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
                 "e26b7bed0d3a64f6",
@@ -26858,14 +26920,14 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "filter by source",
-        "func": "if (msg.fromUI.source === 'ALL') {\n\n    return msg;\n} else {\n    msg.payload.metadatas[0] = msg.payload.metadatas[0].filter(e => e.source === msg.fromUI.source);\n\n    return msg;\n}",
+        "func": "const pageSize = 20;\nlet totalCount = msg.payload.metadatas[0].length;\nconst currentPage = parseInt(msg.fromUI.page) || 1;\n\nconst startIndex = (currentPage - 1) * pageSize;\nconst endIndex = startIndex + pageSize;\nlet paginatedResults = msg.payload.metadatas[0].slice(startIndex, endIndex);\n\nif (msg.fromUI.source === 'ALL') {\n    msg.payload.metadatas[0] = paginatedResults.sort((a, b) => a?.source?.localeCompare(b?.source));\n    msg.payload.totalCount = totalCount;\n\n    return msg;\n} else {\n    // msg.payload.metadatas[0] = msg.payload.metadatas[0].filter(e => e.source === msg.fromUI.source);\n    msg.payload.metadatas[0] = msg.payload.metadatas[0].filter(e => e.source === msg.fromUI.source);\n\n    totalCount = msg.payload.metadatas[0].length;\n    paginatedResults = msg.payload.metadatas[0].slice(startIndex, endIndex);\n    msg.payload.metadatas[0] = paginatedResults;\n    msg.payload.totalCount = totalCount;\n\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 2960,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "39da74eb26ac231e",
@@ -26923,8 +26985,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 290,
-        "y": 2740,
+        "x": 170,
+        "y": 2800,
         "wires": []
     },
     {
@@ -27131,14 +27193,14 @@
         "id": "724d77d3b57d37c8",
         "type": "function",
         "z": "82bc9ba4d7ff197c",
-        "name": "getLinkInfo",
+        "name": "FAQ",
         "func": "msg.payload ={\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase,\n    source: msg.contentPayload.source,\n}\n\nmsg.url = env.get(\"nodered\") + `/FAQ`\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
+        "x": 1890,
         "y": 500,
         "wires": [
             [
@@ -27167,7 +27229,7 @@
         "id": "54ec65ec829af158",
         "type": "function",
         "z": "82bc9ba4d7ff197c",
-        "name": "getLinkInfo",
+        "name": "getFileInfo",
         "func": "msg.payload = {\n    _id: msg.payload._id,\n    knowledgeBaseId: msg.payload.knowledgeBaseId,\n    link: msg.decodedFilename,\n    typeBase: msg.contentPayload.typeBase,\n    nameBase: msg.contentPayload.nameBase,\n    source: msg.contentPayload.source,\n};\n\nmsg.url = env.get(\"nodered\") + `/getFileInfo`;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
@@ -27483,11 +27545,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 570,
-        "y": 2680,
+        "x": 510,
+        "y": 2720,
         "wires": [
             [
-                "d3f545a623e9bc67"
+                "d3f545a623e9bc67",
+                "05630bb94ec5b2cc"
             ]
         ]
     },
@@ -27508,8 +27571,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 550,
-        "y": 2720,
+        "x": 510,
+        "y": 2760,
         "wires": [
             [
                 "984b691ad5f64cc3",
@@ -27688,7 +27751,7 @@
         "senderr": false,
         "headers": [],
         "x": 2850,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "4ffeeba62cb60541"
@@ -27713,11 +27776,414 @@
         "senderr": false,
         "headers": [],
         "x": 2830,
-        "y": 1020,
+        "y": 1100,
         "wires": [
             [
                 "d5a2a83b169432a7"
             ]
         ]
+    },
+    {
+        "id": "10ce49bfb8192a6f",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "1dc750e7d01e594b",
+        "name": "pinecone",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2760,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "b21a11085c0d4413",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "1dc750e7d01e594b",
+        "name": "debug 842",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3070,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "22d38eb751246fa9",
+        "type": "inject",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 3360,
+        "wires": [
+            [
+                "334e53f109fb9972"
+            ]
+        ]
+    },
+    {
+        "id": "52e7027bfb02c152",
+        "type": "function",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "function 657",
+        "func": "msg.url =`https://atest-ddebbcd.svc.aped-4627-b74a.pinecone.io/vectors/upsert`\n// https://$INDEX_HOST/vectors/upsert\n//https://atest-ddebbcd.svc.aped-4627-b74a.pinecone.io\nmsg.headers = {\n    'Api-Key': 'd7bc93d6-915e-4a2d-8d39-d0d8615e8ec0',\n    'Content-Type': 'application/json'\n}\n\nmsg.payload = {\n    \"vectors\": [\n        {\n            \"id\": msg.ids,\n            \"values\": msg.payload.data[0].embedding\n        }]\n        \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 3360,
+        "wires": [
+            [
+                "6a68d673674199fb",
+                "4d039ac0b803a921"
+            ]
+        ]
+    },
+    {
+        "id": "6a68d673674199fb",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 810,
+        "y": 3360,
+        "wires": [
+            [
+                "4d039ac0b803a921"
+            ]
+        ]
+    },
+    {
+        "id": "334e53f109fb9972",
+        "type": "function",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "function 658",
+        "func": "msg.OPENAI_API_KEY = global.get(\"openai\").OPENAI_API;\n// msg.input = `${msg.payload}, ${msg.payload}`;\nmsg.input =\"my name is vika\";\nmsg.ids = Date.now().toString();\nmsg.url = 'https://api.openai.com/v1/embeddings'\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${msg.OPENAI_API_KEY}`\n}\n\nmsg.payload = {\n    \"input\": msg.input,\n    \"model\": \"text-embedding-ada-002\"\n}\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 3360,
+        "wires": [
+            [
+                "54ee3590970cd1a2",
+                "946648dcafc73007"
+            ]
+        ]
+    },
+    {
+        "id": "54ee3590970cd1a2",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 3360,
+        "wires": [
+            [
+                "52e7027bfb02c152",
+                "946648dcafc73007"
+            ]
+        ]
+    },
+    {
+        "id": "946648dcafc73007",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "debug 843",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "4d039ac0b803a921",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "20c961b383179af0",
+        "name": "debug 844",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "aa8cf13a48f45939",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 910,
+        "y": 1760,
+        "wires": [
+            [
+                "453b64e5110846b8",
+                "0c8544e860d497d1"
+            ]
+        ]
+    },
+    {
+        "id": "6603ab90d40345c4",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "1dc750e7d01e594b",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2950,
+        "y": 680,
+        "wires": [
+            [
+                "b21a11085c0d4413",
+                "3cca20597d31f491"
+            ]
+        ]
+    },
+    {
+        "id": "fa305a2d24d8c360",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1050,
+        "y": 2120,
+        "wires": [
+            [
+                "d1eeefe3ab9424e0"
+            ]
+        ]
+    },
+    {
+        "id": "2d950b4ca3b61c20",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 2720,
+        "wires": [
+            [
+                "0f4b6a441e5aa1f7",
+                "a032a81bfc2b43b8"
+            ]
+        ]
+    },
+    {
+        "id": "05630bb94ec5b2cc",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "debug 847",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "a032a81bfc2b43b8",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "debug 848",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "5687398f960d8ac5",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "271d2e95a9d20341",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1110,
+        "y": 2460,
+        "wires": [
+            [
+                "1394e64bbd0dde46"
+            ]
+        ]
+    },
+    {
+        "id": "f86b4e4a27d325f0",
+        "type": "http request",
+        "z": "82bc9ba4d7ff197c",
+        "g": "1dc750e7d01e594b",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 3150,
+        "y": 1000,
+        "wires": [
+            [
+                "da7b9c6f9ac0121f",
+                "e075bd3462c565cd"
+            ]
+        ]
+    },
+    {
+        "id": "e075bd3462c565cd",
+        "type": "debug",
+        "z": "82bc9ba4d7ff197c",
+        "g": "1dc750e7d01e594b",
+        "name": "debug 849",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3510,
+        "y": 900,
+        "wires": []
     }
 ]
