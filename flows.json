@@ -1439,7 +1439,9 @@
             "e075bd3462c565cd"
         ],
         "x": 2334,
-        "y": 599
+        "y": 599,
+        "w": 1332,
+        "h": 822
     },
     {
         "id": "5e1b78e4b4dca086",
@@ -1486,7 +1488,9 @@
             "b04d29592534735b"
         ],
         "x": 2334,
-        "y": 39
+        "y": 39,
+        "w": 1332,
+        "h": 502
     },
     {
         "id": "271d2e95a9d20341",
@@ -1612,7 +1616,9 @@
             "5687398f960d8ac5"
         ],
         "x": 34,
-        "y": 1259
+        "y": 1259,
+        "w": 1432,
+        "h": 1582
     },
     {
         "id": "710369d0410a0d60",
@@ -1714,7 +1720,9 @@
             "b930f0c3ba4eaea0"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 2292,
+        "h": 1242
     },
     {
         "id": "115eb015c9489caa",
@@ -1731,7 +1739,9 @@
             "1526b8eb5f6f428b"
         ],
         "x": 34,
-        "y": 2859
+        "y": 2859,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "20c961b383179af0",
@@ -1753,7 +1763,9 @@
             "4d039ac0b803a921"
         ],
         "x": 34,
-        "y": 3259
+        "y": 3259,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "204e41e815b84721",
@@ -22461,12 +22473,17 @@
         "z": "82bc9ba4d7ff197c",
         "g": "271d2e95a9d20341",
         "name": "Scrape",
-        "func": "// const { JSDOM } = jsdom;\n\n// const html = msg.payload;\n\n// const dom = new JSDOM(`${html}`);\n// dom.window.document.querySelectorAll('style').forEach(link => {\n//     link.remove();\n// });\n// dom.window.document.querySelectorAll('script').forEach(link => {\n//     link.remove();\n// });\n// const document = dom.window.document;\n// const pageText = document.body.textContent;\n// msg.text = pageText;\n\n\n// let table = dom.window.document.querySelector('table');\n\n// let ckeckTable = table?.textContent ? true : false;\n\n\n// if (ckeckTable) {\n//     const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n//         const text = td.textContent.trim();\n//         return text !== \"\" ? text : undefined;\n//     }).filter(Boolean);\n\n//     const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n//     const tableData = rows.map(row => {\n//         const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n//         return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n//     });\n\n//     let tables = JSON.stringify(tableData);\n//     node.warn(tables)\n//     msg.pageContent = pageText + '\\n\\n' + tables;\n// } else {\n//     msg.pageContent = pageText;\n// }\n\n\n// const MAX_LENGTH = 500;\n\n// msg.result = [];\n// let currentParagraph = '';\n\n// const sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\n// for (const sentence of sentences) {\n//     if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n//         currentParagraph += sentence;\n//     } else {\n//         msg.result.push(currentParagraph.trim());\n//         currentParagraph = sentence;\n//     }\n// }\n\n// if (currentParagraph.trim() !== '') {\n//     msg.result.push(currentParagraph.trim());\n// }\n\n\n\n// msg.payload = {\n//     ...msg.old,\n//     text: msg.result\n// }\n\n\n\n// msg.url = env.get(\"nodered\") + `/createVector`\n// return msg;\n",
+        "func": "const { JSDOM } = jsdom;\n\nconst html = msg.payload;\n\nconst dom = new JSDOM(`${html}`);\ndom.window.document.querySelectorAll('style').forEach(link => {\n    link.remove();\n});\ndom.window.document.querySelectorAll('script').forEach(link => {\n    link.remove();\n});\nconst document = dom.window.document;\nconst pageText = document.body.textContent;\nmsg.text = pageText;\n\n\nlet table = dom.window.document.querySelector('table');\n\nlet ckeckTable = table?.textContent ? true : false;\n\n\nif (ckeckTable) {\n    const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n        const text = td.textContent.trim();\n        return text !== \"\" ? text : undefined;\n    }).filter(Boolean);\n\n    const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n    const tableData = rows.map(row => {\n        const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n        return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n    });\n\n    let tables = JSON.stringify(tableData);\n    node.warn(tables)\n    msg.pageContent = pageText + '\\n\\n' + tables;\n} else {\n    msg.pageContent = pageText;\n}\n\n\nconst MAX_LENGTH = 500;\n\nmsg.result = [];\nlet currentParagraph = '';\n\nconst sentences = msg.pageContent.replace(/\\s+/g, ' ').split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        msg.result.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    msg.result.push(currentParagraph.trim());\n}\n\n\n\nmsg.payload = {\n    ...msg.old,\n    text: msg.result\n}\n\n\n\nmsg.url = env.get(\"nodered\") + `/createVector`\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "jsdom",
+                "module": "jsdom"
+            }
+        ],
         "x": 700,
         "y": 1460,
         "wires": [
