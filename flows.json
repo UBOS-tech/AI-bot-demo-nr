@@ -266,7 +266,9 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 739
+        "y": 739,
+        "w": 672,
+        "h": 642
     },
     {
         "id": "7382602cc2b54357",
@@ -305,7 +307,9 @@
             "7939e1f6fecce8a9"
         ],
         "x": 714,
-        "y": 759
+        "y": 759,
+        "w": 1172,
+        "h": 402
     },
     {
         "id": "628c8aecc019f08b",
@@ -354,7 +358,9 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1379
+        "y": 1379,
+        "w": 812,
+        "h": 642
     },
     {
         "id": "b2e9a721546c936c",
@@ -741,9 +747,7 @@
             "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279,
-        "w": 2372,
-        "h": 302
+        "y": 279
     },
     {
         "id": "55b42f036281abed",
@@ -770,9 +774,7 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "44336aabd4cc8aba",
@@ -799,9 +801,7 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099,
-        "w": 992,
-        "h": 182
+        "y": 1099
     },
     {
         "id": "6f53df0634427ab8",
@@ -831,9 +831,7 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299,
-        "w": 1192,
-        "h": 222
+        "y": 1299
     },
     {
         "id": "20f41552a8bf93e6",
@@ -860,9 +858,7 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559,
-        "w": 1212,
-        "h": 202
+        "y": 1559
     },
     {
         "id": "af65f71384d80c06",
@@ -889,9 +885,7 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799,
-        "w": 1152,
-        "h": 202
+        "y": 1799
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -912,9 +906,7 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519,
-        "w": 572,
-        "h": 162
+        "y": 2519
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -954,9 +946,7 @@
             "ac1e3105391deadf"
         ],
         "x": 74,
-        "y": 19,
-        "w": 2152,
-        "h": 242
+        "y": 19
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -986,9 +976,7 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039,
-        "w": 1192,
-        "h": 202
+        "y": 2039
     },
     {
         "id": "d8a434ae844324e0",
@@ -1015,9 +1003,7 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279,
-        "w": 1232,
-        "h": 202
+        "y": 2279
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1051,9 +1037,7 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599,
-        "w": 1232,
-        "h": 422
+        "y": 599
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1263,7 +1247,9 @@
             "893dff2ad4952be1"
         ],
         "x": 14,
-        "y": 99
+        "y": 99,
+        "w": 2072,
+        "h": 622
     },
     {
         "id": "1dc750e7d01e594b",
@@ -17513,7 +17499,7 @@
         "type": "function",
         "z": "391658888cc82dc0",
         "name": "create chroma collection",
-        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase, embeddingFunction: embedder });\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase});\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
