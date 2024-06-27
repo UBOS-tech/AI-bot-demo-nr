@@ -409,7 +409,9 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -442,7 +444,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -558,7 +562,9 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2839
+        "y": 2839,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "d5f3c34635f35708",
@@ -747,7 +753,9 @@
             "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279
+        "y": 279,
+        "w": 2372,
+        "h": 302
     },
     {
         "id": "55b42f036281abed",
@@ -774,7 +782,9 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "44336aabd4cc8aba",
@@ -801,7 +811,9 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "6f53df0634427ab8",
@@ -831,7 +843,9 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -858,7 +872,9 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1212,
+        "h": 202
     },
     {
         "id": "af65f71384d80c06",
@@ -885,7 +901,9 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -906,7 +924,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2519,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -946,7 +966,9 @@
             "ac1e3105391deadf"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 2152,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -976,7 +998,9 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 1192,
+        "h": 202
     },
     {
         "id": "d8a434ae844324e0",
@@ -1003,7 +1027,9 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279
+        "y": 2279,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1037,7 +1063,9 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599
+        "y": 599,
+        "w": 1232,
+        "h": 422
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1176,7 +1204,9 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39
+        "y": 39,
+        "w": 1922,
+        "h": 1168
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1303,7 +1333,9 @@
             "e075bd3462c565cd"
         ],
         "x": 2334,
-        "y": 599
+        "y": 599,
+        "w": 1332,
+        "h": 822
     },
     {
         "id": "5e1b78e4b4dca086",
@@ -1350,7 +1382,9 @@
             "b04d29592534735b"
         ],
         "x": 2334,
-        "y": 39
+        "y": 39,
+        "w": 1332,
+        "h": 502
     },
     {
         "id": "271d2e95a9d20341",
@@ -1476,7 +1510,9 @@
             "5687398f960d8ac5"
         ],
         "x": 34,
-        "y": 1259
+        "y": 1259,
+        "w": 1432,
+        "h": 1582
     },
     {
         "id": "710369d0410a0d60",
@@ -1578,7 +1614,9 @@
             "b930f0c3ba4eaea0"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 2292,
+        "h": 1242
     },
     {
         "id": "115eb015c9489caa",
@@ -1595,7 +1633,9 @@
             "1526b8eb5f6f428b"
         ],
         "x": 34,
-        "y": 2859
+        "y": 2859,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "20c961b383179af0",
@@ -1617,7 +1657,9 @@
             "4d039ac0b803a921"
         ],
         "x": 34,
-        "y": 3259
+        "y": 3259,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "204e41e815b84721",
@@ -1643,7 +1685,9 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 222
     },
     {
         "id": "d2fba984a07da085",
@@ -1656,19 +1700,6 @@
             [
                 "8de776c48f74e5b9",
                 "f48e056edf5892dd"
-            ]
-        ]
-    },
-    {
-        "id": "8adc796d24899a06",
-        "type": "junction",
-        "z": "391658888cc82dc0",
-        "x": 760,
-        "y": 4320,
-        "wires": [
-            [
-                "b237cec8735d5fed",
-                "6b6e65d9c18d2c46"
             ]
         ]
     },
@@ -8677,7 +8708,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "204e41e815b84721",
         "name": "!!! delete chroma 3 collections !!!",
-        "func": "//create collection\nmsg.nameBase = 'Friendly-ChatDemo'\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\n const embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\n// const collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nclient.deleteCollection({ name: \"Friendly-ChatDemo\"})\nclient.deleteCollection({name: \"UBOS-Support\"})\nclient.deleteCollection({name: \"HumanResources\"})\n\nreturn msg;\n\n",
+        "func": "//create collection\nmsg.nameBase = 'Friendly-ChatDemo'\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\n const embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\n// const collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nclient.deleteCollection({ name: \"Friendly-ChatDemo\"})\nclient.deleteCollection({name: \"UBOS-Support\"})\nclient.deleteCollection({name: \"HumanResources\"})\nclient.deleteCollection({ name: \"books\" })\n\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12801,6 +12832,92 @@
         "wires": []
     },
     {
+        "id": "1a1ba67b96487747",
+        "type": "fs-list",
+        "z": "5e7416993281e99d",
+        "name": "",
+        "path": "/data",
+        "pathType": "str",
+        "pattern": "*",
+        "patternType": "str",
+        "filter": "all",
+        "recursive": false,
+        "follow": true,
+        "property": "list",
+        "propertyType": "msg",
+        "x": 430,
+        "y": 3020,
+        "wires": [
+            [
+                "a773f9436124d431"
+            ]
+        ]
+    },
+    {
+        "id": "4aed3d693782f9be",
+        "type": "inject",
+        "z": "5e7416993281e99d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 3000,
+        "wires": [
+            [
+                "1a1ba67b96487747",
+                "e9aa8a427279676b"
+            ]
+        ]
+    },
+    {
+        "id": "a773f9436124d431",
+        "type": "debug",
+        "z": "5e7416993281e99d",
+        "name": "debug 879",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "e9aa8a427279676b",
+        "type": "fs-remove",
+        "z": "5e7416993281e99d",
+        "path": "/data",
+        "pathType": "str",
+        "filename": "credentialsOpenAI.json",
+        "filenameType": "str",
+        "recursive": true,
+        "exist": false,
+        "name": "",
+        "x": 450,
+        "y": 3080,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "64c38e8befb39aa4",
         "type": "function",
         "z": "391658888cc82dc0",
@@ -16045,7 +16162,7 @@
                 "cac91074ef7313ac",
                 "1eb5766f9c6fee23",
                 "f28ea7a9f47e5381",
-                "0fc60b81bcb7f232"
+                "9660d10b5c54a8d3"
             ]
         ]
     },
@@ -16380,7 +16497,8 @@
         "y": 3340,
         "wires": [
             [
-                "5b2d6a3e3b9311bb"
+                "5b2d6a3e3b9311bb",
+                "b8b5cb399d9b0c67"
             ]
         ],
         "l": false
@@ -17383,47 +17501,6 @@
         "wires": []
     },
     {
-        "id": "0fc60b81bcb7f232",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "save history ",
-        "func": "msg.id = 1111111;\nmsg.history = {}\nmsg.history.endDate = Date.now()\nmsg.history.email = msg.userInfo.email;\nmsg.history.requestText =\"Hello\"\nmsg.history.answer = `Hello! To start using the chat, you need to enter your Open AI key on the \"AI Setup\" page if you haven't done so already. Then, simply start a conversation with me by typing what you're interested in, and I'll be happy to assist you`;\nmsg.history.date = Date.now()\nmsg.history.chat_id = msg.id\nmsg.history.user_name = 'you'\nmsg.history.type = 'demo'\nmsg.payload = msg.history\nmsg.url = env.get(\"nodered\") + `/saveUserMessage`;\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 3260,
-        "wires": [
-            [
-                "a73a52dc50a1b210"
-            ]
-        ]
-    },
-    {
-        "id": "a73a52dc50a1b210",
-        "type": "http request",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 670,
-        "y": 3260,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8f21262fb6cd6e01",
         "type": "function",
         "z": "391658888cc82dc0",
@@ -17434,8 +17511,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 4320,
+        "x": 1560,
+        "y": 3040,
         "wires": [
             [
                 "71a4a63c97b5de07"
@@ -17452,8 +17529,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1525,
-        "y": 4320,
+        "x": 1845,
+        "y": 3040,
         "wires": [
             [
                 "2030d56fae48c024"
@@ -17477,8 +17554,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1990,
-        "y": 4320,
+        "x": 2310,
+        "y": 3040,
         "wires": [
             [
                 "a0449b0c933b083d",
@@ -17502,8 +17579,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1390,
-        "y": 4320,
+        "x": 1710,
+        "y": 3040,
         "wires": [
             [
                 "a0449b0c933b083d",
@@ -17524,8 +17601,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1990,
-        "y": 4280,
+        "x": 2310,
+        "y": 3000,
         "wires": []
     },
     {
@@ -17538,8 +17615,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1085,
-        "y": 4320,
+        "x": 1405,
+        "y": 3040,
         "wires": [
             [
                 "8f21262fb6cd6e01"
@@ -17571,8 +17648,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 910,
-        "y": 4320,
+        "x": 1230,
+        "y": 3040,
         "wires": [
             [
                 "33599c4baae4d50d",
@@ -17582,42 +17659,13 @@
         ]
     },
     {
-        "id": "7e37abc46acb097e",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 640,
-        "y": 4220,
-        "wires": [
-            [
-                "8adc796d24899a06"
-            ]
-        ]
-    },
-    {
         "id": "747e58d1d05d4614",
         "type": "comment",
         "z": "391658888cc82dc0",
         "name": "new chat",
         "info": "",
-        "x": 340,
-        "y": 4260,
+        "x": 920,
+        "y": 2960,
         "wires": []
     },
     {
@@ -17631,8 +17679,8 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 2200,
-        "y": 4320,
+        "x": 2520,
+        "y": 3040,
         "wires": [
             [
                 "c59bc98f9a05cab2"
@@ -17662,8 +17710,8 @@
                 "module": "openai"
             }
         ],
-        "x": 1990,
-        "y": 4420,
+        "x": 2410,
+        "y": 3140,
         "wires": [
             [
                 "4939608ea444d32a",
@@ -17687,8 +17735,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 2390,
-        "y": 4280,
+        "x": 2710,
+        "y": 3000,
         "wires": [
             [
                 "273a85fd80f57450"
@@ -17708,8 +17756,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2590,
-        "y": 4420,
+        "x": 2910,
+        "y": 3140,
         "wires": []
     },
     {
@@ -17722,8 +17770,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2550,
-        "y": 4280,
+        "x": 2870,
+        "y": 3000,
         "wires": [
             [
                 "f63be3f74279dbe3"
@@ -17741,8 +17789,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2265,
-        "y": 4420,
+        "x": 2585,
+        "y": 3140,
         "wires": [
             [
                 "1b4044d6f8db5fb5"
@@ -17760,28 +17808,11 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2390,
-        "y": 4420,
+        "x": 2710,
+        "y": 3140,
         "wires": [
             [
                 "8293263cb2616cc5"
-            ]
-        ]
-    },
-    {
-        "id": "30e392841f30c14e",
-        "type": "http in",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "url": "/books_chat",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 600,
-        "y": 4320,
-        "wires": [
-            [
-                "8adc796d24899a06"
             ]
         ]
     },
@@ -17796,8 +17827,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 4240,
+        "x": 1270,
+        "y": 2960,
         "wires": [
             [
                 "7d837ff23139b3dc"
@@ -17812,8 +17843,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1180,
-        "y": 4240,
+        "x": 1500,
+        "y": 2960,
         "wires": [
             [
                 "899e1e8647157ffd"
@@ -17831,8 +17862,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1310,
-        "y": 4240,
+        "x": 1630,
+        "y": 2960,
         "wires": [
             []
         ]
@@ -17848,8 +17879,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 4380,
+        "x": 1360,
+        "y": 3100,
         "wires": [
             [
                 "99de7cc9296e1f3c"
@@ -17872,8 +17903,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 4380,
+        "x": 1570,
+        "y": 3100,
         "wires": [
             [
                 "a11014e096ccd18d"
@@ -17887,8 +17918,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1410,
-        "y": 4380,
+        "x": 1730,
+        "y": 3100,
         "wires": []
     },
     {
@@ -17903,8 +17934,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 4460,
+        "x": 1410,
+        "y": 3000,
         "wires": []
     },
     {
@@ -17918,8 +17949,8 @@
         "initialize": "\n",
         "finalize": "",
         "libs": [],
-        "x": 1660,
-        "y": 4320,
+        "x": 1980,
+        "y": 3040,
         "wires": [
             [
                 "9d728bf4720f252d"
@@ -17947,8 +17978,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1420,
-        "y": 4440,
+        "x": 1740,
+        "y": 3160,
         "wires": [
             [
                 "2030d56fae48c024"
@@ -17965,8 +17996,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1830,
-        "y": 4320,
+        "x": 2150,
+        "y": 3040,
         "wires": [
             [
                 "46f7a5b56acb80e8"
@@ -17981,7 +18012,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "https://aibotnr-7160-656f07128ab32b12000001b8.ubos.tech/books_chat",
+        "url": "https://aibotnr-5850-658ad621387fb711000001e1.ubos.tech/books",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -17992,7 +18023,9 @@
         "x": 590,
         "y": 3200,
         "wires": [
-            []
+            [
+                "c4549f2cbfcc37bb"
+            ]
         ]
     },
     {
@@ -18002,9 +18035,106 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2490,
-        "y": 4340,
+        "x": 2810,
+        "y": 3060,
         "wires": []
+    },
+    {
+        "id": "c4549f2cbfcc37bb",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "function 668",
+        "func": "msg.payload= msg.payload\nmsg.collection = \"books\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 3200,
+        "wires": [
+            [
+                "d4ab35ab9a23b5bd",
+                "e7c804f2fb81ea73"
+            ]
+        ]
+    },
+    {
+        "id": "d4ab35ab9a23b5bd",
+        "type": "debug",
+        "z": "391658888cc82dc0",
+        "name": "debug 878",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 3140,
+        "wires": []
+    },
+    {
+        "id": "e7c804f2fb81ea73",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 950,
+        "y": 3200,
+        "wires": [
+            [
+                "b237cec8735d5fed",
+                "6b6e65d9c18d2c46"
+            ]
+        ]
+    },
+    {
+        "id": "b8b5cb399d9b0c67",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "save history ",
+        "func": "msg.id = 1111111;\nmsg.history = {}\nmsg.history.endDate = Date.now()\nmsg.history.email = msg.userInfo.email;\nmsg.history.requestText =\"Hello\"\nmsg.history.answer = `Hello! To start using the chat, you need to enter your Open AI key on the \"AI Setup\" page if you haven't done so already. Then, simply start a conversation with me by typing what you're interested in, and I'll be happy to assist you`;\nmsg.history.date = Date.now()\nmsg.history.chat_id = msg.id\nmsg.history.user_name = 'you'\nmsg.history.type = 'demo'\nmsg.payload = msg.history\nmsg.url = env.get(\"nodered\") + `/saveUserMessage`;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3030,
+        "y": 3240,
+        "wires": [
+            [
+                "e5cae3664d740257"
+            ]
+        ]
+    },
+    {
+        "id": "e5cae3664d740257",
+        "type": "http request",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 3190,
+        "y": 3240,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "4af50c02f9967b49",
@@ -18543,7 +18673,7 @@
         "z": "d41b21524ec70b11",
         "g": "b2e9a721546c936c",
         "name": "get analytics",
-        "func": "\n// const fieldsToCheck = [\n//     'pinecone',\n//     'WHATSAPP',\n//     'telegram',\n//     'openai',\n//     'META',\n//     'base',\n//     'files'\n// ];\n\n// const payload = {};\n\n// fieldsToCheck.forEach(field => {\n//     payload[field] = global.get(field) || {};\n// });\n\n// function countEmptyAndFilledFields(obj) {\n//     const result = {};\n\n//     for (const key in obj) {\n//         const subObj = obj[key];\n//         const totalFields = Object.keys(subObj).length;\n//         const filledFieldsForKey = Object.values(subObj).filter(value => value !== \"\").length;\n//         const percentage = filledFieldsForKey === 0 ? 0 : ((filledFieldsForKey / totalFields) * 100).toFixed(0);\n\n//         result[key] = {\n//             filledFields: filledFieldsForKey,\n//             totalFields: totalFields,\n//             percentage: percentage\n//         };\n//     }\n\n//     const totalFields = Object.values(result).reduce((acc, curr) => acc + curr.totalFields, 0);\n//     const filledFields = Object.values(result).reduce((acc, curr) => acc + curr.filledFields, 0);\n//     const totalPercentage = filledFields === 0 ? 0 : ((filledFields / totalFields) * 100).toFixed(0);\n\n//     result[\"total\"] = {\n//         filledFields: filledFields,\n//         totalFields: totalFields,\n//         percentage: totalPercentage\n//     };\n\n//     return result;\n// }\n\n// const result = countEmptyAndFilledFields(payload);\n\n// const botsFilledFields = result.WHATSAPP.filledFields + result.telegram.filledFields + result.META.filledFields;\n// const botsTotalFields = 6;\n// const settingsFilledFields = result.pinecone.filledFields + result.openai.filledFields;\n// const settingsTotalFields = 6;\n// const baseTotalFields = global.get('base')?.total ? global.get('base')?.total : 0\n// const filesTotalFields = global.get('files')?.total ? global.get('files')?.total : 0\n\n// const total = parseFloat(((botsFilledFields + settingsFilledFields + baseTotalFields + filesTotalFields)/(botsTotalFields + settingsTotalFields + baseTotalFields + filesTotalFields)) * 100).toFixed(0);\n\n// msg.payload = {\n//     openai: {\n//         filledFields: result.openai.filledFields,\n//         totalFields: 2,},\n//     bots: {\n//         filledFields: botsFilledFields,\n//         totalFields: botsTotalFields,\n//         percentage: botsFilledFields === 0 ? 0 : ((botsFilledFields/botsTotalFields) * 100).toFixed(0)\n//     },\n//     settings: {\n//         filledFields: settingsFilledFields,\n//         totalFields: 6,\n//         percentage: settingsFilledFields === 0 ? 0 : ((settingsFilledFields/settingsTotalFields ) * 100).toFixed(0)\n//     },\n//     base: {\n//         totalFields: baseTotalFields,\n//         percentage: baseTotalFields === 0 ? 0 : 100\n//     },\n//     files: {\n//         totalFields: filesTotalFields,\n//         percentage: filesTotalFields === 0 ? 0 : 100\n//     },\n//     total\n// };\n\n// return msg;\n\nconst fieldsToCheck = [\n    'pinecone',\n    'WHATSAPP',\n    'telegram',\n    'openai',\n    'META',\n    'instagram',\n    'customChat',\n    'base',\n    'files'\n];\n\nconst payload = {};\n\nfieldsToCheck.forEach(field => {\n    payload[field] = global.get(field) || {};\n});\n\nfunction countEmptyAndFilledFields(obj) {\n    const result = {};\n\n    for (const key in obj) {\n        const subObj = obj[key];\n        const totalFields = Object.keys(subObj).length;\n        const filledFieldsForKey = Object.values(subObj).filter(value => !!value).length;\n\n        const percentage = filledFieldsForKey === 0 ? 0 : ((filledFieldsForKey / totalFields) * 100).toFixed(0);\n\n        result[key] = {\n            filledFields: filledFieldsForKey,\n            totalFields: 1,\n            percentage: percentage\n        };\n    }\n\n    const totalFields = Object.values(result).reduce((acc, curr) => acc + curr.totalFields, 0);\n    const filledFields = Object.values(result).reduce((acc, curr) => acc + curr.filledFields, 0);\n    const totalPercentage = filledFields === 0 ? 0 : ((filledFields / totalFields) * 100).toFixed(0);\n\n    result[\"total\"] = {\n        filledFields: filledFields,\n        totalFields: totalFields,\n        percentage: totalPercentage\n    };\n\n    return result;\n}\n\nconst result = countEmptyAndFilledFields(payload);\n\nconst botsFilledFields = result.WHATSAPP.filledFields + result.telegram.filledFields + result.META.filledFields + result.instagram.filledFields + result.customChat.filledFields;\nconst botsTotalFields = 15;\n\nconst settingsFilledFields = result.pinecone.filledFields + result.openai.filledFields;\nconst settingsTotalFields = 2;\n\n\nconst baseFilledFields = global.get('base')?.total ? global.get('base')?.total : 0;\nconst baseTotalFields = global.get('base')?.total ? global.get('base')?.total : 1;\n\nconst filesFilledFields = global.get('files')?.total ? global.get('files')?.total : 0;\nconst filesTotalFields = global.get('files')?.total ? global.get('files')?.total : 1;\n\nconst total = parseFloat(((botsFilledFields + settingsFilledFields + baseFilledFields + filesFilledFields) / (botsTotalFields + settingsTotalFields + baseTotalFields + filesTotalFields)) * 100).toFixed(0);\n\nmsg.payload = {\n    openai: {\n        filledFields: result.openai.filledFields,\n        totalFields: 2\n    },\n    bots: {\n        filledFields: botsFilledFields,\n        totalFields: botsTotalFields,\n        percentage: botsFilledFields === 0 ? 0 : ((botsFilledFields / botsTotalFields) * 100).toFixed(0)\n    },\n    settings: {\n        filledFields: settingsFilledFields,\n        totalFields: settingsTotalFields,\n        percentage: settingsFilledFields === 0 ? 0 : ((settingsFilledFields / settingsTotalFields) * 100).toFixed(0)\n    },\n    base: {\n        totalFields: baseFilledFields,\n        percentage: baseFilledFields === 0 ? 0 : ((baseFilledFields / baseTotalFields) * 100).toFixed(0)\n    },\n    files: {\n        totalFields: filesFilledFields,\n        percentage: filesFilledFields === 0 ? 0 : ((filesFilledFields / filesTotalFields) * 100).toFixed(0)\n    },\n    total,\n};\n\nreturn msg;\n",
+        "func": "\n\nconst fieldsToCheck = [\n    'pinecone',\n    'WHATSAPP',\n    'telegram',\n    'openai',\n    'META',\n    'instagram',\n    'customChat',\n    'base',\n    'files'\n];\n\nconst payload = {};\n\nfieldsToCheck.forEach(field => {\n    payload[field] = global.get(field) || {};\n});\n\nfunction countEmptyAndFilledFields(obj) {\n    const result = {};\n\n    for (const key in obj) {\n        const subObj = obj[key];\n        const totalFields = Object.keys(subObj).length;\n        const filledFieldsForKey = Object.values(subObj).filter(value => !!value).length;\n\n        const percentage = filledFieldsForKey === 0 ? 0 : ((filledFieldsForKey / totalFields) * 100).toFixed(0);\n\n        result[key] = {\n            filledFields: filledFieldsForKey,\n            totalFields: 1,\n            percentage: percentage\n        };\n    }\n\n    const totalFields = Object.values(result).reduce((acc, curr) => acc + curr.totalFields, 0);\n    const filledFields = Object.values(result).reduce((acc, curr) => acc + curr.filledFields, 0);\n    const totalPercentage = filledFields === 0 ? 0 : ((filledFields / totalFields) * 100).toFixed(0);\n\n    result[\"total\"] = {\n        filledFields: filledFields,\n        totalFields: totalFields,\n        percentage: totalPercentage\n    };\n\n    return result;\n}\n\nconst result = countEmptyAndFilledFields(payload);\n\nconst botsFilledFields = result.WHATSAPP.filledFields + result.telegram.filledFields + result.META.filledFields + result.instagram.filledFields + result.customChat.filledFields;\nconst botsTotalFields = 15;\n\nconst settingsFilledFields = result.pinecone.filledFields + result.openai.filledFields;\nconst settingsTotalFields = 6;\n\n\nconst baseFilledFields = global.get('base')?.total ? global.get('base')?.total : 0;\nconst baseTotalFields = global.get('base')?.total ? global.get('base')?.total : 1;\n\nconst filesFilledFields = global.get('files')?.total ? global.get('files')?.total : 0;\nconst filesTotalFields = global.get('files')?.total ? global.get('files')?.total : 1;\n\nconst total = parseFloat(((botsFilledFields + settingsFilledFields + baseFilledFields + filesFilledFields) / (botsTotalFields + settingsTotalFields + baseTotalFields + filesTotalFields)) * 100).toFixed(0);\n\nmsg.payload = {\n    openai: {\n        filledFields: result.openai.filledFields,\n        totalFields: 2\n    },\n    bots: {\n        filledFields: botsFilledFields,\n        totalFields: botsTotalFields,\n        percentage: botsFilledFields === 0 ? 0 : ((botsFilledFields / botsTotalFields) * 100).toFixed(0)\n    },\n    settings: {\n        filledFields: settingsFilledFields,\n        totalFields: 6,\n        percentage: settingsFilledFields === 0 ? 0 : ((settingsFilledFields / settingsTotalFields) * 100).toFixed(0)\n    },\n    base: {\n        totalFields: baseFilledFields,\n        percentage: baseFilledFields === 0 ? 0 : ((baseFilledFields / baseTotalFields) * 100).toFixed(0)\n    },\n    files: {\n        totalFields: filesFilledFields,\n        percentage: filesFilledFields === 0 ? 0 : ((filesFilledFields / filesTotalFields) * 100).toFixed(0)\n    },\n    total,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -24983,7 +25113,7 @@
         "z": "82bc9ba4d7ff197c",
         "g": "1dc750e7d01e594b",
         "name": "from Chroma",
-        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 500\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
+        "func": "const { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n// const embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst vector = Array(1536).fill(0);\n\nlet collection2 = await client.getCollection({ name: msg.payload.typeName, })\nconst result = await collection2.query({\n    queryEmbeddings: vector,\n    nResults: 500\n});\n\nmsg.payload = result;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
