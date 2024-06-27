@@ -17499,7 +17499,7 @@
         "type": "function",
         "z": "391658888cc82dc0",
         "name": "create chroma collection",
-        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase});\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17518,8 +17518,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1230,
-        "y": 3040,
+        "x": 1070,
+        "y": 3240,
         "wires": [
             [
                 "33599c4baae4d50d",
@@ -17622,7 +17622,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2870,
+        "x": 2920,
         "y": 3000,
         "wires": [
             []
@@ -17729,8 +17729,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1360,
-        "y": 3100,
+        "x": 1380,
+        "y": 3240,
         "wires": [
             [
                 "99de7cc9296e1f3c"
@@ -17753,24 +17753,11 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1570,
-        "y": 3100,
+        "x": 1590,
+        "y": 3240,
         "wires": [
-            [
-                "a11014e096ccd18d"
-            ]
+            []
         ]
-    },
-    {
-        "id": "a11014e096ccd18d",
-        "type": "http response",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1730,
-        "y": 3100,
-        "wires": []
     },
     {
         "id": "5a90ef1ad87570c3",
@@ -17841,8 +17828,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 590,
-        "y": 3200,
+        "x": 450,
+        "y": 3240,
         "wires": [
             [
                 "c4549f2cbfcc37bb"
@@ -17860,8 +17847,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 3200,
+        "x": 630,
+        "y": 3240,
         "wires": [
             [
                 "d4ab35ab9a23b5bd",
@@ -17896,8 +17883,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 950,
-        "y": 3200,
+        "x": 810,
+        "y": 3240,
         "wires": [
             [
                 "b237cec8735d5fed",
