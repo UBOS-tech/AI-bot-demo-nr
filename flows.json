@@ -16025,14 +16025,14 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 3340,
+        "x": 180,
+        "y": 3300,
         "wires": [
             [
                 "cac91074ef7313ac",
                 "1eb5766f9c6fee23",
                 "f28ea7a9f47e5381",
-                "9660d10b5c54a8d3"
+                "b237cec8735d5fed"
             ]
         ]
     },
@@ -16553,64 +16553,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "ead4f0507b667ca1",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 260,
-        "y": 3400,
-        "wires": [
-            [
-                "1eb5766f9c6fee23"
-            ]
-        ]
-    },
-    {
-        "id": "987d772b69e97229",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 240,
-        "y": 3440,
-        "wires": [
-            [
-                "1eb5766f9c6fee23"
-            ]
-        ]
     },
     {
         "id": "0e542698df982b67",
@@ -17371,528 +17313,6 @@
         "wires": []
     },
     {
-        "id": "8f21262fb6cd6e01",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "totaCharacters ",
-        "func": "msg.pageContent = `1.How many book genres are there in total?\nWhat is the total number of book genres and subgenres?\nWhat's the approximate number of book genres, including subgenres?\n \nThere are around 50 genres in total — the exact number depends on who you ask. If you take subgenres into account, over on Reedsy Discovery we have 107 different categories, while Amazon has over 16,000!\n \n2. What is the overarching category for books with imaginary plots?\nCan you list the main genres of fiction books?\nWhat are some common fiction book genres?\n \nFiction is the overarching category for books that contain imaginary plots, characters, and settings. Fiction Book Genres are: fantasy, science fiction, dystopian, action & adventure, detective & mystery, thriller & suspense, romance, horror, historical fiction, young adult, children’s fiction, women’s fiction, contemporary fiction,  literary fiction, graphic novels, short story.\n \n \n3. What are the characteristics of fantasy books?\nCan you give examples of books in the fantasy genre?\n \nFantasy - This genre features supernatural, mythological, or magical elements and characters.\n \nFantasy can be further divided into High and Low. In High Fantasy the setting is at the forefront of the plot. Low Fantasy involves magic or the supernatural but is set in our familiar world.\n \nFantasy examples:\n \n● Game of Thrones by George Martin\n \n● The Way of Kings by Brandon Sanderson\n \n4. What defines the science fiction book genre?\nWhat themes and concepts are explored in science fiction?\nCan you explain the difference between hard and soft science fiction?\nWhat are some popular science fiction books?\nWhat makes a book science fiction?\nWhat are some famous science fiction authors?\n \nScience Fiction - In the same vein as Fantasy, Science Fiction is a massive book genre. Science fiction explores futuristic and highly technological societies while dealing with classic themes and concepts while addressing big “what if” questions.\n \nMany readers first think of science fiction with “hard sciences” set in the distant future, such as advanced AI, time travel, and space exploration.\n \nMany books in this genre however deal with the “soft sciences” such as sociology or ecology to speculate about the future of the human race.\n \nScience Fiction examples:\n \n● Dune by Frank Herbert\n \n● The Left Hand of Darkness by Ursula K. Le Guin\n \n5. What defines the dystopian book genre?\nHow do dystopian novels differ from other genres like science fiction?\nCan you explain the characteristics of dystopian novels?\nWhat themes and concepts are commonly explored in dystopian literature?\nCan you give examples of popular dystopian books?\nWho are some famous authors known for writing dystopian novels?\n \nDystopian - Usually, but not always, considered a subgenre of Science Fiction, Dystopian novels have emerged as their own genre in recent years.\n \nThese stories are set in a bleak, grim future often following a tragic event or disaster. The characters then face oppressive governments, technology gone bad, or environmental ruin in pursuit of cultural or social justice.\n \nDystopian examples:\n \n● The Hunger Games by Susanne Collins\n \n● Nineteen Eighty-Four by George Orwell\n \n6. What defines the action and adventure book genre?\nCan you describe the typical plot structure of action and adventure novels?\nHow do action and adventure novels differ from other genres?\nWhat are some common themes explored in action and adventure literature?\nCan you give examples of popular action and adventure books?\nWho are some famous authors known for writing action and adventure novels?\n \nAction & Adventure - Action and adventure novels feature a main character on a quest to achieve an ultimate goal.\n \nThe protagonist encounters a series of high-stakes situations, and, by the end of their journey, they’ve overcome these challenges and undergone a personal transformation.\n \nAction & Adventure examples:\n \n● Life of Pi by Yann Martel\n \n● The Hobbit by J.R.R. Tolkien\n \n7. What defines the detective and mystery book genre?\nCan you describe the typical plot structure of detective and mystery novels?\nHow does this genre differ from others that include mystery elements?\nCan you give examples of popular detective and mystery books?\nWho are some renowned authors known for writing detective and mystery novels?\n \nDetective & Mystery - This genre’s plots revolve around a crime or mystery that must be solved or foiled by the protagonist.\n \nWhile many genres include a mystery or a bit of detective work, this one features the solving of the crime as its main driving force.\n \nMystery and Detective examples:\n \n● The Adventures of Sherlock Holmes by Sir Arthur Conan Doyle\n \n● Murder on the Orient Express by Agatha Christie\n \n8. Could you give examples of popular thriller and suspense books?\nWho are some notable authors known for writing thrillers and suspense novels?\nWhat defines the Thriller & Suspense book genre?\n \nThriller & Suspense - Thriller and Suspense go hand in hand, including scary elements like Horror. However, the objective is to maintain tension until the resolution.\n \nWhile they involve elements similar to the Mystery genre, the protagonist primarily attempts to save their own life, or someone else’s, rather than solving a crime.\n \nThrillers & Suspense Novels examples:\n \n● The Girl with the Dragon Tattoo by Stieg Larsson\n \n● Gone Girl by Gillian Flynn\n \n9. What defines the romance book genre?\nCan you describe the typical structure of romance novels?\nWhat role does love play in the development of romance stories?\nCan you give examples of popular romance books?\nWho are some well-known authors in the romance genre?\n \nRomance -Love serves as the focal point of the plot in this book genre. While other plot elements may be present, the entire story develops the main character’s romantic relationship and usually ends happily.\n \nRomance novels examples:\n \n● The Notebook by Nicholas Sparks\n \n● Jane Eyre by Charlotte Bronte\n \n10. What defines the horror book genre?\nWhat are some common themes explored in horror novels?\nCan you give examples of popular horror books?\nWho are some renowned authors known for writing horror fiction?\n \nHorror - The Horror genre relies on theme, plot, or setting to scare, startle, shock, and wreak discomfort and even revulsion until the hero defeats the threat.\n \nHorror subgenres can vary broadly from more light-hearted Comedy Horror to heady Psychological Horror to the more villain-centric Slasher Horror.\n \nHorror writers, like Stephen King and Dean Kuntz, are experts in eliciting such responses and often include elements from the Thriller, Suspense, or Mystery genres.\n \nHorror Genre examples:\n \n● Carrie by Stephen King\n \n● The Haunting of Hill House by Shirley Jackson\n \n \n11. What defines the historical fiction book genre?\nCan you give examples of popular historical fiction books?\nWho are some notable authors known for writing historical fiction?\n \nHistorical Fiction - This book genre is set in a specific time period, location, or around a specific historic event. The prose provides historically accurate details relevant to the period.\n \nWhile the plot may be based on an actual event, such as the Civil War, the characters and their actions are fictitious.\n \nHistorical Fiction examples:\n \n● All the Light We Cannot See by Anthony Doerr\n \n● One Hundred Years of Solitude by Gabriel Garcia Marquez\n \n12. What is Young Adult fiction?\nExamples of popular Young Adult books?\nWho are famous authors of Young Adult novels?\n \nYoung Adult (YA)  - The Young Adult genre is fiction geared toward readers aged 13 to 17. YA often overlaps other genres, such as Fantasy or Dystopian with a coming-of-age storyline.\n \nYoung Adult genre examples:\n \n● The Fault in Our Stars by John Green\n \n● Harry Potter by J.K. Rowling\n \n13. What is Children’s Fiction?\nCan you give examples of Children’s Fiction books?\nWho are famous authors of Children’s Fiction?\n \nChildren’s Fiction - Whereas Young Adult caters to those 13 and above, Children’s Fiction is for readers aged 13 and below, and many subgenres comprise this category.\n \nChildren’s Fiction examples:\n \n● Goodnight Moon by Margaret Brown\n \n● Charlotte’s Web by E.B. White\n \n14. What is Women’s Fiction?\nCan you give examples of Women’s Fiction books?\nWho are famous authors of Women’s Fiction?\n \nWomen’s Fiction - This book genre obviously targets a female readership and typically reflects upon the shared feminine experience or the growth of the female protagonist. This often pairs well with Contemporary Fiction or Romance.\n \nWomen’s Fiction examples:\n \n● The Joy Luck Club by Amy Tan\n \n● The Help by Kathryn Stockett\n \n15. What is Contemporary Fiction?\nCan you give examples of Contemporary Fiction books?\nWho are famous authors of Contemporary Fiction?\n \nContemporary Fiction - This genre is so broad that it involves almost all genres set in the present.\n \nPlots revolve around a character’s everyday life such as work, politics, relationships, and the struggles of the modern era, but of course with challenges and twists intended to keep readers engaged.\n \nContemporary Fiction examples:\n \n● Eleanor Oliphant is Completely Fine by Gail Honeyman\n \n● A Man Called Ove by Fredrik Backman\n \n \n16. What is Literary Fiction?\nCan you give examples of Literary Fiction books?\nWho are famous authors of Literary Fiction?\n \nLiterary Fiction - Works of Literary Fiction are character-driven and introspective. They evoke deep thought through personal or social commentary on a particular theme.\n \nLiterary Fiction examples:\n \n● Where the Crawdads Sing by Delia Owens\n \n● To Kill A Mockingbird by Harper Lee\n \n \n17. What are Graphic Novels?\nCan you give examples of Graphic Novels?\nWhat types of stories are told in Graphic Novels?\n \nGraphic Novels - Graphic Novels are defined not by their content but by their form. This genre is presented through narrative art with illustrations and typography in a panel layout like that of comic books, but have evolved into their own genre.\n \nThey can cover content as broad as memoirs, historical accounts, and adaptations of other media.\n \nGraphic Novel examples:\n \n● The Boy, the Mole, the Fox, and the Horse by Charlie Mackesy\n \n● The World of Edena by Moebius\n \n \n18. What are Short Stories?\nCan you give examples of Short Story collections?\nWho are famous authors of Short Stories?\n \nShort Story - Collections of short stories, usually sharing a theme or narrative thread are self-explanatory.\n \nShort Story examples:\n \n● Legoland by Gerard Woodward\n \n● The Best Christian Short Stories by Brett Lott\n \n19. What is the overarching category for books based entirely on fact and reality?\nCan you list the main genres of nonfiction books?\nWhat are some common nonfiction book genres?\nNonfiction Book Genres- This is a broad category encompassing a number of nonfiction subgenres. From memoirs and biographies to books to self-help and true crime books, there's a type of nonfiction for every kind of reader.\nWhile storytelling is still vital in these genres—and Jerry constantly promotes using fiction techniques in nonfiction—the books in these categories have events, people, and concepts based entirely on fact and reality.\nNonfiction Book Genres are: memoir & autobiography, biography, history, food & drink, poetry, self-help, true-crime, travel, art & photography, essays, humanities & social sciences, sciences & technology.\n \n20. What is the difference between a memoir and an autobiography?\nCan you give examples of memoirs?\nCan you give examples of autobiographies?\n \nMemoir & Autobiography - These two types of nonfiction books fall under the same genre because, in both cases, the author also serves as the narrator.\n \nThe difference between a memoir and an autobiography is that an autobiography is a chronological account of the life of the narrator, while a memoir uses defining moments in one’s life to buttress a self-help theme.\n \nA popular memoir example is The Glass Castle by Jeannette Walls\n \nAn autobiography example is I Know Why the Caged Bird Sings by Maya Angelou\n \n21. What is a biography?\nCan you give examples of biographies?\nHow do biographies differ from autobiographies?\n \nBiography - Biographies tell the story of the life of a notable person, most often someone well known or anyone whose story teaches valuable life lessons.\n \nThese differ from autobiographies in that they are written in third-person by someone else, rather than by the subject in first-person.\n \nBiography examples:\n \n● Alexander Hamilton by Ron Chernow\n \n● Steve Jobs by Walter Isaacson\n \n22. What is History in books?\nCan you give examples of History books?\nHow do History books educate readers?\n \nHistory - This genre aims to educate and entertain the reader by chronicling a historical event.\n \nHistory examples:\n \n● The Devil in the White City by Erik Larson\n \n● Bury My Heart at Wounded Knee by Dee Brown\n \n \n23. What are Food & Drink books?\nCan you give examples of Food & Drink books?\nHow do Food & Drink books appeal to readers?\n \nFood & Drink - Food and drink is one of nonfiction’s hottest markets as its titles cater to a variety of diets, lifestyles, and cultural cuisines. Photographs often accompany recipes and personal stories for food lovers.\n \nFood & Drink examples:\n \n● Fire and Ice: Classic Nordic Cooking by Darra Goldstein\n \n● Food52 Genius Recipes: 100 Recipes That Will Change the Way You Cook by Kristen Miglore and Amanda Hesser\n \n24. What is Poetry?\nCan you give examples of Poetry books?\nWhat types of poetic expression are found in Poetry books?\n \nPoetry - Often organized into collections or anthologies, this genre includes free verse, rhymed verse, and a variety of other types of poetic expression.\n \nPoetry examples:\n \n● Leaves of Grass by Walt Whitman\n \n● The Wilderness by Sandra Lim\n \n25. What is Self-Help literature?\nCan you give examples of Self-Help books?\nHow do Self-Help books empower readers?\nSelf-Help - This book genre is devoted to empowering readers to realize their potential so they can become the best version of themselves.\n \nSelf-Help examples:\n \n● Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear\n \n● The Power of Letting Go: How to drop everything that’s holding you back by John Purkiss  \n \n26. What are True Crime books?\nCan you give examples of True Crime books?\nWhat types of crimes do True Crime books focus on?\n \nTrue Crime - True Crime books examine real crimes and events, usually with alarming detail. Many books in this genre focus on infamous murders, kidnappings, or other felonies.\n \nTrue Crime examples:\n \n● In Cold Blood by Truman Capote\n \n● I’ll Be Gone In the Dark by Michelle McNamara\n \n27. What are Travel books?\nCan you give examples of Travel books?\nWhat information do Travel books typically provide?\n \nTravel - These books take readers all over the world, featuring reviews, budgeting tips, travel hacks, and advice on where to eat and what to see.\n \nTravel examples:\n \n● The Journey Matters by Jonathan Glancey\n \n● Vagabonding by Rolf Potts\n \n28. What are Art & Photography books?\nCan you give examples of Art & Photography books?\nWhat topics do Art & Photography books typically cover?\n \nArt & Photography - This genre is home to books that showcase an artist’s work, a specific style of art, or the history of art.\n \nArt & Photography examples:\n \n● Wonderland by Annie Leibovitz\n \n● On Photography by Susan Sontag\n \n29. What are Essays in literature?\nCan you give examples of Essay collections?\nHow do Essays typically explore personal experiences?\nEssays - This genre often follows a unifying theme. These essays—or speeches transcribed—cover the writer’s personal experiences, usually told in the first person.\n \nEssay examples include:\n \n● A Room of One’s Own by Virginia Woolf\n \n● Slouching Towards Bethlehem by Joan Didion\n \n30. What are Humanities & Social Sciences books?\nCan you give examples of Humanities & Social Sciences books?\nWhat topics do Humanities & Social Sciences books typically cover?\n \nHumanities & Social Sciences - This academic genre explores issues related to social sciences such as psychology, sociology, philosophy, language, religion, or music.\n \nHumanities & Social Sciences examples:\n \n● How You Say It: Why You Talk the Way You Do—and What It Says About You by Katherine D. Kinzler\n \n● On Liberty by John Stuart Mill\n \n31. What are Science & Technology books?\nCan you give examples of Science & Technology books?\nWhat topics do Science & Technology books typically cover?\n \nScience & Technology - Books in this genre delve into current scientific and technological developments from technology such as Artificial Intelligence and coding to medical research.\n \nScience & Technology examples:\n \n● The Premonition: A Pandemic Story by Michael Lewis\n \n● Life’s Edge: The Search for What It Means to Be Alive by Carl Zimmer`\nmsg.totaCharacters = msg.pageContent.length\n\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 3040,
-        "wires": [
-            [
-                "71a4a63c97b5de07"
-            ]
-        ]
-    },
-    {
-        "id": "8b14d66ad0a7da8c",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "a142709ade270efa"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1845,
-        "y": 3040,
-        "wires": [
-            [
-                "2030d56fae48c024"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "46f7a5b56acb80e8",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "function 667",
-        "func": "\nmsg.array = msg.payload;\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 2310,
-        "y": 3040,
-        "wires": [
-            [
-                "a0449b0c933b083d",
-                "8293263cb2616cc5"
-            ]
-        ]
-    },
-    {
-        "id": "71a4a63c97b5de07",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "FILES",
-        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Books-Data',\n    type: \"Files\",\n    file: `Books-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.source,\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1710,
-        "y": 3040,
-        "wires": [
-            [
-                "a0449b0c933b083d",
-                "8b14d66ad0a7da8c"
-            ]
-        ]
-    },
-    {
-        "id": "a0449b0c933b083d",
-        "type": "debug",
-        "z": "391658888cc82dc0",
-        "name": "debug 876",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2310,
-        "y": 3000,
-        "wires": []
-    },
-    {
-        "id": "33599c4baae4d50d",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "a142709ade270efa"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1405,
-        "y": 3040,
-        "wires": [
-            [
-                "8f21262fb6cd6e01"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b237cec8735d5fed",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "create chroma collection",
-        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "chromadb",
-                "module": "chromadb"
-            },
-            {
-                "var": "openai",
-                "module": "openai"
-            },
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1070,
-        "y": 3240,
-        "wires": [
-            [
-                "33599c4baae4d50d",
-                "085c9e6e3f8d4544",
-                "5a90ef1ad87570c3"
-            ]
-        ]
-    },
-    {
-        "id": "747e58d1d05d4614",
-        "type": "comment",
-        "z": "391658888cc82dc0",
-        "name": "new chat",
-        "info": "",
-        "x": 920,
-        "y": 2960,
-        "wires": []
-    },
-    {
-        "id": "8293263cb2616cc5",
-        "type": "array-loop",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "key": "amount",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 2520,
-        "y": 3040,
-        "wires": [
-            [
-                "c59bc98f9a05cab2"
-            ],
-            [
-                "cda90727976cf777"
-            ]
-        ]
-    },
-    {
-        "id": "cda90727976cf777",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "create chroma collection",
-        "func": "\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nmsg.tobase = msg.payload\nconst question = msg.payload.questions;\nconst result = msg.payload.answer;\nmsg.emb = msg.payload.embedding;\nmsg.ids = Date.now().toString()\nlet collection2 = await client.getCollection({ name: msg.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: question,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt' \n})\n\nmsg.payload = create;\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "chromadb",
-                "module": "chromadb"
-            },
-            {
-                "var": "openai",
-                "module": "openai"
-            }
-        ],
-        "x": 2410,
-        "y": 3140,
-        "wires": [
-            [
-                "3bde1a78b79eeac6"
-            ]
-        ]
-    },
-    {
-        "id": "c59bc98f9a05cab2",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "post",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 2710,
-        "y": 3000,
-        "wires": [
-            [
-                "273a85fd80f57450"
-            ]
-        ]
-    },
-    {
-        "id": "273a85fd80f57450",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "d5c0ee67d630e0f2"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2920,
-        "y": 3000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3bde1a78b79eeac6",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.tobase.questions;\nconst result = msg.tobase.answer;\n\nlet url = msg.nameBase + '.txt';\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId };\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         chroma: true,\n         metadata: {\n            url: url,\n            question: question,\n            result: result,\n            source: msg.source,\n         },\n      }\n   }\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2585,
-        "y": 3140,
-        "wires": [
-            [
-                "1b4044d6f8db5fb5"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "1b4044d6f8db5fb5",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "d5c0ee67d630e0f2"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2710,
-        "y": 3140,
-        "wires": [
-            [
-                "8293263cb2616cc5"
-            ]
-        ]
-    },
-    {
-        "id": "6b6e65d9c18d2c46",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "create file for future customPrompts",
-        "func": "msg.filename = '/data/customPrompts.json';\nmsg.payload = [];\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 2960,
-        "wires": [
-            [
-                "7d837ff23139b3dc"
-            ]
-        ]
-    },
-    {
-        "id": "7d837ff23139b3dc",
-        "type": "json",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1500,
-        "y": 2960,
-        "wires": [
-            [
-                "899e1e8647157ffd"
-            ]
-        ]
-    },
-    {
-        "id": "899e1e8647157ffd",
-        "type": "file",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1630,
-        "y": 2960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "085c9e6e3f8d4544",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "Fill standard prompt",
-        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Assistant\",\n    \"tone\": \"Informal\",\n    \"language\": \"English\",\n    \"prompt_custom\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor. Respond to user questions using the provided information:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 3240,
-        "wires": [
-            [
-                "99de7cc9296e1f3c"
-            ]
-        ]
-    },
-    {
-        "id": "99de7cc9296e1f3c",
-        "type": "http request",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1590,
-        "y": 3240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5a90ef1ad87570c3",
-        "type": "debug",
-        "z": "391658888cc82dc0",
-        "name": "debug 877",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1410,
-        "y": 3000,
-        "wires": []
-    },
-    {
-        "id": "2030d56fae48c024",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "vectors",
-        "func": "msg.collection = \"books\";\nmsg.payload = {}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "\n",
-        "finalize": "",
-        "libs": [],
-        "x": 1980,
-        "y": 3040,
-        "wires": [
-            [
-                "9d728bf4720f252d"
-            ]
-        ]
-    },
-    {
-        "id": "9d728bf4720f252d",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "4af50c02f9967b49"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2150,
-        "y": 3040,
-        "wires": [
-            [
-                "46f7a5b56acb80e8"
-            ]
-        ]
-    },
-    {
-        "id": "9660d10b5c54a8d3",
-        "type": "http request",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://aibotnr-5850-658ad621387fb711000001e1.ubos.tech/books",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 450,
-        "y": 3240,
-        "wires": [
-            [
-                "c4549f2cbfcc37bb"
-            ]
-        ]
-    },
-    {
-        "id": "c4549f2cbfcc37bb",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "function 668",
-        "func": "msg.payload= msg.payload\nmsg.collection = \"books\";\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 630,
-        "y": 3240,
-        "wires": [
-            [
-                "d4ab35ab9a23b5bd",
-                "e7c804f2fb81ea73"
-            ]
-        ]
-    },
-    {
-        "id": "d4ab35ab9a23b5bd",
-        "type": "debug",
-        "z": "391658888cc82dc0",
-        "name": "debug 878",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 3140,
-        "wires": []
-    },
-    {
-        "id": "e7c804f2fb81ea73",
-        "type": "link call",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "links": [
-            "a142709ade270efa"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 810,
-        "y": 3240,
-        "wires": [
-            [
-                "b237cec8735d5fed",
-                "6b6e65d9c18d2c46"
-            ]
-        ]
-    },
-    {
         "id": "b8b5cb399d9b0c67",
         "type": "function",
         "z": "391658888cc82dc0",
@@ -17931,6 +17351,337 @@
         "y": 3240,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "8f21262fb6cd6e01",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "totaCharacters ",
+        "func": "msg.pageContent = `1.How many book genres are there in total?\nWhat is the total number of book genres and subgenres?\nWhat's the approximate number of book genres, including subgenres?\n \nThere are around 50 genres in total — the exact number depends on who you ask. If you take subgenres into account, over on Reedsy Discovery we have 107 different categories, while Amazon has over 16,000!\n \n2. What is the overarching category for books with imaginary plots?\nCan you list the main genres of fiction books?\nWhat are some common fiction book genres?\n \nFiction is the overarching category for books that contain imaginary plots, characters, and settings. Fiction Book Genres are: fantasy, science fiction, dystopian, action & adventure, detective & mystery, thriller & suspense, romance, horror, historical fiction, young adult, children’s fiction, women’s fiction, contemporary fiction,  literary fiction, graphic novels, short story.\n \n \n3. What are the characteristics of fantasy books?\nCan you give examples of books in the fantasy genre?\n \nFantasy - This genre features supernatural, mythological, or magical elements and characters.\n \nFantasy can be further divided into High and Low. In High Fantasy the setting is at the forefront of the plot. Low Fantasy involves magic or the supernatural but is set in our familiar world.\n \nFantasy examples:\n \n● Game of Thrones by George Martin\n \n● The Way of Kings by Brandon Sanderson\n \n4. What defines the science fiction book genre?\nWhat themes and concepts are explored in science fiction?\nCan you explain the difference between hard and soft science fiction?\nWhat are some popular science fiction books?\nWhat makes a book science fiction?\nWhat are some famous science fiction authors?\n \nScience Fiction - In the same vein as Fantasy, Science Fiction is a massive book genre. Science fiction explores futuristic and highly technological societies while dealing with classic themes and concepts while addressing big “what if” questions.\n \nMany readers first think of science fiction with “hard sciences” set in the distant future, such as advanced AI, time travel, and space exploration.\n \nMany books in this genre however deal with the “soft sciences” such as sociology or ecology to speculate about the future of the human race.\n \nScience Fiction examples:\n \n● Dune by Frank Herbert\n \n● The Left Hand of Darkness by Ursula K. Le Guin\n \n5. What defines the dystopian book genre?\nHow do dystopian novels differ from other genres like science fiction?\nCan you explain the characteristics of dystopian novels?\nWhat themes and concepts are commonly explored in dystopian literature?\nCan you give examples of popular dystopian books?\nWho are some famous authors known for writing dystopian novels?\n \nDystopian - Usually, but not always, considered a subgenre of Science Fiction, Dystopian novels have emerged as their own genre in recent years.\n \nThese stories are set in a bleak, grim future often following a tragic event or disaster. The characters then face oppressive governments, technology gone bad, or environmental ruin in pursuit of cultural or social justice.\n \nDystopian examples:\n \n● The Hunger Games by Susanne Collins\n \n● Nineteen Eighty-Four by George Orwell\n \n6. What defines the action and adventure book genre?\nCan you describe the typical plot structure of action and adventure novels?\nHow do action and adventure novels differ from other genres?\nWhat are some common themes explored in action and adventure literature?\nCan you give examples of popular action and adventure books?\nWho are some famous authors known for writing action and adventure novels?\n \nAction & Adventure - Action and adventure novels feature a main character on a quest to achieve an ultimate goal.\n \nThe protagonist encounters a series of high-stakes situations, and, by the end of their journey, they’ve overcome these challenges and undergone a personal transformation.\n \nAction & Adventure examples:\n \n● Life of Pi by Yann Martel\n \n● The Hobbit by J.R.R. Tolkien\n \n7. What defines the detective and mystery book genre?\nCan you describe the typical plot structure of detective and mystery novels?\nHow does this genre differ from others that include mystery elements?\nCan you give examples of popular detective and mystery books?\nWho are some renowned authors known for writing detective and mystery novels?\n \nDetective & Mystery - This genre’s plots revolve around a crime or mystery that must be solved or foiled by the protagonist.\n \nWhile many genres include a mystery or a bit of detective work, this one features the solving of the crime as its main driving force.\n \nMystery and Detective examples:\n \n● The Adventures of Sherlock Holmes by Sir Arthur Conan Doyle\n \n● Murder on the Orient Express by Agatha Christie\n \n8. Could you give examples of popular thriller and suspense books?\nWho are some notable authors known for writing thrillers and suspense novels?\nWhat defines the Thriller & Suspense book genre?\n \nThriller & Suspense - Thriller and Suspense go hand in hand, including scary elements like Horror. However, the objective is to maintain tension until the resolution.\n \nWhile they involve elements similar to the Mystery genre, the protagonist primarily attempts to save their own life, or someone else’s, rather than solving a crime.\n \nThrillers & Suspense Novels examples:\n \n● The Girl with the Dragon Tattoo by Stieg Larsson\n \n● Gone Girl by Gillian Flynn\n \n9. What defines the romance book genre?\nCan you describe the typical structure of romance novels?\nWhat role does love play in the development of romance stories?\nCan you give examples of popular romance books?\nWho are some well-known authors in the romance genre?\n \nRomance -Love serves as the focal point of the plot in this book genre. While other plot elements may be present, the entire story develops the main character’s romantic relationship and usually ends happily.\n \nRomance novels examples:\n \n● The Notebook by Nicholas Sparks\n \n● Jane Eyre by Charlotte Bronte\n \n10. What defines the horror book genre?\nWhat are some common themes explored in horror novels?\nCan you give examples of popular horror books?\nWho are some renowned authors known for writing horror fiction?\n \nHorror - The Horror genre relies on theme, plot, or setting to scare, startle, shock, and wreak discomfort and even revulsion until the hero defeats the threat.\n \nHorror subgenres can vary broadly from more light-hearted Comedy Horror to heady Psychological Horror to the more villain-centric Slasher Horror.\n \nHorror writers, like Stephen King and Dean Kuntz, are experts in eliciting such responses and often include elements from the Thriller, Suspense, or Mystery genres.\n \nHorror Genre examples:\n \n● Carrie by Stephen King\n \n● The Haunting of Hill House by Shirley Jackson\n \n \n11. What defines the historical fiction book genre?\nCan you give examples of popular historical fiction books?\nWho are some notable authors known for writing historical fiction?\n \nHistorical Fiction - This book genre is set in a specific time period, location, or around a specific historic event. The prose provides historically accurate details relevant to the period.\n \nWhile the plot may be based on an actual event, such as the Civil War, the characters and their actions are fictitious.\n \nHistorical Fiction examples:\n \n● All the Light We Cannot See by Anthony Doerr\n \n● One Hundred Years of Solitude by Gabriel Garcia Marquez\n \n12. What is Young Adult fiction?\nExamples of popular Young Adult books?\nWho are famous authors of Young Adult novels?\n \nYoung Adult (YA)  - The Young Adult genre is fiction geared toward readers aged 13 to 17. YA often overlaps other genres, such as Fantasy or Dystopian with a coming-of-age storyline.\n \nYoung Adult genre examples:\n \n● The Fault in Our Stars by John Green\n \n● Harry Potter by J.K. Rowling\n \n13. What is Children’s Fiction?\nCan you give examples of Children’s Fiction books?\nWho are famous authors of Children’s Fiction?\n \nChildren’s Fiction - Whereas Young Adult caters to those 13 and above, Children’s Fiction is for readers aged 13 and below, and many subgenres comprise this category.\n \nChildren’s Fiction examples:\n \n● Goodnight Moon by Margaret Brown\n \n● Charlotte’s Web by E.B. White\n \n14. What is Women’s Fiction?\nCan you give examples of Women’s Fiction books?\nWho are famous authors of Women’s Fiction?\n \nWomen’s Fiction - This book genre obviously targets a female readership and typically reflects upon the shared feminine experience or the growth of the female protagonist. This often pairs well with Contemporary Fiction or Romance.\n \nWomen’s Fiction examples:\n \n● The Joy Luck Club by Amy Tan\n \n● The Help by Kathryn Stockett\n \n15. What is Contemporary Fiction?\nCan you give examples of Contemporary Fiction books?\nWho are famous authors of Contemporary Fiction?\n \nContemporary Fiction - This genre is so broad that it involves almost all genres set in the present.\n \nPlots revolve around a character’s everyday life such as work, politics, relationships, and the struggles of the modern era, but of course with challenges and twists intended to keep readers engaged.\n \nContemporary Fiction examples:\n \n● Eleanor Oliphant is Completely Fine by Gail Honeyman\n \n● A Man Called Ove by Fredrik Backman\n \n \n16. What is Literary Fiction?\nCan you give examples of Literary Fiction books?\nWho are famous authors of Literary Fiction?\n \nLiterary Fiction - Works of Literary Fiction are character-driven and introspective. They evoke deep thought through personal or social commentary on a particular theme.\n \nLiterary Fiction examples:\n \n● Where the Crawdads Sing by Delia Owens\n \n● To Kill A Mockingbird by Harper Lee\n \n \n17. What are Graphic Novels?\nCan you give examples of Graphic Novels?\nWhat types of stories are told in Graphic Novels?\n \nGraphic Novels - Graphic Novels are defined not by their content but by their form. This genre is presented through narrative art with illustrations and typography in a panel layout like that of comic books, but have evolved into their own genre.\n \nThey can cover content as broad as memoirs, historical accounts, and adaptations of other media.\n \nGraphic Novel examples:\n \n● The Boy, the Mole, the Fox, and the Horse by Charlie Mackesy\n \n● The World of Edena by Moebius\n \n \n18. What are Short Stories?\nCan you give examples of Short Story collections?\nWho are famous authors of Short Stories?\n \nShort Story - Collections of short stories, usually sharing a theme or narrative thread are self-explanatory.\n \nShort Story examples:\n \n● Legoland by Gerard Woodward\n \n● The Best Christian Short Stories by Brett Lott\n \n19. What is the overarching category for books based entirely on fact and reality?\nCan you list the main genres of nonfiction books?\nWhat are some common nonfiction book genres?\nNonfiction Book Genres- This is a broad category encompassing a number of nonfiction subgenres. From memoirs and biographies to books to self-help and true crime books, there's a type of nonfiction for every kind of reader.\nWhile storytelling is still vital in these genres—and Jerry constantly promotes using fiction techniques in nonfiction—the books in these categories have events, people, and concepts based entirely on fact and reality.\nNonfiction Book Genres are: memoir & autobiography, biography, history, food & drink, poetry, self-help, true-crime, travel, art & photography, essays, humanities & social sciences, sciences & technology.\n \n20. What is the difference between a memoir and an autobiography?\nCan you give examples of memoirs?\nCan you give examples of autobiographies?\n \nMemoir & Autobiography - These two types of nonfiction books fall under the same genre because, in both cases, the author also serves as the narrator.\n \nThe difference between a memoir and an autobiography is that an autobiography is a chronological account of the life of the narrator, while a memoir uses defining moments in one’s life to buttress a self-help theme.\n \nA popular memoir example is The Glass Castle by Jeannette Walls\n \nAn autobiography example is I Know Why the Caged Bird Sings by Maya Angelou\n \n21. What is a biography?\nCan you give examples of biographies?\nHow do biographies differ from autobiographies?\n \nBiography - Biographies tell the story of the life of a notable person, most often someone well known or anyone whose story teaches valuable life lessons.\n \nThese differ from autobiographies in that they are written in third-person by someone else, rather than by the subject in first-person.\n \nBiography examples:\n \n● Alexander Hamilton by Ron Chernow\n \n● Steve Jobs by Walter Isaacson\n \n22. What is History in books?\nCan you give examples of History books?\nHow do History books educate readers?\n \nHistory - This genre aims to educate and entertain the reader by chronicling a historical event.\n \nHistory examples:\n \n● The Devil in the White City by Erik Larson\n \n● Bury My Heart at Wounded Knee by Dee Brown\n \n \n23. What are Food & Drink books?\nCan you give examples of Food & Drink books?\nHow do Food & Drink books appeal to readers?\n \nFood & Drink - Food and drink is one of nonfiction’s hottest markets as its titles cater to a variety of diets, lifestyles, and cultural cuisines. Photographs often accompany recipes and personal stories for food lovers.\n \nFood & Drink examples:\n \n● Fire and Ice: Classic Nordic Cooking by Darra Goldstein\n \n● Food52 Genius Recipes: 100 Recipes That Will Change the Way You Cook by Kristen Miglore and Amanda Hesser\n \n24. What is Poetry?\nCan you give examples of Poetry books?\nWhat types of poetic expression are found in Poetry books?\n \nPoetry - Often organized into collections or anthologies, this genre includes free verse, rhymed verse, and a variety of other types of poetic expression.\n \nPoetry examples:\n \n● Leaves of Grass by Walt Whitman\n \n● The Wilderness by Sandra Lim\n \n25. What is Self-Help literature?\nCan you give examples of Self-Help books?\nHow do Self-Help books empower readers?\nSelf-Help - This book genre is devoted to empowering readers to realize their potential so they can become the best version of themselves.\n \nSelf-Help examples:\n \n● Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear\n \n● The Power of Letting Go: How to drop everything that’s holding you back by John Purkiss  \n \n26. What are True Crime books?\nCan you give examples of True Crime books?\nWhat types of crimes do True Crime books focus on?\n \nTrue Crime - True Crime books examine real crimes and events, usually with alarming detail. Many books in this genre focus on infamous murders, kidnappings, or other felonies.\n \nTrue Crime examples:\n \n● In Cold Blood by Truman Capote\n \n● I’ll Be Gone In the Dark by Michelle McNamara\n \n27. What are Travel books?\nCan you give examples of Travel books?\nWhat information do Travel books typically provide?\n \nTravel - These books take readers all over the world, featuring reviews, budgeting tips, travel hacks, and advice on where to eat and what to see.\n \nTravel examples:\n \n● The Journey Matters by Jonathan Glancey\n \n● Vagabonding by Rolf Potts\n \n28. What are Art & Photography books?\nCan you give examples of Art & Photography books?\nWhat topics do Art & Photography books typically cover?\n \nArt & Photography - This genre is home to books that showcase an artist’s work, a specific style of art, or the history of art.\n \nArt & Photography examples:\n \n● Wonderland by Annie Leibovitz\n \n● On Photography by Susan Sontag\n \n29. What are Essays in literature?\nCan you give examples of Essay collections?\nHow do Essays typically explore personal experiences?\nEssays - This genre often follows a unifying theme. These essays—or speeches transcribed—cover the writer’s personal experiences, usually told in the first person.\n \nEssay examples include:\n \n● A Room of One’s Own by Virginia Woolf\n \n● Slouching Towards Bethlehem by Joan Didion\n \n30. What are Humanities & Social Sciences books?\nCan you give examples of Humanities & Social Sciences books?\nWhat topics do Humanities & Social Sciences books typically cover?\n \nHumanities & Social Sciences - This academic genre explores issues related to social sciences such as psychology, sociology, philosophy, language, religion, or music.\n \nHumanities & Social Sciences examples:\n \n● How You Say It: Why You Talk the Way You Do—and What It Says About You by Katherine D. Kinzler\n \n● On Liberty by John Stuart Mill\n \n31. What are Science & Technology books?\nCan you give examples of Science & Technology books?\nWhat topics do Science & Technology books typically cover?\n \nScience & Technology - Books in this genre delve into current scientific and technological developments from technology such as Artificial Intelligence and coding to medical research.\n \nScience & Technology examples:\n \n● The Premonition: A Pandemic Story by Michael Lewis\n \n● Life’s Edge: The Search for What It Means to Be Alive by Carl Zimmer`\nmsg.totaCharacters = msg.pageContent.length\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 3160,
+        "wires": [
+            [
+                "71a4a63c97b5de07"
+            ]
+        ]
+    },
+    {
+        "id": "8b14d66ad0a7da8c",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1185,
+        "y": 3160,
+        "wires": [
+            [
+                "16926b452421208b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "46f7a5b56acb80e8",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "function 667",
+        "func": "\nmsg.array = msg.payload;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1490,
+        "y": 3160,
+        "wires": [
+            [
+                "8293263cb2616cc5"
+            ]
+        ]
+    },
+    {
+        "id": "71a4a63c97b5de07",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "FILES",
+        "func": "msg.collection = \"knowledgeObjects\";\nmsg.knowledgeObjectsId = objectid()\nmsg.payload = {\n    _id: msg.knowledgeObjectsId,\n    knowledgeBaseId: objectid(msg.knowlegebaseId),\n    name: 'Books-Data',\n    type: \"Files\",\n    file: `Books-Data.txt`,\n    vectors: [],\n    status: \"Source saved\",\n    demo: true,\n    deleted: false,\n    createdAt: new Date(),\n    totaCharacters: msg.totaCharacters,\n    source: msg.source,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1070,
+        "y": 3160,
+        "wires": [
+            [
+                "8b14d66ad0a7da8c"
+            ]
+        ]
+    },
+    {
+        "id": "33599c4baae4d50d",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 735,
+        "y": 3160,
+        "wires": [
+            [
+                "8f21262fb6cd6e01"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b237cec8735d5fed",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "create chroma collection",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'books';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase });\n\n// msg.nameBase = 'HR_Data2'\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            },
+            {
+                "var": "openai",
+                "module": "openai"
+            },
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 550,
+        "y": 3200,
+        "wires": [
+            [
+                "33599c4baae4d50d",
+                "085c9e6e3f8d4544"
+            ]
+        ]
+    },
+    {
+        "id": "8293263cb2616cc5",
+        "type": "array-loop",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "key": "amount",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1820,
+        "y": 3080,
+        "wires": [
+            [
+                "c59bc98f9a05cab2"
+            ],
+            [
+                "cda90727976cf777"
+            ]
+        ]
+    },
+    {
+        "id": "cda90727976cf777",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "create chroma collection",
+        "func": "\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nmsg.tobase = msg.payload\nconst question = msg.payload.questions;\nconst result = msg.payload.answer;\nmsg.emb = msg.payload.embedding;\nmsg.ids = Date.now().toString()\nlet collection2 = await client.getCollection({ name: msg.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: question,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt' \n})\n\nmsg.payload = create;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "chromadb",
+                "module": "chromadb"
+            },
+            {
+                "var": "openai",
+                "module": "openai"
+            }
+        ],
+        "x": 1710,
+        "y": 3180,
+        "wires": [
+            [
+                "3bde1a78b79eeac6"
+            ]
+        ]
+    },
+    {
+        "id": "c59bc98f9a05cab2",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "post",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.knowledgeObjectsId)}\nmsg.payload = {\n    $set: {\n     status:\"Saved\"\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 2010,
+        "y": 3040,
+        "wires": [
+            [
+                "273a85fd80f57450"
+            ]
+        ]
+    },
+    {
+        "id": "273a85fd80f57450",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "links": [
+            "d5c0ee67d630e0f2"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2220,
+        "y": 3040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bde1a78b79eeac6",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "create vector",
+        "func": "msg.collection = \"knowledgeObjects\";\n\nconst question = msg.tobase.questions;\nconst result = msg.tobase.answer;\n\nlet url = msg.nameBase + '.txt';\n\n\nmsg.query = { \"_id\": msg.knowledgeObjectsId };\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: msg.ids,\n         chroma: true,\n         metadata: {\n            url: url,\n            question: question,\n            result: result,\n            source: msg.source,\n         },\n      }\n   }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1885,
+        "y": 3180,
+        "wires": [
+            [
+                "1b4044d6f8db5fb5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1b4044d6f8db5fb5",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "links": [
+            "d5c0ee67d630e0f2"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2010,
+        "y": 3180,
+        "wires": [
+            [
+                "8293263cb2616cc5"
+            ]
+        ]
+    },
+    {
+        "id": "085c9e6e3f8d4544",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "Fill standard prompt",
+        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Assistant\",\n    \"tone\": \"Informal\",\n    \"language\": \"English\",\n    \"prompt_custom\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor. Respond to user questions using the provided information:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 3220,
+        "wires": [
+            [
+                "99de7cc9296e1f3c"
+            ]
+        ]
+    },
+    {
+        "id": "99de7cc9296e1f3c",
+        "type": "http request",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1030,
+        "y": 3220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16926b452421208b",
+        "type": "http request",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://aibotnr-5850-658ad621387fb711000001e1.ubos.tech/books",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1310,
+        "y": 3160,
+        "wires": [
+            [
+                "46f7a5b56acb80e8"
+            ]
         ]
     },
     {
