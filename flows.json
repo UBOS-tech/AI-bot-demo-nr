@@ -17565,7 +17565,7 @@
         "type": "function",
         "z": "391658888cc82dc0",
         "name": "create chroma collection",
-        "func": "\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get(\"openai\").OPENAI_API });\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nmsg.tobase = msg.payload\nconst question = msg.payload.questions;\nconst result = msg.payload.answer;\nmsg.emb = msg.payload.embedding;\nmsg.ids = Date.now().toString()\nlet collection2 = await client.getCollection({ name: msg.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: question,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt' \n})\n\nmsg.payload = create;\n\nreturn msg;\n",
+        "func": "\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nmsg.tobase = msg.payload\nconst question = msg.payload.questions;\nconst result = msg.payload.answer;\nmsg.emb = msg.payload.embedding;\nmsg.ids = Date.now().toString()\nlet collection2 = await client.getCollection({ name: msg.nameBase});\nconst create = await collection2.add({\n    ids: [msg.ids],\n    embeddings: msg.emb,\n    metadatas: [{\n        question: question,\n        result: result,\n        id: msg.ids,\n        source: msg.source,\n    }],\n    documents: msg.nameBase + '.txt' \n})\n\nmsg.payload = create;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
