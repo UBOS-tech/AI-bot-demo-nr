@@ -17364,8 +17364,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 3160,
+        "x": 820,
+        "y": 3200,
         "wires": [
             [
                 "71a4a63c97b5de07"
@@ -17382,8 +17382,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1185,
-        "y": 3160,
+        "x": 1065,
+        "y": 3200,
         "wires": [
             [
                 "16926b452421208b"
@@ -17407,8 +17407,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1490,
-        "y": 3160,
+        "x": 1370,
+        "y": 3200,
         "wires": [
             [
                 "8293263cb2616cc5"
@@ -17431,8 +17431,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1070,
-        "y": 3160,
+        "x": 970,
+        "y": 3200,
         "wires": [
             [
                 "8b14d66ad0a7da8c"
@@ -17449,8 +17449,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 735,
-        "y": 3160,
+        "x": 705,
+        "y": 3200,
         "wires": [
             [
                 "8f21262fb6cd6e01"
@@ -17486,8 +17486,7 @@
         "y": 3200,
         "wires": [
             [
-                "33599c4baae4d50d",
-                "085c9e6e3f8d4544"
+                "33599c4baae4d50d"
             ]
         ]
     },
@@ -17620,47 +17619,6 @@
         ]
     },
     {
-        "id": "085c9e6e3f8d4544",
-        "type": "function",
-        "z": "391658888cc82dc0",
-        "name": "Fill standard prompt",
-        "func": "const standardPrompt = {\n    \"answer_length\": \"Small\",\n    \"answer_as\": \"Assistant\",\n    \"tone\": \"Informal\",\n    \"language\": \"English\",\n    \"prompt_custom\": \"Assume the persona of Emily, a friendly and energetic individual who always uses emojis and maintains a consistently happy demeanor. Respond to user questions using the provided information:\",\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 3220,
-        "wires": [
-            [
-                "99de7cc9296e1f3c"
-            ]
-        ]
-    },
-    {
-        "id": "99de7cc9296e1f3c",
-        "type": "http request",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1030,
-        "y": 3220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "16926b452421208b",
         "type": "http request",
         "z": "391658888cc82dc0",
@@ -17676,8 +17634,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1310,
-        "y": 3160,
+        "x": 1190,
+        "y": 3200,
         "wires": [
             [
                 "46f7a5b56acb80e8"
