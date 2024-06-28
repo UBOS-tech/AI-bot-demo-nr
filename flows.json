@@ -407,7 +407,9 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -440,7 +442,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -527,7 +531,9 @@
             "1573008514834eb6"
         ],
         "x": 44,
-        "y": 499
+        "y": 499,
+        "w": 1992,
+        "h": 402
     },
     {
         "id": "96ff04cf0133a4da",
@@ -546,7 +552,9 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2499
+        "y": 2499,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "d5f3c34635f35708",
@@ -704,10 +712,17 @@
             "7f7e2007a018670f",
             "4badd197346ea811",
             "d2af17549ceaa392",
-            "1a38379bdaa684a2"
+            "1a38379bdaa684a2",
+            "893d4fc4750bbbdb",
+            "a253fc6cdfe60366",
+            "cfd3ce8ea64b9170",
+            "df106eb13223a9b7",
+            "857ffeebb0e9ed26"
         ],
-        "x": 74,
-        "y": 319
+        "x": 34,
+        "y": 279,
+        "w": 2372,
+        "h": 262
     },
     {
         "id": "55b42f036281abed",
@@ -731,10 +746,15 @@
             "e2b6a5c01579e436",
             "a9aef289fc3c1f6c",
             "c9d6e1e1075806c2",
-            "531a8a840209f5f5"
+            "531a8a840209f5f5",
+            "403388954328d129",
+            "615af07db017ba91",
+            "a3c2e2660c73a85a"
         ],
-        "x": 1094,
-        "y": 1099
+        "x": 34,
+        "y": 579,
+        "w": 1092,
+        "h": 242
     },
     {
         "id": "44336aabd4cc8aba",
@@ -758,10 +778,17 @@
             "4ac11aecb4ab7794",
             "ca674b80e8fcdc99",
             "ac1bfb5a8440f210",
-            "1a206d7e3e958251"
+            "1a206d7e3e958251",
+            "c74ecabd99d6cdb6",
+            "d0342a264eb1773c",
+            "f8bb1de705c5b62f",
+            "eb96940ef1ee94f5",
+            "75888155d9785419"
         ],
-        "x": 64,
-        "y": 1099
+        "x": 34,
+        "y": 1219,
+        "w": 1052,
+        "h": 222
     },
     {
         "id": "6f53df0634427ab8",
@@ -788,10 +815,17 @@
             "07c58156a8edcd8d",
             "d8a8e91b3d0499d1",
             "202731eee0626cf2",
-            "10c0cf87a1cbdb0a"
+            "10c0cf87a1cbdb0a",
+            "b3969bc5edb9bf8f",
+            "f84fa92c5ced236e",
+            "7ab37f416463bd03",
+            "31311070d4ece8f0",
+            "f08e3c221c200643"
         ],
-        "x": 54,
-        "y": 1299
+        "x": 34,
+        "y": 1459,
+        "w": 1712,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -815,10 +849,20 @@
             "4c812ed941d51f84",
             "af191a7e64081653",
             "70118f402d0f03ac",
-            "d04767856f0cbf5a"
+            "d04767856f0cbf5a",
+            "27a547de9434abbe",
+            "24f0394246420210",
+            "08415ebcb87dae77",
+            "09f772850224242f",
+            "deed4bf57d130045",
+            "482a14e5f7f4483a",
+            "db2b6e7349537cc1",
+            "8ba4bd833157be37"
         ],
-        "x": 54,
-        "y": 1559
+        "x": 34,
+        "y": 1719,
+        "w": 1512,
+        "h": 262
     },
     {
         "id": "af65f71384d80c06",
@@ -842,10 +886,20 @@
             "f3c2adf19e638386",
             "94a28b46766806c7",
             "83f76447dfbcfdec",
-            "c3b931f10ae5cf2b"
+            "c3b931f10ae5cf2b",
+            "4bbd5c26c4a1c279",
+            "a3de904182d0287d",
+            "6a445d5526c40c8d",
+            "d5b0a65564109b26",
+            "6c3a8aedcb4111b3",
+            "3b760520581b46b9",
+            "ad5725aa4bae18f9",
+            "06d02de3a229fda7"
         ],
-        "x": 54,
-        "y": 1799
+        "x": 34,
+        "y": 1999,
+        "w": 1452,
+        "h": 262
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -866,7 +920,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2859,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -898,10 +954,14 @@
             "c542eb9521c6b170",
             "0ec04c582bf41c8a",
             "995f5d8e881f201b",
-            "3db438964b91e5ca"
+            "3db438964b91e5ca",
+            "587935292d2df534",
+            "aa06daa077ae8819"
         ],
-        "x": 74,
-        "y": 39
+        "x": 34,
+        "y": 19,
+        "w": 1952,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -920,18 +980,25 @@
             "7dfcb7349b36ac43",
             "1bddd93bb95c872b",
             "5b1eba943199c7fe",
-            "d007c8325d2ea8ba",
             "7e2f34dccfee2b28",
-            "a624f88f28ace7f7",
             "be1a8fcf69fcb4d5",
             "07cb2ad202820c52",
             "253a2e09f0a02b14",
             "15b1f54d4016402f",
             "db638caa413c6f15",
-            "1566d559db5d95fb"
+            "1566d559db5d95fb",
+            "c94a7ab33569d254",
+            "92e9ef1af5a4a9e8",
+            "a624f88f28ace7f7",
+            "d007c8325d2ea8ba",
+            "3690823201c1386f",
+            "3102d5b681bd73a6",
+            "034fc18bce221529"
         ],
-        "x": 54,
-        "y": 2039
+        "x": 34,
+        "y": 2279,
+        "w": 1492,
+        "h": 242
     },
     {
         "id": "d8a434ae844324e0",
@@ -955,10 +1022,20 @@
             "f2165ec907e49ca0",
             "a733b2750bc44503",
             "1b9fc3e8df560614",
-            "b13fea9ecd31d1f7"
+            "b13fea9ecd31d1f7",
+            "206112ed79eae1f1",
+            "d200da9b5f23a71d",
+            "6b7e1a7174b4f4d8",
+            "504a1d774c3bd162",
+            "1215e04aafd5a49a",
+            "e4ae061602854b70",
+            "e32f951991c2055b",
+            "0a76a7c83142fc18"
         ],
-        "x": 54,
-        "y": 2279
+        "x": 34,
+        "y": 2539,
+        "w": 1592,
+        "h": 302
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -988,10 +1065,17 @@
             "e14c97e9d1bbbe03",
             "c68696d78b845950",
             "6502eb7bffdb7f2b",
-            "9464348869bc10b2"
+            "9464348869bc10b2",
+            "8ca324163db93564",
+            "83e1ce1515959878",
+            "09b605a60ff25108",
+            "6011f858251ca354",
+            "8ca5589d63e7ba45"
         ],
-        "x": 74,
-        "y": 599
+        "x": 34,
+        "y": 839,
+        "w": 1472,
+        "h": 342
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1030,7 +1114,9 @@
             "dfe7c5abb92e3283"
         ],
         "x": 54,
-        "y": 39
+        "y": 39,
+        "w": 1552,
+        "h": 422
     },
     {
         "id": "478d796d1a70f361",
@@ -1117,7 +1203,9 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39
+        "y": 39,
+        "w": 1882,
+        "h": 1168
     },
     {
         "id": "1dc750e7d01e594b",
@@ -1625,31 +1713,6 @@
         "h": 562
     },
     {
-        "id": "204e41e815b84721",
-        "type": "group",
-        "z": "f48a32dcae7a25f2",
-        "g": "478d796d1a70f361",
-        "name": "Technical. DELETES !",
-        "style": {
-            "stroke": "#ff0000",
-            "label": true
-        },
-        "nodes": [
-            "0f8f44d118b78a90",
-            "d909a2f94071e9d9",
-            "39d64a121b1f0d72",
-            "270cd5f14ea98f9f",
-            "2c90cbc636d386ac",
-            "2c94d9ad2d99454b",
-            "058ce6b878b0dc81",
-            "14bb9cf4afb07119",
-            "9b10864d7faca599",
-            "5cd31c58f735fafb"
-        ],
-        "x": 74,
-        "y": 959
-    },
-    {
         "id": "2e6e4e61c61cc1ec",
         "type": "group",
         "z": "391658888cc82dc0",
@@ -1710,6 +1773,33 @@
         "y": 59,
         "w": 2072,
         "h": 622
+    },
+    {
+        "id": "204e41e815b84721",
+        "type": "group",
+        "z": "f48a32dcae7a25f2",
+        "g": "478d796d1a70f361",
+        "name": "Technical. DELETES !",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true
+        },
+        "nodes": [
+            "0f8f44d118b78a90",
+            "d909a2f94071e9d9",
+            "39d64a121b1f0d72",
+            "270cd5f14ea98f9f",
+            "2c90cbc636d386ac",
+            "2c94d9ad2d99454b",
+            "058ce6b878b0dc81",
+            "14bb9cf4afb07119",
+            "9b10864d7faca599",
+            "5cd31c58f735fafb"
+        ],
+        "x": 74,
+        "y": 959,
+        "w": 852,
+        "h": 222
     },
     {
         "id": "d2fba984a07da085",
@@ -2811,7 +2901,8 @@
         "y": 260,
         "wires": [
             [
-                "f7104bf96bd273b8"
+                "f7104bf96bd273b8",
+                "2d3c03f04bed7e0b"
             ]
         ]
     },
@@ -2924,7 +3015,7 @@
         "y": 340,
         "wires": [
             [
-                "e13acc374410451e"
+                "f482db00357125df"
             ]
         ]
     },
@@ -2939,7 +3030,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
+        "x": 1090,
         "y": 320,
         "wires": [
             []
@@ -2958,7 +3049,7 @@
         "y": 300,
         "wires": [
             [
-                "e13acc374410451e"
+                "f482db00357125df"
             ]
         ]
     },
@@ -2973,7 +3064,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 680,
         "y": 320,
         "wires": [
             [
@@ -2993,7 +3084,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 580,
+        "x": 900,
         "y": 320,
         "wires": [
             [
@@ -3009,7 +3100,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 685,
+        "x": 1005,
         "y": 320,
         "wires": [
             [
@@ -3275,7 +3366,8 @@
         "y": 80,
         "wires": [
             [
-                "6c2077e9bf3e3bd9"
+                "6c2077e9bf3e3bd9",
+                "12c195051c3a1dc3"
             ]
         ]
     },
@@ -3388,7 +3480,7 @@
         "y": 160,
         "wires": [
             [
-                "8b6a7ae2e50ce9e0"
+                "123279fd65a6a7fc"
             ]
         ]
     },
@@ -3403,7 +3495,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
+        "x": 1090,
         "y": 140,
         "wires": [
             []
@@ -3422,7 +3514,7 @@
         "y": 120,
         "wires": [
             [
-                "8b6a7ae2e50ce9e0"
+                "123279fd65a6a7fc"
             ]
         ]
     },
@@ -3437,7 +3529,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 700,
         "y": 140,
         "wires": [
             [
@@ -3457,7 +3549,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 540,
+        "x": 900,
         "y": 140,
         "wires": [
             [
@@ -3473,7 +3565,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 645,
+        "x": 1005,
         "y": 140,
         "wires": [
             [
@@ -3604,6 +3696,194 @@
             [
                 "db31f5dfa738f3d8"
             ]
+        ]
+    },
+    {
+        "id": "2d3c03f04bed7e0b",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsModelTesting.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 344.22607421875,
+        "y": 211.71875,
+        "wires": [
+            [
+                "8c7171b8c4e1b77e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8c7171b8c4e1b77e",
+        "type": "link call",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 514.22607421875,
+        "y": 211.71875,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12c195051c3a1dc3",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/defaultCredsForUI_ModelTesting.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 295,
+        "y": 20,
+        "wires": [
+            [
+                "e01d955711439625"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e01d955711439625",
+        "type": "link call",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 410,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f482db00357125df",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsModelTesting.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 215,
+        "y": 320,
+        "wires": [
+            [
+                "63158d6123308cf5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "63158d6123308cf5",
+        "type": "link call",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "142a684ea383d2fc"
+            ]
+        ]
+    },
+    {
+        "id": "142a684ea383d2fc",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "e13acc374410451e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "123279fd65a6a7fc",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/defaultCredsForUI_ModelTesting.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 235,
+        "y": 140,
+        "wires": [
+            [
+                "a294f21ff4850f17"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a294f21ff4850f17",
+        "type": "link call",
+        "z": "71cb7453ba91face",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "fcc3ef47add694ad"
+            ]
+        ]
+    },
+    {
+        "id": "fcc3ef47add694ad",
+        "type": "function",
+        "z": "71cb7453ba91face",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "8b6a7ae2e50ce9e0"
+            ],
+            []
         ]
     },
     {
@@ -3971,7 +4251,8 @@
         "y": 560,
         "wires": [
             [
-                "6c76326e253c4191"
+                "6c76326e253c4191",
+                "66dcdee442dabf1a"
             ]
         ]
     },
@@ -4072,7 +4353,7 @@
         "y": 600,
         "wires": [
             [
-                "2abd642df691d970"
+                "4ac050df89e47f9e"
             ]
         ]
     },
@@ -4087,8 +4368,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 620,
+        "x": 710,
+        "y": 640,
         "wires": [
             [
                 "a6cb4025fae04ff0"
@@ -4120,7 +4401,7 @@
         "y": 640,
         "wires": [
             [
-                "2abd642df691d970"
+                "4ac050df89e47f9e"
             ]
         ]
     },
@@ -4136,8 +4417,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 580,
-        "y": 620,
+        "x": 920,
+        "y": 640,
         "wires": [
             [
                 "63f76692be57f5de"
@@ -4152,8 +4433,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 685,
-        "y": 620,
+        "x": 1025,
+        "y": 640,
         "wires": [
             [
                 "c48c1e8939e422f8"
@@ -4172,8 +4453,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
-        "y": 620,
+        "x": 1110,
+        "y": 640,
         "wires": [
             []
         ]
@@ -4398,6 +4679,100 @@
             [
                 "49062ea88d54d8f7"
             ]
+        ]
+    },
+    {
+        "id": "4ac050df89e47f9e",
+        "type": "function",
+        "z": "a0451234ff05c29f",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsBenchmark.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 245,
+        "y": 640,
+        "wires": [
+            [
+                "afa9b17887cccc28"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "afa9b17887cccc28",
+        "type": "link call",
+        "z": "a0451234ff05c29f",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "adcb0278b26ba6c7"
+            ]
+        ]
+    },
+    {
+        "id": "adcb0278b26ba6c7",
+        "type": "function",
+        "z": "a0451234ff05c29f",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 640,
+        "wires": [
+            [
+                "2abd642df691d970"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "66dcdee442dabf1a",
+        "type": "function",
+        "z": "a0451234ff05c29f",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsBenchmark.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 425,
+        "y": 520,
+        "wires": [
+            [
+                "3d4ee285ed3f4c3a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3d4ee285ed3f4c3a",
+        "type": "link call",
+        "z": "a0451234ff05c29f",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 540,
+        "y": 520,
+        "wires": [
+            []
         ]
     },
     {
@@ -8497,6 +8872,7 @@
         "id": "deed4bf57d130045",
         "type": "file in",
         "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -8505,8 +8881,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 440,
-        "y": 1660,
+        "x": 580,
+        "y": 1880,
         "wires": [
             [
                 "09f772850224242f"
@@ -8517,6 +8893,7 @@
         "id": "08415ebcb87dae77",
         "type": "function",
         "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
         "name": "upSert data",
         "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -8524,8 +8901,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1660,
+        "x": 790,
+        "y": 1880,
         "wires": [
             [
                 "442dc81d593f8fa7"
@@ -8536,12 +8913,13 @@
         "id": "09f772850224242f",
         "type": "json",
         "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 545,
-        "y": 1660,
+        "x": 685,
+        "y": 1880,
         "wires": [
             [
                 "08415ebcb87dae77"
@@ -8553,6 +8931,7 @@
         "id": "6c3a8aedcb4111b3",
         "type": "file in",
         "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -8561,8 +8940,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 420,
-        "y": 1900,
+        "x": 560,
+        "y": 2160,
         "wires": [
             [
                 "d5b0a65564109b26"
@@ -8573,6 +8952,7 @@
         "id": "6a445d5526c40c8d",
         "type": "function",
         "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
         "name": "upSert data",
         "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -8580,8 +8960,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 1900,
+        "x": 770,
+        "y": 2160,
         "wires": [
             [
                 "25d6a37a67658cb0"
@@ -8592,12 +8972,13 @@
         "id": "d5b0a65564109b26",
         "type": "json",
         "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 525,
-        "y": 1900,
+        "x": 655,
+        "y": 2160,
         "wires": [
             [
                 "6a445d5526c40c8d"
@@ -8609,6 +8990,7 @@
         "id": "206112ed79eae1f1",
         "type": "file in",
         "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -8617,8 +8999,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 460,
-        "y": 2380,
+        "x": 620,
+        "y": 2740,
         "wires": [
             [
                 "d200da9b5f23a71d"
@@ -8629,6 +9011,7 @@
         "id": "6b7e1a7174b4f4d8",
         "type": "function",
         "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
         "name": "upSert data",
         "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -8636,8 +9019,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 2380,
+        "x": 850,
+        "y": 2740,
         "wires": [
             [
                 "99eaf8b2c80fbd56"
@@ -8648,12 +9031,13 @@
         "id": "d200da9b5f23a71d",
         "type": "json",
         "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 565,
-        "y": 2380,
+        "x": 745,
+        "y": 2740,
         "wires": [
             [
                 "6b7e1a7174b4f4d8"
@@ -8682,8 +9066,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 2820,
+        "x": 170,
+        "y": 3120,
         "wires": [
             [
                 "7581c41cdef2719a",
@@ -8705,8 +9089,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 690,
-        "y": 2780,
+        "x": 710,
+        "y": 3080,
         "wires": [
             []
         ]
@@ -8722,8 +9106,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 690,
-        "y": 2740,
+        "x": 710,
+        "y": 3040,
         "wires": [
             []
         ]
@@ -8739,8 +9123,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 690,
-        "y": 2820,
+        "x": 710,
+        "y": 3120,
         "wires": [
             []
         ]
@@ -8756,8 +9140,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 680,
-        "y": 2860,
+        "x": 700,
+        "y": 3160,
         "wires": [
             []
         ]
@@ -8773,8 +9157,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2740,
+        "x": 390,
+        "y": 3040,
         "wires": [
             [
                 "dedd1f98dc546bf5"
@@ -8792,8 +9176,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2780,
+        "x": 390,
+        "y": 3080,
         "wires": [
             [
                 "63f6bf7898cc0dae"
@@ -8811,8 +9195,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2820,
+        "x": 390,
+        "y": 3120,
         "wires": [
             [
                 "74c7e436e8768420"
@@ -8830,8 +9214,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2860,
+        "x": 390,
+        "y": 3160,
         "wires": [
             [
                 "4467141270deb3e6"
@@ -8849,8 +9233,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 700,
-        "y": 2900,
+        "x": 720,
+        "y": 3200,
         "wires": [
             []
         ]
@@ -8866,8 +9250,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 2900,
+        "x": 390,
+        "y": 3200,
         "wires": [
             [
                 "7a61269051adaede"
@@ -8896,11 +9280,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 400,
+        "x": 150,
+        "y": 360,
         "wires": [
             [
-                "747b886e4ef7a789"
+                "857ffeebb0e9ed26"
             ]
         ]
     },
@@ -8916,8 +9300,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 380,
+        "x": 1010,
+        "y": 340,
         "wires": [
             []
         ]
@@ -8932,11 +9316,11 @@
             "0225b679b27c7cb6"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 360,
+        "x": 130,
+        "y": 320,
         "wires": [
             [
-                "747b886e4ef7a789"
+                "857ffeebb0e9ed26"
             ]
         ]
     },
@@ -8952,8 +9336,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 380,
+        "x": 640,
+        "y": 340,
         "wires": [
             [
                 "df58dbb812b80859"
@@ -8973,8 +9357,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 380,
+        "x": 800,
+        "y": 340,
         "wires": [
             [
                 "ac63feae5ecd30aa"
@@ -8990,8 +9374,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 645,
-        "y": 380,
+        "x": 925,
+        "y": 340,
         "wires": [
             [
                 "a194b63031f633f4"
@@ -9009,11 +9393,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 480,
+        "x": 180,
+        "y": 440,
         "wires": [
             [
-                "ab72fce8e9ad71ae"
+                "ab72fce8e9ad71ae",
+                "893d4fc4750bbbdb"
             ]
         ]
     },
@@ -9029,8 +9414,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 480,
+        "x": 430,
+        "y": 440,
         "wires": [
             [
                 "e134e725a4a97f03"
@@ -9053,8 +9438,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 740,
-        "y": 460,
+        "x": 700,
+        "y": 420,
         "wires": [
             [
                 "db4dda113a133f32"
@@ -9070,8 +9455,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 610,
-        "y": 460,
+        "x": 570,
+        "y": 420,
         "wires": [
             [
                 "66e010e4bd2f3852"
@@ -9090,8 +9475,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
-        "y": 460,
+        "x": 1190,
+        "y": 420,
         "wires": [
             [
                 "7c3869a24eef7b9b"
@@ -9110,8 +9495,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 460,
+        "x": 840,
+        "y": 420,
         "wires": [
             [
                 "8f82a1d189344a56"
@@ -9131,8 +9516,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1020,
-        "y": 460,
+        "x": 980,
+        "y": 420,
         "wires": [
             [
                 "64ada091ef6083db"
@@ -9148,8 +9533,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1115,
-        "y": 460,
+        "x": 1075,
+        "y": 420,
         "wires": [
             [
                 "3f6b420a991ab205"
@@ -9169,8 +9554,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1390,
-        "y": 460,
+        "x": 1350,
+        "y": 420,
         "wires": [
             [
                 "1a38379bdaa684a2"
@@ -9185,8 +9570,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1930,
-        "y": 460,
+        "x": 1890,
+        "y": 420,
         "wires": []
     },
     {
@@ -9201,8 +9586,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1760,
-        "y": 460,
+        "x": 1720,
+        "y": 420,
         "wires": [
             [
                 "139b56b09fa92b48",
@@ -9222,8 +9607,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1955,
-        "y": 500,
+        "x": 1915,
+        "y": 460,
         "wires": [
             [
                 "139b56b09fa92b48"
@@ -9243,8 +9628,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1840,
-        "y": 380,
+        "x": 1800,
+        "y": 340,
         "wires": [
             [
                 "6f7b89e9a9f27359"
@@ -9262,8 +9647,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2030,
-        "y": 380,
+        "x": 1990,
+        "y": 340,
         "wires": [
             [
                 "b9e54a435fd93ad4"
@@ -9282,8 +9667,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
-        "y": 380,
+        "x": 2130,
+        "y": 340,
         "wires": [
             [
                 "4badd197346ea811"
@@ -9302,8 +9687,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 630,
-        "y": 500,
+        "x": 590,
+        "y": 460,
         "wires": [
             []
         ]
@@ -9316,8 +9701,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 990,
-        "y": 500,
+        "x": 950,
+        "y": 460,
         "wires": []
     },
     {
@@ -9338,8 +9723,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 735,
-        "y": 500,
+        "x": 695,
+        "y": 460,
         "wires": [
             [
                 "7f7e2007a018670f"
@@ -9359,8 +9744,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 500,
+        "x": 800,
+        "y": 460,
         "wires": [
             [
                 "fc4255ed2bf1f4cf"
@@ -9384,8 +9769,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 2350,
-        "y": 440,
+        "x": 2310,
+        "y": 400,
         "wires": [
             []
         ]
@@ -9400,11 +9785,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1250,
-        "y": 1240,
+        "x": 190,
+        "y": 720,
         "wires": [
             [
-                "bd719ef3e9c10461"
+                "bd719ef3e9c10461",
+                "615af07db017ba91"
             ]
         ]
     },
@@ -9416,8 +9802,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2010,
-        "y": 1240,
+        "x": 950,
+        "y": 720,
         "wires": []
     },
     {
@@ -9432,8 +9818,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
-        "y": 1240,
+        "x": 410,
+        "y": 720,
         "wires": [
             [
                 "13697ce660977927"
@@ -9452,8 +9838,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1740,
-        "y": 1240,
+        "x": 680,
+        "y": 720,
         "wires": [
             [
                 "c2e52898284109f0"
@@ -9472,8 +9858,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 1240,
+        "x": 820,
+        "y": 720,
         "wires": [
             [
                 "5ac95ac081347ad9"
@@ -9489,8 +9875,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1610,
-        "y": 1240,
+        "x": 550,
+        "y": 720,
         "wires": [
             [
                 "dc858829d5d5704d"
@@ -9519,11 +9905,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1210,
-        "y": 1180,
+        "x": 150,
+        "y": 660,
         "wires": [
             [
-                "a9aef289fc3c1f6c"
+                "a3c2e2660c73a85a"
             ]
         ]
     },
@@ -9539,8 +9925,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 1160,
+        "x": 1050,
+        "y": 640,
         "wires": [
             []
         ]
@@ -9555,11 +9941,11 @@
             "5ac95ac081347ad9"
         ],
         "uncaught": false,
-        "x": 1190,
-        "y": 1140,
+        "x": 130,
+        "y": 620,
         "wires": [
             [
-                "a9aef289fc3c1f6c"
+                "a3c2e2660c73a85a"
             ]
         ]
     },
@@ -9575,8 +9961,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1380,
-        "y": 1160,
+        "x": 720,
+        "y": 640,
         "wires": [
             [
                 "c9d6e1e1075806c2"
@@ -9596,8 +9982,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1520,
-        "y": 1160,
+        "x": 860,
+        "y": 640,
         "wires": [
             [
                 "531a8a840209f5f5"
@@ -9613,8 +9999,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1625,
-        "y": 1160,
+        "x": 965,
+        "y": 640,
         "wires": [
             [
                 "8a72925d859727a6"
@@ -9632,11 +10018,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 210,
-        "y": 1240,
+        "x": 180,
+        "y": 1360,
         "wires": [
             [
-                "f9e03308c657f770"
+                "f9e03308c657f770",
+                "75888155d9785419"
             ]
         ]
     },
@@ -9648,8 +10035,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 980,
-        "y": 1240,
+        "x": 950,
+        "y": 1360,
         "wires": []
     },
     {
@@ -9664,8 +10051,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 1240,
+        "x": 410,
+        "y": 1360,
         "wires": [
             [
                 "82fb1c643eb3fb61"
@@ -9684,8 +10071,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 710,
-        "y": 1240,
+        "x": 680,
+        "y": 1360,
         "wires": [
             [
                 "a9d95c65607079f2"
@@ -9704,8 +10091,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 1240,
+        "x": 820,
+        "y": 1360,
         "wires": [
             [
                 "f19aa6742a6d53b8"
@@ -9721,8 +10108,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 580,
-        "y": 1240,
+        "x": 550,
+        "y": 1360,
         "wires": [
             [
                 "8a7ca7f672e935cf"
@@ -9751,11 +10138,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 1180,
+        "x": 150,
+        "y": 1300,
         "wires": [
             [
-                "ca674b80e8fcdc99"
+                "eb96940ef1ee94f5"
             ]
         ]
     },
@@ -9771,8 +10158,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 1160,
+        "x": 1010,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -9787,11 +10174,11 @@
             "f19aa6742a6d53b8"
         ],
         "uncaught": false,
-        "x": 160,
-        "y": 1140,
+        "x": 130,
+        "y": 1260,
         "wires": [
             [
-                "ca674b80e8fcdc99"
+                "eb96940ef1ee94f5"
             ]
         ]
     },
@@ -9807,8 +10194,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1160,
+        "x": 680,
+        "y": 1280,
         "wires": [
             [
                 "ac1bfb5a8440f210"
@@ -9828,8 +10215,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 490,
-        "y": 1160,
+        "x": 820,
+        "y": 1280,
         "wires": [
             [
                 "1a206d7e3e958251"
@@ -9845,8 +10232,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 595,
-        "y": 1160,
+        "x": 925,
+        "y": 1280,
         "wires": [
             [
                 "696f86b68509797e"
@@ -9864,11 +10251,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 210,
-        "y": 1480,
+        "x": 190,
+        "y": 1600,
         "wires": [
             [
-                "fd4c414b794e5621"
+                "fd4c414b794e5621",
+                "b3969bc5edb9bf8f"
             ]
         ]
     },
@@ -9880,8 +10268,8 @@
         "name": "saveCredentialsTelegram",
         "statusCode": "",
         "headers": {},
-        "x": 1110,
-        "y": 1480,
+        "x": 1610,
+        "y": 1600,
         "wires": []
     },
     {
@@ -9896,8 +10284,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 1480,
+        "x": 550,
+        "y": 1600,
         "wires": [
             [
                 "202731eee0626cf2"
@@ -9916,8 +10304,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 780,
-        "y": 1480,
+        "x": 1280,
+        "y": 1600,
         "wires": [
             [
                 "f534dee418315872"
@@ -9936,8 +10324,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 1480,
+        "x": 1420,
+        "y": 1600,
         "wires": [
             [
                 "e8fc6671d55b0f15"
@@ -9953,8 +10341,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 1480,
+        "x": 1150,
+        "y": 1600,
         "wires": [
             [
                 "a730631d60ca44d5"
@@ -9983,11 +10371,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 1380,
+        "x": 150,
+        "y": 1540,
         "wires": [
             [
-                "e8da08c43db01ea0"
+                "7ab37f416463bd03"
             ]
         ]
     },
@@ -10003,8 +10391,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 1360,
+        "x": 1030,
+        "y": 1500,
         "wires": [
             []
         ]
@@ -10019,11 +10407,11 @@
             "e8fc6671d55b0f15"
         ],
         "uncaught": false,
-        "x": 150,
-        "y": 1340,
+        "x": 130,
+        "y": 1500,
         "wires": [
             [
-                "e8da08c43db01ea0"
+                "7ab37f416463bd03"
             ]
         ]
     },
@@ -10039,8 +10427,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 1360,
+        "x": 660,
+        "y": 1500,
         "wires": [
             [
                 "6cd39dcc316df0f3"
@@ -10060,8 +10448,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 500,
-        "y": 1360,
+        "x": 820,
+        "y": 1500,
         "wires": [
             [
                 "07c58156a8edcd8d"
@@ -10077,8 +10465,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 605,
-        "y": 1360,
+        "x": 925,
+        "y": 1500,
         "wires": [
             [
                 "49306d261dbeac93"
@@ -10098,8 +10486,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1440,
+        "x": 970,
+        "y": 1600,
         "wires": [
             [
                 "866fb43782d1e1aa"
@@ -10119,8 +10507,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 440,
-        "y": 1440,
+        "x": 740,
+        "y": 1600,
         "wires": [
             [
                 "10c0cf87a1cbdb0a"
@@ -10136,8 +10524,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 545,
-        "y": 1440,
+        "x": 845,
+        "y": 1600,
         "wires": [
             [
                 "d8a8e91b3d0499d1"
@@ -10155,11 +10543,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 210,
-        "y": 1720,
+        "x": 190,
+        "y": 1880,
         "wires": [
             [
-                "60fcd07d289f558e"
+                "60fcd07d289f558e",
+                "24f0394246420210"
             ]
         ]
     },
@@ -10171,8 +10560,8 @@
         "name": "saveCredentialsWhatsApp",
         "statusCode": "",
         "headers": {},
-        "x": 1120,
-        "y": 1720,
+        "x": 1400,
+        "y": 1880,
         "wires": []
     },
     {
@@ -10187,8 +10576,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 1720,
+        "x": 410,
+        "y": 1880,
         "wires": [
             [
                 "deed4bf57d130045"
@@ -10207,8 +10596,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 780,
-        "y": 1720,
+        "x": 1060,
+        "y": 1880,
         "wires": [
             [
                 "cf1b9596312bc4b3"
@@ -10227,8 +10616,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 1720,
+        "x": 1200,
+        "y": 1880,
         "wires": [
             [
                 "8daa2861a904afea"
@@ -10244,8 +10633,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 1720,
+        "x": 930,
+        "y": 1880,
         "wires": [
             [
                 "1bc83c2dc4602eca"
@@ -10274,11 +10663,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 1640,
+        "x": 170,
+        "y": 1800,
         "wires": [
             [
-                "af191a7e64081653"
+                "482a14e5f7f4483a"
             ]
         ]
     },
@@ -10294,8 +10683,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 1620,
+        "x": 1010,
+        "y": 1780,
         "wires": [
             []
         ]
@@ -10310,11 +10699,11 @@
             "8daa2861a904afea"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 1600,
+        "x": 150,
+        "y": 1760,
         "wires": [
             [
-                "af191a7e64081653"
+                "482a14e5f7f4483a"
             ]
         ]
     },
@@ -10330,8 +10719,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 1620,
+        "x": 680,
+        "y": 1780,
         "wires": [
             [
                 "70118f402d0f03ac"
@@ -10351,8 +10740,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 1620,
+        "x": 840,
+        "y": 1780,
         "wires": [
             [
                 "d04767856f0cbf5a"
@@ -10368,8 +10757,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 605,
-        "y": 1620,
+        "x": 925,
+        "y": 1780,
         "wires": [
             [
                 "81285fb22828f3a7"
@@ -10388,10 +10777,11 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 200,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
-                "05d32cb22d1820d0"
+                "05d32cb22d1820d0",
+                "4bbd5c26c4a1c279"
             ]
         ]
     },
@@ -10403,8 +10793,8 @@
         "name": "saveCredentialsMeta",
         "statusCode": "",
         "headers": {},
-        "x": 1080,
-        "y": 1960,
+        "x": 1360,
+        "y": 2160,
         "wires": []
     },
     {
@@ -10420,7 +10810,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
                 "6c3a8aedcb4111b3"
@@ -10439,8 +10829,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 760,
-        "y": 1960,
+        "x": 1040,
+        "y": 2160,
         "wires": [
             [
                 "6e92270506c85509"
@@ -10459,8 +10849,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 1960,
+        "x": 1180,
+        "y": 2160,
         "wires": [
             [
                 "cec13002671b136d"
@@ -10476,8 +10866,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 630,
-        "y": 1960,
+        "x": 910,
+        "y": 2160,
         "wires": [
             [
                 "a875a7442427d3c0"
@@ -10506,11 +10896,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 1880,
+        "x": 150,
+        "y": 2080,
         "wires": [
             [
-                "94a28b46766806c7"
+                "3b760520581b46b9"
             ]
         ]
     },
@@ -10526,8 +10916,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 1860,
+        "x": 1070,
+        "y": 2060,
         "wires": [
             []
         ]
@@ -10542,11 +10932,11 @@
             "cec13002671b136d"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 1840,
+        "x": 130,
+        "y": 2040,
         "wires": [
             [
-                "94a28b46766806c7"
+                "3b760520581b46b9"
             ]
         ]
     },
@@ -10562,8 +10952,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 1860,
+        "x": 740,
+        "y": 2060,
         "wires": [
             [
                 "83f76447dfbcfdec"
@@ -10583,8 +10973,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 1860,
+        "x": 880,
+        "y": 2060,
         "wires": [
             [
                 "c3b931f10ae5cf2b"
@@ -10600,8 +10990,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 605,
-        "y": 1860,
+        "x": 965,
+        "y": 2060,
         "wires": [
             [
                 "738e56c7120b9bf6"
@@ -10620,7 +11010,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 150,
-        "y": 2560,
+        "y": 2900,
         "wires": [
             [
                 "556665caf77d4528"
@@ -10640,7 +11030,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 2560,
+        "y": 2900,
         "wires": [
             [
                 "17cd66a251cdead3"
@@ -10656,7 +11046,7 @@
         "statusCode": "",
         "headers": {},
         "x": 490,
-        "y": 2560,
+        "y": 2900,
         "wires": []
     },
     {
@@ -10670,7 +11060,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 170,
-        "y": 2640,
+        "y": 2980,
         "wires": [
             [
                 "013b9e46e798e2ea"
@@ -10690,7 +11080,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 2640,
+        "y": 2980,
         "wires": [
             [
                 "75a973c1530c1fe9"
@@ -10706,7 +11096,7 @@
         "statusCode": "",
         "headers": {},
         "x": 550,
-        "y": 2640,
+        "y": 2980,
         "wires": []
     },
     {
@@ -10731,11 +11121,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 120,
+        "x": 150,
+        "y": 100,
         "wires": [
             [
-                "9a3e954c71966082"
+                "b22f121c3320e9a5"
             ]
         ]
     },
@@ -10751,8 +11141,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 100,
+        "x": 1030,
+        "y": 80,
         "wires": [
             []
         ]
@@ -10767,11 +11157,11 @@
             "99766ae124788165"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 80,
+        "x": 130,
+        "y": 60,
         "wires": [
             [
-                "9a3e954c71966082"
+                "b22f121c3320e9a5"
             ]
         ]
     },
@@ -10787,8 +11177,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 100,
+        "x": 660,
+        "y": 80,
         "wires": [
             [
                 "d4cfb62e6712ea70"
@@ -10808,8 +11198,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 100,
+        "x": 820,
+        "y": 80,
         "wires": [
             [
                 "871e2e68011d2922"
@@ -10825,8 +11215,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 645,
-        "y": 100,
+        "x": 945,
+        "y": 80,
         "wires": [
             [
                 "7463dc6292d1d495"
@@ -10844,11 +11234,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
-        "y": 180,
+        "x": 190,
+        "y": 160,
         "wires": [
             [
-                "44167fa33c55119e"
+                "44167fa33c55119e",
+                "aa06daa077ae8819"
             ]
         ]
     },
@@ -10864,8 +11255,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 180,
+        "x": 430,
+        "y": 160,
         "wires": [
             [
                 "923b1ee62dae6292"
@@ -10884,8 +11275,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 740,
-        "y": 180,
+        "x": 700,
+        "y": 160,
         "wires": [
             [
                 "7cc35f67ee411a69"
@@ -10901,8 +11292,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 610,
-        "y": 180,
+        "x": 570,
+        "y": 160,
         "wires": [
             [
                 "0c43ff4c8ab91d70"
@@ -10921,8 +11312,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
-        "y": 180,
+        "x": 1170,
+        "y": 160,
         "wires": [
             [
                 "995f5d8e881f201b"
@@ -10941,8 +11332,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 180,
+        "x": 840,
+        "y": 160,
         "wires": [
             [
                 "d7028718c4d49d2f"
@@ -10962,8 +11353,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1020,
-        "y": 180,
+        "x": 980,
+        "y": 160,
         "wires": [
             [
                 "ef3b978082bb6fdc"
@@ -10979,8 +11370,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1115,
-        "y": 180,
+        "x": 1075,
+        "y": 160,
         "wires": [
             [
                 "eafc20609617a96f"
@@ -10996,8 +11387,8 @@
         "name": "pinecone",
         "statusCode": "",
         "headers": {},
-        "x": 1940,
-        "y": 180,
+        "x": 1900,
+        "y": 160,
         "wires": []
     },
     {
@@ -11012,8 +11403,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1760,
-        "y": 180,
+        "x": 1720,
+        "y": 160,
         "wires": [
             [
                 "99766ae124788165"
@@ -11032,8 +11423,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1955,
-        "y": 220,
+        "x": 1915,
+        "y": 200,
         "wires": [
             [
                 "99766ae124788165"
@@ -11052,10 +11443,11 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 210,
-        "y": 2200,
+        "y": 2440,
         "wires": [
             [
-                "a63f97a42ae8a447"
+                "a63f97a42ae8a447",
+                "c94a7ab33569d254"
             ]
         ]
     },
@@ -11067,8 +11459,8 @@
         "name": "saveCredentialsInstagram",
         "statusCode": "",
         "headers": {},
-        "x": 1110,
-        "y": 2200,
+        "x": 1390,
+        "y": 2440,
         "wires": []
     },
     {
@@ -11084,7 +11476,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 2200,
+        "y": 2440,
         "wires": [
             [
                 "15b1f54d4016402f"
@@ -11103,8 +11495,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 780,
-        "y": 2200,
+        "x": 1060,
+        "y": 2440,
         "wires": [
             [
                 "1bddd93bb95c872b"
@@ -11123,8 +11515,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 2200,
+        "x": 1200,
+        "y": 2440,
         "wires": [
             [
                 "75e002f2f4141242"
@@ -11140,41 +11532,11 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 2200,
+        "x": 930,
+        "y": 2440,
         "wires": [
             [
                 "7dfcb7349b36ac43"
-            ]
-        ]
-    },
-    {
-        "id": "d007c8325d2ea8ba",
-        "type": "inject",
-        "z": "5e7416993281e99d",
-        "g": "fcdce1b1fa2970b8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 2120,
-        "wires": [
-            [
-                "be1a8fcf69fcb4d5"
             ]
         ]
     },
@@ -11190,28 +11552,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 2100,
+        "x": 990,
+        "y": 2340,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "a624f88f28ace7f7",
-        "type": "complete",
-        "z": "5e7416993281e99d",
-        "g": "fcdce1b1fa2970b8",
-        "name": "",
-        "scope": [
-            "75e002f2f4141242"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 2080,
-        "wires": [
-            [
-                "be1a8fcf69fcb4d5"
-            ]
         ]
     },
     {
@@ -11226,8 +11570,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 2100,
+        "x": 660,
+        "y": 2340,
         "wires": [
             [
                 "07cb2ad202820c52"
@@ -11247,8 +11591,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 2100,
+        "x": 820,
+        "y": 2340,
         "wires": [
             [
                 "253a2e09f0a02b14"
@@ -11264,8 +11608,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 605,
-        "y": 2100,
+        "x": 905,
+        "y": 2340,
         "wires": [
             [
                 "7e2f34dccfee2b28"
@@ -11286,8 +11630,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 440,
-        "y": 2160,
+        "x": 580,
+        "y": 2440,
         "wires": [
             [
                 "db638caa413c6f15"
@@ -11303,8 +11647,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 545,
-        "y": 2160,
+        "x": 675,
+        "y": 2440,
         "wires": [
             [
                 "1566d559db5d95fb"
@@ -11324,8 +11668,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 2160,
+        "x": 790,
+        "y": 2440,
         "wires": [
             [
                 "5b1eba943199c7fe"
@@ -11342,11 +11686,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 2440,
+        "x": 200,
+        "y": 2740,
         "wires": [
             [
-                "7c86e034b96712e3"
+                "7c86e034b96712e3",
+                "504a1d774c3bd162"
             ]
         ]
     },
@@ -11358,8 +11703,8 @@
         "name": "saveCredentialsCustomChat",
         "statusCode": "",
         "headers": {},
-        "x": 1140,
-        "y": 2440,
+        "x": 1480,
+        "y": 2740,
         "wires": []
     },
     {
@@ -11374,8 +11719,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2440,
+        "x": 430,
+        "y": 2740,
         "wires": [
             [
                 "206112ed79eae1f1"
@@ -11394,8 +11739,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 800,
-        "y": 2440,
+        "x": 1140,
+        "y": 2740,
         "wires": [
             [
                 "b5cc57f54633e474"
@@ -11414,8 +11759,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 2440,
+        "x": 1280,
+        "y": 2740,
         "wires": [
             [
                 "937a270543443c8f"
@@ -11431,8 +11776,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 670,
-        "y": 2440,
+        "x": 1010,
+        "y": 2740,
         "wires": [
             [
                 "c52453c6b535f291"
@@ -11461,11 +11806,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 2360,
+        "x": 150,
+        "y": 2620,
         "wires": [
             [
-                "a733b2750bc44503"
+                "e32f951991c2055b"
             ]
         ]
     },
@@ -11481,8 +11826,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 2340,
+        "x": 1010,
+        "y": 2580,
         "wires": [
             []
         ]
@@ -11497,11 +11842,11 @@
             "937a270543443c8f"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 2320,
+        "x": 130,
+        "y": 2580,
         "wires": [
             [
-                "a733b2750bc44503"
+                "e32f951991c2055b"
             ]
         ]
     },
@@ -11517,8 +11862,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 2340,
+        "x": 640,
+        "y": 2580,
         "wires": [
             [
                 "1b9fc3e8df560614"
@@ -11538,8 +11883,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 2340,
+        "x": 800,
+        "y": 2580,
         "wires": [
             [
                 "b13fea9ecd31d1f7"
@@ -11555,8 +11900,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 605,
-        "y": 2340,
+        "x": 925,
+        "y": 2580,
         "wires": [
             [
                 "a6de13bc37d84813"
@@ -11574,11 +11919,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 800,
+        "x": 180,
+        "y": 940,
         "wires": [
             [
-                "72e75fc6c28edbbb"
+                "72e75fc6c28edbbb",
+                "8ca324163db93564"
             ]
         ]
     },
@@ -11590,8 +11936,8 @@
         "name": "saveCustomPrompts",
         "statusCode": "",
         "headers": {},
-        "x": 1180,
-        "y": 800,
+        "x": 1380,
+        "y": 940,
         "wires": []
     },
     {
@@ -11606,8 +11952,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 800,
+        "x": 410,
+        "y": 940,
         "wires": [
             [
                 "c68696d78b845950"
@@ -11626,8 +11972,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 860,
-        "y": 800,
+        "x": 1060,
+        "y": 940,
         "wires": [
             [
                 "d6b7c1633ade4e77"
@@ -11646,8 +11992,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 800,
+        "x": 1200,
+        "y": 940,
         "wires": [
             [
                 "26837d2e12d903d5"
@@ -11663,8 +12009,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 730,
-        "y": 800,
+        "x": 930,
+        "y": 940,
         "wires": [
             [
                 "feabf115ddcd503f"
@@ -11693,11 +12039,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 980,
+        "x": 150,
+        "y": 1140,
         "wires": [
             [
-                "35f3586a9108cda4"
+                "8ca5589d63e7ba45"
             ]
         ]
     },
@@ -11713,8 +12059,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 960,
+        "x": 1030,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -11729,11 +12075,11 @@
             "26837d2e12d903d5"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 940,
+        "x": 130,
+        "y": 1100,
         "wires": [
             [
-                "35f3586a9108cda4"
+                "8ca5589d63e7ba45"
             ]
         ]
     },
@@ -11749,8 +12095,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 960,
+        "x": 700,
+        "y": 1120,
         "wires": [
             [
                 "a276e9193bc5d837"
@@ -11770,8 +12116,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 560,
-        "y": 960,
+        "x": 840,
+        "y": 1120,
         "wires": [
             [
                 "de031a982e1b5519"
@@ -11787,8 +12133,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 665,
-        "y": 960,
+        "x": 945,
+        "y": 1120,
         "wires": [
             [
                 "b95be6e52a858245"
@@ -11806,8 +12152,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 210,
-        "y": 640,
+        "x": 170,
+        "y": 880,
         "wires": [
             [
                 "50dbd89157f0220d"
@@ -11826,8 +12172,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 640,
+        "x": 430,
+        "y": 880,
         "wires": [
             [
                 "e14c97e9d1bbbe03"
@@ -11842,8 +12188,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 690,
-        "y": 640,
+        "x": 650,
+        "y": 880,
         "wires": []
     },
     {
@@ -11859,8 +12205,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 500,
-        "y": 740,
+        "x": 560,
+        "y": 940,
         "wires": [
             [
                 "6502eb7bffdb7f2b"
@@ -11876,8 +12222,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 595,
-        "y": 740,
+        "x": 675,
+        "y": 940,
         "wires": [
             [
                 "9464348869bc10b2"
@@ -11897,8 +12243,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 740,
+        "x": 790,
+        "y": 940,
         "wires": [
             [
                 "89dadc7992ba36b7"
@@ -11915,8 +12261,8 @@
             "d8182f2910dcd33f"
         ],
         "uncaught": false,
-        "x": 1830,
-        "y": 220,
+        "x": 1790,
+        "y": 200,
         "wires": [
             [
                 "c542eb9521c6b170"
@@ -11933,8 +12279,8 @@
             "ddd8ee138059b10f"
         ],
         "uncaught": false,
-        "x": 1830,
-        "y": 500,
+        "x": 1790,
+        "y": 460,
         "wires": [
             [
                 "89a3547980a3c139"
@@ -11958,8 +12304,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1590,
-        "y": 440,
+        "x": 1550,
+        "y": 400,
         "wires": [
             [
                 "89b9d71dd5b48135"
@@ -11983,8 +12329,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1590,
-        "y": 180,
+        "x": 1550,
+        "y": 160,
         "wires": [
             [
                 "12036ee86f2394d9"
@@ -12003,12 +12349,1035 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1400,
-        "y": 180,
+        "x": 1360,
+        "y": 160,
         "wires": [
             [
                 "3db438964b91e5ca"
             ]
+        ]
+    },
+    {
+        "id": "587935292d2df534",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 530,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa06daa077ae8819",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "d5b48aa89e9f41a1",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name:'/data/credentialsPinecone.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "587935292d2df534"
+            ]
+        ]
+    },
+    {
+        "id": "a253fc6cdfe60366",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "893d4fc4750bbbdb",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name:'/data/credentialsOpenAI.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "a253fc6cdfe60366"
+            ]
+        ]
+    },
+    {
+        "id": "83e1ce1515959878",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "7348d6f27f4f25e5",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 550,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ca324163db93564",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "7348d6f27f4f25e5",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/customPrompts.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1020,
+        "wires": [
+            [
+                "83e1ce1515959878"
+            ]
+        ]
+    },
+    {
+        "id": "c74ecabd99d6cdb6",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "44336aabd4cc8aba",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 570,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75888155d9785419",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "44336aabd4cc8aba",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsMsg.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1400,
+        "wires": [
+            [
+                "c74ecabd99d6cdb6"
+            ]
+        ]
+    },
+    {
+        "id": "f84fa92c5ced236e",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "6f53df0634427ab8",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 490,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3969bc5edb9bf8f",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "6f53df0634427ab8",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsTelegram.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1640,
+        "wires": [
+            [
+                "f84fa92c5ced236e"
+            ]
+        ]
+    },
+    {
+        "id": "27a547de9434abbe",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 510,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24f0394246420210",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsWhatsApp.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1940,
+        "wires": [
+            [
+                "27a547de9434abbe"
+            ]
+        ]
+    },
+    {
+        "id": "a3de904182d0287d",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 570,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4bbd5c26c4a1c279",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsMeta.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 2220,
+        "wires": [
+            [
+                "a3de904182d0287d"
+            ]
+        ]
+    },
+    {
+        "id": "c94a7ab33569d254",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsInstagram.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 2480,
+        "wires": [
+            [
+                "92e9ef1af5a4a9e8"
+            ]
+        ]
+    },
+    {
+        "id": "92e9ef1af5a4a9e8",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 550,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "504a1d774c3bd162",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsCustomChat.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2800,
+        "wires": [
+            [
+                "1215e04aafd5a49a"
+            ]
+        ]
+    },
+    {
+        "id": "1215e04aafd5a49a",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 590,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e32f951991c2055b",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsCustomChat.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 265,
+        "y": 2580,
+        "wires": [
+            [
+                "0a76a7c83142fc18"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "0a76a7c83142fc18",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 370,
+        "y": 2580,
+        "wires": [
+            [
+                "e4ae061602854b70"
+            ]
+        ]
+    },
+    {
+        "id": "e4ae061602854b70",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "d8a434ae844324e0",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 2580,
+        "wires": [
+            [
+                "a733b2750bc44503"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a624f88f28ace7f7",
+        "type": "complete",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "",
+        "scope": [
+            "75e002f2f4141242"
+        ],
+        "uncaught": false,
+        "x": 130,
+        "y": 2320,
+        "wires": [
+            [
+                "034fc18bce221529"
+            ]
+        ]
+    },
+    {
+        "id": "d007c8325d2ea8ba",
+        "type": "inject",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 2360,
+        "wires": [
+            [
+                "034fc18bce221529"
+            ]
+        ]
+    },
+    {
+        "id": "034fc18bce221529",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsInstagram.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 285,
+        "y": 2340,
+        "wires": [
+            [
+                "3102d5b681bd73a6"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3102d5b681bd73a6",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 390,
+        "y": 2340,
+        "wires": [
+            [
+                "3690823201c1386f"
+            ]
+        ]
+    },
+    {
+        "id": "3690823201c1386f",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "fcdce1b1fa2970b8",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 2340,
+        "wires": [
+            [
+                "be1a8fcf69fcb4d5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3b760520581b46b9",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsMeta.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 265,
+        "y": 2060,
+        "wires": [
+            [
+                "ad5725aa4bae18f9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ad5725aa4bae18f9",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 410,
+        "y": 2060,
+        "wires": [
+            [
+                "06d02de3a229fda7"
+            ]
+        ]
+    },
+    {
+        "id": "06d02de3a229fda7",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "af65f71384d80c06",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2060,
+        "wires": [
+            [
+                "94a28b46766806c7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "482a14e5f7f4483a",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsWhatsApp.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 295,
+        "y": 1780,
+        "wires": [
+            [
+                "8ba4bd833157be37"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8ba4bd833157be37",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 410,
+        "y": 1780,
+        "wires": [
+            [
+                "db2b6e7349537cc1"
+            ]
+        ]
+    },
+    {
+        "id": "db2b6e7349537cc1",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "20f41552a8bf93e6",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1780,
+        "wires": [
+            [
+                "af191a7e64081653"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7ab37f416463bd03",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "6f53df0634427ab8",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsTelegram.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 255,
+        "y": 1500,
+        "wires": [
+            [
+                "31311070d4ece8f0"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "31311070d4ece8f0",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "6f53df0634427ab8",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 370,
+        "y": 1500,
+        "wires": [
+            [
+                "f08e3c221c200643"
+            ]
+        ]
+    },
+    {
+        "id": "f08e3c221c200643",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "6f53df0634427ab8",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1500,
+        "wires": [
+            [
+                "e8da08c43db01ea0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "eb96940ef1ee94f5",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "44336aabd4cc8aba",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsMsg.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 295,
+        "y": 1280,
+        "wires": [
+            [
+                "d0342a264eb1773c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d0342a264eb1773c",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "44336aabd4cc8aba",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "f8bb1de705c5b62f"
+            ]
+        ]
+    },
+    {
+        "id": "f8bb1de705c5b62f",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "44336aabd4cc8aba",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1280,
+        "wires": [
+            [
+                "ca674b80e8fcdc99"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8ca5589d63e7ba45",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "7348d6f27f4f25e5",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/customPrompts.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 295,
+        "y": 1120,
+        "wires": [
+            [
+                "6011f858251ca354"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6011f858251ca354",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "7348d6f27f4f25e5",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 430,
+        "y": 1120,
+        "wires": [
+            [
+                "09b605a60ff25108"
+            ]
+        ]
+    },
+    {
+        "id": "09b605a60ff25108",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "7348d6f27f4f25e5",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1120,
+        "wires": [
+            [
+                "35f3586a9108cda4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "857ffeebb0e9ed26",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsOpenAI.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 265,
+        "y": 340,
+        "wires": [
+            [
+                "cfd3ce8ea64b9170"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cfd3ce8ea64b9170",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "df106eb13223a9b7"
+            ]
+        ]
+    },
+    {
+        "id": "df106eb13223a9b7",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "dd4d6fdf1b601b09",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "747b886e4ef7a789"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b22f121c3320e9a5",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsPinecone.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 285,
+        "y": 80,
+        "wires": [
+            [
+                "f294e8075963e28f"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f294e8075963e28f",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "f4e220a36a5362e9"
+            ]
+        ]
+    },
+    {
+        "id": "f4e220a36a5362e9",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "9a3e954c71966082"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "403388954328d129",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "g": "55b42f036281abed",
+        "name": "",
+        "links": [
+            "a142709ade270efa"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 510,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "615af07db017ba91",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "55b42f036281abed",
+        "name": "credentials",
+        "func": "msg.collection =\"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsPrompts.json'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "403388954328d129"
+            ]
+        ]
+    },
+    {
+        "id": "a3c2e2660c73a85a",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "g": "55b42f036281abed",
+        "name": "credentials",
+        "func": "msg.collection = \"credentialsforcheck\"\nmsg.payload = { name: '/data/credentialsPrompts.json' }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 315,
+        "y": 640,
+        "wires": [
+            [
+                "78ef1f4369e3e02d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "78ef1f4369e3e02d",
+        "type": "link call",
+        "z": "5e7416993281e99d",
+        "name": "",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "926b8502348b59bd"
+            ]
+        ]
+    },
+    {
+        "id": "926b8502348b59bd",
+        "type": "function",
+        "z": "5e7416993281e99d",
+        "name": ">",
+        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 640,
+        "wires": [
+            [
+                "a9aef289fc3c1f6c"
+            ],
+            []
         ]
     },
     {
