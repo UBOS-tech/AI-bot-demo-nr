@@ -440,7 +440,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -546,7 +548,9 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2499
+        "y": 2499,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "d5f3c34635f35708",
@@ -712,7 +716,9 @@
             "857ffeebb0e9ed26"
         ],
         "x": 34,
-        "y": 279
+        "y": 279,
+        "w": 2372,
+        "h": 262
     },
     {
         "id": "55b42f036281abed",
@@ -742,7 +748,9 @@
             "a3c2e2660c73a85a"
         ],
         "x": 34,
-        "y": 579
+        "y": 579,
+        "w": 1092,
+        "h": 242
     },
     {
         "id": "44336aabd4cc8aba",
@@ -774,7 +782,9 @@
             "75888155d9785419"
         ],
         "x": 34,
-        "y": 1219
+        "y": 1219,
+        "w": 1052,
+        "h": 222
     },
     {
         "id": "6f53df0634427ab8",
@@ -809,7 +819,9 @@
             "f08e3c221c200643"
         ],
         "x": 34,
-        "y": 1459
+        "y": 1459,
+        "w": 1712,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -844,7 +856,9 @@
             "8ba4bd833157be37"
         ],
         "x": 34,
-        "y": 1719
+        "y": 1719,
+        "w": 1512,
+        "h": 262
     },
     {
         "id": "af65f71384d80c06",
@@ -879,7 +893,9 @@
             "06d02de3a229fda7"
         ],
         "x": 34,
-        "y": 1999
+        "y": 1999,
+        "w": 1452,
+        "h": 262
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -900,7 +916,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2859
+        "y": 2859,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -937,7 +955,9 @@
             "aa06daa077ae8819"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1952,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -972,7 +992,9 @@
             "034fc18bce221529"
         ],
         "x": 34,
-        "y": 2279
+        "y": 2279,
+        "w": 1492,
+        "h": 242
     },
     {
         "id": "d8a434ae844324e0",
@@ -1007,7 +1029,9 @@
             "0a76a7c83142fc18"
         ],
         "x": 34,
-        "y": 2539
+        "y": 2539,
+        "w": 1592,
+        "h": 302
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1045,7 +1069,9 @@
             "8ca5589d63e7ba45"
         ],
         "x": 34,
-        "y": 839
+        "y": 839,
+        "w": 1472,
+        "h": 342
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1171,7 +1197,9 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39
+        "y": 39,
+        "w": 1882,
+        "h": 1168
     },
     {
         "id": "1dc750e7d01e594b",
@@ -1763,7 +1791,9 @@
             "5cd31c58f735fafb"
         ],
         "x": 74,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 222
     },
     {
         "id": "d2fba984a07da085",
@@ -16702,7 +16732,8 @@
         "y": 2180,
         "wires": [
             [
-                "8f21262fb6cd6e01"
+                "8f21262fb6cd6e01",
+                "2ea2da5556297b7e"
             ]
         ],
         "l": false
@@ -16713,7 +16744,7 @@
         "z": "391658888cc82dc0",
         "g": "7304f8bea16d2f84",
         "name": "create chroma collection",
-        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'BooksChat3';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase });\n\n\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
+        "func": "//create collection\nglobal.set(\"otherTechVars\", { isPromptDefault: true });\n\nmsg.nameBase = 'BooksChat';\nmsg.typeBase = 'chroma';\nmsg.source = 'default';\n\n\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME') });\nconst collection = await client.createCollection({ name: msg.nameBase });\n\n\nmsg.collection = \"knowlegebase\";\nmsg.knowlegebaseId = objectid();\nmsg.payload = {\n    _id: msg.knowlegebaseId,\n    select: true,\n    type: msg.typeBase,\n    name: msg.nameBase,\n    deleted: false,\n    demo: true,\n    source: msg.source,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17865,6 +17896,47 @@
         "wires": []
     },
     {
+        "id": "2ea2da5556297b7e",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "Fill standard prompt",
+        "func": "const standardPrompt = {\n    \"answer_length\": \"Medium\",\n    \"answer_as\": \"Assistant\",\n    \"tone\": \"Informal\",\n    \"language\": \"English\",\n    \"prompt_custom\":`You work at a bookshop. Your goal is to recommend books that we currently have in stock or answer customers' questions. If we don't have something they are looking for, you can recommend alternative titles. Additionally, in all your messages, please recommend the following three bestsellers:\n\nThe Women: A Novel Hardcover - A #1 bestseller on The New York Times, USA Today, Washington Post, and Los Angeles Times! From the celebrated author of The Nightingale and The Four Winds, Kristin Hannah's The Women is at once an intimate portrait of coming of age in a dangerous time and an epic tale of a nation divided. When twenty-year-old nursing student Frances “Frankie” McGrath hears the words \"Women can be heroes,\" it is a revelation. Raised in the sun-drenched, idyllic world of Southern California and sheltered by her conservative parents, she has always prided herself on doing the right thing. But in 1965, the world is changing, and she suddenly dares to imagine a different future for herself. When her brother ships out to serve in Vietnam, she joins the Army Nurse Corps and follows his path.\n\nThe Housemaid Is Watching Paperback - A twisting, pulse-pounding thriller from Freida McFadden, the New York Times bestselling author of The Housemaid and The Coworker. \"You must be our new neighbors!\" Mrs. Lowell gushes and waves across the picket fence. I clutch my daughter's hand and smile back, but the second Mrs. Lowell sees my husband, a strange expression crosses her face. In that moment, I make a promise. We finally have a family home. My past is far, far behind us. And I'll do anything to keep it that way.\n\nLies I Taught in Medical School: How Conventional Medicine Is Making You Sicker and What You Can Do to Save Your Own Life - Modern medicine is lying to you. Discover the true science behind chronic diseases and implement an actionable plan to take control of your health and longevity once and for all. For the first time in history, chronic diseases like diabetes, hypertension, and obesity plague our population on a global scale. From seasoned physician Robert Lufkin, MD, this paradigm-shifting book comprehensively explains the linked cause and exposes the misconceptions prevalent in modern medicine. In Lies I Taught in Medical School, Dr. Lufkin explains that metabolic dysfunction is the common underlying cause of most chronic diseases that has been overlooked for decades, providing the tools needed to address these diseases in ourselves. He draws on expansive, peer-reviewed evidence, proving that standard medical recommendations are killing us.\n\nBooks we currently have in stock:`,\n    \"knowledge_base\": `${msg.nameBase} ${msg.typeBase}`,\n    \"id_base\": msg.knowlegebaseId,\n};\n\nmsg.payload = standardPrompt;\n\nmsg.url = env.get('nodered') + '/saveCustomPrompts';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2960,
+        "y": 2120,
+        "wires": [
+            [
+                "8ed8e4ea0c2f6ebc"
+            ]
+        ]
+    },
+    {
+        "id": "8ed8e4ea0c2f6ebc",
+        "type": "http request",
+        "z": "391658888cc82dc0",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 3170,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "28386ebbba4f23d6",
         "type": "function",
         "z": "d41b21524ec70b11",
@@ -18523,7 +18595,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.tab_cred>div>div>div>div>div{\n   background: transparent !important; \n}\n\n.tab_cred>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 90px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #3ba6ff;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #3ba6ff!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}\n\n.selectWithoutCross .cancel-icon {\n    display:none !important;\n}\n\n/* DB Benchmark & ModelTesting pages ---START--- */\n.pseudoInput {\n    background: none !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInput input,\n.pseudoInput textarea {\n    background: #f9fafa !important;\n    border-radius: 10px !important;\n    color: #2E3D49 !important;\n}\n\n.inputRegular {\n    background-color: #F6F7F8 !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInputEnrichment  {\n    background: none !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInputEnrichment textarea {\n    background: #edf2f7 !important;\n    border-width: 10px !important;\n    border-color: #edf2f7 !important;\n    border-radius: 10px !important;\n    color: #2E3D49 !important;\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div {\n    border-radius: 10px !important;\n    transition-delay: 999999s; /* prevents the hover from turning on */\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div:hover {\n    cursor: default !important; /* hover off */\n}\n\n.listVectorsText div>div>div>div>div>div>div {\n    padding: 10px !important;\n}\n\n\n\n.tableOfVectors .thead .tr .th:nth-child(1),\n.tableOfVectors .tbody .tr .td:nth-child(1) {\n    width: 45% !important;\n}\n\n.tableOfVectors .thead .tr .th:nth-child(2),\n.tableOfVectors .tbody .tr .td:nth-child(2) {\n    width: 50% !important;\n}\n\n.tableOfVectors .thead .tr .th:last-child,\n.tableOfVectors .tbody .tr .td:last-child {\n    width: 5% !important;\n}\n\n.Text_v_answer div>div>div>div>div>div>div{\n    padding: 10px !important;\n    /* border-radius: 10px !important; */\n}\n\n.modelTestingSelector .cancel-icon,\n.BenchmarkSelector .cancel-icon {\n    display: none !important;\n}\n\n.Enrich_JSONForm .t--jsonformfield-Enriched_data_from_AI {\n    border-radius: 10px !important;\n}\n/* DB Benchmark & ModelTesting pages ---FINISH--- */\n\n\n.buttonsTraining>div>div>div>div {\n    border: 1px solid #e8e8e8 !important;\n    border-radius: 9px !important;\n    padding: 0 !important;\n}\n\n.buttonsTraining button {\n    border-color: #e8e8e8 !important;\n}\n.btn_translate{\n    position: absolute!important;\n    z-index: 1000000000000!important;\n        /* left: 1573.66px!important; */\n}\n.logout_btn{\n        width: 87px!important;\n}\n.title >div>div>div>div>div>div>div span {\nfont-size: clamp(20px, 1.3vw, 22px) !important;\n}\n.loginForm_wrapper > div > div > div > div > div {\n  border-radius: 30px !important\n}\n.loginForm_wrapper:before,\n.loginForm_wrapper:after {\n  z-index: -1 !important;\n  position: absolute !important;\n  content: \"\" !important;\n  bottom: 18px !important;\n  left: 10px !important;\n  width: 50% !important;\n  top: 80% !important;\n  max-width: 300px !important;\n  background: #adabab !important;\n  box-shadow: 0 18px 7px #adabab !important;\n  transform: rotate(-3deg) !important;\n  border-radius: 10px !important;\n}\n\n.loginForm_wrapper:after {\n  transform: rotate(3deg) !important;\n  right: 10px !important;\n  left: auto !important;\n}\n\n.supportModal{\n    top:66px !important;\n    right:24px !important;\n    border-radius: 10px !important;\n}",
+        "template": "@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,200&display=swap');\n\nbody{\n    font-family: 'Titillium Web', sans-serif!important;\n   \n}\n\n.header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.tab_cred>div>div>div>div>div{\n   background: transparent !important; \n}\n\n.tab_cred>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100vh !important; \n    top: 66px !important; \n    padding: 0px !important;\n}\n\n.scroll_section1{\n    height: 100vh !important; \n    top: 17px !important; \n    padding: 0px !important;\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}\n\n.icon >div>div>div>div>div>div>div{\n   background-position: center right!important;\n}\n\n.title >div>div>div>div>div>div>div span {\nfont-size:22px!important; \n}\n.title >div>div>div>div>div>div>div >span >span.training_span {color:#118cfc!important; font-size: 28px!important;  font-weight: 700!important;}\n.tabs >div>div>div>div>div>div {\nfont-size:20px!important;\ntext-transform: uppercase!important;\nfont-weight: 500!important;\n}\n.training_wrap >div>div>div>div>div>div>div>div>div>div>div>div>div{\n    display: inline-flex!important;\n    justify-content: space-between!important;\n}\n.table{\nfont-size:14px!important;\ntext-transform: lowercase!important;\nfont-weight: 400!important; \n}\n.table >div>div>div>div>div>div{\n    font-size:14px!important;\ntext-transform: uppercase!important;\n}\n.tr>div>div>div>div>div>div>div>div{\n    border-right: none!important;\n}\n\n\n\n.title >div>div>div>div>div>div>div >span >span {\nfont-size:14px!important;\nfont-weight: 400!important; \n}\n\n/**/\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    margin-bottom: 20px!important;\n}\n.main>div>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position: initial !important;\n}\n\n.hide{\n    display: none;\n       height: 20px!important;\n}\n\n.activ{\n    display: block;\n    /* height: 270px!important; */\n}\n.activ_setup{\n    display: block;\n    /* height: 500px!important; */\n}\n.btn_right>div>div>div>div>button>span>svg {\n    transform: rotate(180deg)!important;\n    transition: all 0.5s ease 0s !important;\n}\n.btn_left>div>div>div>div>button>span>svg {\n        transform: translateY(0px)!important;\n    transition: none 0s ease 0s!important;\n}\n\n/* За замовчуванням */\n.btn_left>div>div>div>div>button,\n.btn_right>div>div>div>div>button {\n    background-color: #ccc;  \n    transition: background-color 0.3s ease, transform 0.3s ease !important;\n \n}\n\n\n.btn_left>div>div>div>div>button:hover:enabled,\n.btn_right>div>div>div>div>button:hover:enabled {\n    background: #9991 !important; \n    transform: translateY(-5px) !important; \n}\n.bp3-input  {\nborder-radius: 10px!important;\n}\n.select_input button.select-button {\n    border-radius: 10px!important;\n}\n.dashboard_text>div>div>div>div>div>div>div{\n    font-size:32px!important;\nfont-weight: 700!important; \n}\n.t--widget-progresswidget>div>div>div>div{\n   height: 68%!important; \n  border-radius:10px!important; \n    background: #3ba6ff;\n    overflow: hidden!important;\n    \n\n}\n\n.t--widget-progresswidget>div>div>div>div>div{\n    height: 100%!important; \n    background-color: #3ba6ff!important;\n    padding-right: 4px!important;\n    font-size: 20px!important;\n    font-weight: 600!important;\n    text-align: center!important;\n    padding-top: 2px!important;\n  \n   \n   \n} \n.text_cross{\n    text-decoration: line-through!important;\n}\n.text_cross span{\n    text-decoration: none!important;\n}\n.done{\n    opacity: 0.3!important;\n}\n.scroll_section{\n     overflow-y: hidden!important;\n}\n\n\n.users_tabs{\n    border-radius: 10px!important;\n}\n.upload_img .bp3-button {\n    background:#215484!important;\n    border-radius: 5px !important;\n}\n.upload_img .bp3-button:hover,\n.upload_img >div>div>div>div:hover > button, \n.upload_img >div>div>div>div:active > button{\nbackground: #123a5e!important;\ntransition: background-color 0.3s ease, transform 0.3s ease !important;\n}\n.text_aisetup{\n    top:0 px!important;\n}\n.text_aisetup>div>div>div>div>div>div>div>span{\ngap: 5px!important;\ndisplay: flex!important;\nwidth: 100%!important;\nline-height: 1.2!important;\nwhite-space: normal!important;\n}\n.table_vectors .table .td{height: 250px!important;\n}\n.table_vectors .table .td>div>div{\n    white-space: initial!important;\n    align-items: baseline!important;\n}\n\n.chatDemo{\n    height: calc(100% - 60px)!important;\n}\n\n.cloneTemplateBtn {\nwidth: 200px !important;\nleft: calc(100% - 220px) !important;\n}\n\n.warningSection{\n    width: calc(100% - 45px) !important;\n    left: 6px !important;\n}\n\n.warningText{\n    width: 100% !important;\n}\n\n.selectWithoutCross .cancel-icon {\n    display:none !important;\n}\n\n/* DB Benchmark & ModelTesting pages ---START--- */\n.pseudoInput {\n    background: none !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInput input,\n.pseudoInput textarea {\n    background: #f9fafa !important;\n    border-radius: 10px !important;\n    color: #2E3D49 !important;\n}\n\n.inputRegular {\n    background-color: #F6F7F8 !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInputEnrichment  {\n    background: none !important;\n    border-radius: 10px !important;\n}\n\n.pseudoInputEnrichment textarea {\n    background: #edf2f7 !important;\n    border-width: 10px !important;\n    border-color: #edf2f7 !important;\n    border-radius: 10px !important;\n    color: #2E3D49 !important;\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div {\n    border-radius: 10px !important;\n    transition-delay: 999999s; /* prevents the hover from turning on */\n}\n\n.listVectors div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div>div:hover {\n    cursor: default !important; /* hover off */\n}\n\n.listVectorsText div>div>div>div>div>div>div {\n    padding: 10px !important;\n}\n\n\n\n.tableOfVectors .thead .tr .th:nth-child(1),\n.tableOfVectors .tbody .tr .td:nth-child(1) {\n    width: 45% !important;\n}\n\n.tableOfVectors .thead .tr .th:nth-child(2),\n.tableOfVectors .tbody .tr .td:nth-child(2) {\n    width: 50% !important;\n}\n\n.tableOfVectors .thead .tr .th:last-child,\n.tableOfVectors .tbody .tr .td:last-child {\n    width: 5% !important;\n}\n\n.Text_v_answer div>div>div>div>div>div>div{\n    padding: 10px !important;\n    /* border-radius: 10px !important; */\n}\n\n.modelTestingSelector .cancel-icon,\n.BenchmarkSelector .cancel-icon {\n    display: none !important;\n}\n\n.Enrich_JSONForm .t--jsonformfield-Enriched_data_from_AI {\n    border-radius: 10px !important;\n}\n/* DB Benchmark & ModelTesting pages ---FINISH--- */\n\n\n.buttonsTraining>div>div>div>div {\n    border: 1px solid #e8e8e8 !important;\n    border-radius: 9px !important;\n    padding: 0 !important;\n}\n\n.buttonsTraining button {\n    border-color: #e8e8e8 !important;\n}\n.btn_translate{\n    position: absolute!important;\n    z-index: 1000000000000!important;\n        /* left: 1573.66px!important; */\n}\n.logout_btn{\n        width: 87px!important;\n}\n.title >div>div>div>div>div>div>div span {\nfont-size: clamp(20px, 1.3vw, 22px) !important;\n}\n.loginForm_wrapper > div > div > div > div > div {\n  border-radius: 30px !important\n}\n.loginForm_wrapper:before,\n.loginForm_wrapper:after {\n  z-index: -1 !important;\n  position: absolute !important;\n  content: \"\" !important;\n  bottom: 18px !important;\n  left: 10px !important;\n  width: 50% !important;\n  top: 80% !important;\n  max-width: 300px !important;\n  background: #adabab !important;\n  box-shadow: 0 18px 7px #adabab !important;\n  transform: rotate(-3deg) !important;\n  border-radius: 10px !important;\n}\n\n.loginForm_wrapper:after {\n  transform: rotate(3deg) !important;\n  right: 10px !important;\n  left: auto !important;\n}\n\n.supportModal{\n    top:66px !important;\n    right:24px !important;\n    border-radius: 10px !important;\n}",
         "output": "str",
         "x": 260,
         "y": 60,
