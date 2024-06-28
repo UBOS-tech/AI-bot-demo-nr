@@ -266,9 +266,7 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 739,
-        "w": 672,
-        "h": 642
+        "y": 739
     },
     {
         "id": "7382602cc2b54357",
@@ -305,9 +303,7 @@
             "bfee4f87b9784649"
         ],
         "x": 714,
-        "y": 759,
-        "w": 1172,
-        "h": 402
+        "y": 759
     },
     {
         "id": "628c8aecc019f08b",
@@ -356,9 +352,7 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1379,
-        "w": 812,
-        "h": 642
+        "y": 1379
     },
     {
         "id": "b2e9a721546c936c",
@@ -407,9 +401,7 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -442,9 +434,7 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19,
-        "w": 812,
-        "h": 422
+        "y": 19
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -552,9 +542,7 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2499,
-        "w": 932,
-        "h": 82
+        "y": 2499
     },
     {
         "id": "d5f3c34635f35708",
@@ -1203,9 +1191,7 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39,
-        "w": 1882,
-        "h": 1168
+        "y": 39
     },
     {
         "id": "1dc750e7d01e594b",
@@ -1558,9 +1544,7 @@
             "176d449a45ff9d2c"
         ],
         "x": 754,
-        "y": 1239,
-        "w": 692,
-        "h": 82
+        "y": 1239
     },
     {
         "id": "77d78cdc0e69fb3a",
@@ -1592,9 +1576,7 @@
             "749ba2193d3e33ee"
         ],
         "x": 34,
-        "y": 2659,
-        "w": 1592,
-        "h": 342
+        "y": 2659
     },
     {
         "id": "dcc25df538a6b74b",
@@ -1633,9 +1615,7 @@
             "c37a0f8a359a6fb0"
         ],
         "x": 934,
-        "y": 1379,
-        "w": 1272,
-        "h": 642
+        "y": 1379
     },
     {
         "id": "7304f8bea16d2f84",
@@ -1708,9 +1688,7 @@
             "171bfe7dd5d64fdb"
         ],
         "x": 14,
-        "y": 2059,
-        "w": 4412,
-        "h": 562
+        "y": 2059
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1770,9 +1748,7 @@
             "893dff2ad4952be1"
         ],
         "x": 14,
-        "y": 59,
-        "w": 2072,
-        "h": 622
+        "y": 59
     },
     {
         "id": "204e41e815b84721",
@@ -1797,9 +1773,7 @@
             "5cd31c58f735fafb"
         ],
         "x": 74,
-        "y": 959,
-        "w": 852,
-        "h": 222
+        "y": 959
     },
     {
         "id": "d2fba984a07da085",
@@ -3804,7 +3778,8 @@
         "y": 320,
         "wires": [
             [
-                "142a684ea383d2fc"
+                "142a684ea383d2fc",
+                "b2f12994b6974ec0"
             ]
         ]
     },
@@ -3813,7 +3788,7 @@
         "type": "function",
         "z": "71cb7453ba91face",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if(msg.payload.length<=0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -3871,7 +3846,7 @@
         "type": "function",
         "z": "71cb7453ba91face",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -3885,6 +3860,23 @@
             ],
             []
         ]
+    },
+    {
+        "id": "b2f12994b6974ec0",
+        "type": "debug",
+        "z": "71cb7453ba91face",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 400,
+        "wires": []
     },
     {
         "id": "e02a6f3b999ea6b6",
@@ -4724,7 +4716,7 @@
         "type": "function",
         "z": "a0451234ff05c29f",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -12736,7 +12728,7 @@
         "z": "5e7416993281e99d",
         "g": "d8a434ae844324e0",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -12845,7 +12837,7 @@
         "z": "5e7416993281e99d",
         "g": "fcdce1b1fa2970b8",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -12906,7 +12898,7 @@
         "z": "5e7416993281e99d",
         "g": "af65f71384d80c06",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -12967,7 +12959,7 @@
         "z": "5e7416993281e99d",
         "g": "20f41552a8bf93e6",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13028,7 +13020,7 @@
         "z": "5e7416993281e99d",
         "g": "6f53df0634427ab8",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13089,7 +13081,7 @@
         "z": "5e7416993281e99d",
         "g": "44336aabd4cc8aba",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13150,7 +13142,7 @@
         "z": "5e7416993281e99d",
         "g": "7348d6f27f4f25e5",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13211,7 +13203,7 @@
         "z": "5e7416993281e99d",
         "g": "dd4d6fdf1b601b09",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13269,7 +13261,7 @@
         "type": "function",
         "z": "5e7416993281e99d",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -13365,7 +13357,7 @@
         "type": "function",
         "z": "5e7416993281e99d",
         "name": ">",
-        "func": "if(msg.payload.length>0){\n    return[null,msg]\n}else{\n    return[msg,null]\n}",
+        "func": "if (msg.payload.length <= 0) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
