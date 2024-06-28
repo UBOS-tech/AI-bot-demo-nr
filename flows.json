@@ -15944,7 +15944,7 @@
             [
                 "cac91074ef7313ac",
                 "1eb5766f9c6fee23",
-                "f28ea7a9f47e5381"
+                "37e39b656b72b8dc"
             ]
         ]
     },
@@ -16432,7 +16432,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 725,
+        "x": 755,
         "y": 3300,
         "wires": [
             [
@@ -16452,7 +16452,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 805,
+        "x": 825,
         "y": 3300,
         "wires": [
             [
@@ -16488,7 +16488,7 @@
         "wires": [
             [
                 "81c57dc875342556",
-                "b237cec8735d5fed"
+                "dc7aeed7b96f8eba"
             ]
         ]
     },
@@ -16989,8 +16989,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 770,
-        "y": 3500,
+        "x": 910,
+        "y": 3520,
         "wires": [
             [
                 "63697784a2f10f7d"
@@ -17013,8 +17013,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 430,
-        "y": 3440,
+        "x": 570,
+        "y": 3460,
         "wires": [
             [
                 "63697784a2f10f7d"
@@ -17032,8 +17032,8 @@
         "resetValue": "value-null",
         "array": "array",
         "arrayType": "msg",
-        "x": 600,
-        "y": 3440,
+        "x": 740,
+        "y": 3460,
         "wires": [
             [],
             [
@@ -17057,8 +17057,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 560,
-        "y": 3500,
+        "x": 700,
+        "y": 3520,
         "wires": [
             [
                 "b6dd3e9970796c36"
@@ -17295,7 +17295,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 2690,
+        "x": 2750,
         "y": 3120,
         "wires": [
             [
@@ -17453,6 +17453,120 @@
             [
                 "46f7a5b56acb80e8"
             ]
+        ]
+    },
+    {
+        "id": "37e39b656b72b8dc",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "check_",
+        "func": "msg.collection = 'translations';\n\n\nmsg.payload = {\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 3460,
+        "wires": [
+            [
+                "d068ca0f319eb526"
+            ]
+        ]
+    },
+    {
+        "id": "d068ca0f319eb526",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "find_",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 270,
+        "y": 3460,
+        "wires": [
+            [
+                "97a28392933c46c3"
+            ]
+        ]
+    },
+    {
+        "id": "97a28392933c46c3",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "function 668",
+        "func": "if(msg.payload.length>0){\n     return [null, msg]\n}else{\n    return [msg, null] \n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 3460,
+        "wires": [
+            [
+                "f28ea7a9f47e5381"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dc7aeed7b96f8eba",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": "check",
+        "func": "msg.collection = \"knowlegebase\";\nmsg.payload={\n    name: 'BooksChat'\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3530,
+        "y": 3220,
+        "wires": [
+            [
+                "4258d0fad970024e"
+            ]
+        ]
+    },
+    {
+        "id": "4258d0fad970024e",
+        "type": "link call",
+        "z": "391658888cc82dc0",
+        "name": "find_",
+        "links": [
+            "4af50c02f9967b49"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 3250,
+        "y": 3200,
+        "wires": [
+            [
+                "171bfe7dd5d64fdb"
+            ]
+        ]
+    },
+    {
+        "id": "171bfe7dd5d64fdb",
+        "type": "function",
+        "z": "391658888cc82dc0",
+        "name": ">",
+        "func": "\nif(msg.payload.length>0){\n    return [null,msg]\n}else{\n    return [msg, null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2570,
+        "y": 3120,
+        "wires": [
+            [
+                "b237cec8735d5fed"
+            ],
+            []
         ]
     },
     {
