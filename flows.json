@@ -409,7 +409,9 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1072,
+        "h": 522
     },
     {
         "id": "d5f776f7723294b2",
@@ -442,7 +444,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -539,7 +543,9 @@
             "bd6c2ef535cd2431"
         ],
         "x": 44,
-        "y": 539
+        "y": 539,
+        "w": 1992,
+        "h": 402
     },
     {
         "id": "96ff04cf0133a4da",
@@ -558,7 +564,9 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2839
+        "y": 2839,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "d5f3c34635f35708",
@@ -747,7 +755,9 @@
             "1a38379bdaa684a2"
         ],
         "x": 74,
-        "y": 279
+        "y": 279,
+        "w": 2372,
+        "h": 302
     },
     {
         "id": "55b42f036281abed",
@@ -774,7 +784,9 @@
             "531a8a840209f5f5"
         ],
         "x": 1094,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "44336aabd4cc8aba",
@@ -801,7 +813,9 @@
             "1a206d7e3e958251"
         ],
         "x": 64,
-        "y": 1099
+        "y": 1099,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "6f53df0634427ab8",
@@ -831,7 +845,9 @@
             "10c0cf87a1cbdb0a"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "20f41552a8bf93e6",
@@ -858,7 +874,9 @@
             "d04767856f0cbf5a"
         ],
         "x": 54,
-        "y": 1559
+        "y": 1559,
+        "w": 1212,
+        "h": 202
     },
     {
         "id": "af65f71384d80c06",
@@ -885,7 +903,9 @@
             "c3b931f10ae5cf2b"
         ],
         "x": 54,
-        "y": 1799
+        "y": 1799,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "21ac3a19bfa57a66",
@@ -906,7 +926,9 @@
             "75a973c1530c1fe9"
         ],
         "x": 54,
-        "y": 2519
+        "y": 2519,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "d5b48aa89e9f41a1",
@@ -946,7 +968,9 @@
             "ac1e3105391deadf"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 2152,
+        "h": 242
     },
     {
         "id": "fcdce1b1fa2970b8",
@@ -976,7 +1000,9 @@
             "1566d559db5d95fb"
         ],
         "x": 54,
-        "y": 2039
+        "y": 2039,
+        "w": 1192,
+        "h": 202
     },
     {
         "id": "d8a434ae844324e0",
@@ -1003,7 +1029,9 @@
             "b13fea9ecd31d1f7"
         ],
         "x": 54,
-        "y": 2279
+        "y": 2279,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "7348d6f27f4f25e5",
@@ -1037,7 +1065,9 @@
             "9464348869bc10b2"
         ],
         "x": 74,
-        "y": 599
+        "y": 599,
+        "w": 1232,
+        "h": 422
     },
     {
         "id": "4aa44aa75910cb5b",
@@ -1082,7 +1112,9 @@
             "dfe7c5abb92e3283"
         ],
         "x": 44,
-        "y": 59
+        "y": 59,
+        "w": 1552,
+        "h": 462
     },
     {
         "id": "478d796d1a70f361",
@@ -1176,7 +1208,9 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39
+        "y": 39,
+        "w": 1922,
+        "h": 1168
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1643,7 +1677,9 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 222
     },
     {
         "id": "d2fba984a07da085",
@@ -2655,7 +2691,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -3124,7 +3160,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -3947,7 +3983,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -8664,7 +8700,7 @@
         "z": "f48a32dcae7a25f2",
         "g": "204e41e815b84721",
         "name": "!!! delete chroma 3 collections !!!",
-        "func": "//create collection\nmsg.nameBase = 'Friendly-ChatDemo'\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\n const embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\n// const collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nclient.deleteCollection({ name: \"Friendly-ChatDemo\"})\nclient.deleteCollection({name: \"UBOS-Support\"})\nclient.deleteCollection({name: \"HumanResources\"})\nclient.deleteCollection({ name: \"books\" })\n\nreturn msg;\n\n",
+        "func": "//create collection\nmsg.nameBase = 'Friendly-ChatDemo'\nconst { ChromaClient } = chromadb;\nconst { OpenAIEmbeddingFunction } = chromadb;\n\n const embedder = new OpenAIEmbeddingFunction({ openai_api_key: global.get('openai').OPENAI_API })\nconst client = new ChromaClient({ path: env.get('VECTORDB-CHROMA-HOST-NAME')});\n// const collection = await client.createCollection({ name: msg.nameBase , embeddingFunction: embedder }) \n\n\n// msg.nameBase = 'HR_Data2'\nclient.deleteCollection({ name: \"Friendly-ChatDemo\"})\nclient.deleteCollection({name: \"UBOS-Support\"})\nclient.deleteCollection({name: \"HumanResources\"})\nclient.deleteCollection({ name: \"BooksChat\" })\n\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9456,7 +9492,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -10369,7 +10405,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -10601,7 +10637,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -10892,7 +10928,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -11124,7 +11160,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -11349,7 +11385,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -11792,7 +11828,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -12316,7 +12352,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -14469,8 +14505,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 2740,
+        "x": 140,
+        "y": 2700,
         "wires": [
             [
                 "a82e57fa148e257d",
@@ -14481,7 +14517,9 @@
                 "9f889ff75239be98",
                 "b6fef9620863f50e",
                 "40e13304a5e70703",
-                "556194a53f10ea42"
+                "556194a53f10ea42",
+                "e1aaeb6e2920dc1e",
+                "99a9b9a20f67bcb5"
             ]
         ]
     },
@@ -14562,65 +14600,6 @@
         ]
     },
     {
-        "id": "2deaabf9bbcb2053",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 260,
-        "y": 2560,
-        "wires": [
-            [
-                "a82e57fa148e257d",
-                "096c9eae2933b87d"
-            ]
-        ]
-    },
-    {
-        "id": "2d9faf0f178e91bf",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 2360,
-        "wires": [
-            [
-                "556194a53f10ea42"
-            ]
-        ]
-    },
-    {
         "id": "1068da380a33d05f",
         "type": "debug",
         "z": "391658888cc82dc0",
@@ -14633,8 +14612,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 2240,
+        "x": 710,
+        "y": 2060,
         "wires": []
     },
     {
@@ -14719,36 +14698,6 @@
         "wires": [
             [
                 "42363917f62bf339"
-            ]
-        ]
-    },
-    {
-        "id": "12953714d1fc22a0",
-        "type": "inject",
-        "z": "391658888cc82dc0",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 2600,
-        "wires": [
-            [
-                "99a9b9a20f67bcb5",
-                "e1aaeb6e2920dc1e"
             ]
         ]
     },
@@ -16031,7 +15980,8 @@
             [
                 "cac91074ef7313ac",
                 "1eb5766f9c6fee23",
-                "f28ea7a9f47e5381"
+                "f28ea7a9f47e5381",
+                "b237cec8735d5fed"
             ]
         ]
     },
@@ -18188,7 +18138,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -18293,7 +18243,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -18798,6 +18748,120 @@
         "wires": [
             [
                 "fda8bd5e1ba0261e"
+            ]
+        ]
+    },
+    {
+        "id": "3e1a16d163dd4d27",
+        "type": "fs-remove",
+        "z": "f421c7859219b9ce",
+        "path": "/data",
+        "pathType": "str",
+        "filename": "credentialsWhatsApp.json",
+        "filenameType": "str",
+        "recursive": true,
+        "exist": false,
+        "name": "",
+        "x": 290,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac58af0bf41f0cc1",
+        "type": "fs-list",
+        "z": "f421c7859219b9ce",
+        "name": "",
+        "path": "/data",
+        "pathType": "str",
+        "pattern": "*",
+        "patternType": "str",
+        "filter": "all",
+        "recursive": false,
+        "follow": true,
+        "property": "list",
+        "propertyType": "msg",
+        "x": 290,
+        "y": 680,
+        "wires": [
+            [
+                "a863454caf265c8d"
+            ]
+        ]
+    },
+    {
+        "id": "a22ce3d930d0ec9a",
+        "type": "inject",
+        "z": "f421c7859219b9ce",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "ac58af0bf41f0cc1"
+            ]
+        ]
+    },
+    {
+        "id": "a863454caf265c8d",
+        "type": "debug",
+        "z": "f421c7859219b9ce",
+        "name": "debug 876",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "fd115b18e5b91514",
+        "type": "inject",
+        "z": "f421c7859219b9ce",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 800,
+        "wires": [
+            [
+                "3e1a16d163dd4d27"
             ]
         ]
     },
