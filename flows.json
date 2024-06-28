@@ -409,9 +409,7 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -499,7 +497,9 @@
             "c20f006fc113de9c"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 952,
+        "h": 602
     },
     {
         "id": "4a77a41c6602f9d6",
@@ -543,9 +543,7 @@
             "bd6c2ef535cd2431"
         ],
         "x": 44,
-        "y": 539,
-        "w": 1992,
-        "h": 402
+        "y": 539
     },
     {
         "id": "96ff04cf0133a4da",
@@ -564,9 +562,7 @@
             "69d78287c809cd74"
         ],
         "x": 34,
-        "y": 2839,
-        "w": 932,
-        "h": 82
+        "y": 2839
     },
     {
         "id": "d5f3c34635f35708",
@@ -1112,9 +1108,7 @@
             "dfe7c5abb92e3283"
         ],
         "x": 44,
-        "y": 59,
-        "w": 1552,
-        "h": 462
+        "y": 59
     },
     {
         "id": "478d796d1a70f361",
@@ -1208,9 +1202,7 @@
             "fec40ad77f5eb005"
         ],
         "x": 44,
-        "y": 39,
-        "w": 1922,
-        "h": 1168
+        "y": 39
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1337,7 +1329,9 @@
             "e075bd3462c565cd"
         ],
         "x": 2334,
-        "y": 599
+        "y": 599,
+        "w": 1332,
+        "h": 822
     },
     {
         "id": "5e1b78e4b4dca086",
@@ -1384,7 +1378,9 @@
             "b04d29592534735b"
         ],
         "x": 2334,
-        "y": 39
+        "y": 39,
+        "w": 1332,
+        "h": 502
     },
     {
         "id": "271d2e95a9d20341",
@@ -1510,7 +1506,9 @@
             "5687398f960d8ac5"
         ],
         "x": 34,
-        "y": 1259
+        "y": 1259,
+        "w": 1432,
+        "h": 1582
     },
     {
         "id": "710369d0410a0d60",
@@ -1612,7 +1610,9 @@
             "b930f0c3ba4eaea0"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 2292,
+        "h": 1242
     },
     {
         "id": "115eb015c9489caa",
@@ -1629,7 +1629,9 @@
             "1526b8eb5f6f428b"
         ],
         "x": 34,
-        "y": 2859
+        "y": 2859,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "20c961b383179af0",
@@ -1651,7 +1653,9 @@
             "4d039ac0b803a921"
         ],
         "x": 34,
-        "y": 3259
+        "y": 3259,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "204e41e815b84721",
@@ -1677,9 +1681,7 @@
             "32c0f876c2302cd8"
         ],
         "x": 74,
-        "y": 959,
-        "w": 852,
-        "h": 222
+        "y": 959
     },
     {
         "id": "d2fba984a07da085",
@@ -18748,120 +18750,6 @@
         "wires": [
             [
                 "fda8bd5e1ba0261e"
-            ]
-        ]
-    },
-    {
-        "id": "3e1a16d163dd4d27",
-        "type": "fs-remove",
-        "z": "f421c7859219b9ce",
-        "path": "/data",
-        "pathType": "str",
-        "filename": "credentialsWhatsApp.json",
-        "filenameType": "str",
-        "recursive": true,
-        "exist": false,
-        "name": "",
-        "x": 290,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ac58af0bf41f0cc1",
-        "type": "fs-list",
-        "z": "f421c7859219b9ce",
-        "name": "",
-        "path": "/data",
-        "pathType": "str",
-        "pattern": "*",
-        "patternType": "str",
-        "filter": "all",
-        "recursive": false,
-        "follow": true,
-        "property": "list",
-        "propertyType": "msg",
-        "x": 290,
-        "y": 680,
-        "wires": [
-            [
-                "a863454caf265c8d"
-            ]
-        ]
-    },
-    {
-        "id": "a22ce3d930d0ec9a",
-        "type": "inject",
-        "z": "f421c7859219b9ce",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 680,
-        "wires": [
-            [
-                "ac58af0bf41f0cc1"
-            ]
-        ]
-    },
-    {
-        "id": "a863454caf265c8d",
-        "type": "debug",
-        "z": "f421c7859219b9ce",
-        "name": "debug 876",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 430,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "fd115b18e5b91514",
-        "type": "inject",
-        "z": "f421c7859219b9ce",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 800,
-        "wires": [
-            [
-                "3e1a16d163dd4d27"
             ]
         ]
     },
