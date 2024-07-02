@@ -266,9 +266,7 @@
             "ad6642159ff08086"
         ],
         "x": 14,
-        "y": 739,
-        "w": 672,
-        "h": 642
+        "y": 739
     },
     {
         "id": "7382602cc2b54357",
@@ -305,9 +303,7 @@
             "bfee4f87b9784649"
         ],
         "x": 714,
-        "y": 759,
-        "w": 1172,
-        "h": 402
+        "y": 759
     },
     {
         "id": "628c8aecc019f08b",
@@ -356,9 +352,7 @@
             "64fc4993e145d169"
         ],
         "x": 14,
-        "y": 1379,
-        "w": 812,
-        "h": 642
+        "y": 1379
     },
     {
         "id": "b2e9a721546c936c",
@@ -407,9 +401,7 @@
             "3422465e9d16734b"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1072,
-        "h": 522
+        "y": 19
     },
     {
         "id": "d5f776f7723294b2",
@@ -442,7 +434,9 @@
             "53d5d61c6a1232fd"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 812,
+        "h": 422
     },
     {
         "id": "c7c1d01c718f9fc8",
@@ -797,7 +791,6 @@
         "nodes": [
             "d7c8e3bc1058ee1c",
             "e8fc6671d55b0f15",
-            "fd4c414b794e5621",
             "a730631d60ca44d5",
             "f534dee418315872",
             "866fb43782d1e1aa",
@@ -808,8 +801,6 @@
             "6cd39dcc316df0f3",
             "07c58156a8edcd8d",
             "d8a8e91b3d0499d1",
-            "202731eee0626cf2",
-            "10c0cf87a1cbdb0a",
             "b3969bc5edb9bf8f",
             "f84fa92c5ced236e",
             "7ab37f416463bd03",
@@ -818,7 +809,7 @@
         ],
         "x": 34,
         "y": 1459,
-        "w": 1712,
+        "w": 1212,
         "h": 222
     },
     {
@@ -834,7 +825,6 @@
         "nodes": [
             "7352c0893615a7b1",
             "8daa2861a904afea",
-            "60fcd07d289f558e",
             "1bc83c2dc4602eca",
             "cf1b9596312bc4b3",
             "442dc81d593f8fa7",
@@ -847,15 +837,13 @@
             "27a547de9434abbe",
             "24f0394246420210",
             "08415ebcb87dae77",
-            "09f772850224242f",
-            "deed4bf57d130045",
             "482a14e5f7f4483a",
             "db2b6e7349537cc1",
             "8ba4bd833157be37"
         ],
         "x": 34,
         "y": 1719,
-        "w": 1512,
+        "w": 1192,
         "h": 262
     },
     {
@@ -871,7 +859,6 @@
         "nodes": [
             "fb40210600213ded",
             "cec13002671b136d",
-            "05d32cb22d1820d0",
             "a875a7442427d3c0",
             "6e92270506c85509",
             "25d6a37a67658cb0",
@@ -884,15 +871,13 @@
             "4bbd5c26c4a1c279",
             "a3de904182d0287d",
             "6a445d5526c40c8d",
-            "d5b0a65564109b26",
-            "6c3a8aedcb4111b3",
             "3b760520581b46b9",
             "ad5725aa4bae18f9",
             "06d02de3a229fda7"
         ],
         "x": 34,
         "y": 1999,
-        "w": 1452,
+        "w": 1152,
         "h": 262
     },
     {
@@ -970,7 +955,6 @@
         "nodes": [
             "592585a4653acbf5",
             "75e002f2f4141242",
-            "a63f97a42ae8a447",
             "7dfcb7349b36ac43",
             "1bddd93bb95c872b",
             "5b1eba943199c7fe",
@@ -978,8 +962,6 @@
             "be1a8fcf69fcb4d5",
             "07cb2ad202820c52",
             "253a2e09f0a02b14",
-            "15b1f54d4016402f",
-            "db638caa413c6f15",
             "1566d559db5d95fb",
             "c94a7ab33569d254",
             "92e9ef1af5a4a9e8",
@@ -991,7 +973,7 @@
         ],
         "x": 34,
         "y": 2279,
-        "w": 1492,
+        "w": 1192,
         "h": 242
     },
     {
@@ -1007,7 +989,6 @@
         "nodes": [
             "9a395f169c030c2b",
             "937a270543443c8f",
-            "7c86e034b96712e3",
             "c52453c6b535f291",
             "b5cc57f54633e474",
             "99eaf8b2c80fbd56",
@@ -1017,8 +998,6 @@
             "a733b2750bc44503",
             "1b9fc3e8df560614",
             "b13fea9ecd31d1f7",
-            "206112ed79eae1f1",
-            "d200da9b5f23a71d",
             "6b7e1a7174b4f4d8",
             "504a1d774c3bd162",
             "1215e04aafd5a49a",
@@ -1028,7 +1007,7 @@
         ],
         "x": 34,
         "y": 2539,
-        "w": 1592,
+        "w": 1232,
         "h": 302
     },
     {
@@ -1044,7 +1023,6 @@
         "nodes": [
             "c62d2c0b595c17b3",
             "26837d2e12d903d5",
-            "72e75fc6c28edbbb",
             "feabf115ddcd503f",
             "d6b7c1633ade4e77",
             "89dadc7992ba36b7",
@@ -1057,8 +1035,6 @@
             "2855906b5eb49b6c",
             "50dbd89157f0220d",
             "e14c97e9d1bbbe03",
-            "c68696d78b845950",
-            "6502eb7bffdb7f2b",
             "9464348869bc10b2",
             "8ca324163db93564",
             "83e1ce1515959878",
@@ -1068,7 +1044,7 @@
         ],
         "x": 34,
         "y": 839,
-        "w": 1472,
+        "w": 1272,
         "h": 342
     },
     {
@@ -1529,9 +1505,7 @@
             "e76ed8c0f0b8a886"
         ],
         "x": 34,
-        "y": 79,
-        "w": 592,
-        "h": 482
+        "y": 79
     },
     {
         "id": "a11dd55966c9b0fa",
@@ -1550,9 +1524,7 @@
             "176d449a45ff9d2c"
         ],
         "x": 754,
-        "y": 1239,
-        "w": 692,
-        "h": 82
+        "y": 1239
     },
     {
         "id": "77d78cdc0e69fb3a",
@@ -1585,9 +1557,7 @@
             "37afe4ad2c1b2362"
         ],
         "x": 34,
-        "y": 2659,
-        "w": 1592,
-        "h": 342
+        "y": 2659
     },
     {
         "id": "dcc25df538a6b74b",
@@ -1626,9 +1596,7 @@
             "c37a0f8a359a6fb0"
         ],
         "x": 934,
-        "y": 1379,
-        "w": 1272,
-        "h": 642
+        "y": 1379
     },
     {
         "id": "7304f8bea16d2f84",
@@ -1702,9 +1670,7 @@
             "cb9d7d265ce9ceea"
         ],
         "x": 14,
-        "y": 2059,
-        "w": 4092,
-        "h": 562
+        "y": 2059
     },
     {
         "id": "2e6e4e61c61cc1ec",
@@ -1764,9 +1730,7 @@
             "893dff2ad4952be1"
         ],
         "x": 14,
-        "y": 59,
-        "w": 2072,
-        "h": 622
+        "y": 59
     },
     {
         "id": "204e41e815b84721",
@@ -8879,82 +8843,22 @@
         ]
     },
     {
-        "id": "deed4bf57d130045",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "20f41552a8bf93e6",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 580,
-        "y": 1880,
-        "wires": [
-            [
-                "09f772850224242f"
-            ]
-        ]
-    },
-    {
         "id": "08415ebcb87dae77",
         "type": "function",
         "z": "5e7416993281e99d",
         "g": "20f41552a8bf93e6",
         "name": "upSert data",
-        "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
+        "func": "msg.currentCredsInFile = msg.payload;\nmsg.filename = '/data/credentialsWhatsApp.json'\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 470,
         "y": 1880,
         "wires": [
             [
                 "442dc81d593f8fa7"
-            ]
-        ]
-    },
-    {
-        "id": "09f772850224242f",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "20f41552a8bf93e6",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 685,
-        "y": 1880,
-        "wires": [
-            [
-                "08415ebcb87dae77"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6c3a8aedcb4111b3",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "af65f71384d80c06",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 560,
-        "y": 2160,
-        "wires": [
-            [
-                "d5b0a65564109b26"
             ]
         ]
     },
@@ -8964,56 +8868,17 @@
         "z": "5e7416993281e99d",
         "g": "af65f71384d80c06",
         "name": "upSert data",
-        "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
+        "func": "msg.currentCredsInFile = msg.payload;\nmsg.filename = '/data/credentialsMeta.json'\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
+        "x": 470,
         "y": 2160,
         "wires": [
             [
                 "25d6a37a67658cb0"
-            ]
-        ]
-    },
-    {
-        "id": "d5b0a65564109b26",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "af65f71384d80c06",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 655,
-        "y": 2160,
-        "wires": [
-            [
-                "6a445d5526c40c8d"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "206112ed79eae1f1",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "d8a434ae844324e0",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 620,
-        "y": 2740,
-        "wires": [
-            [
-                "d200da9b5f23a71d"
             ]
         ]
     },
@@ -9023,37 +8888,19 @@
         "z": "5e7416993281e99d",
         "g": "d8a434ae844324e0",
         "name": "upSert data",
-        "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
+        "func": "msg.currentCredsInFile = msg.payload;\nmsg.filename = '/data/credentialsCustomChat.json';\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
+        "x": 490,
         "y": 2740,
         "wires": [
             [
                 "99eaf8b2c80fbd56"
             ]
         ]
-    },
-    {
-        "id": "d200da9b5f23a71d",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "d8a434ae844324e0",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 745,
-        "y": 2740,
-        "wires": [
-            [
-                "6b7e1a7174b4f4d8"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "15601d86a8dff722",
@@ -10265,8 +10112,8 @@
         "y": 1600,
         "wires": [
             [
-                "fd4c414b794e5621",
-                "b3969bc5edb9bf8f"
+                "b3969bc5edb9bf8f",
+                "d8a8e91b3d0499d1"
             ]
         ]
     },
@@ -10278,29 +10125,9 @@
         "name": "saveCredentialsTelegram",
         "statusCode": "",
         "headers": {},
-        "x": 1610,
+        "x": 1110,
         "y": 1600,
         "wires": []
-    },
-    {
-        "id": "fd4c414b794e5621",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "6f53df0634427ab8",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsTelegram.json'\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 1600,
-        "wires": [
-            [
-                "202731eee0626cf2"
-            ]
-        ]
     },
     {
         "id": "a730631d60ca44d5",
@@ -10314,7 +10141,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1280,
+        "x": 780,
         "y": 1600,
         "wires": [
             [
@@ -10334,7 +10161,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1420,
+        "x": 920,
         "y": 1600,
         "wires": [
             [
@@ -10351,7 +10178,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1150,
+        "x": 650,
         "y": 1600,
         "wires": [
             [
@@ -10496,52 +10323,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
+        "x": 470,
         "y": 1600,
         "wires": [
             [
                 "866fb43782d1e1aa"
             ]
         ]
-    },
-    {
-        "id": "202731eee0626cf2",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "6f53df0634427ab8",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 740,
-        "y": 1600,
-        "wires": [
-            [
-                "10c0cf87a1cbdb0a"
-            ]
-        ]
-    },
-    {
-        "id": "10c0cf87a1cbdb0a",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "6f53df0634427ab8",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 845,
-        "y": 1600,
-        "wires": [
-            [
-                "d8a8e91b3d0499d1"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "7352c0893615a7b1",
@@ -10557,8 +10345,8 @@
         "y": 1880,
         "wires": [
             [
-                "60fcd07d289f558e",
-                "24f0394246420210"
+                "24f0394246420210",
+                "08415ebcb87dae77"
             ]
         ]
     },
@@ -10570,29 +10358,9 @@
         "name": "saveCredentialsWhatsApp",
         "statusCode": "",
         "headers": {},
-        "x": 1400,
+        "x": 1080,
         "y": 1880,
         "wires": []
-    },
-    {
-        "id": "60fcd07d289f558e",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "20f41552a8bf93e6",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsWhatsApp.json'\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 1880,
-        "wires": [
-            [
-                "deed4bf57d130045"
-            ]
-        ]
     },
     {
         "id": "1bc83c2dc4602eca",
@@ -10606,7 +10374,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1060,
+        "x": 740,
         "y": 1880,
         "wires": [
             [
@@ -10626,7 +10394,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1200,
+        "x": 880,
         "y": 1880,
         "wires": [
             [
@@ -10643,7 +10411,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 930,
+        "x": 610,
         "y": 1880,
         "wires": [
             [
@@ -10790,8 +10558,8 @@
         "y": 2160,
         "wires": [
             [
-                "05d32cb22d1820d0",
-                "4bbd5c26c4a1c279"
+                "4bbd5c26c4a1c279",
+                "6a445d5526c40c8d"
             ]
         ]
     },
@@ -10803,29 +10571,9 @@
         "name": "saveCredentialsMeta",
         "statusCode": "",
         "headers": {},
-        "x": 1360,
+        "x": 1060,
         "y": 2160,
         "wires": []
-    },
-    {
-        "id": "05d32cb22d1820d0",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "af65f71384d80c06",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsMeta.json'\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 2160,
-        "wires": [
-            [
-                "6c3a8aedcb4111b3"
-            ]
-        ]
     },
     {
         "id": "a875a7442427d3c0",
@@ -10839,7 +10587,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1040,
+        "x": 740,
         "y": 2160,
         "wires": [
             [
@@ -10859,7 +10607,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1180,
+        "x": 880,
         "y": 2160,
         "wires": [
             [
@@ -10876,7 +10624,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 910,
+        "x": 610,
         "y": 2160,
         "wires": [
             [
@@ -11456,8 +11204,8 @@
         "y": 2440,
         "wires": [
             [
-                "a63f97a42ae8a447",
-                "c94a7ab33569d254"
+                "c94a7ab33569d254",
+                "1566d559db5d95fb"
             ]
         ]
     },
@@ -11469,29 +11217,9 @@
         "name": "saveCredentialsInstagram",
         "statusCode": "",
         "headers": {},
-        "x": 1390,
+        "x": 1090,
         "y": 2440,
         "wires": []
-    },
-    {
-        "id": "a63f97a42ae8a447",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "fcdce1b1fa2970b8",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsInstagram.json';\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 2440,
-        "wires": [
-            [
-                "15b1f54d4016402f"
-            ]
-        ]
     },
     {
         "id": "7dfcb7349b36ac43",
@@ -11505,7 +11233,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1060,
+        "x": 760,
         "y": 2440,
         "wires": [
             [
@@ -11525,7 +11253,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1200,
+        "x": 900,
         "y": 2440,
         "wires": [
             [
@@ -11542,7 +11270,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 930,
+        "x": 630,
         "y": 2440,
         "wires": [
             [
@@ -11628,57 +11356,18 @@
         "l": false
     },
     {
-        "id": "15b1f54d4016402f",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "fcdce1b1fa2970b8",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 580,
-        "y": 2440,
-        "wires": [
-            [
-                "db638caa413c6f15"
-            ]
-        ]
-    },
-    {
-        "id": "db638caa413c6f15",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "fcdce1b1fa2970b8",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 675,
-        "y": 2440,
-        "wires": [
-            [
-                "1566d559db5d95fb"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "1566d559db5d95fb",
         "type": "function",
         "z": "5e7416993281e99d",
         "g": "fcdce1b1fa2970b8",
         "name": "upSert data",
-        "func": "msg.currentCredsInFile = msg.payload;\n\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
+        "func": "msg.currentCredsInFile = msg.payload;\nmsg.filename = '/data/credentialsInstagram.json';\nmsg.payload = {\n    ...msg.currentCredsInFile,\n    ...msg.newCredentials,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 490,
         "y": 2440,
         "wires": [
             [
@@ -11700,8 +11389,8 @@
         "y": 2740,
         "wires": [
             [
-                "7c86e034b96712e3",
-                "504a1d774c3bd162"
+                "504a1d774c3bd162",
+                "6b7e1a7174b4f4d8"
             ]
         ]
     },
@@ -11713,29 +11402,9 @@
         "name": "saveCredentialsCustomChat",
         "statusCode": "",
         "headers": {},
-        "x": 1480,
+        "x": 1120,
         "y": 2740,
         "wires": []
-    },
-    {
-        "id": "7c86e034b96712e3",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "d8a434ae844324e0",
-        "name": "set filename",
-        "func": "msg.filename = '/data/credentialsCustomChat.json';\n\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 2740,
-        "wires": [
-            [
-                "206112ed79eae1f1"
-            ]
-        ]
     },
     {
         "id": "c52453c6b535f291",
@@ -11749,7 +11418,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1140,
+        "x": 780,
         "y": 2740,
         "wires": [
             [
@@ -11769,7 +11438,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
+        "x": 920,
         "y": 2740,
         "wires": [
             [
@@ -11786,7 +11455,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1010,
+        "x": 650,
         "y": 2740,
         "wires": [
             [
@@ -11933,8 +11602,8 @@
         "y": 940,
         "wires": [
             [
-                "72e75fc6c28edbbb",
-                "8ca324163db93564"
+                "8ca324163db93564",
+                "9464348869bc10b2"
             ]
         ]
     },
@@ -11946,29 +11615,9 @@
         "name": "saveCustomPrompts",
         "statusCode": "",
         "headers": {},
-        "x": 1380,
+        "x": 1180,
         "y": 940,
         "wires": []
-    },
-    {
-        "id": "72e75fc6c28edbbb",
-        "type": "function",
-        "z": "5e7416993281e99d",
-        "g": "7348d6f27f4f25e5",
-        "name": "set filename",
-        "func": "\n\nif (msg.payload.isPromptDefault === false) {\n    const updateOtherTechVars = {\n        ...global.get('otherTechVars'),\n        isPromptDefault: false,\n    };\n\n    global.set(\"otherTechVars\", updateOtherTechVars);\n}\n\nmsg.filename = '/data/customPrompts.json';\n\ndelete msg.payload.isPromptDefault;\nmsg.newCredentials = msg.payload;\n\nmsg.payload = {};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 940,
-        "wires": [
-            [
-                "c68696d78b845950"
-            ]
-        ]
     },
     {
         "id": "feabf115ddcd503f",
@@ -11982,7 +11631,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1060,
+        "x": 840,
         "y": 940,
         "wires": [
             [
@@ -12002,7 +11651,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1200,
+        "x": 1000,
         "y": 940,
         "wires": [
             [
@@ -12019,7 +11668,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 930,
+        "x": 670,
         "y": 940,
         "wires": [
             [
@@ -12203,57 +11852,18 @@
         "wires": []
     },
     {
-        "id": "c68696d78b845950",
-        "type": "file in",
-        "z": "5e7416993281e99d",
-        "g": "7348d6f27f4f25e5",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 560,
-        "y": 940,
-        "wires": [
-            [
-                "6502eb7bffdb7f2b"
-            ]
-        ]
-    },
-    {
-        "id": "6502eb7bffdb7f2b",
-        "type": "json",
-        "z": "5e7416993281e99d",
-        "g": "7348d6f27f4f25e5",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 675,
-        "y": 940,
-        "wires": [
-            [
-                "9464348869bc10b2"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "9464348869bc10b2",
         "type": "function",
         "z": "5e7416993281e99d",
         "g": "7348d6f27f4f25e5",
         "name": "upSert data",
-        "func": "// msg.currentCredsInFile = msg.payload;\n\n\n\nconst fileData = msg.payload;\nconst newCredential = {\n    ANSWER_LENGTH: msg.newCredentials?.answer_length,\n    ANSWER_AS: msg.newCredentials?.answer_as,\n    TONE: msg.newCredentials?.tone,\n    LANGUAGE: msg.newCredentials?.language,\n    PROMPT_CUSTOM: msg.newCredentials?.prompt_custom,\n    // knowledge_base: msg.newCredentials?.knowledge_base,\n    NAME_BASE: msg.newCredentials?.knowledge_base.split(' ')[0],\n    TYPE_BASE: msg.newCredentials?.knowledge_base.split(' ')[1],\n    ID: msg.newCredentials?.id_base,\n};\n\nconst elIndex = fileData.findIndex(el => el.ID === newCredential.ID);\n\nif ( elIndex > -1 ) {\n    fileData[elIndex] = { ...newCredential };\n} else {\n    fileData.push({ ...newCredential });\n}\n\nmsg.payload = fileData;\n\nreturn msg;\n",
+        "func": "// msg.currentCredsInFile = msg.payload;\n\n\nmsg.filename = '/data/customPrompts.json';\nconst fileData = msg.payload;\nconst newCredential = {\n    ANSWER_LENGTH: msg.newCredentials?.answer_length,\n    ANSWER_AS: msg.newCredentials?.answer_as,\n    TONE: msg.newCredentials?.tone,\n    LANGUAGE: msg.newCredentials?.language,\n    PROMPT_CUSTOM: msg.newCredentials?.prompt_custom,\n    // knowledge_base: msg.newCredentials?.knowledge_base,\n    NAME_BASE: msg.newCredentials?.knowledge_base.split(' ')[0],\n    TYPE_BASE: msg.newCredentials?.knowledge_base.split(' ')[1],\n    ID: msg.newCredentials?.id_base,\n};\n\nconst elIndex = fileData.findIndex(el => el.ID === newCredential.ID);\n\nif ( elIndex > -1 ) {\n    fileData[elIndex] = { ...newCredential };\n} else {\n    fileData.push({ ...newCredential });\n}\n\nmsg.payload = fileData;\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 490,
         "y": 940,
         "wires": [
             [
